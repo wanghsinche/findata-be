@@ -67,7 +67,10 @@ export interface Data {
 }
 
 export enum EStatement {
-  incomeStatement='IA',
-  balanceSheet='BA',
-  cashFlow='CA'	
+  incomeStatementAnnual='IA',
+  balanceSheetAnnual='BA',
+  cashFlowAnnual='CA',
+  incomeStatementQuater='IQ',
+  balanceSheetQuater='BQ',
+  cashFlowQuater='CQ',
 }
