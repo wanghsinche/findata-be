@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dFin pannel</title>
+</head>
+<body>
+    <label for="ticker">ticker</label>
+    <input id="ticker"/>
+    <button id="fetchbtn">fetch quote</button>
+
+<fieldset>
+    <legend>Select a period:</legend>
+
+    <div>
+      <input type="radio" name="period" value="annually" id="annually"
+             checked>
+      <label for="annually">annually</label>
+    </div>
+
+    <div>
+      <input type="radio" name="period" value="quaterly" id="quaterly">
+      <label for="quaterly">quaterly</label>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Select a statement:</legend>
+
+    <div>
+      <input type="radio" name="statement" value="balance" id="balance"
+             checked>
+      <label for="balance">balance sheet</label>
+    </div>
+
+    <div>
+      <input type="radio" name="statement" value="income" id="income">
+      <label for="income">income sheet</label>
+    </div>
+
+    <div>
+      <input type="radio"  name="statement" value="cashflow" id="cashflow">
+      <label for="cashflow">cashflow</label>
+    </div>
+</fieldset>
+
+    <button id="fetchstatement">fetch statement</button>
+
+
+    <output id="output"></output>
+</body>
+<script>
+
+
+  function onFailure(error) {
+    var div = document.getElementById('output');
+    div.innerHTML = "ERROR: " + error.message;
+  }
+
+
+  const inputBox = document.getElementById('ticker');
+  const btn = document.getElementById('fetchbtn');
+  btn.addEventListener('click', ()=>{
+    const ticker = inputBox.value
+    if (!ticker) return
+    console.log('here')
+    google.script.run.withFailureHandler(onFailure).onGenerateQuote(ticker);
+  })
+</script>
+
+</html>
