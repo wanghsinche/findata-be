@@ -51,6 +51,9 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
           case 'checkout.session.completed':
             const checkoutSession = event.data
               .object as Stripe.Checkout.Session;
+
+            console.info(checkoutSession.mode)
+
             if (checkoutSession.mode === 'subscription') {
               const subscriptionId = checkoutSession.subscription;
               await manageSubscriptionStatusChange(

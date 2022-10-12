@@ -15,7 +15,7 @@ export async function manageSubscriptionStatusChange(
     eventType: string
 ) {
 
-    console.log('receive');
+    console.info('receive');
 
     let { data: subscriptionData } = await supabaseServer
     .from('subscription')
@@ -25,7 +25,7 @@ export async function manageSubscriptionStatusChange(
 
     if (subscriptionData?.length) {
         // existed, directly return
-        console.log('id existed')
+        console.info('id existed ', subscriptionId)
         return
     }
 
@@ -40,7 +40,7 @@ export async function manageSubscriptionStatusChange(
         { subscription: subscriptionId, email: (customer as Stripe.Customer).email, customerId },
     ])
 
-    console.log(insertData, error)
+    console.info(insertData, error)
 }
 
 export async function verifyEmail(email: string) {
