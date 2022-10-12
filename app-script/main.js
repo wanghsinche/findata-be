@@ -1,11 +1,12 @@
 /* ------------------- Main function -------------------- */
 
+const appName = 'FinData'
+
 /**
  * generate ticker data
  * @param {String} ticker stock ticker
  */
 function onGenerateQuote(ticker) {
-  const quoteURL = 'https://findata-be.vercel.app/api/quote?ticker=' + ticker;
 
 
   const ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -15,20 +16,18 @@ function onGenerateQuote(ticker) {
   if (!cell) {
     throw('Unable to insert text, no cursor.');
   }
-  
+
+  const data = generateQuote(ticker)
+
   const rowStart = cell.getLastRow()
   const colStart = cell.getLastColumn()+1
 
-  const quoteRes =  UrlFetchApp.fetch(quoteURL).getContentText();
-
-  const quoteJSON = JSON.parse(quoteRes);
-
-  const cols = quoteJSON.sheetData[0].length
-  const rows = quoteJSON.sheetData.length
+  const cols = data[0].length
+  const rows = data.length
 
   const targetRange = sheet.getRange(rowStart, colStart, rows, cols);
 
-  targetRange.setValues(quoteJSON.sheetData);
+  targetRange.setValues(data);
 
   cell.setValue(ticker)
 
@@ -41,8 +40,6 @@ function onGenerateQuote(ticker) {
  * @param {String} sheet balance annually, cash annually, income annually, balance quaterly, cash quaterly, income quaterly
  */
 function onGenerateStatement(ticker, sheetType) {
-  const quoteURL = `https://findata-be.vercel.app/api/statement?ticker=${ticker}&sheet=${sheetType}`;
-
 
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = ss.getSheets()[0];
@@ -55,16 +52,14 @@ function onGenerateStatement(ticker, sheetType) {
   const rowStart = cell.getLastRow()
   const colStart = cell.getLastColumn()+1
 
-  const quoteRes =  UrlFetchApp.fetch(quoteURL).getContentText();
+  const data = generateStatement(ticker, sheetType)
 
-  const quoteJSON = JSON.parse(quoteRes);
-
-  const cols = quoteJSON.sheetData[0].length
-  const rows = quoteJSON.sheetData.length
+  const cols = data[0].length
+  const rows = data.length
 
   const targetRange = sheet.getRange(rowStart, colStart, rows, cols);
 
-  targetRange.setValues(quoteJSON.sheetData);
+  targetRange.setValues(data);
 
   cell.setValue(ticker)
 
@@ -73,29 +68,22 @@ function onGenerateStatement(ticker, sheetType) {
 
 
 /* ----------- Google Sheets add-on functions ----------- */
-/**
- * onOpen
- * @param {*} e open event
- */
-function onOpen(e) {
-  SpreadsheetApp.getUi().createAddonMenu()
-    .addItem('Show Pannel', 'showAbout')
-    .addToUi();
-}
 
 /**
  * onInstall
  * @param {*} e install event
  */
 function onInstall(e) {
-  onOpen(e);
+  SpreadsheetApp.getUi().createAddonMenu()
+  .addItem(`${appName} Pannel`, 'showPannel')
+  .addToUi();
 }
 
 /**
  * callback function
  */
-function showAbout() {
+function showPannel() {
   const ui = HtmlService.createHtmlOutputFromFile('pannel')
-    .setTitle('dFin Pannel');
+    .setTitle(`${appName} Pannel`);
   SpreadsheetApp.getUi().showSidebar(ui);
 }

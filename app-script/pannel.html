@@ -4,14 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dFin pannel</title>
+    <title>FinData Pannel</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <label for="ticker">ticker</label>
-    <input id="ticker"/>
-    <button id="fetchbtn">fetch quote</button>
 
-<fieldset>
+  <section class="flex justify-center mt-4">
+    <div class="form-control w-full max-w-xs">
+      <label class="label">
+        <span class="label-text">What is the ticker?</span>
+      </label>
+      <input type="text" placeholder="TSLA" class="input input-bordered w-full max-w-xs" id="ticker" />
+    </div>
+  </section>
+
+  <section class="mt-4">
+    <div class="tabs ">
+      <a class="tab tab-lifted">Quotes Data</a> 
+      <a class="tab tab-lifted tab-active ">Fundamental Data</a> 
+    </div>
+    <div class="pannel border-base-300 bg-base-200  p-4">
+      <fieldset class="form-control w-full">
+        <label class="label cursor-pointer">
+          <span class="label-text">Annual Statement</span> 
+          <input type="radio" name="radio-6" class="radio radio-primary" value="annually" />
+        </label>
+        <label class="label cursor-pointer">
+          <span class="label-text">Quarter Statement</span> 
+          <input type="radio" name="radio-6" class="radio radio-primary" checked value="quaterly"/>
+        </label>
+      </fieldset>
+      
+      <select class="select w-full mt-4">
+        <option disabled selected>Pick your Statement</option>
+        <option value="income">income sheet</option>
+        <option value="cashflow">cashflow</option>
+        <option value="balance">balance sheet</option>
+      </select>
+      
+    </div>
+  </section>
+  <section class="flex justify-center mt-4 mb-4">
+    <button class="btn w-1/2" id="fetchbtn">Fetch Data</button>
+  </section>
+ 
+  <div class="alert alert-warning shadow-lg">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      <span>12 unread messages. Tap to see.</span>
+    </div>
+  </div>
+  
+
+<!-- <fieldset>
     <legend>Select a period:</legend>
 
     <div>
@@ -47,7 +93,7 @@
 </fieldset>
 
     <button id="fetchstatement">fetch statement</button>
-
+ -->
 
     <output id="output"></output>
 </body>
