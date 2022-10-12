@@ -52,14 +52,17 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
             const checkoutSession = event.data
               .object as Stripe.Checkout.Session;
 
-            // if (checkoutSession.mode === 'subscription') {
-              const subscriptionId = checkoutSession.subscription;
-              await manageSubscriptionStatusChange(
-                subscriptionId as string,
-                checkoutSession.customer as string,
-                event.type
-              );
-            // }
+            if (checkoutSession.mode !== 'subscription') {
+              throw new Error('Unhandled relevant mode! '+checkoutSession.mode);
+            }
+
+            const subscriptionId = checkoutSession.subscription;
+            await manageSubscriptionStatusChange(
+              subscriptionId as string,
+              checkoutSession.customer as string,
+              event.type
+            );
+
             break;
           default:
             throw new Error('Unhandled relevant event! '+event.type);
