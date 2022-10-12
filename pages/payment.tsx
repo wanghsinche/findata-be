@@ -3,16 +3,19 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import styles from '../styles/Home.module.css'
 
-const testElement = process.env.NODE_ENV === 'development' ? <a href={`https://buy.stripe.com/test_5kA29YePw4Klc5WdQQ?prefilled_email=${email}`} target="blank" className={styles.card}>
-  <p>
-    TEST 80 USD
-  </p>
-</a> : null
+const isTest = process.env.NODE_ENV === 'development'
 
 
 const Page: NextPage = () => {
   const router = useRouter()
   const email = router.query.email;
+
+  const testElement = isTest ? <a href={`https://buy.stripe.com/test_5kA29YePw4Klc5WdQQ?prefilled_email=${email}`} target="blank" className={styles.card}>
+    <p>
+      TEST 80 USD
+    </p>
+  </a> : null
+
 
   return (
     <div className={styles.container}>
