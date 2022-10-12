@@ -3,8 +3,9 @@ import Stripe from 'stripe';
 import { Readable } from 'node:stream';
 import { stripeServer } from '../../utils/stripe';
 import { manageSubscriptionStatusChange } from '../../utils/supabase-admin';
+import { getWebhookSecret } from '../../utils/constant';
 
-// Stripe requires the raw body to construct the event.
+// // Stripe requires the raw body to construct the event.
 export const config = {
   api: {
     bodyParser: false
@@ -34,13 +35,11 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     const buf = await buffer(req);
     const sig = req.headers['stripe-signature'];
-    const webhookSecret =
-      process.env.STRIPE_WEBHOOK_SECRET_LIVE ??
-      process.env.STRIPE_WEBHOOK_SECRET;
+    const webhookSecret =getWebhookSecret();
     let event: Stripe.Event;
 
     try {
-      if (!sig || !webhookSecret) return;
+      if (!sig || !webhookSecret) return res.status(400).send(`Webhook Error: no sig or webhookSecret `);
       event = stripeServer.webhooks.constructEvent(buf, sig, webhookSecret);
     } catch (err: any) {
       console.log(`❌ Error message: ${err.message}`);

@@ -1,8 +1,7 @@
 import Stripe from 'stripe';
-import { productName } from './constant';
-const STRIPE_APIKEY = process.env.STRIPE_APIKEY as string;
+import { getStripeAPIKEY, productName } from './constant';
 
-export const stripeServer = new Stripe(STRIPE_APIKEY, {
+export const stripeServer = new Stripe(getStripeAPIKEY(), {
   // https://github.com/stripe/stripe-node#configuration
   apiVersion: '2022-08-01',
   // Register this as an official Stripe plugin.
