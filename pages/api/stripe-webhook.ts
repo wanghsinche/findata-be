@@ -20,17 +20,6 @@ async function buffer(readable: Readable) {
   return Buffer.concat(chunks);
 }
 
-const relevantEvents = new Set([
-  'product.created',
-  'product.updated',
-  'price.created',
-  'price.updated',
-  'checkout.session.completed',
-  'customer.subscription.created',
-  'customer.subscription.updated',
-  'customer.subscription.deleted'
-]);
-
 const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     const buf = await buffer(req);
@@ -46,7 +35,6 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
       return res.status(400).send(`Webhook Error: ${err.message}`);
     }
 
-    if (relevantEvents.has(event.type)) {
       try {
         switch (event.type) {
           case 'customer.subscription.created':
@@ -56,7 +44,7 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
             await manageSubscriptionStatusChange(
               subscription.id,
               subscription.customer as string,
-              event.type === 'customer.subscription.created'
+              event.type
             );
             break;
           case 'checkout.session.completed':
@@ -67,7 +55,7 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
               await manageSubscriptionStatusChange(
                 subscriptionId as string,
                 checkoutSession.customer as string,
-                true
+                event.type
               );
             }
             break;
@@ -80,7 +68,6 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
           .status(400)
           .send('Webhook error: "Webhook handler failed. View logs."');
       }
-    }
 
     res.json({ received: true });
   } else {

@@ -1,6 +1,13 @@
 export const priceId = 'price_1LrlZ8FMVPfRQBiogvN0ENMb';
-export const domain = 'https://findata-be.vercel.com'
+export const domain = 'https://findata-be.vercel.app'
 export const productName = 'financeSheet'
+
+export const supabaseUrl = 'https://tgubgmgavtnuuavwolvm.supabase.co'
+
+export function getSupabaseKey(){
+    return process.env.SUPABASE_APIKEY as string
+} 
+
 
 export function getWebhookSecret(){
     return (process.env.NODE_ENV === 'development' ?

@@ -9,3 +9,8 @@ export function formatDate(d:Date){
     const date = paddingZero(String(d.getDate()), 2);
     return `${d.getFullYear()}-${month}-${date}`
 }
+
+export function roundToDay(n:number){
+    const reminder = n%(24*3600000)
+    return n-reminder
+}

@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios';
 import { IFinvizQuote } from '../../types/finviz';
-import { formatDate } from '../../utils/date';
+import { formatDate, roundToDay } from '../../utils/date';
 const finvizURL = 'https://finviz.com/api/quote.ashx';
 
 type TCell = string|number;
@@ -22,7 +22,7 @@ export default async function quote(
   query.set('instrument', 'stock');
   query.set('patterns', 'true');
   query.set('premarket','false');
-  query.set('rev', String(Date.now()));
+  query.set('rev', String(roundToDay(Date.now())));
   query.set('timeframe', 'd');
   query.set('type', 'new');
   query.set('ticker', ticker);
