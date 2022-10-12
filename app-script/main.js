@@ -70,13 +70,21 @@ function onGenerateStatement(ticker, sheetType) {
 /* ----------- Google Sheets add-on functions ----------- */
 
 /**
+ * onOpen
+ * @param {*} e open event
+ */
+function onOpen(e) {
+  SpreadsheetApp.getUi().createAddonMenu()
+    .addItem(`${appName} Pannel`, 'showPannel')
+    .addToUi();
+}
+
+/**
  * onInstall
  * @param {*} e install event
  */
 function onInstall(e) {
-  SpreadsheetApp.getUi().createAddonMenu()
-  .addItem(`${appName} Pannel`, 'showPannel')
-  .addToUi();
+  onOpen(e);
 }
 
 /**
