@@ -4,19 +4,17 @@ import Image from 'next/image'
 import { useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 import axios from 'axios';
+import { priceId } from '../utils/constant'
+
+const Checkout = () => {
+  return <form action="/api/payment" method="POST">
+    <input type="hidden" name="priceId" value={priceId} />
+    <button type="submit">Checkout</button>
+  </form>
+
+}
 
 const Page: NextPage = () => {
-  useEffect(()=>{
-    axios.get('/api/quote?ticker=se').then(res=>{
-        console.table(res.data);
-    })
-  }, [])
-  useEffect(()=>{
-    axios.get('/api/statement?ticker=se&sheet=BA').then(res=>{
-        console.table(res.data.data);
-    })
-  }, [])
-
   return (
     <div className={styles.container}>
       <Head>
@@ -26,7 +24,7 @@ const Page: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        open console
+        <Checkout />
       </main>
     </div>
   )
