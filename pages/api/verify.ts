@@ -14,7 +14,14 @@ export default async function handler(
 
   if (!email) return res.status(400).json({result:false})
   
-  const result = await verifyEmail(email);
+  try {
+    const result = await verifyEmail(email);
+    return res.status(200).json({result:!!result})
 
-  return res.status(200).json({result:!!result})
+  } catch (error) {
+    console.error(error)
+    return res.status(400).json({result:false})
+  }
+
+
 }
