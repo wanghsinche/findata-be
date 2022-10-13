@@ -1,6 +1,6 @@
 type TCell = string|number
 
-const placeHolder = 'Please Upgrade to Premium'
+const placeHolder = 'Only For Paid User'
 
 export function coverSomething(arr:TCell[][], rowPos = 3, colPos = 2){
     const rowMid = Math.floor(arr.length * (1 - 1/rowPos))

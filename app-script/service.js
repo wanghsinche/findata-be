@@ -2,42 +2,52 @@
  * generate ticker data
  * @param {String} ticker stock ticker
  */
- function generateQuote(ticker) {
-    const quoteURL = 'https://findata-be.vercel.app/api/quote?ticker=' + ticker;
-    
-    const quoteRes =  UrlFetchApp.fetch(quoteURL).getContentText();
-  
-    const quoteJSON = JSON.parse(quoteRes);
-    return quoteJSON.sheetData;  
-  }
-  
+function generateQuote(ticker) {
+  const email = Session.getActiveUser().getEmail();
+
+  const quoteURL = `https://findata-be.vercel.app/api/quote?ticker=${ticker}&email=${email}`;
+
+  const quoteRes = UrlFetchApp.fetch(quoteURL).getContentText();
+
+  const quoteJSON = JSON.parse(quoteRes);
+  return quoteJSON.sheetData;
+}
+
 
 /**
  * generate ticker statement
  * @param {String} ticker stock ticker
  * @param {String} sheet balance annually, cash annually, income annually, balance quaterly, cash quaterly, income quaterly
  */
- function generateStatement(ticker, sheetType) {
-    const quoteURL = `https://findata-be.vercel.app/api/statement?ticker=${ticker}&sheet=${sheetType}`;
+function generateStatement(ticker, sheetType) {
+  const email = Session.getActiveUser().getEmail();
+
+  const quoteURL = `https://findata-be.vercel.app/api/statement?ticker=${ticker}&sheet=${sheetType}&email=${email}`;
+
+
+  const quoteRes = UrlFetchApp.fetch(quoteURL).getContentText();
+
+  const quoteJSON = JSON.parse(quoteRes);
+
+  return quoteJSON.sheetData
+
+}
+
+/**
+ * get plan detail
+ *
+ */
+function getPlanDetail() {
+  const email = Session.getActiveUser().getEmail();
+  const verifyURL = `https://findata-be.vercel.app/api/verify?email=${email}`;
   
-  
-    const quoteRes =  UrlFetchApp.fetch(quoteURL).getContentText();
-  
-    const quoteJSON = JSON.parse(quoteRes);
-  
-    return quoteJSON.sheetData
-  
+  const planRes = UrlFetchApp.fetch(verifyURL).getContentText();
+
+  const planResJSON = JSON.parse(planRes);
+
+  return {
+    plan: planResJSON.plan,
+    email,
+    expiration: planResJSON.expiration
   }
-  
-  /**
-   * get plan detail
-   *
-   */
-  function getPlanDetail(){
-    console.log(Session.getActiveUser().getEmail())
-    return {
-      plan: 'string',
-      email: Session.getActiveUser().getEmail(),
-      expiration: Date.now()
-    }
-  }
+}

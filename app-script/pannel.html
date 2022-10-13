@@ -9,7 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+  <div class="flex items-center justify-between">
+    <span class="badge" id="plan">Free plan</span>
 
+    <a class="text-red-400 link" id="promote" href="https://findata-be.vercel.app/payment" target="_blank">
+      Upgrade the plan to unlock more data!
+    </a>
+
+  </div>
+  
   <section class="flex justify-center mt-4">
     <div class="form-control w-full max-w-xs">
       <label class="label">
@@ -112,6 +120,14 @@
   }
 
   const fetchbtn = document.getElementById('fetchbtn')
+
+
+  google.script.run.withFailureHandler(onFailure).withSuccessHandler(function(res){
+            onSuccess()
+            document.getElementById('plan').innerHTML = res.plan + ' plan'
+            if (res.plan !== 'Free') document.getElementById('promote').classList.add('hidden')
+          }).onGetPlanDetail();
+
 
   bindEvent('js-tab-btn', e=>{
       // switch tab
