@@ -36,7 +36,7 @@ export default async function statement(
     if (k === 'Period End Date') return
     sheetData.push([k, ...v])
   })
-
+  console.log(userPlan)
   if (userPlan.plan === 'Free') coverSomething(sheetData)
 
   res.status(200).json({
