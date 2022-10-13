@@ -9,16 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div class="flex items-center justify-between">
-    <span class="badge" id="plan">Free plan</span>
-
-    <a class="text-red-400 link" id="promote" href="https://findata-be.vercel.app/payment" target="_blank">
+  <div>
+    
+    <p>
+    <a class="text-red-400 link text-sm" id="promote" href="https://findata-be.vercel.app/payment" target="_blank">
       Upgrade the plan to unlock more data!
     </a>
-
+    </p>
+    <span class="badge" id="plan">Free plan</span>
   </div>
   
-  <section class="flex justify-center mt-4">
+  <section class="flex justify-center mt-2">
     <div class="form-control w-full max-w-xs">
       <label class="label">
         <span class="label-text">What is the ticker?</span>
@@ -29,8 +30,8 @@
 
   <section class="mt-4">
     <div class="tabs">
-      <a class="tab tab-lifted js-tab-btn" data-key="quote-pannel">Quotes Data</a> 
-      <a class="tab tab-lifted tab-active js-tab-btn" data-key="sheet-pannel">Fundamental Data</a> 
+      <a class="tab tab-lifted js-tab-btn" data-key="quote-pannel">Quotes</a> 
+      <a class="tab tab-lifted tab-active js-tab-btn" data-key="sheet-pannel">Fundamental</a> 
     </div>  
     <div class="js-tab-pannel border-base-300 bg-base-200  p-4"  id="sheet-pannel">
       <p>
