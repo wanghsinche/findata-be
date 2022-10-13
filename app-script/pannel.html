@@ -20,100 +20,153 @@
   </section>
 
   <section class="mt-4">
-    <div class="tabs ">
-      <a class="tab tab-lifted">Quotes Data</a> 
-      <a class="tab tab-lifted tab-active ">Fundamental Data</a> 
-    </div>
-    <div class="pannel border-base-300 bg-base-200  p-4">
-      <fieldset class="form-control w-full">
+    <div class="tabs">
+      <a class="tab tab-lifted js-tab-btn" data-key="quote-pannel">Quotes Data</a> 
+      <a class="tab tab-lifted tab-active js-tab-btn" data-key="sheet-pannel">Fundamental Data</a> 
+    </div>  
+    <div class="js-tab-pannel border-base-300 bg-base-200  p-4"  id="sheet-pannel">
+      <p>
+        Fetch the Fundamental Data Sheet
+      </p>
+      <fieldset class="form-control w-full mt-2">
         <label class="label cursor-pointer">
           <span class="label-text">Annual Statement</span> 
-          <input type="radio" name="radio-6" class="radio radio-primary" value="annually" />
+          <input type="radio" name="radio-6" class="radio radio-primary js-period" value="annual" />
         </label>
         <label class="label cursor-pointer">
           <span class="label-text">Quarter Statement</span> 
-          <input type="radio" name="radio-6" class="radio radio-primary" checked value="quaterly"/>
+          <input type="radio" name="radio-6" class="radio radio-primary js-period" checked value="quarter"/>
         </label>
       </fieldset>
       
-      <select class="select w-full mt-4">
-        <option disabled selected>Pick your Statement</option>
+      <select class="select w-full mt-4" id="sheettype">
         <option value="income">income sheet</option>
         <option value="cashflow">cashflow</option>
         <option value="balance">balance sheet</option>
       </select>
       
     </div>
+    <div class="js-tab-pannel hidden border-base-300 bg-base-200  p-4" id="quote-pannel">
+        <p>
+          Fetch the History Data
+        </p>
+    </div>
   </section>
   <section class="flex justify-center mt-4 mb-4">
     <button class="btn w-1/2" id="fetchbtn">Fetch Data</button>
   </section>
  
-  <div class="alert alert-warning shadow-lg">
+  <div class="alert alert-warning shadow-lg hidden" id="alert">
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-      <span>12 unread messages. Tap to see.</span>
+      <span id="alertcontent">12 unread messages. Tap to see.</span>
     </div>
   </div>
   
-
-<!-- <fieldset>
-    <legend>Select a period:</legend>
-
-    <div>
-      <input type="radio" name="period" value="annually" id="annually"
-             checked>
-      <label for="annually">annually</label>
-    </div>
-
-    <div>
-      <input type="radio" name="period" value="quaterly" id="quaterly">
-      <label for="quaterly">quaterly</label>
-    </div>
-</fieldset>
-
-<fieldset>
-    <legend>Select a statement:</legend>
-
-    <div>
-      <input type="radio" name="statement" value="balance" id="balance"
-             checked>
-      <label for="balance">balance sheet</label>
-    </div>
-
-    <div>
-      <input type="radio" name="statement" value="income" id="income">
-      <label for="income">income sheet</label>
-    </div>
-
-    <div>
-      <input type="radio"  name="statement" value="cashflow" id="cashflow">
-      <label for="cashflow">cashflow</label>
-    </div>
-</fieldset>
-
-    <button id="fetchstatement">fetch statement</button>
- -->
-
-    <output id="output"></output>
 </body>
 <script>
 
+  function myAlert(msg){
+    const el = document.getElementById('alert')
+    const alertContent = document.getElementById('alertcontent')
+
+    el.classList.remove('hidden')
+    setTimeout(() => {
+      el.classList.add('hidden')      
+    }, 3000);
+
+    alertContent.innerText = msg
+  }
 
   function onFailure(error) {
-    var div = document.getElementById('output');
-    div.innerHTML = "ERROR: " + error.message;
+    myAlert(error.message)
   }
 
 
-  const inputBox = document.getElementById('ticker');
-  const btn = document.getElementById('fetchbtn');
-  btn.addEventListener('click', ()=>{
-    const ticker = inputBox.value
-    if (!ticker) return
-    console.log('here')
-    google.script.run.withFailureHandler(onFailure).onGenerateQuote(ticker);
+  function bindEvent(className, cb){
+    document.body.addEventListener('click', (e)=>{
+      const className = e.target.className
+      if (className.includes('js-tab-btn')){
+        cb(e)
+      }
+    })
+  }
+
+  const fetchbtn = document.getElementById('fetchbtn')
+
+  bindEvent('js-tab-btn', e=>{
+      // switch tab
+      const targetID = e.target.dataset.key
+      const pannel = document.querySelectorAll('.js-tab-pannel')
+      
+      pannel.forEach(node=>{
+        if (node.id === targetID){
+          node.classList.remove('hidden')
+        } else {
+          node.classList.add('hidden')
+        }
+      })
+    
+      document.querySelectorAll('.js-tab-btn').forEach(el=>{
+        if (el.dataset.key === targetID) {
+          el.classList.add('tab-active')
+
+        } else {
+          el.classList.remove('tab-active')
+
+        }
+      })
+
   })
+
+  fetchbtn.addEventListener('click', (e)=>{
+    // sheet-pannel
+    // quote-pannel
+    const type = document.querySelector('.js-tab-btn.tab-active').dataset.key;
+
+    const ticker = document.getElementById('ticker').value
+
+    if (!ticker) {
+      myAlert('Please input the ticker!')
+      return
+    }
+
+    if (type === 'quote-pannel'){
+      // fetch sheet data
+
+      google.script.run.withFailureHandler(onFailure).onGenerateQuote(ticker);
+
+
+    }
+    if (type === 'sheet-pannel'){
+      // fetch quote data
+      let period = null;
+      document.querySelectorAll('.js-period').forEach(el=>{
+        if (el.checked){
+          period = el.value
+        }
+      })
+      const sheetType = document.getElementById('sheettype').value
+
+      const periodMap = {
+        annual: 'A',
+        quarter: 'Q'
+      }
+      const sheetMap = {
+        income: 'I',
+        balance:'B',
+        cashflow:'C'
+      }
+
+      const periodSheet= sheetMap[sheetType]+periodMap[period]
+      
+      google.script.run.withFailureHandler(onFailure).onGenerateStatement(ticker, periodSheet);
+    }
+
+  })
+
+
 </script>
 
 </html>
+
