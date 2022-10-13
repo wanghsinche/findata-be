@@ -15,34 +15,10 @@ export async function manageSubscriptionStatusChange(
     eventType: string
 ) {
 
-    console.info('receive');
-    // use stripe to manage the data
+    console.info('receive ', {
+        subscriptionId, customerId, eventType
+    });
 
-
-    // let { data: subscriptionData } = await supabaseServer
-    // .from('subscription')
-    // .select("id")
-    // // Filters
-    // .eq('subscription', subscriptionId)
-
-    // if (subscriptionData?.length) {
-    //     // existed, directly return
-    //     console.info('id existed ', subscriptionId)
-    //     return
-    // }
-
-    // const customer  = await stripeServer.customers.retrieve(
-    //     customerId
-    //   );
-
-
-    // let { data: insertData, error } = await supabaseServer
-    // .from('subscription')
-    // .insert([
-    //     { subscription: subscriptionId, email: (customer as Stripe.Customer).email, customerId },
-    // ])
-
-    // console.info(insertData, error)
 }
 
 
@@ -56,11 +32,12 @@ export async function retrieveCustomer(email: string) {
     .order('created_at', {
         ascending: true
     })
+    .single();
 
-    if (!customerData?.length) {
+    if (!customerData) {
         return
     }
-    return customerData[customerData.length-1].customerId
+    return customerData.customerId
 }
 
 export async function insertCustomer(customerId: string, email: string) {
@@ -69,5 +46,5 @@ export async function insertCustomer(customerId: string, email: string) {
     .insert([
         { email, customerId },
     ])
-    console.info(error)
+    console.info('insert customer '+email+' '+customerId,error)
 }

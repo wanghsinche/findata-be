@@ -5,16 +5,36 @@ import styles from '../styles/Home.module.css'
 
 const isTest = process.env.NODE_ENV === 'development'
 
+function getCheckout(priceId: string, email: string) {
+  const query = new URLSearchParams()
+  if (priceId) query.set('priceId', priceId)
+  if (email) query.set('email', email)
+  return `/api/stripe-checkout?${query.toString()}`
+}
+
+const priceTable = isTest ? [
+  {
+    desc: 'Monthly',
+    price: 'price_1LrlWLFMVPfRQBioEBwGUkAG'
+  },
+  {
+    desc: 'One Time',
+    price: 'price_1LsMdAFMVPfRQBioEM8jx2XZ'
+  },
+] : [
+  {
+    desc: 'Monthly 8 USD',
+    price: 'price_1LrlEhFMVPfRQBiov6gupghl'
+  },
+  {
+    desc: 'Yearly 80 USD',
+    price: 'price_1LrlEhFMVPfRQBioVtlLEK2b'
+  },
+]
 
 const Page: NextPage = () => {
   const router = useRouter()
-  const email = router.query.email;
-
-  const testElement = isTest ? <a href={`https://buy.stripe.com/test_5kA29YePw4Klc5WdQQ?prefilled_email=${email}`} target="blank" className={styles.card}>
-    <p>
-      TEST 80 USD
-    </p>
-  </a> : null
+  const email = router.query.email as string;
 
 
   return (
@@ -26,17 +46,11 @@ const Page: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <section className={styles.grid}>
-          <a href={`https://buy.stripe.com/28o3eLd8f3eH6DS5kk?prefilled_email=${email}`} target="blank" className={styles.card}>
+          {priceTable.map(el => <a key={el.price} href={getCheckout(el.price, email)} target="blank" className={styles.card}>
             <p>
-              Monthly 8 USD
+              {el.desc}
             </p>
-          </a>
-          <a href={`https://buy.stripe.com/9AQ3eLecj8z1ges3cd?prefilled_email=${email}`} target="blank" className={styles.card}>
-            <p>
-              Yearly 80 USD
-            </p>
-          </a>
-          {testElement}
+          </a>)}
         </section>
       </main>
     </div>

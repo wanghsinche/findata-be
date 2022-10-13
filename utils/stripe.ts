@@ -23,12 +23,12 @@ export async function selectOrCreateCustomer(email: string) {
   }
 
   const name = email.split('@')[0]
-  console.log('a new user: '+email)
   const customer = await stripeServer.customers.create({
     email, name
   })
 
   await insertCustomer(customer.id, email)
+  console.log('a new user: '+email + ' ' +  customer.id)
 
   return customer
 }
@@ -52,24 +52,24 @@ export async function getUserPlan(email: string): Promise<{
     } 
   }
 
+
+  const activePlan = user.subscriptions?.data.find(el => el.status === 'active');
+  
+  if (activePlan) {
+    return {
+      email, plan: 'Premium', expiration: activePlan.current_period_end
+    }
+  }
+
   // mannually added user, one time payment
   if (Number(user.metadata.expiration) > Date.now()) {
     return {
       email, plan: 'One', expiration: Number(user.metadata.expiration)
     }
   }
-
-  const activePlan = user.subscriptions?.data.find(el => el.status === 'active');
-
-  if (!activePlan) {
-    return {
-      email, plan: 'Free', expiration: 0
-    }
-  }
-
-
+  
   return {
-    email, plan: 'Premium', expiration: activePlan.current_period_end
+    email, plan: 'Free', expiration: 0
   }
 
 }

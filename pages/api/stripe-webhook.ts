@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import Stripe from 'stripe';
 import { Readable } from 'node:stream';
 import { selectOrCreateCustomer, stripeServer } from '../../utils/stripe';
-import { manageSubscriptionStatusChange, insertCustomer } from '../../utils/supabase-admin';
+import { manageSubscriptionStatusChange } from '../../utils/supabase-admin';
 import { getWebhookSecret } from '../../utils/constant';
 
 // // Stripe requires the raw body to construct the event.
@@ -54,14 +54,10 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
             
             const email = checkoutSession.customer_details?.email || checkoutSession.customer_email as string;
 
-            let subscriptionId:string = ''
-            let customerId: string = ''
 
             if (checkoutSession.mode === 'subscription') {
-              subscriptionId = checkoutSession.subscription as string;
-              customerId = checkoutSession.customer as string;
-              // update the customerId
-              await insertCustomer(customerId, email)
+              // try to update the customerId if it is a new customer
+              await selectOrCreateCustomer(email)
             } 
 
 
@@ -80,9 +76,6 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
               throw new Error('Unhandled relevant mode! '+checkoutSession.mode);
             }
             
-
-            
-
             break;
           default:
             throw new Error('Unhandled relevant event! '+event.type);
