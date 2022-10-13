@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinData My Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <progress class="progress w-full hidden" id="progress"></progress>
+
+    <div class="card-body mx-auto">
+        <div class="flex justify-between">
+            <div class="flex-None">Email:</div>
+            <div class="flex-None" id="email">loading</div>
+        </div>
+        <div class="flex justify-between">
+            <div class="flex-None">Plan:</div>
+            <div class="flex-None" id="plan">loading</div>
+        </div>
+        <div class="flex justify-between">
+            <div class="flex-None">Expiration:</div>
+            <div class="flex-None" id="expiration">loading</div>
+        </div>
+        <div class="card-actions justify-end mt-4">
+            <a class="btn btn-primary" href="https://findata-be.vercel.app/payment" target="_blank">upgrade Plan</a>
+        </div>
+        <p class="text-sm" >
+            <a class="text-red-400 link" href="https://findata-be.vercel.app/payment" target="_blank">
+                Upgrade the plan to unlock more data!
+            </a>
+            &nbsp;&nbsp;
+            Remember to reload the page after payment
+        </p>
+
+    </div>
+    
+    <div class="hidden" id="alert">
+        <span id="alertcontent" class="text-red-600">12 unread messages. Tap to see.</span>
+    </div>
+    
+
+    
+
+    <script>
+          function myAlert(msg){
+            const el = document.getElementById('alert')
+            const alertContent = document.getElementById('alertcontent')
+
+            el.classList.remove('hidden')
+            setTimeout(() => {
+            el.classList.add('hidden')      
+            }, 5000);
+
+            alertContent.innerText = msg
+        }
+
+        let loading = false
+        function showLoading(){
+            loading = true
+            document.getElementById('progress').classList.remove('hidden')
+        }
+
+        function hideLoading(){
+            loading = false
+            document.getElementById('progress').classList.add('hidden')
+        }
+
+        function onFailure(error) {
+            myAlert(error.message)
+            hideLoading()
+        }
+
+        function onSuccess(){
+            hideLoading()
+        }
+
+        google.script.run.withFailureHandler(onFailure).withSuccessHandler(function(res){
+            onSuccess()
+            document.getElementById('email').innerHTML = res.email
+            document.getElementById('plan').innerHTML = res.plan
+            document.getElementById('expiration').innerHTML = res.expiration ? new Date(res.expiration).toDateString():'--'
+        }).onGetPlanDetail();
+
+
+    </script>
+
+</body>
+</html>

@@ -16,54 +16,58 @@ export async function manageSubscriptionStatusChange(
 ) {
 
     console.info('receive');
-
-    let { data: subscriptionData } = await supabaseServer
-    .from('subscription')
-    .select("id")
-    // Filters
-    .eq('subscription', subscriptionId)
-
-    if (subscriptionData?.length) {
-        // existed, directly return
-        console.info('id existed ', subscriptionId)
-        return
-    }
-
-    const customer  = await stripeServer.customers.retrieve(
-        customerId
-      );
+    // use stripe to manage the data
 
 
-    let { data: insertData, error } = await supabaseServer
-    .from('subscription')
-    .insert([
-        { subscription: subscriptionId, email: (customer as Stripe.Customer).email, customerId },
-    ])
+    // let { data: subscriptionData } = await supabaseServer
+    // .from('subscription')
+    // .select("id")
+    // // Filters
+    // .eq('subscription', subscriptionId)
 
-    console.info(insertData, error)
+    // if (subscriptionData?.length) {
+    //     // existed, directly return
+    //     console.info('id existed ', subscriptionId)
+    //     return
+    // }
+
+    // const customer  = await stripeServer.customers.retrieve(
+    //     customerId
+    //   );
+
+
+    // let { data: insertData, error } = await supabaseServer
+    // .from('subscription')
+    // .insert([
+    //     { subscription: subscriptionId, email: (customer as Stripe.Customer).email, customerId },
+    // ])
+
+    // console.info(insertData, error)
 }
 
-export async function verifyEmail(email: string) {
-    let { data: subscriptionData, error } = await supabaseServer
-    .from('subscription')
-    .select('id,created_at,email,subscription,customerId')
+
+export async function retrieveCustomer(email: string) {
+    if (!email) throw 'No email'
+    let { data: customerData, error } = await supabaseServer
+    .from('customer')
+    .select('id,created_at,email,customerId')
     // Filters
     .eq('email', email)
-    .order('created_at')
+    .order('created_at', {
+        ascending: true
+    })
 
-    if (!subscriptionData?.length) {
+    if (!customerData?.length) {
         return
     }
+    return customerData[customerData.length-1].customerId
+}
 
-    const subscriptionId = subscriptionData[0].subscription;
-    const customerId = subscriptionData[0].customerId;
-
-    const subscription = await stripeServer.subscriptions.retrieve(subscriptionId);
-
-    if (subscription.customer !== customerId) return
-
-    if (subscription.status === 'active') return true
-
-    if (subscription.status === 'trialing') return true
-
+export async function insertCustomer(customerId: string, email: string) {
+    let { error } = await supabaseServer
+    .from('customer')
+    .insert([
+        { email, customerId },
+    ])
+    console.info(error)
 }

@@ -29,3 +29,15 @@
   
   }
   
+  /**
+   * get plan detail
+   *
+   */
+  function getPlanDetail(){
+    console.log(Session.getActiveUser().getEmail())
+    return {
+      plan: 'string',
+      email: Session.getActiveUser().getEmail(),
+      expiration: Date.now()
+    }
+  }

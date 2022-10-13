@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import Stripe from 'stripe';
 import { Readable } from 'node:stream';
-import { stripeServer } from '../../utils/stripe';
-import { manageSubscriptionStatusChange } from '../../utils/supabase-admin';
+import { selectOrCreateCustomer, stripeServer } from '../../utils/stripe';
+import { manageSubscriptionStatusChange, insertCustomer } from '../../utils/supabase-admin';
 import { getWebhookSecret } from '../../utils/constant';
 
 // // Stripe requires the raw body to construct the event.
@@ -51,17 +51,37 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
           case 'checkout.session.completed':
             const checkoutSession = event.data
               .object as Stripe.Checkout.Session;
+            
+            const email = checkoutSession.customer_details?.email || checkoutSession.customer_email as string;
 
-            if (checkoutSession.mode !== 'subscription') {
+            let subscriptionId:string = ''
+            let customerId: string = ''
+
+            if (checkoutSession.mode === 'subscription') {
+              subscriptionId = checkoutSession.subscription as string;
+              customerId = checkoutSession.customer as string;
+              // update the customerId
+              await insertCustomer(customerId, email)
+            } 
+
+
+            if (checkoutSession.mode === 'payment') {
+              // manually create Customer and extend 30 days trials
+              const customer = await selectOrCreateCustomer(email)
+              // + next 30 days
+              await stripeServer.customers.update(customer.id, {
+                metadata: {
+                  expiration: String(Date.now() + 30 * 3600 * 24)
+                }
+              })
+            }
+            
+            if (checkoutSession.mode === 'setup') {
               throw new Error('Unhandled relevant mode! '+checkoutSession.mode);
             }
+            
 
-            const subscriptionId = checkoutSession.subscription;
-            await manageSubscriptionStatusChange(
-              subscriptionId as string,
-              checkoutSession.customer as string,
-              event.type
-            );
+            
 
             break;
           default:

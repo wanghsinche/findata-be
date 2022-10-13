@@ -66,6 +66,9 @@ function onGenerateStatement(ticker, sheetType) {
   return 
 }
 
+function onGetPlanDetail() {
+  return getPlanDetail()
+}
 
 /* ----------- Google Sheets add-on functions ----------- */
 
@@ -76,6 +79,8 @@ function onGenerateStatement(ticker, sheetType) {
 function onOpen(e) {
   SpreadsheetApp.getUi().createAddonMenu()
     .addItem(`${appName} Pannel`, 'showPannel')
+    .addSeparator()
+    .addItem(`My Account`, 'showAccount')
     .addToUi();
 }
 
@@ -92,6 +97,16 @@ function onInstall(e) {
  */
 function showPannel() {
   const ui = HtmlService.createHtmlOutputFromFile('pannel')
-    .setTitle(`${appName} Pannel`);
+    .setTitle(`${appName} - Pannel`);
   SpreadsheetApp.getUi().showSidebar(ui);
+}
+
+/**
+ * show premium
+ */
+
+ function showAccount(){
+  const ui = HtmlService.createHtmlOutputFromFile('account')
+  .setTitle(`${appName} - My Account`);
+  SpreadsheetApp.getUi().showDialog(ui)
 }
