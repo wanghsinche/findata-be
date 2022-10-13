@@ -42,7 +42,9 @@ export async function getUserPlan(email: string): Promise<{
   plan: 'Premium' | 'Free' | 'One';
   expiration: number;
 }> {
-  if (!email) throw 'No email'
+  if (!email) return {
+    email, plan: 'Free', expiration: 0
+  } 
 
   const user = await selectOrCreateCustomer(email)
 

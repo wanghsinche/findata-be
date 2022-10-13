@@ -2,10 +2,11 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios';
 import { EStatement, IFinvizStatement } from '../../types/finviz';
+import { getUserPlan } from '../../utils/stripe';
+import { coverSomething } from '../../utils/common';
 const finvizURL = 'https://finviz.com/api/statement.ashx';
 
 type TCell = string|number;
-
 
 export default async function statement(
   req: NextApiRequest,
@@ -16,8 +17,11 @@ export default async function statement(
 ) {
   const ticker = req.query.ticker as string;
   const sheet = req.query.sheet as EStatement;
+  const email = req.query.email as string;
 
   if (!ticker || !sheet) return res.status(400).end();
+
+  const userPlan = await getUserPlan(email)
 
   const query = new URLSearchParams();
   query.set('s', sheet);
@@ -32,6 +36,8 @@ export default async function statement(
     if (k === 'Period End Date') return
     sheetData.push([k, ...v])
   })
+
+  if (userPlan.plan === 'Free') coverSomething(sheetData)
 
   res.status(200).json({
     ticker, sheetData

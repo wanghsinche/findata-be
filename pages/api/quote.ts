@@ -32,7 +32,7 @@ export default async function quote(
   // convert to sheet data
 
   const sheetData: TCell[][] = [[
-    'date', 'open', 'high', 'low', 'close'
+    'date', 'open', 'high', 'low', 'close', 'volume'
   ]];
   finvizData.date.forEach((d, idx)=>{
     sheetData.push([
@@ -41,6 +41,7 @@ export default async function quote(
        finvizData.high[idx],
        finvizData.low[idx],
        finvizData.close[idx],
+       finvizData.volume[idx]
     ])
   })
 
