@@ -52,6 +52,9 @@
         </p>
     </div>
   </section>
+  
+  <progress class="progress progress-primary w-full hidden" id="progress"></progress>
+
   <section class="flex justify-center mt-4 mb-4">
     <button class="btn w-1/2" id="fetchbtn">Fetch Data</button>
   </section>
@@ -63,8 +66,20 @@
     </div>
   </div>
   
+
+
 </body>
 <script>
+  let loading = false
+  function showLoading(){
+    loading = true
+    document.getElementById('progress').classList.remove('hidden')
+  }
+
+  function hideLoading(){
+    loading = false
+    document.getElementById('progress').classList.add('hidden')
+  }
 
   function myAlert(msg){
     const el = document.getElementById('alert')
@@ -80,8 +95,12 @@
 
   function onFailure(error) {
     myAlert(error.message)
+    hideLoading()
   }
 
+  function onSuccess(){
+    hideLoading()
+  }
 
   function bindEvent(className, cb){
     document.body.addEventListener('click', (e)=>{
@@ -120,6 +139,7 @@
   })
 
   fetchbtn.addEventListener('click', (e)=>{
+    if (loading) return
     // sheet-pannel
     // quote-pannel
     const type = document.querySelector('.js-tab-btn.tab-active').dataset.key;
@@ -134,7 +154,8 @@
     if (type === 'quote-pannel'){
       // fetch sheet data
 
-      google.script.run.withFailureHandler(onFailure).onGenerateQuote(ticker);
+      showLoading()
+      google.script.run.withFailureHandler(onFailure).withSuccessHandler(onSuccess).onGenerateQuote(ticker);
 
 
     }
@@ -160,7 +181,8 @@
 
       const periodSheet= sheetMap[sheetType]+periodMap[period]
       
-      google.script.run.withFailureHandler(onFailure).onGenerateStatement(ticker, periodSheet);
+      showLoading()
+      google.script.run.withFailureHandler(onFailure).withSuccessHandler(onSuccess).onGenerateStatement(ticker, periodSheet);
     }
 
   })
