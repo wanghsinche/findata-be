@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    
-    <progress class="progress w-full hidden" id="progress"></progress>
+
+    <progress class="progress w-full" id="progress"></progress>
 
     <div class="card-body mx-auto">
         <div class="flex justify-between">
@@ -26,7 +28,8 @@
             <div class="flex-None" id="expiration">loading</div>
         </div>
         <div class="card-actions justify-end mt-4">
-            <a class="btn btn-primary" href="https://findata-be.vercel.app/payment" target="_blank">upgrade Plan</a>
+            <a class="btn btn-primary js-payment-link" href="https://findata-be.vercel.app/payment"
+                target="_blank">upgrade Plan</a>
         </div>
 
         <p class="text-sm hidden" id="portal">
@@ -36,7 +39,7 @@
         </p>
 
         <p class="text-sm" id="promote">
-            <a class="text-red-400 link" href="https://findata-be.vercel.app/payment" target="_blank">
+            <a class="text-red-400 link js-payment-link" href="https://findata-be.vercel.app/payment" target="_blank">
                 Upgrade the plan to unlock more data!
             </a>
             &nbsp;&nbsp;
@@ -44,34 +47,34 @@
         </p>
 
     </div>
-    
+
     <div class="hidden" id="alert">
         <span id="alertcontent" class="text-red-600">12 unread messages. Tap to see.</span>
     </div>
-    
 
-    
+
+
 
     <script>
-          function myAlert(msg){
+        function myAlert(msg) {
             const el = document.getElementById('alert')
             const alertContent = document.getElementById('alertcontent')
 
             el.classList.remove('hidden')
             setTimeout(() => {
-            el.classList.add('hidden')      
+                el.classList.add('hidden')
             }, 5000);
 
             alertContent.innerText = msg
         }
 
         let loading = false
-        function showLoading(){
+        function showLoading() {
             loading = true
             document.getElementById('progress').classList.remove('hidden')
         }
 
-        function hideLoading(){
+        function hideLoading() {
             loading = false
             document.getElementById('progress').classList.add('hidden')
         }
@@ -81,23 +84,37 @@
             hideLoading()
         }
 
-        function onSuccess(){
+        function onSuccess() {
             hideLoading()
         }
 
-        google.script.run.withFailureHandler(onFailure).withSuccessHandler(function(res){
-            onSuccess()
-            document.getElementById('email').innerHTML = res.email
-            document.getElementById('plan').innerHTML = res.plan
-            document.getElementById('expiration').innerHTML = res.expiration ? new Date(res.expiration).toDateString():'--'
-            if (res.plan === 'Premium') {
-                document.getElementById('promote').classList.add('hidden')
-                document.getElementById('portal').classList.remove('hidden')
-            }
-        }).onGetPlanDetail();
 
+        function checkStatus() {
+            showLoading()
+            google.script.run.withFailureHandler(onFailure).withSuccessHandler(function (res) {
+
+                document.getElementById('email').innerHTML = res.email
+                document.getElementById('plan').innerHTML = res.plan
+                document.getElementById('expiration').innerHTML = res.expiration ? new Date(res.expiration).toDateString() : '--'
+
+                if (res.plan === 'Premium') {
+                    document.getElementById('promote').classList.add('hidden')
+                    document.getElementById('portal').classList.remove('hidden')
+                }
+
+                const paymentLink = 'https://findata-be.vercel.app/payment?email=' + res.email
+                document.querySelectorAll('.js-payment-link').forEach(el => el.setAttribute('href', paymentLink))
+                onSuccess()
+            }).onGetPlanDetail();
+
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            checkStatus()
+        });
 
     </script>
 
 </body>
+
 </html>

@@ -12,7 +12,7 @@
   <div>
     
     <p>
-    <a class="text-red-400 link text-sm" id="promote" href="https://findata-be.vercel.app/payment" target="_blank">
+    <a class="text-red-400 link text-sm js-payment-link" id="promote" href="https://findata-be.vercel.app/payment" target="_blank">
       Upgrade the plan to unlock more data!
     </a>
     </p>
@@ -122,12 +122,23 @@
 
   const fetchbtn = document.getElementById('fetchbtn')
 
-
-  google.script.run.withFailureHandler(onFailure).withSuccessHandler(function(res){
+  function checkStatus(){
+    showLoading()
+    google.script.run.withFailureHandler(onFailure).withSuccessHandler(function(res){
             onSuccess()
             document.getElementById('plan').innerHTML = res.plan + ' plan'
             if (res.plan !== 'Free') document.getElementById('promote').classList.add('hidden')
+
+            const paymentLink = 'https://findata-be.vercel.app/payment?email='+res.email
+            document.querySelectorAll('.js-payment-link').forEach(el=>el.setAttribute('href', paymentLink))
+
           }).onGetPlanDetail();
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    checkStatus()
+  });
+
 
 
   bindEvent('js-tab-btn', e=>{

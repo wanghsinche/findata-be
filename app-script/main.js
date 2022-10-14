@@ -19,8 +19,8 @@ function onGenerateQuote(ticker) {
 
   const data = generateQuote(ticker)
 
-  const rowStart = cell.getLastRow()
-  const colStart = cell.getLastColumn()+1
+  const rowStart = cell.getLastRow()+1
+  const colStart = cell.getLastColumn()
 
   const cols = data[0].length
   const rows = data.length
@@ -29,7 +29,13 @@ function onGenerateQuote(ticker) {
 
   targetRange.setValues(data);
 
-  cell.setValue(ticker)
+  const bold = SpreadsheetApp.newTextStyle()
+  .setBold(true)
+  .build();
+
+  sheet.getRange(rowStart, colStart, 1, cols).setTextStyles([new Array(cols).fill(bold)])
+
+  sheet.getRange(rowStart-1, colStart, 1, 2).setValues([['TICKER:',ticker]]).setTextStyles([[bold, bold]])
 
   return 
 }
@@ -49,8 +55,8 @@ function onGenerateStatement(ticker, sheetType) {
     throw('Unable to insert text, no cursor.');
   }
   
-  const rowStart = cell.getLastRow()
-  const colStart = cell.getLastColumn()+1
+  const rowStart = cell.getLastRow()+1
+  const colStart = cell.getLastColumn()
 
   const data = generateStatement(ticker, sheetType)
 
@@ -61,7 +67,13 @@ function onGenerateStatement(ticker, sheetType) {
 
   targetRange.setValues(data);
 
-  cell.setValue(ticker)
+  const bold = SpreadsheetApp.newTextStyle()
+  .setBold(true)
+  .build();
+
+  sheet.getRange(rowStart, colStart, 1, cols).setTextStyles([new Array(cols).fill(bold)])
+
+  sheet.getRange(rowStart-1, colStart, 1, 2).setValues([['TICKER:',ticker]]).setTextStyles([[bold, bold]])
 
   return 
 }
