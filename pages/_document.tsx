@@ -1,6 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { MyFoot } from '../component/foot'
-import { MyHead } from '../component/head'
 
 export default function Document() {
     return (
@@ -13,9 +11,7 @@ export default function Document() {
                 />
             </Head>
             <body className='leading-relaxed tracking-wide flex flex-col'>
-                <MyHead />
                 <Main />
-                <MyFoot />
                 <NextScript />
             </body>
         </Html>

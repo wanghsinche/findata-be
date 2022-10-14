@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { productName } from '../utils/constant'
+import Layout from '../component/layout'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <>
@@ -15,7 +16,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <meta name="author" content="" />
       <meta name="google-site-verification" content="TXey7sFwuQUU4xYY2iklnrHAKriPDfkg6mOEndjaHZs" />
     </Head>
-    <Component {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   </>
 
 }
