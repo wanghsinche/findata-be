@@ -8,7 +8,7 @@ interface IResult {
 }
 
 function getDomain(req:NextApiRequest){
-  if (req.headers.host) return req.headers.host
+  if (req.headers.host) return `https://${req.headers.host}`
   if (req.headers.origin) return req.headers.origin
   const url = new URL(req.headers.referer as string)
   return `${url.protocol}//${url.host}`
