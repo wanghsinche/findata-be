@@ -28,7 +28,14 @@
         <div class="card-actions justify-end mt-4">
             <a class="btn btn-primary" href="https://findata-be.vercel.app/payment" target="_blank">upgrade Plan</a>
         </div>
-        <p class="text-sm" >
+
+        <p class="text-sm hidden" id="portal">
+            <a class="link" href="https://billing.stripe.com/p/login/28o3eV8FO1BJ7Mk000" target="_blank">
+                Review your subscription
+            </a>
+        </p>
+
+        <p class="text-sm" id="promote">
             <a class="text-red-400 link" href="https://findata-be.vercel.app/payment" target="_blank">
                 Upgrade the plan to unlock more data!
             </a>
@@ -83,6 +90,10 @@
             document.getElementById('email').innerHTML = res.email
             document.getElementById('plan').innerHTML = res.plan
             document.getElementById('expiration').innerHTML = res.expiration ? new Date(res.expiration).toDateString():'--'
+            if (res.plan === 'Premium') {
+                document.getElementById('promote').classList.add('hidden')
+                document.getElementById('portal').classList.remove('hidden')
+            }
         }).onGetPlanDetail();
 
 
