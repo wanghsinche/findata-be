@@ -11,21 +11,21 @@ const Page: NextPage = () => {
 
   const title = sessionId ? 'Thanks for your payment!' : 'Payment failed'
 
-  const result = sessionId ? <div className='text-ms'>Please reload the spreadsheet to retrieve the latest status.<p>You will receive an email confirmation.</p></div> : '';
+  const result = sessionId ? <div className='text-ms'>Please redirect to your spreadsheet and reload it to fetch the latest status.<p>You will receive an email confirmation.</p></div> : '';
 
   const customerPortal = <a href='https://billing.stripe.com/p/login/28o3eV8FO1BJ7Mk000' target='_blank' rel="noreferrer" className='mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg'>
     Customer Portal
   </a>
 
   const extraBtn = sessionId ? <><p className='text-ms mt-20'>
-    Use Customer Portal to review your subscription plan
+    You can use Customer Portal to review your payment as well
   </p><div className='mt-10'>
       {customerPortal}
     </div></> : ''
 
   return (
     <div >
-      <section className="w-full mx-auto text-center bg-gray-100 pt-6 pb-12" style={{ height: '50vh' }}>
+      <section className="w-full mx-auto text-center bg-gray-100 pt-6 pb-12" style={{ minHeight: '50vh' }}>
         <h2 className="w-full my-2 text-5xl font-black leading-tight text-center">
           {title}
         </h2>

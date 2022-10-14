@@ -16,7 +16,7 @@ const PriceCard = (p: IPriceCardProps) => {
   const el = p.price
   const product = p.price.product as Stripe.Product
   const isDefault = el.id === product.default_price
-  const extraClassName = isDefault ? 'rounded-lg gradient' : 'rounded-none bg-white';
+  const extraClassName = isDefault ? 'rounded-lg gradient' : 'rounded-lg gradient1';
   const extraTextColor = isDefault ? 'text-white' : 'text-gray-600';
   return <div className={"flex flex-col mx-auto lg:mx-0  mt-4 " + extraClassName}>
     <div className={"flex-1  rounded-t rounded-b-none overflow-hidden shadow " + extraTextColor}>
@@ -32,7 +32,7 @@ const PriceCard = (p: IPriceCardProps) => {
         {el.currency} {toMoney(el.unit_amount)} <span className="text-base"> {el.recurring ? `/ ${el.recurring.interval}` : ''}</span>
       </div>
       <div className="flex items-center justify-center">
-        <a className="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg" href={getCheckout(el.id, p.email)}>
+        <a className="mx-auto lg:mx-0 hover:underline gradient2 text-black font-bold rounded my-6 py-4 px-8 shadow-lg" href={getCheckout(el.id, p.email)}>
           Purchase
         </a>
       </div>
@@ -61,16 +61,11 @@ const Page: NextPage<IProps> = ({ priceList }) => {
   const router = useRouter()
   const email = router.query.email as string;
 
-  const firstSection = <section className="container mx-auto">
-    <MyBanner />
-  </section>;
 
   const myTable = priceList.filter(el => el.active).map(el => <PriceCard key={el.id} price={el} email={email} />)
 
   return (
     <div >
-      {firstSection}
-
       <section className="flex container m-auto mb-20 justify-center">
         {myTable}
       </section>

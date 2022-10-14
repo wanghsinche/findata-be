@@ -2,12 +2,12 @@ import { productName } from "../utils/constant";
 import { MyLogo } from "./logo";
 
 export function MyBanner(){
-    return <div className="text-center px-3 lg:px-0">
+    return <div className="px-3 lg:px-0">
     <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight">
-        <MyLogo color="text-white"/>
+        <MyLogo />
     </h1>
-    <p className="leading-normal text-base md:text-xl lg:text-2xl mb-8 text-gray-50">
-      Retrieve finance data into your Google Sheet
+    <p className="leading-normal text-base mb-8 text-left md:w-full lg:w-1/2 mx-auto">
+    FinData enables you to import stock history quotes, finance statement sheet to your spreadsheet by using a simple operation. Combined with the Google Finance function, you will be able to analyze the stock market in a single spreadsheet.
     </p>
   </div>
 }

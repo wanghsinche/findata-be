@@ -12,7 +12,7 @@ export default function Document() {
                     rel="stylesheet"
                 />
             </Head>
-            <body className='mainbg leading-relaxed tracking-wide flex flex-col'>
+            <body className='leading-relaxed tracking-wide flex flex-col'>
                 <MyHead />
                 <Main />
                 <MyFoot />

@@ -8,6 +8,7 @@ const Home: NextPage = () => {
   const firstSection = <div className="container mx-auto h-screen">
     <div className="text-center px-3 lg:px-0">
       <MyBanner />
+
       <button className="mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48 bg-green-500">
         Get Start
       </button>
@@ -15,8 +16,8 @@ const Home: NextPage = () => {
     </div>
 
     <div className="flex items-center w-full mx-auto content-end">
-      <div className="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white rounded shadow-xl">
-      <Image src="/screenshot.png" width={324} height={168} className="w-full"/>
+      <div className="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white rounded shadow-xl ">
+      <img src="/screenshot.png" alt='screenshot' height="80" className="h-full m-auto"/>
 
       </div>
       
@@ -25,7 +26,7 @@ const Home: NextPage = () => {
 
   const secondSection = <section className="bg-gray-100 border-b py-8">
     <div className="container max-w-5xl mx-auto m-8">
-      <h2 className="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800">
+      <h2 className="w-full mb-2 mt-20 text-5xl font-black leading-tight text-center text-gray-800">
         Features
       </h2>
       <div className="w-full mb-4">
@@ -35,10 +36,10 @@ const Home: NextPage = () => {
       <div className="flex flex-wrap">
         <div className="w-5/6 sm:w-1/2 p-6">
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-            Get history quotes
+            History Quotes Pannel
           </h3>
           <p className="text-gray-600 mb-8">
-            Retrieve history price, volumne and others 
+            By using History Quotes Panel, you can easily retrieve the last 2 years daily prices, volumnes and others in one click
           </p>
         </div>
         <div className="w-full sm:w-1/2 p-6">
@@ -51,10 +52,10 @@ const Home: NextPage = () => {
         <div className="w-full sm:w-1/2 p-6 mt-6">
           <div className="align-middle">
             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Get financial statement
+              Financial Statement Sheet
             </h3>
             <p className="text-gray-600 mb-8">
-              Find out the balance sheet, income sheet and cashflow
+              The Financial Fundamental Panel allows you to bring the balance sheet, income sheet and cashflow sheet into your spreadsheet
             </p>
           </div>
         </div>
