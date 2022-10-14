@@ -1,18 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { MyBanner } from '../component/banner'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   const firstSection = <div className="container mx-auto h-screen">
     <div className="text-center px-3 lg:px-0">
-      <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight">
-        FinanceData
-      </h1>
-      <p className="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mb-8">
-        Retrieve finance data into your Google Sheet
-      </p>
-
+      <MyBanner />
       <button className="mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48 bg-green-500">
         Try It
       </button>

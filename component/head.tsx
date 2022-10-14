@@ -1,15 +1,11 @@
 import { productName } from "../utils/constant";
+import { MyLogo } from "./logo";
 
 export function MyHead() {
     return <nav id="header" className="w-full z-30 top-0 text-white py-1 lg:py-6">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6">
             <div className="pl-4 flex items-center">
-                <a className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-                    <svg className="h-6 w-6 inline-block fill-current text-yellow-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M13 8V0L8.11 5.87 3 12h4v8L17 8h-4z"></path>
-                    </svg>
-                    {productName}
-                </a>
+                <MyLogo />
             </div>
 
             <div className="block lg:hidden pr-4">
