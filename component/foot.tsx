@@ -16,6 +16,10 @@ export function MyFoot(){
               <a href="/privacy" className="font-light no-underline hover:underline text-gray-100 hover:text-orange-500">Privacy Policy</a>
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="/term" className="font-light no-underline hover:underline text-gray-100 hover:text-orange-500">Terms & Conditions</a>
+            </li>
+
+            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <a href="mailto:wang0xinzhe@gmail.com?subject=FinData%20FAQ" className="font-light no-underline hover:underline text-gray-100 hover:text-orange-500">FAQ</a>
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">

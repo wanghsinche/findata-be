@@ -109,7 +109,7 @@ const Page: NextPage = () => {
 
     return (
         <div className='m-auto' >
-            <div className='w-2/3 m-auto bg-white p-10'>
+            <div className='md:w-full break-all lg:w-2/3 m-auto bg-white p-10'>
                 <Policy />
                 <InfoLog />
                 <Contact />
