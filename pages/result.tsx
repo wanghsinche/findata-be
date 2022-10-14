@@ -8,8 +8,8 @@ import styles from '../styles/Home.module.css'
 const Page: NextPage = () => {
   const router = useRouter()
   const sessionId = router.query.session_id;
-
-  const title = sessionId ? 'Thanks for your payment!' : 'Payment failed'
+  const failed = router.query.failed;
+  const title = failed ? 'Payment failed' : sessionId ? 'Thanks for your payment!' : 'Loading';
 
   const result = sessionId ? <div className='text-ms'>Please redirect to your spreadsheet and reload it to fetch the latest status.<p>You will receive an email confirmation.</p></div> : '';
 

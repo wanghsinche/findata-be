@@ -17,7 +17,7 @@ const PriceCard = (p: IPriceCardProps) => {
   const product = p.price.product as Stripe.Product
   const isDefault = el.id === product.default_price
   const extraClassName = isDefault ? 'rounded-lg gradient' : 'rounded-lg gradient1';
-  const extraTextColor = isDefault ? 'text-white' : 'text-gray-600';
+  const extraTextColor = isDefault ? 'text-white' : 'text-black';
   return <div className={"flex flex-col mx-auto lg:mx-0  mt-4 " + extraClassName}>
     <div className={"flex-1  rounded-t rounded-b-none overflow-hidden shadow " + extraTextColor}>
       <div className="p-8 text-3xl font-bold text-center border-b-4">
@@ -32,7 +32,7 @@ const PriceCard = (p: IPriceCardProps) => {
         {el.currency} {toMoney(el.unit_amount)} <span className="text-base"> {el.recurring ? `/ ${el.recurring.interval}` : ''}</span>
       </div>
       <div className="flex items-center justify-center">
-        <a className="mx-auto lg:mx-0 hover:underline gradient2 text-black font-bold rounded my-6 py-4 px-8 shadow-lg" href={getCheckout(el.id, p.email)}>
+        <a className="mx-auto lg:mx-0 hover:underline gradient2 text-black font-bold rounded my-6 py-4 px-8 shadow-lg" href={getCheckout(el.id, p.email)} target="_blank" rel="nofollow">
           Purchase
         </a>
       </div>

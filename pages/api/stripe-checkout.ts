@@ -8,10 +8,12 @@ interface IResult {
 }
 
 function getDomain(req:NextApiRequest){
-  if (req.headers.host) return `https://${req.headers.host}`
   if (req.headers.origin) return req.headers.origin
-  const url = new URL(req.headers.referer as string)
-  return `${url.protocol}//${url.host}`
+  if (req.headers.referer) {
+    const url = new URL(req.headers.referer as string)
+    return `${url.protocol}//${url.host}`  
+  }
+  return 'https://findata-be.vercel.app/'
 }
 
 export default async function handler(
@@ -42,7 +44,7 @@ export default async function handler(
     const checkoutSession = await stripeServer.checkout.sessions.create({
       mode: modeMap[price.type],
       success_url: `${getDomain(req)}/result?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${getDomain(req)}/result`,
+      cancel_url: `${getDomain(req)}/result?failed=true`,
       customer: customer?.id,
       line_items: [{
         price: priceId,
