@@ -1,7 +1,9 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetServerSidePropsContext } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import Stripe from 'stripe'
 import styles from '../styles/Home.module.css'
+import { stripeServer } from '../utils/stripe'
 
 const isTest = process.env.NODE_ENV === 'development'
 
@@ -12,30 +14,30 @@ function getCheckout(priceId: string, email: string) {
   return `/api/stripe-checkout?${query.toString()}`
 }
 
-const priceTable = isTest ? [
-  {
-    desc: 'Monthly',
-    price: 'price_1LrlWLFMVPfRQBioEBwGUkAG'
-  },
-  {
-    desc: 'One Time',
-    price: 'price_1LsMdAFMVPfRQBioEM8jx2XZ'
-  },
-] : [
-  {
-    desc: 'Monthly 8 USD',
-    price: 'price_1LrlEhFMVPfRQBiov6gupghl'
-  },
-  {
-    desc: 'Yearly 80 USD',
-    price: 'price_1LrlEhFMVPfRQBioVtlLEK2b'
-  },
-]
+function toMoney(num:number|null){
+  if (!num) return '--'
+  return (num/100).toFixed(2)
+}
 
-const Page: NextPage = () => {
+interface IProps {
+  priceList: Stripe.Price[]
+}
+
+const Page: NextPage<IProps> = ({priceList}) => {
   const router = useRouter()
   const email = router.query.email as string;
 
+  const myTable = priceList.filter(el=>el.active).map(el => <a key={el.id} href={getCheckout(el.id, email)} target="blank" className={styles.card}>
+    <p>
+      {(el.product as Stripe.Product)?.name}
+    </p>
+    <p>
+      {el.currency} {toMoney(el.unit_amount)} {el.recurring?`/ ${el.recurring.interval}`:''}
+    </p>
+    <p>
+      {el.metadata?.desc}
+    </p>
+  </a>)
 
   return (
     <div className={styles.container}>
@@ -46,15 +48,24 @@ const Page: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <section className={styles.grid}>
-          {priceTable.map(el => <a key={el.price} href={getCheckout(el.price, email)} target="blank" className={styles.card}>
-            <p>
-              {el.desc}
-            </p>
-          </a>)}
+          {myTable}
         </section>
       </main>
     </div>
   )
 }
+
+// This gets called on every request
+export async function getServerSideProps(ctx:GetServerSidePropsContext) {
+  const productId = ctx.query.product as string || 'prod_Max8KnDwRMwu9l'; // default product
+  if (!productId) return { props: { priceList: [] } }
+  // Fetch data from external API
+  const priceData = await stripeServer.prices.search({query: `product: '${productId}' AND active:'true'`, expand: ['data.product']})
+
+  // Pass data to the page via props
+  return { props: { priceList: priceData.data } }
+}
+
+
 
 export default Page
