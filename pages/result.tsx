@@ -9,6 +9,7 @@ const Page: NextPage = () => {
   const router = useRouter()
   const sessionId = router.query.session_id;
   const failed = router.query.failed;
+  const email = router.query.email;
   const title = failed ? 'Payment failed' : sessionId ? 'Thanks for your payment!' : 'Loading';
 
   const result = sessionId ? <div className='text-ms'>Please redirect to your spreadsheet and reload it to fetch the latest status.<p>You will receive an email confirmation.</p></div> : '';
@@ -17,11 +18,17 @@ const Page: NextPage = () => {
     Customer Portal
   </a>
 
-  const extraBtn = sessionId ? <><p className='text-ms mt-20'>
-    You can use Customer Portal to review your payment as well
-  </p><div className='mt-10'>
-      {customerPortal}
-    </div></> : ''
+  const extraBtn = sessionId ? <>
+  <p className='text-ms mt-8'>
+  {email}
+  </p>
+    <p className='text-ms'>
+      You can use Customer Portal to review your payment as well
+    </p>
+    <div className='mt-10'>
+        {customerPortal}
+    </div>
+    </> : ''
 
   return (
     <div >
@@ -29,13 +36,16 @@ const Page: NextPage = () => {
         <h2 className="w-full my-2 text-5xl font-black leading-tight text-center">
           {title}
         </h2>
-        <div className="w-full mb-4">
-          <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+
+        <div className="w-full my-4">
+          <div className="h-1 mx-auto bg-white w-1/6 my-0 py-0 rounded-t"></div>
         </div>
+
 
         <h3 className="my-4 text-3xl ">
           {result}
         </h3>
+
 
         {extraBtn}
 
