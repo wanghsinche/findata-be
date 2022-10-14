@@ -9,13 +9,17 @@ const Home: NextPage = () => {
     <div className="text-center px-3 lg:px-0">
       <MyBanner />
       <button className="mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48 bg-green-500">
-        Try It
+        Get Start
       </button>
 
     </div>
 
     <div className="flex items-center w-full mx-auto content-end">
-      <div className="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white w-1/2 rounded shadow-xl"></div>
+      <div className="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white rounded shadow-xl">
+      <Image src="/screenshot.png" width={324} height={168} className="w-full"/>
+
+      </div>
+      
     </div>
   </div>
 
