@@ -1,6 +1,7 @@
 export const priceId = 'price_1LrlZ8FMVPfRQBiogvN0ENMb';
 export const domain = 'https://findata-be.vercel.app'
 export const productName = 'FinData'
+export const email = 'wang0xinzhe@gmail.com';
 
 export const supabaseUrl = 'https://tgubgmgavtnuuavwolvm.supabase.co'
 
