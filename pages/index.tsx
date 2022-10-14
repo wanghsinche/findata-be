@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
     <div className="flex items-center w-full mx-auto content-end">
       <div className="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white rounded shadow-xl ">
-      <img src="/screenshot.png" height="80" className="h-full m-auto"/>
+      <img src="/screenshot.png" alt='screenshot' height="80" className="h-full m-auto"/>
 
       </div>
       
