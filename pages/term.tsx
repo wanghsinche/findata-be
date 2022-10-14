@@ -16,7 +16,7 @@ const Term = () => {
 
         <h3 className='text-center'><strong>Cookies</strong></h3>
 
-        <p>We employ the use of cookies. By accessing FinData, you agreed to use cookies in agreement with the FinData's Privacy Policy. </p>
+        <p>We employ the use of cookies. By accessing FinData, you agreed to use cookies in agreement with the FinData&apos;s Privacy Policy. </p>
 
         <p>Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
 
@@ -89,7 +89,7 @@ const Term = () => {
             <li className="list-disc">By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.</li>
         </ul>
 
-        <p>No use of FinData's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+        <p>No use of FinData&apos;s logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
 
         <h3 className='text-center'><strong>iFrames</strong></h3>
 
