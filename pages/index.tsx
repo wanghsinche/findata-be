@@ -22,7 +22,7 @@ const Home: NextPage = () => {
   const secondSection = <section className="bg-gray-100 border-b py-8">
     <div className="container max-w-5xl mx-auto m-8">
       <h2 className="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800">
-        Title
+        Features
       </h2>
       <div className="w-full mb-4">
         <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -31,14 +31,10 @@ const Home: NextPage = () => {
       <div className="flex flex-wrap">
         <div className="w-5/6 sm:w-1/2 p-6">
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-            Lorem ipsum dolor sit amet
+            Get history quotes
           </h3>
           <p className="text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            at ipsum eu nunc commodo posuere et sit amet ligula.<br /><br />
-
-            Images from:
-            <a className="text-orange-500 underline" href="https://undraw.co/">undraw.co</a>
+            Retrieve history price, volumne and others 
           </p>
         </div>
         <div className="w-full sm:w-1/2 p-6">
@@ -51,13 +47,10 @@ const Home: NextPage = () => {
         <div className="w-full sm:w-1/2 p-6 mt-6">
           <div className="align-middle">
             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Lorem ipsum dolor sit amet
+              Get financial statement
             </h3>
             <p className="text-gray-600 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              at ipsum eu nunc commodo posuere et sit amet ligula.<br /><br />
-              Images from:
-              <a className="text-orange-500 underline" href="https://undraw.co/">undraw.co</a>
+              Find out the balance sheet, income sheet and cashflow
             </p>
           </div>
         </div>
