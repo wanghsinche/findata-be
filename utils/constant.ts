@@ -1,6 +1,6 @@
 export const priceId = 'price_1LrlZ8FMVPfRQBiogvN0ENMb';
 export const domain = 'https://findata-be.vercel.app'
-export const productName = 'financeSheet'
+export const productName = 'FinanceData'
 
 export const supabaseUrl = 'https://tgubgmgavtnuuavwolvm.supabase.co'
 
