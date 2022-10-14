@@ -13,7 +13,7 @@ const Page: NextPage = () => {
 
   const result = sessionId ? <div className='text-ms'>Please reload the spreadsheet to retrieve the latest status.<p>You will receive an email confirmation.</p></div> : '';
 
-  const customerPortal = <a href='https://billing.stripe.com/p/login/28o3eV8FO1BJ7Mk000' target='_blank' className='mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg'>
+  const customerPortal = <a href='https://billing.stripe.com/p/login/28o3eV8FO1BJ7Mk000' target='_blank' rel="noreferrer" className='mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg'>
     Customer Portal
   </a>
 

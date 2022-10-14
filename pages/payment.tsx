@@ -32,7 +32,7 @@ const PriceCard = (p: IPriceCardProps) => {
         {el.currency} {toMoney(el.unit_amount)} <span className="text-base"> {el.recurring ? `/ ${el.recurring.interval}` : ''}</span>
       </div>
       <div className="flex items-center justify-center">
-        <a className="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg" href={getCheckout(el.id, p.email)} target="_blank" >
+        <a className="mx-auto lg:mx-0 hover:underline gradient2 text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg" href={getCheckout(el.id, p.email)}>
           Purchase
         </a>
       </div>
