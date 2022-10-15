@@ -1,6 +1,6 @@
 const domain = 'https://findata-be.uk'
 function getEmail(){
-  return Session.getActiveUser().getEmail();
+  return process.env.NODE_ENV === 'test'? 'wang0xinzhe@gmail.com':Session.getActiveUser().getEmail();
 }
 /**
  * generate ticker data
