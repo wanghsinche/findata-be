@@ -10,7 +10,7 @@
   ],
   "runtimeVersion": "V8",
   "urlFetchWhitelist": [
-    "https://findata-be.vercel.app/"
+    "https://findata-be.uk/"
   ],
   "executionApi": {
     "access": "ANYONE"

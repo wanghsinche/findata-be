@@ -1,5 +1,4 @@
-export const priceId = 'price_1LrlZ8FMVPfRQBiogvN0ENMb';
-export const domain = 'https://findata-be.vercel.app'
+export const domain = `https://${process.env.DOMAIN}`
 export const productName = 'FinData'
 export const email = 'wang0xinzhe@gmail.com';
 
@@ -9,6 +8,12 @@ export function getSupabaseKey(){
     return process.env.SUPABASE_APIKEY as string
 } 
 
+
+export function getProductID(){
+    return (process.env.NODE_ENV === 'development' ?
+    process.env.PRODUCT:
+    process.env.PRODUCT_LIVE) as string
+}
 
 export function getWebhookSecret(){
     return (process.env.NODE_ENV === 'development' ?

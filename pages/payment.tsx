@@ -1,12 +1,8 @@
 import type { NextPage, GetServerSidePropsContext } from 'next'
-import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Stripe from 'stripe'
-import { MyBanner } from '../component/banner'
-import styles from '../styles/Home.module.css'
+import { getProductID } from '../utils/constant'
 import { stripeServer } from '../utils/stripe'
-
-const isTest = process.env.NODE_ENV === 'development'
 
 interface IPriceCardProps {
   price: Stripe.Price;
@@ -18,7 +14,7 @@ const PriceCard = (p: IPriceCardProps) => {
   const isDefault = el.id === product.default_price
   const extraClassName = isDefault ? 'rounded-lg gradient' : 'rounded-lg gradient1';
   const extraTextColor = isDefault ? 'text-white' : 'text-black';
-  return <div className={"flex flex-col mx-auto lg:mx-0  mt-4 " + extraClassName}>
+  return <div className={"flex flex-col mx-auto lg:mx-0 sm:basis-full  mt-4 " + extraClassName}>
     <div className={"flex-1  rounded-t rounded-b-none overflow-hidden shadow " + extraTextColor}>
       <div className="p-8 text-3xl font-bold text-center border-b-4">
         {el.metadata?.title}
@@ -75,7 +71,7 @@ const Page: NextPage<IProps> = ({ priceList }) => {
 
 // This gets called on every request
 export async function getServerSideProps(ctx: GetServerSidePropsContext) {
-  const productId = ctx.query.product as string || 'prod_Max8KnDwRMwu9l'; // default product
+  const productId = ctx.query.product as string || getProductID(); // default product
   if (!productId) return { props: { priceList: [] } }
   // Fetch data from external API
   const priceData = await stripeServer.prices.search({ query: `product: '${productId}' AND active:'true'`, expand: ['data.product'] })

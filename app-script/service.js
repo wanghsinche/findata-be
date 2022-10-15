@@ -1,11 +1,15 @@
+const domain = 'https://findata-be.uk'
+function getEmail(){
+  return Session.getActiveUser().getEmail();
+}
 /**
  * generate ticker data
  * @param {String} ticker stock ticker
  */
 function generateQuote(ticker) {
-  const email = Session.getActiveUser().getEmail();
+  const email = getEmail();
 
-  const quoteURL = `https://findata-be.vercel.app/api/quote?ticker=${ticker}&email=${email}`;
+  const quoteURL = `${domain}/api/quote?ticker=${ticker}&email=${email}`;
 
   const quoteRes = UrlFetchApp.fetch(quoteURL).getContentText();
 
@@ -20,9 +24,9 @@ function generateQuote(ticker) {
  * @param {String} sheet balance annually, cash annually, income annually, balance quaterly, cash quaterly, income quaterly
  */
 function generateStatement(ticker, sheetType) {
-  const email = Session.getActiveUser().getEmail();
+  const email = getEmail();
 
-  const quoteURL = `https://findata-be.vercel.app/api/statement?ticker=${ticker}&sheet=${sheetType}&email=${email}`;
+  const quoteURL = `${domain}/api/statement?ticker=${ticker}&sheet=${sheetType}&email=${email}`;
 
 
   const quoteRes = UrlFetchApp.fetch(quoteURL).getContentText();
@@ -38,8 +42,8 @@ function generateStatement(ticker, sheetType) {
  *
  */
 function getPlanDetail() {
-  const email = Session.getActiveUser().getEmail();
-  const verifyURL = `https://findata-be.vercel.app/api/verify?email=${email}`;
+  const email = getEmail();
+  const verifyURL = `${domain}/api/verify?email=${email}`;
   
   const planRes = UrlFetchApp.fetch(verifyURL).getContentText();
 
