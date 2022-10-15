@@ -9,8 +9,6 @@
  * @customfunction
  */
 function findata_quote(ticker, attribute, startDate, endDate){
-    console.log(ticker, attribute, startDate, endDate)
-    console.log(typeof attribute)
     const sheetData = generateQuote(ticker)
     const startDateNum = new Date(startDate).valueOf()
     const endDateNum = new Date(endDate).valueOf()
