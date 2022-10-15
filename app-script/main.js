@@ -90,7 +90,7 @@ function onGetPlanDetail() {
  */
 function onOpen(e) {
   SpreadsheetApp.getUi().createAddonMenu()
-    .addItem(`${appName} Pannel`, 'showPannel')
+    .addItem(`Open ${appName} panel`, 'showpanel')
     .addSeparator()
     .addItem(`My Account`, 'showAccount')
     .addToUi();
@@ -107,9 +107,9 @@ function onInstall(e) {
 /**
  * callback function
  */
-function showPannel() {
-  const ui = HtmlService.createHtmlOutputFromFile('pannel')
-    .setTitle(`${appName} - Pannel`);
+function showpanel() {
+  const ui = HtmlService.createHtmlOutputFromFile('panel')
+    .setTitle(`${appName} - panel`);
   SpreadsheetApp.getUi().showSidebar(ui);
 }
 

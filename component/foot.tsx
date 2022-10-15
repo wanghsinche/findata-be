@@ -23,7 +23,7 @@ export function MyFoot(){
               <a href="mailto:wang0xinzhe@gmail.com?subject=FinData%20FAQ" className="font-light no-underline hover:underline text-gray-100 hover:text-orange-500">FAQ</a>
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="mailto:wang0xinzhe@gmail.com?subject=FinData%20support" className="font-light no-underline hover:underline text-gray-100 hover:text-orange-500">Support</a>
+              <a href="/support" className="font-light no-underline hover:underline text-gray-100 hover:text-orange-500">Support</a>
             </li>
           </ul>
         </div>

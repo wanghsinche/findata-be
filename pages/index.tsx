@@ -36,7 +36,7 @@ const Home: NextPage = () => {
       <div className="flex flex-wrap">
         <div className="w-5/6 sm:w-1/2 p-6">
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-            History Quotes Pannel
+            History Quotes panel
           </h3>
           <p className="text-gray-600 mb-8">
             By using History Quotes Panel, you can easily retrieve the last 2 years daily prices, volumnes and others in one click

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinData Pannel</title>
+    <title>FinData panel</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 </head>
@@ -30,10 +30,10 @@
 
   <section class="mt-4">
     <div class="tabs">
-      <a class="tab tab-lifted js-tab-btn" data-key="quote-pannel">Quotes</a> 
-      <a class="tab tab-lifted tab-active js-tab-btn" data-key="sheet-pannel">Fundamental</a> 
+      <a class="tab tab-lifted js-tab-btn" data-key="quote-panel">Quotes</a> 
+      <a class="tab tab-lifted tab-active js-tab-btn" data-key="sheet-panel">Fundamental</a> 
     </div>  
-    <div class="js-tab-pannel border-base-300 bg-base-200  p-4"  id="sheet-pannel">
+    <div class="js-tab-panel border-base-300 bg-base-200  p-4"  id="sheet-panel">
       <p>
         Fetch the Fundamental Data Sheet
       </p>
@@ -55,7 +55,7 @@
       </select>
       
     </div>
-    <div class="js-tab-pannel hidden border-base-300 bg-base-200  p-4" id="quote-pannel">
+    <div class="js-tab-panel hidden border-base-300 bg-base-200  p-4" id="quote-panel">
         <p>
           Fetch the History Data
         </p>
@@ -144,9 +144,9 @@
   bindEvent('js-tab-btn', e=>{
       // switch tab
       const targetID = e.target.dataset.key
-      const pannel = document.querySelectorAll('.js-tab-pannel')
+      const panel = document.querySelectorAll('.js-tab-panel')
       
-      pannel.forEach(node=>{
+      panel.forEach(node=>{
         if (node.id === targetID){
           node.classList.remove('hidden')
         } else {
@@ -168,8 +168,8 @@
 
   fetchbtn.addEventListener('click', (e)=>{
     if (loading) return
-    // sheet-pannel
-    // quote-pannel
+    // sheet-panel
+    // quote-panel
     const type = document.querySelector('.js-tab-btn.tab-active').dataset.key;
 
     const ticker = document.getElementById('ticker').value
@@ -179,7 +179,7 @@
       return
     }
 
-    if (type === 'quote-pannel'){
+    if (type === 'quote-panel'){
       // fetch sheet data
 
       showLoading()
@@ -187,7 +187,7 @@
 
 
     }
-    if (type === 'sheet-pannel'){
+    if (type === 'sheet-panel'){
       // fetch quote data
       let period = null;
       document.querySelectorAll('.js-period').forEach(el=>{
