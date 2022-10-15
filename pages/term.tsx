@@ -4,7 +4,7 @@ import { productName, email } from '../utils/constant'
 const Term = () => {
     return <div className='m-auto' >
     <div className='md:w-full break-all lg:w-2/3 m-auto bg-white p-10'>
-        <h2 className='font-bold text-lg text-center'><strong>Terms and Conditions</strong></h2>
+        <h1 className='font-bold text-lg text-center'>Terms and Conditions</h1>
 
         <p>Welcome to FinData!</p>
 
