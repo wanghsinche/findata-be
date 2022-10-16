@@ -25,12 +25,17 @@ function postFromCacheOrServer(quoteURL, body){
   if (cache.get(key)){
     quoteRes = cache.get(key)
   } else {
-    quoteRes = UrlFetchApp.fetch(quoteURL, {
-      method : 'POST',
-      contentType: 'application/json',
-      // Convert the JavaScript object to a JSON string.
-      payload : payload
-    }).getContentText();
+    const options =
+    {
+      "method" : "post",
+      "contentType" : "application/json",
+      "headers" : {
+        "Authorization" : "Basic <Base64 of user:password>"  
+      },
+      "payload" : payload
+    };
+
+    quoteRes = UrlFetchApp.fetch(quoteURL, options).getContentText();
     cache.put(key, quoteRes, expirationInSeconds)
   }
   return quoteRes
