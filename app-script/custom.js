@@ -16,6 +16,7 @@ function findata(moduleName, ticker, queryOption, path){
     if (!queryOption.every(el=>el instanceof Array)) throw 'queryOption value should be Array'
     const param = queryOption.reduce((am, [k, ...value])=>{
         am[k] = value.length > 1? value: value[0]
+        return am
     }, {})
 
     return getYahooFinance(moduleName, ticker, param, path)

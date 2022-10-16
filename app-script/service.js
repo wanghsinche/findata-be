@@ -26,7 +26,7 @@ function postFromCacheOrServer(quoteURL, body){
     quoteRes = cache.get(key)
   } else {
     quoteRes = UrlFetchApp.fetch(quoteURL, {
-      method : 'post',
+      method : 'POST',
       contentType: 'application/json',
       // Convert the JavaScript object to a JSON string.
       payload : payload

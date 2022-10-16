@@ -54,7 +54,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<IResult>
 ){
-    if (req.method !== 'POST') return res.status(400).json({ticker:'', sheetData: [], error:'Only For POST'})
+    if (req.method !== 'POST') return res.status(400).json({ticker:'', sheetData: [], error:`Only For POST, but get ${req.method}`})
 
     const body = req.body
     const { error } = schema.validate(body)
