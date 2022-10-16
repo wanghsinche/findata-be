@@ -3,7 +3,7 @@ function getEmail(){
   return process.env.NODE_ENV === 'test'? 'wang0xinzhe@gmail.com':Session.getActiveUser().getEmail();
 }
 
-function hashFun(text) {
+function hashFunc(text) {
   var hash = 0,
     i, chr;
   if (text.length === 0) return hash;
@@ -17,7 +17,7 @@ function hashFun(text) {
 
 
 function getFromCacheOrServer(quoteURL){
-  const key = String(hashFun(quoteURL))
+  const key = String(hashFunc(quoteURL))
   let quoteRes = '';
   const cache = CacheService.getScriptCache();
   if (cache.get(key)){
@@ -31,7 +31,7 @@ function getFromCacheOrServer(quoteURL){
 
 function postFromCacheOrServer(quoteURL, body){
   const payload = JSON.stringify(body)
-  const key = String(hashFun(quoteURL+payload))
+  const key = String(hashFunc(quoteURL+payload))
 
   let quoteRes = '';
 
@@ -111,8 +111,8 @@ function getPlanDetail() {
  * getYahooFinance
  * @param {string} moduleName 
  * @param {string} query 
- * @param {object} queryOptions 
- * @param {string} path 
+ * @param {object} [queryOptions] 
+ * @param {string} [path] 
  * @return 2d array
  */
 function getYahooFinance(moduleName, query, queryOptions, path){

@@ -3,12 +3,12 @@
  *
  * @param {string} moduleName moduleName: history, quote, quoteSummary, etc 
  * @param {string} ticker ticker: AAPL, TSLA.
- * @param {*} queryOption queryOption: See complete documentation at https://github.com/gadicc/node-yahoo-finance2/tree/devel/docs#yahoo-finance-docs
+ * @param {*} [queryOption] queryOption: See complete documentation at https://github.com/gadicc/node-yahoo-finance2/tree/devel/docs#yahoo-finance-docs
  * @param {string} [path] path: Select specific part from the result, for example: a.b[0].c 
  * @return The asked information the source.
  * @customfunction
  */
-function findata(moduleName, ticker, queryOption, path){
+function findata(moduleName, ticker, queryOption = [], path){
     if (!(queryOption instanceof Array)) throw 'queryOption should be Array'
     /**
      * queryOption [key, value][]  ==> {}
