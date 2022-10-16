@@ -56,17 +56,24 @@ export default async function handler(
 ){
     // if (req.method !== 'POST') return res.status(400).json({ticker:'', sheetData: [], error:`Only For POST, but get ${req.method}`})
 
-    console.log(req.method, req.headers, req.body)
+    let body = req.body
+    
+    if (req.method === 'GET') {
+        try {
+            body = JSON.parse(req.query.json as string)            
+        } catch (err) {
+            console.error(err)
+        }
+    }
 
-    const body = req.body
     const { error } = schema.validate(body)
 
     if (error) return res.status(400).json({ticker:'', sheetData: [], error: error.message})
 
-    const moduleName = req.body.moduleName as EModule
-    const query = req.body.query as string
-    const queryOptions = req.body.queryOptions as Record<string, unknown>
-    const path = req.body.path as string
+    const moduleName = body.moduleName as EModule
+    const query = body.query as string
+    const queryOptions = body.queryOptions as Record<string, unknown>
+    const path = body.path as string
 
     let data
 

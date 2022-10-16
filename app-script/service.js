@@ -25,17 +25,12 @@ function postFromCacheOrServer(quoteURL, body){
   if (cache.get(key)){
     quoteRes = cache.get(key)
   } else {
-    const options =
-    {
-      "method" : "post",
-      "contentType" : "application/json",
-      "headers" : {
-        "Authorization" : "Basic <Base64 of user:password>"  
-      },
-      "payload" : payload
-    };
-
-    quoteRes = UrlFetchApp.fetch(quoteURL, options).getContentText();
+    quoteRes = UrlFetchApp.fetch(quoteURL, {
+      method : 'POST',
+      contentType: 'application/json',
+      // Convert the JavaScript object to a JSON string.
+      payload : payload
+    }).getContentText();
     cache.put(key, quoteRes, expirationInSeconds)
   }
   return quoteRes
@@ -108,11 +103,12 @@ function getPlanDetail() {
  */
 function getYahooFinance(moduleName, query, queryOption, path){
   const email = getEmail();
-  const verifyURL = `${domain}/api/yahoo-finance?email=${email}`;
   const body = {
     moduleName, query, queryOption, path
   }
-  const dataRes = postFromCacheOrServer(verifyURL, body)
+  const yhURL = `${domain}/api/yahoo-finance?email=${email}&json=${JSON.stringify(body)}`;
+
+  const dataRes = getFromCacheOrServer(yhURL)
 
   const dataJSON = JSON.parse(dataRes);
 
