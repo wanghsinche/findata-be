@@ -3,12 +3,12 @@ function getEmail(){
   return process.env.NODE_ENV === 'test'? 'wang0xinzhe@gmail.com':Session.getActiveUser().getEmail();
 }
 
-function hash() {
+function hashFun(text) {
   var hash = 0,
     i, chr;
-  if (this.length === 0) return hash;
-  for (i = 0; i < this.length; i++) {
-    chr = this.charCodeAt(i);
+  if (text.length === 0) return hash;
+  for (i = 0; i < text.length; i++) {
+    chr = text.charCodeAt(i);
     hash = ((hash << 5) - hash) + chr;
     hash |= 0; // Convert to 32bit integer
   }
@@ -17,7 +17,7 @@ function hash() {
 
 
 function getFromCacheOrServer(quoteURL){
-  const key = String(hash(quoteURL))
+  const key = String(hashFun(quoteURL))
   let quoteRes = '';
   const cache = CacheService.getScriptCache();
   if (cache.get(key)){
@@ -31,7 +31,7 @@ function getFromCacheOrServer(quoteURL){
 
 function postFromCacheOrServer(quoteURL, body){
   const payload = JSON.stringify(body)
-  const key = String(hash(quoteURL+payload))
+  const key = String(hashFun(quoteURL+payload))
 
   let quoteRes = '';
 
