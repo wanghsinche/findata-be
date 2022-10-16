@@ -3,21 +3,35 @@ function getEmail(){
   return process.env.NODE_ENV === 'test'? 'wang0xinzhe@gmail.com':Session.getActiveUser().getEmail();
 }
 
+function hash() {
+  var hash = 0,
+    i, chr;
+  if (this.length === 0) return hash;
+  for (i = 0; i < this.length; i++) {
+    chr = this.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0; // Convert to 32bit integer
+  }
+  return hash;
+}
+
+
 function getFromCacheOrServer(quoteURL){
+  const key = String(hash(quoteURL))
   let quoteRes = '';
   const cache = CacheService.getScriptCache();
-  if (cache.get(quoteURL)){
-    quoteRes = cache.get(quoteURL)
+  if (cache.get(key)){
+    quoteRes = cache.get(key)
   } else {
     quoteRes = UrlFetchApp.fetch(quoteURL).getContentText();
-    cache.put(quoteURL, quoteRes, expirationInSeconds)
+    cache.put(key, quoteRes, expirationInSeconds)
   }
   return quoteRes
 }
 
 function postFromCacheOrServer(quoteURL, body){
   const payload = JSON.stringify(body)
-  const key = quoteURL+payload
+  const key = String(hash(quoteURL+payload))
 
   let quoteRes = '';
 
@@ -97,16 +111,16 @@ function getPlanDetail() {
  * getYahooFinance
  * @param {string} moduleName 
  * @param {string} query 
- * @param {object} queryOption 
+ * @param {object} queryOptions 
  * @param {string} path 
  * @return 2d array
  */
-function getYahooFinance(moduleName, query, queryOption, path){
+function getYahooFinance(moduleName, query, queryOptions, path){
   const email = getEmail();
   const body = {
-    moduleName, query, queryOption, path
+    moduleName, query, queryOptions, path
   }
-  const yhURL = `${domain}/api/yahoo-finance?email=${email}&json=${JSON.stringify(body)}`;
+  const yhURL = `${domain}/api/yahoo-finance?email=${email}&json=${encodeURIComponent(JSON.stringify(body))}`;
 
   const dataRes = getFromCacheOrServer(yhURL)
 

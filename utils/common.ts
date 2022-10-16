@@ -1,4 +1,4 @@
-export type TCell = string|number
+export type TCell = string|number|Date
 
 const placeHolder = 'Only For Paid User'
 
@@ -21,6 +21,7 @@ type TEntity = Record<string, unknown>
 
 export function primitiveData(value:unknown){
     if (value === null || value === undefined) return ''
+	if (value instanceof Date) return value
     if (typeof value !== 'object') return value as TCell
     return String(value)
 }

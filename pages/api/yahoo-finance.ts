@@ -58,6 +58,7 @@ export default async function handler(
 
     let body = req.body
     
+    // fix the google app script problem
     if (req.method === 'GET') {
         try {
             body = JSON.parse(req.query.json as string)            
