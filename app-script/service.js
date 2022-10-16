@@ -15,6 +15,28 @@ function getFromCacheOrServer(quoteURL){
   return quoteRes
 }
 
+function postFromCacheOrServer(quoteURL, body){
+  const payload = JSON.stringify(body)
+  const key = quoteURL+payload
+
+  let quoteRes = '';
+
+  const cache = CacheService.getScriptCache();
+  if (cache.get(key)){
+    quoteRes = cache.get(key)
+  } else {
+    quoteRes = UrlFetchApp.fetch(quoteURL, {
+      method : 'post',
+      contentType: 'application/json',
+      // Convert the JavaScript object to a JSON string.
+      payload : payload
+    }).getContentText();
+    cache.put(key, quoteRes, expirationInSeconds)
+  }
+  return quoteRes
+}
+
+
 const expirationInSeconds = 300
 
 /**
@@ -69,4 +91,25 @@ function getPlanDetail() {
     email,
     expiration: planResJSON.expiration
   }
+}
+
+/**
+ * getYahooFinance
+ * @param {string} moduleName 
+ * @param {string} query 
+ * @param {object} queryOption 
+ * @param {string} path 
+ * @return 2d array
+ */
+function getYahooFinance(moduleName, query, queryOption, path){
+  const email = getEmail();
+  const verifyURL = `${domain}/api/yahoo-finance?email=${email}`;
+  const body = {
+    moduleName, query, queryOption, path
+  }
+  const dataRes = postFromCacheOrServer(verifyURL, body)
+
+  const dataJSON = JSON.parse(dataRes);
+
+  return dataJSON.sheetData
 }

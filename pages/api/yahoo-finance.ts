@@ -40,6 +40,16 @@ const schema = Joi.object({
     path: Joi.string()
 })
 
+function adjustQueryOptions(query: Record<string, unknown>){
+    const arrayFields = ['modules', 'fields']
+    Object.keys(query).forEach(k=>{
+        if (arrayFields.includes(k) && !(query[k] instanceof Array)){
+            query[k] = [query[k]]
+        }
+    })
+    return query
+}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<IResult>
@@ -59,7 +69,7 @@ export default async function handler(
     let data
 
     try {
-        data = await (YHModuleMap[moduleName] as any)(query, queryOptions as any)
+        data = await (YHModuleMap[moduleName] as any)(query, adjustQueryOptions(queryOptions) as any)
 
     } catch (err) {
         return res.status(400).json({ticker:'', sheetData: [], error: String(err)})
