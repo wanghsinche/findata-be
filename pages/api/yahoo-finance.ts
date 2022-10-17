@@ -16,22 +16,22 @@ const schema = Joi.object({
     moduleName: Joi.string().required().allow(...Object.values(EModule)),
     query: Joi.string().required(),
     queryOptions: Joi.object(),
-    path: Joi.string()
+    path: Joi.string().required()
 })
 
 
 export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<IResult>
-){
+    req: NextApiRequest,
+    res: NextApiResponse<IResult>
+) {
     // if (req.method !== 'POST') return res.status(400).json({ticker:'', sheetData: [], error:`Only For POST, but get ${req.method}`})
 
     let body = req.body
-    
+
     // fix the google app script problem
     if (req.method === 'GET') {
         try {
-            body = JSON.parse(req.query.json as string)            
+            body = JSON.parse(req.query.json as string)
         } catch (err) {
             console.error(err)
         }
@@ -39,7 +39,7 @@ export default async function handler(
 
     const { error } = schema.validate(body)
 
-    if (error) return res.status(400).json({ticker:'', sheetData: [], error: error.message})
+    if (error) return res.status(400).json({ ticker: '', sheetData: [], error: error.message })
 
     const moduleName = body.moduleName as EModule
     const query = body.query as string
@@ -51,25 +51,29 @@ export default async function handler(
     try {
         data = await getYahooFinanceData(moduleName, query, queryOptions)
     } catch (err) {
-        return res.status(400).json({ticker:'', sheetData: [], error: String(err)})
+        return res.status(400).json({ ticker: '', sheetData: [], error: String(err) })
     }
-    
-    const result = !path? data: get(data as any, path, null) as unknown
+
+
+
+    const result = path === '*' ? data : get(data as any, path, null) as unknown
 
     if (!result) return res.status(200).json({
         ticker: query, sheetData: []
     })
 
-    if (result instanceof Array) return res.status(200).json({
-        ticker: query, sheetData: tabularData(result)
-    })
+    const sheetData = convertToSheetData(result)
 
-    if (typeof result === 'object') return res.status(200).json({
-        ticker: query, sheetData: tabularData([result as Record<string, unknown>])
-    })
-
-    return res.status(200).json({
-        ticker: query, sheetData: [[primitiveData(result)]]
+    res.status(200).json({
+        ticker: query, sheetData: sheetData
     })
 }
 
+
+function convertToSheetData(result: unknown) {
+    if (result instanceof Array) return tabularData(result)
+
+    if (typeof result === 'object') return tabularData([result as Record<string, unknown>])
+
+    return [[primitiveData(result)]]
+}

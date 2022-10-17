@@ -21,7 +21,7 @@ function isIsoDate(str) {
   return d instanceof Date && !isNaN(d) && d.toISOString()===str; // valid date 
 }
 
-function convertDate(self, k, value){
+function convertDate(k, value){
   if (typeof value === 'string' && isIsoDate(value)){
     return new Date(value)
   }

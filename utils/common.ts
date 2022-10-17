@@ -23,7 +23,8 @@ export function primitiveData(value:unknown){
     if (value === null || value === undefined) return ''
 	if (value instanceof Date) return value
     if (typeof value !== 'object') return value as TCell
-    return String(value)
+	if (value instanceof Array) return `[${value.length} item(s)]`
+    return `[nested structure]: ${Object.keys(value).join(', ')}`
 }
 
 export function tabularData(data: TEntity[]):TCell[][]{
