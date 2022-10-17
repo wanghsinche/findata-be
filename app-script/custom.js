@@ -8,7 +8,7 @@
  * @return The asked information the source.
  * @customfunction
  */
-function findata(moduleName, ticker, queryOption = [], path){
+function FinData(moduleName, ticker, queryOption = [], path='*'){
     if (!(queryOption instanceof Array)) throw 'queryOption should be Array'
     /**
      * queryOption [key, value][]  ==> {}
