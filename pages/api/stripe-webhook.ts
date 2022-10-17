@@ -65,9 +65,11 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
               // manually create Customer and extend 30 days trials
               const customer = await selectOrCreateCustomer(email)
               // + next 30 days
+              const currentExpiration = customer.metadata.expiration? Number(customer.metadata.expiration) : Date.now()
+
               await stripeServer.customers.update(customer.id, {
                 metadata: {
-                  expiration: String(Date.now() + 30 * 3600 * 24)
+                  expiration:  String(currentExpiration + 30 * 3600 * 24)
                 }
               })
             }

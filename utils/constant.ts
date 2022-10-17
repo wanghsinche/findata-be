@@ -26,3 +26,7 @@ export function getStripeAPIKEY(){
     process.env.STRIPE_APIKEY:
     process.env.STRIPE_APIKEY_LIVE) as string
 }
+
+export function getRedisURL(){
+    return process.env.REDIS
+}

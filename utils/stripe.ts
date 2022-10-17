@@ -24,7 +24,9 @@ export async function selectOrCreateCustomer(email: string) {
 
   const name = email.split('@')[0]
   const customer = await stripeServer.customers.create({
-    email, name
+    email, name, metadata: {
+      expiration: String(Date.now())
+    }
   })
 
   await insertCustomer(customer.id, email)
