@@ -1,7 +1,11 @@
 import { createClient, RedisClientType } from 'redis';
 import { getRedisURL } from './constant';
 
-let client: RedisClientType
+const client = createClient({
+    url: getRedisURL()
+});
+
+client.on('error', (err) => console.log('Redis Client Error', err));    
 
 const expireSeconds = 300 // 5min
 
@@ -20,13 +24,6 @@ function hashFunc(text:string) {
   
 
 export async function getCache(){
-    if (!client){
-        client = createClient({
-            url: getRedisURL()
-        });
-        
-        client.on('error', (err) => console.log('Redis Client Error', err));    
-    }
 
     if (!client.isReady){    
         await client.connect();

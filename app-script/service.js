@@ -15,6 +15,18 @@ function hashFunc(text) {
   return hash;
 }
 
+function isIsoDate(str) {
+  if (!/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z/.test(str)) return false;
+  const d = new Date(str); 
+  return d instanceof Date && !isNaN(d) && d.toISOString()===str; // valid date 
+}
+
+function convertDate(self, k, value){
+  if (typeof value === 'string' && isIsoDate(value)){
+    return new Date(value)
+  }
+  return value
+}
 
 function getFromCacheOrServer(quoteURL){
   const key = String(hashFunc(quoteURL))
@@ -24,27 +36,6 @@ function getFromCacheOrServer(quoteURL){
     quoteRes = cache.get(key)
   } else {
     quoteRes = UrlFetchApp.fetch(quoteURL).getContentText();
-    cache.put(key, quoteRes, expirationInSeconds)
-  }
-  return quoteRes
-}
-
-function postFromCacheOrServer(quoteURL, body){
-  const payload = JSON.stringify(body)
-  const key = String(hashFunc(quoteURL+payload))
-
-  let quoteRes = '';
-
-  const cache = CacheService.getScriptCache();
-  if (cache.get(key)){
-    quoteRes = cache.get(key)
-  } else {
-    quoteRes = UrlFetchApp.fetch(quoteURL, {
-      method : 'POST',
-      contentType: 'application/json',
-      // Convert the JavaScript object to a JSON string.
-      payload : payload
-    }).getContentText();
     cache.put(key, quoteRes, expirationInSeconds)
   }
   return quoteRes
@@ -124,7 +115,7 @@ function getYahooFinance(moduleName, query, queryOptions, path){
 
   const dataRes = getFromCacheOrServer(yhURL)
 
-  const dataJSON = JSON.parse(dataRes);
+  const dataJSON = JSON.parse(dataRes, convertDate);
 
   return dataJSON.sheetData
 }
