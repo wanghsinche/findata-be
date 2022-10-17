@@ -38,16 +38,30 @@ export async function getYahooFinanceData(moduleName: EModule, query: string, qu
     const key = JSON.stringify({
         moduleName, query, queryOption
     })
+    
+    let cache 
 
-    const cache = await getCache()
+    try {
+        cache = await getCache()
 
-    const cacheData = await cache.get(key)
+        const cacheData = await cache.get(key)
+    
+        if (cacheData) return cacheData
 
-    if (cacheData) return cacheData
+    } catch (error) {
+        console.error(error)        
+    }
 
     const data = await (YHModuleMap[moduleName] as any)(query, adjustQueryOptions(queryOption) as any)
 
-    await cache.set(key, data)
+    try {
+        if (cache) {
+            await cache.set(key, data)
+        }
+    } catch (error) {
+        console.error(error)
+    }
+
 
     return data
 }

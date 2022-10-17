@@ -35,8 +35,7 @@ export async function getCache(){
     return {
         async set (k:string, data: unknown){
             k = hashFunc(k)
-            await client.set(k, JSON.stringify(data))
-            await client.expire(k, expireSeconds)
+            await client.setEx(k, expireSeconds, JSON.stringify(data))
         },
         async get (k:string){
             k = hashFunc(k)
