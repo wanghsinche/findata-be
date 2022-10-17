@@ -43,8 +43,6 @@ export async function getYahooFinanceData(moduleName: EModule, query: string, qu
 
     const cacheData = await cache.get(key)
 
-    if (cacheData) console.log('hit')
-
     if (cacheData) return cacheData
 
     const data = await (YHModuleMap[moduleName] as any)(query, adjustQueryOptions(queryOption) as any)
