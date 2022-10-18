@@ -10,7 +10,9 @@
  * @customfunction
  */
 function FinData(moduleName, ticker, queryOption = [], expand='*', columns='' ){
-    if (!(queryOption instanceof Array)) throw 'queryOption should be Array'
+    if (!queryOption) queryOption = []
+
+    if (!(queryOption instanceof Array)) throw `queryOption should be Array but got ${queryOption}`
     /**
      * queryOption [key, value][]  ==> {}
      */

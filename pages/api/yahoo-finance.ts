@@ -58,7 +58,7 @@ export default async function handler(
 
 
 
-    const result = expand === '*' || expand === '' ? data : get(data as any, expand, null) as unknown
+    const result = expand === '*' || !expand ? data : get(data as any, expand, null) as unknown
 
     if (!result) return res.status(200).json({
         ticker: query, sheetData: []
@@ -80,19 +80,17 @@ function convertToSheetData(result: unknown) {
     return [[primitiveData(result)]]
 }
 
-function selectColumns(sheetData:TCell[][], columns: string){
+function selectColumns(sheetData: TCell[][], columns: string) {
     if (!columns) return sheetData
-    const xTicker = sheetData[0]
+    const xTicker = sheetData[0] as string[]
 
-    return columns.split(',').reduce((acm, col)=>{
-        const idx = xTicker.findIndex(e=>e===col)
-        if (idx === -1) return acm
+    return sheetData.map(row => pick(row, columns, xTicker))
+}
 
-        const res = sheetData.map(el=>el[idx])
-
-        if (acm.length === 0) return [res]
-        
-        return acm.map((row, rowIdx)=>row.concat(res[rowIdx]))
-
-    }, [] as TCell[][])
+function pick(row: TCell[], columns: string, xTicker: string[]) {
+    return columns.split(',').map(col => {
+        const idx = xTicker.findIndex(t => t === col)
+        if (idx === -1) return ''
+        return row[idx]
+    })
 }
