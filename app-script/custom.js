@@ -3,12 +3,13 @@
  *
  * @param {string} moduleName moduleName: history, quote, quoteSummary, etc 
  * @param {string} ticker ticker: AAPL, TSLA.
- * @param {string} path path: Use * to select all or select specific part from the result, for example: a.b[0].c 
  * @param {*[][]} [queryOption] queryOption: See complete documentation at https://github.com/gadicc/node-yahoo-finance2/tree/devel/docs#yahoo-finance-docs
+ * @param {string} [expand] expand: expand a specific part from the result, for example: a.b[0].c, use empty string "" if you don't need it
+ * @param {string} [columns] columns: select specific parts from the result, for example: col1, col2, col3
  * @return The asked information the source.
  * @customfunction
  */
-function FinData(moduleName, ticker, path='*', queryOption = []){
+function FinData(moduleName, ticker, queryOption = [], expand='', columns='' ){
     if (!(queryOption instanceof Array)) throw 'queryOption should be Array'
     /**
      * queryOption [key, value][]  ==> {}
@@ -19,6 +20,6 @@ function FinData(moduleName, ticker, path='*', queryOption = []){
         return am
     }, {})
 
-    return getYahooFinance(moduleName, ticker, param, path)
+    return getYahooFinance(moduleName, ticker, param, expand, columns)
 
 }

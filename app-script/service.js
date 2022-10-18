@@ -106,14 +106,19 @@ function getPlanDetail() {
  * getYahooFinance
  * @param {string} moduleName 
  * @param {string} query 
- * @param {object} [queryOptions] 
- * @param {string} [path] 
+ * @param {object} [queryOptions]
+ * @param {string} [expand]
+ * @param {string} [columns] 
  * @return 2d array
  */
-function getYahooFinance(moduleName, query, queryOptions, path) {
+function getYahooFinance(moduleName, query, queryOptions={}, expand="", columns="") {
   const email = getEmail();
   const body = {
-    moduleName, query, queryOptions, path
+    moduleName, 
+    query, 
+    queryOptions, 
+    expand,
+    columns
   }
   const yhURL = `${domain}/api/yahoo-finance?email=${email}&json=${encodeURIComponent(JSON.stringify(body))}`;
   
