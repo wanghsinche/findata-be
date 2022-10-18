@@ -16,8 +16,8 @@ const schema = Joi.object({
     moduleName: Joi.string().required().allow(...Object.values(EModule)),
     query: Joi.string().required(),
     queryOptions: Joi.object(),
-    expand: Joi.string().required(),
-    columns: Joi.string()
+    expand: Joi.string().allow(''),
+    columns: Joi.string().allow('')
 })
 
 

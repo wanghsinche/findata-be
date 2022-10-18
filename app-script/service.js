@@ -111,7 +111,7 @@ function getPlanDetail() {
  * @param {string} [columns] 
  * @return 2d array
  */
-function getYahooFinance(moduleName, query, queryOptions={}, expand="", columns="") {
+function getYahooFinance(moduleName, query, queryOptions={}, expand="*", columns="") {
   const email = getEmail();
   const body = {
     moduleName, 

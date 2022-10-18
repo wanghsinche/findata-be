@@ -9,7 +9,7 @@
  * @return The asked information the source.
  * @customfunction
  */
-function FinData(moduleName, ticker, queryOption = [], expand='', columns='' ){
+function FinData(moduleName, ticker, queryOption = [], expand='*', columns='' ){
     if (!(queryOption instanceof Array)) throw 'queryOption should be Array'
     /**
      * queryOption [key, value][]  ==> {}
