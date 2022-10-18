@@ -43,6 +43,7 @@ export async function getUserPlan(email: string): Promise<{
   email: string;
   plan: 'Premium' | 'Free' | 'One';
   expiration: number;
+  customerId?: string;
 }> {
   if (!email) return {
     email, plan: 'Free', expiration: 0
@@ -52,7 +53,7 @@ export async function getUserPlan(email: string): Promise<{
 
   if (user.deleted) {
     return {
-      email, plan: 'Free', expiration: 0
+      email, plan: 'Free', expiration: 0, customerId: user.id
     } 
   }
 
@@ -61,19 +62,19 @@ export async function getUserPlan(email: string): Promise<{
   
   if (activePlan) {
     return {
-      email, plan: 'Premium', expiration: activePlan.current_period_end
+      email, plan: 'Premium', expiration: activePlan.current_period_end, customerId: user.id
     }
   }
 
   // mannually added user, one time payment
   if (Number(user.metadata.expiration) > Date.now()) {
     return {
-      email, plan: 'One', expiration: Number(user.metadata.expiration)
+      email, plan: 'One', expiration: Number(user.metadata.expiration), customerId: user.id
     }
   }
   
   return {
-    email, plan: 'Free', expiration: 0
+    email, plan: 'Free', expiration: 0, customerId: user.id
   }
 
 }

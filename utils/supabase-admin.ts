@@ -6,7 +6,7 @@ import { getSupabaseKey } from './constant';
 const supabaseUrl = 'https://tgubgmgavtnuuavwolvm.supabase.co'
 const supabaseKey = getSupabaseKey()
 
-const supabaseServer = createClient(supabaseUrl, supabaseKey)
+export const supabaseServer = createClient(supabaseUrl, supabaseKey)
 
 
 export async function manageSubscriptionStatusChange(
