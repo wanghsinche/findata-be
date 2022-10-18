@@ -13,7 +13,7 @@ interface IResult {
 
 
 const schema = Joi.object({
-    moduleName: Joi.string().required().allow(...Object.values(EModule)),
+    moduleName: Joi.string().required().valid(...Object.values(EModule)),
     query: Joi.string().required(),
     queryOptions: Joi.object(),
     expand: Joi.string().allow(''),

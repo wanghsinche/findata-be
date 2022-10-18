@@ -5,7 +5,7 @@ export enum EModule {
     historicalc='historical', // - historical market prices.
     quote='quote',// - essential symbol info.
     quoteSummary='quoteSummary', // - comprehensive symbol info.
-    search='search',// - symbol lookup, news and articles.
+    // search='search',// - symbol lookup, news and articles.
     recommendationsBySymbol='recommendationsBySymbol',// - similar symbols.
     trendingSymbols='trendingSymbols',// - symbols trending in a country.
     options='options',// - options trading (call/put).
@@ -13,10 +13,19 @@ export enum EModule {
 }
 
 const YHModuleMap:Partial<Record<EModule, (query:string, option: unknown)=>unknown>> = {
-    [EModule.historicalc]: (query:string, option: unknown)=>yahooFinance.historical(query, option as any),
+    [EModule.historicalc]: (query:string, rawOption: unknown)=>{
+        const yearOfStart = new Date()
+        yearOfStart.setUTCMonth(0)
+        yearOfStart.setUTCDate(0)
+        yearOfStart.setUTCHours(0)
+        yearOfStart.setUTCMinutes(0)
+        yearOfStart.setUTCSeconds(0)
+        const option = {period1: yearOfStart, ...rawOption as Record<string, unknown>}
+        return yahooFinance.historical(query, option as any)
+    },
     [EModule.quote]:(query:string, option: unknown)=>yahooFinance.quote(query, option as any),
     [EModule.quoteSummary]:(query:string, option: unknown)=>yahooFinance.quoteSummary(query, option as any),
-    [EModule.search]:(query:string, option: unknown)=>yahooFinance.search(query, option as any),
+    // [EModule.search]:(query:string, option: unknown)=>yahooFinance.search(query, option as any),
     [EModule.recommendationsBySymbol]:(query:string, option: unknown)=>yahooFinance.recommendationsBySymbol(query, option as any),
     [EModule.trendingSymbols]: (query:string, option: unknown)=>yahooFinance.trendingSymbols(query, option as any),
     [EModule.options]:(query:string, option: unknown)=>yahooFinance.options(query, option as any),
