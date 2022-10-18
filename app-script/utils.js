@@ -41,10 +41,6 @@ function getFromCacheOrServer(quoteURL) {
 }
 
 
-function stringToRecord(str){
-    const jsonStr = str.replace(/\,/g,':')
-    return JSON.parse(jsonStr)
-}
 
 function twoDArrayToRecord(queryOption){
     return param = queryOption.reduce((am, [k, ...value])=>{
