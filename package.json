@@ -10,7 +10,7 @@
     "gulp:production": "NODE_ENV=production gulp",
     "gulp:test": "NODE_ENV=test gulp",
     "app:push": "npx @google/clasp -P app-script push",
-    "doc": "npx ts-node doc/preprocess.ts"
+    "doc": "npx ts-node autocomplete-doc/preprocess.ts"
   },
   "dependencies": {
     "@google/clasp": "^2.4.2",

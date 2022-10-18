@@ -6,6 +6,7 @@ interface IResult {
     email: string;
     plan: string;
     expiration: number;
+    customerId?: string;
 }
 
 export default async function handler(

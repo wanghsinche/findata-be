@@ -1,8 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 
-const appendToPath = false
-const name = 'quote-summary-balance-sheet-history'
+const appendToPath = true
+const name = 'quote-summary-asset-profile'
 
 const fileName = path.resolve(__dirname, `${name}.csv`)
 const outFileName = path.resolve(__dirname, `${name}.txt`)
@@ -22,8 +22,9 @@ const sheetText = rows.map((rowText, idx)=>{
 
     const moduleName= row[1].trim()
     const realPath = appendToPath?`${row[2]}.${key}`:row[2].trim()
-    const keyword = row[3].trim() || camelToWords(key)
-    const subModule = row[4].trim()
+    const subModule = row[4]?.trim()
+
+    const keyword = row[3].trim() || camelToWords(key)+' '+camelToWords(subModule)
 
     return [row[0], moduleName, realPath, keyword, subModule].join(',')+','
 }).join('\n')

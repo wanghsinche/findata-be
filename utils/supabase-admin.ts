@@ -6,7 +6,7 @@ import { getSupabaseKey } from './constant';
 const supabaseUrl = 'https://tgubgmgavtnuuavwolvm.supabase.co'
 const supabaseKey = getSupabaseKey()
 
-const supabaseServer = createClient(supabaseUrl, supabaseKey)
+export const supabaseServer = createClient(supabaseUrl, supabaseKey)
 
 
 export async function manageSubscriptionStatusChange(
@@ -47,4 +47,16 @@ export async function insertCustomer(customerId: string, email: string) {
         { email, customerId },
     ])
     console.info('insert customer '+email+' '+customerId,error)
+}
+
+export async function searchField(word:string) {
+    const { data, error } = await supabaseServer
+    .from('autocomplete')
+    .select('*')
+    .textSearch('keyword', `'${word}'`)
+    if (error){
+        throw String(error)
+    }
+
+    return data
 }

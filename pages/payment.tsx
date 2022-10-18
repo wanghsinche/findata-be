@@ -57,6 +57,7 @@ const Page: NextPage<IProps> = ({ priceList }) => {
   const router = useRouter()
   const email = router.query.email as string;
 
+  if (!email) return <div className='text-center my-10'>forbidden</div>
 
   const myTable = priceList.filter(el => el.active).map(el => <PriceCard key={el.id} price={el} email={email} />)
 
