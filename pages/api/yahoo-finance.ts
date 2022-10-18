@@ -16,7 +16,8 @@ const schema = Joi.object({
     moduleName: Joi.string().required().allow(...Object.values(EModule)),
     query: Joi.string().required(),
     queryOptions: Joi.object(),
-    path: Joi.string().required()
+    expand: Joi.string().required(),
+    columns: Joi.string()
 })
 
 
@@ -44,7 +45,8 @@ export default async function handler(
     const moduleName = body.moduleName as EModule
     const query = body.query as string
     const queryOptions = body.queryOptions as Record<string, unknown>
-    const path = body.path as string
+    const expand = body.expand as string
+    const columns = body.columns as string
 
     let data
 
@@ -56,13 +58,13 @@ export default async function handler(
 
 
 
-    const result = path === '*' ? data : get(data as any, path, null) as unknown
+    const result = expand === '*' || expand === '' ? data : get(data as any, expand, null) as unknown
 
     if (!result) return res.status(200).json({
         ticker: query, sheetData: []
     })
 
-    const sheetData = convertToSheetData(result)
+    const sheetData = selectColumns(convertToSheetData(result), columns)
 
     res.status(200).json({
         ticker: query, sheetData: sheetData
@@ -76,4 +78,21 @@ function convertToSheetData(result: unknown) {
     if (typeof result === 'object') return tabularData([result as Record<string, unknown>])
 
     return [[primitiveData(result)]]
+}
+
+function selectColumns(sheetData:TCell[][], columns: string){
+    if (!columns) return sheetData
+    const xTicker = sheetData[0]
+
+    return columns.split(',').reduce((acm, col)=>{
+        const idx = xTicker.findIndex(e=>e===col)
+        if (idx === -1) return acm
+
+        const res = sheetData.map(el=>el[idx])
+
+        if (acm.length === 0) return [res]
+        
+        return acm.map((row, rowIdx)=>row.concat(res[rowIdx]))
+
+    }, [] as TCell[][])
 }
