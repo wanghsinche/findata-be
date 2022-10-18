@@ -48,3 +48,15 @@ export async function insertCustomer(customerId: string, email: string) {
     ])
     console.info('insert customer '+email+' '+customerId,error)
 }
+
+export async function searchField(word:string) {
+    const { data, error } = await supabaseServer
+    .from('autocomplete')
+    .select('*')
+    .textSearch('keyword', `'${word}'`)
+    if (error){
+        throw String(error)
+    }
+
+    return data
+}
