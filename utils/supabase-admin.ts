@@ -60,7 +60,7 @@ export async function searchField(word:string) {
     }
     
     // fuzzy search
-    
+
     let { data, error } = await supabaseServer
     .from('autocomplete')
     .select('*')
@@ -69,5 +69,5 @@ export async function searchField(word:string) {
         throw String(error)
     }
 
-    return data
+    return data!
 }
