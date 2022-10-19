@@ -52,7 +52,7 @@ function getPlanDetail() {
   const planResJSON = JSON.parse(planRes);
 
   // update the local state
-  isFree = Number(res.expiration) < Date.now()
+  isFree = Number(planResJSON.expiration) < Date.now()
 
   return {
     plan: planResJSON.plan,
@@ -86,4 +86,22 @@ function getYahooFinance(moduleName, query, queryOptions={}, expand="*", columns
   const dataJSON = JSON.parse(dataRes, convertDate);
 
   return dataJSON.sheetData
+}
+
+/**
+ * 
+ * @param {string} word 
+ */
+function getFormula(word){
+  if (!word.trim()) return {
+    word, data:[]
+  }
+  const email = getEmail();
+
+  const yhURL = `${domain}/api/formula-builder?email=${email}&word=${word}`;
+  const dataRes = getFromCacheOrServer(yhURL)
+  const dataJSON = JSON.parse(dataRes, convertDate);
+
+  return dataJSON
+
 }

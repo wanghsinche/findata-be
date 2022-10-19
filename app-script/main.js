@@ -82,6 +82,19 @@ function onGetPlanDetail() {
   return getPlanDetail()
 }
 
+function onInsertFormula(info){
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = ss.getSheets()[0];
+
+  const cell = sheet.getCurrentCell();
+  if (!cell) {
+    throw('Unable to insert text, no cursor.');
+  }
+
+  cell.setValue(`=FinData("${info.moduleName}", "${info.ticker}", ${recordToTwoDArrayString(info.queryOption)}, "${info.path}")`)
+
+}
+
 /* ----------- Google Sheets add-on functions ----------- */
 
 /**
@@ -90,6 +103,7 @@ function onGetPlanDetail() {
  */
 function onOpen(e) {
   SpreadsheetApp.getUi().createAddonMenu()
+    .addItem(`Open Formula Builder`, 'showbuilder')
     .addItem(`Open ${appName} panel`, 'showpanel')
     .addSeparator()
     .addItem(`My Account`, 'showAccount')
@@ -112,6 +126,12 @@ function showpanel() {
     .setTitle(`${appName} - panel`);
   SpreadsheetApp.getUi().showSidebar(ui);
 }
+function showbuilder() {
+  const ui = HtmlService.createHtmlOutputFromFile('formula-builder')
+    .setTitle(`${appName} - Formula Builder`);
+  SpreadsheetApp.getUi().showSidebar(ui);
+}
+
 
 /**
  * show premium
@@ -122,3 +142,5 @@ function showpanel() {
   .setTitle(`${appName} - My Account`);
   SpreadsheetApp.getUi().showDialog(ui)
 }
+
+

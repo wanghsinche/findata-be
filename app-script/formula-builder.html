@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinData panel</title>
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <style>
+        .badge {
+            border: 1px solid #29691d;
+            padding: 2px;
+        }
+
+        .badge.black {
+            border: 1px solid #616161;
+            background-color: #616161;
+            color: #fff;
+        }
+
+        .badge.green {
+            border: 1px solid #29691d;
+            background-color: #29691d;
+            color: #fff;
+        }
+
+
+        .hidden {
+            display: none
+        }
+        .invisible{
+            visibility: hidden;
+        }
+        #progress {
+            width: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <progress id="progress" class="invisible"></progress>
+    <div class="block">
+        <span class="badge black" id="plan">Free plan</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="js-payment-link" id="promote" href="https://findata-be.vercel.app/payment" target="_blank">
+            To Unlock More Access!
+        </a>
+    </div>
+
+
+    <div class="form-group">
+
+        <fieldset>
+
+            <legend>Input your ticker:</legend>
+            <input type="text" class="block" id="ticker" placeholder="For example: AAPL, TSLA">
+
+
+        </fieldset>
+
+
+        <fieldset>
+
+            <legend>Select a metric:</legend>
+            <input type="text" class="block" id="suggestion" placeholder="what do you want?">
+
+            <div id="suggestion-list" class="block">
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Metric Detail:</legend>
+            <div>Module name : <span id="module-name"></span></div>
+
+            <div>path : <span id="path"></span></div>
+        </fieldset>
+
+        <fieldset id="query-option">
+            <legend>Query Option:</legend>
+
+        </fieldset>
+
+        <div class="error block hidden" id="alert">Form input errors</div>
+
+        <fieldset>
+            <legend>Action:</legend>
+            <div class="block">
+                <button class="create" id="create-btn">Create</button>
+            </div>
+
+        </fieldset>
+
+
+
+    </div>
+
+    <script>
+
+        const queryOptionMap = [
+            {
+                moduleName: 'historical',
+                render: (info) => {
+                    const thisYear = `${new Date().getUTCFullYear()}-01-01`
+
+                    const domHTML = `
+                    <legend>Query Option:</legend>
+
+                    <div class="block">
+                        <label>from : <input id="period1" type="date" value="${thisYear}"></input></label>
+                    </div>
+                    <div class="block">
+                        <label>to : <input id="period2" type="date"></input></label>
+                    </div>
+                    <div class="block">
+                        <label>interval : <select id="interval">
+                                <option value="1d" selected>1 day</option>
+                                <option value="1wk">1 week</option>
+                                <option value="1mo">1 month</option>
+                            </select></label>
+                    </div>
+
+                    `
+
+                    document.getElementById('query-option').innerHTML = domHTML
+                },
+                collectInfo: () => {
+                    return {
+                        moduleName: document.getElementById('module-name').textContent,
+                        ticker: document.getElementById('ticker').value,
+                        queryOption:
+                        {
+                            period1: document.getElementById('period1').value,
+                            period2: document.getElementById('period2').value,
+                            interval: document.getElementById('interval').value
+                        },
+                        path: document.getElementById('path').textContent,
+                    }
+                }
+            },
+            {
+                moduleName: 'quoteSummary',
+                render: (info) => {
+
+                    const domHTML = `
+                    <legend>Query Option:</legend>
+
+                    <div class="block">
+                        <label>Sub Module : <input id="submodule" disabled value="${info.submodule}"></input></label>
+                    </div>
+
+                    </div>
+
+                    `
+
+                    document.getElementById('query-option').innerHTML = domHTML
+                },
+                collectInfo: () => {
+                    return {
+                        moduleName: document.getElementById('module-name').textContent,
+                        ticker: document.getElementById('ticker').value,
+                        queryOption:
+                        {
+                            modules: document.getElementById('submodule').value,
+                        },
+                        path: document.getElementById('path').textContent,
+                    }
+                }
+            },
+            {
+                moduleName: 'options',
+                render: (info) => {
+
+                    const domHTML = `
+                    <legend>Query Option:</legend>
+
+                    <div class="block">
+                        <label>date (expiration) : <input id="date" type="date"></input></label>
+                    </div>
+
+                    `
+
+                    document.getElementById('query-option').innerHTML = domHTML
+                },
+                collectInfo: () => {
+                    return {
+                        moduleName: document.getElementById('module-name').textContent,
+                        ticker: document.getElementById('ticker').value,
+                        queryOption:
+                        {
+                            date: document.getElementById('date').value,
+                        },
+                        path: document.getElementById('path').textContent,
+                    }
+                }
+            },
+
+            {
+                moduleName: 'default',
+                render: (info) => {
+
+                    const domHTML = `
+                    <legend>Query Option:</legend>
+
+                    </div>
+
+                    `
+
+                    document.getElementById('query-option').innerHTML = domHTML
+                },
+                collectInfo: () => {
+                    return {
+                        moduleName: document.getElementById('module-name').textContent,
+                        ticker: document.getElementById('ticker').value,
+                        queryOption:
+                        {
+                        },
+                        path: document.getElementById('path').textContent,
+                    }
+                }
+
+            },
+
+
+        ];
+
+        function r(parent) {
+            while (parent.firstChild) {
+                parent.removeChild(parent.firstChild);
+            }
+        }
+
+        function h(tag, attributes, children) {
+            const el = document.createElement(tag)
+            if (attributes) {
+                Object.entries(attributes).forEach(([k, v]) => {
+                    if (k === 'onClick') {
+                        el.addEventListener('click', v)
+                    } else {
+                        el.setAttribute(k, v)
+                    }
+                })
+            }
+            if (children) {
+                if (children instanceof Array) {
+                    el.append(...children)
+                }
+                else {
+                    el.appendChild(children)
+                }
+            }
+            return el
+        }
+
+        function debounce(callback, wait) {
+            let timeoutId = null;
+            return (...args) => {
+                window.clearTimeout(timeoutId);
+                timeoutId = window.setTimeout(() => {
+                callback.apply(null, args);
+                }, wait);
+            };
+        }
+
+        let loading = false
+        function showLoading() {
+            loading = true
+            document.getElementById('progress').classList.remove('invisible')
+        }
+
+        function hideLoading() {
+            loading = false
+            document.getElementById('progress').classList.add('invisible')
+        }
+
+        function myAlert(msg) {
+            const el = document.getElementById('alert')
+
+            el.classList.remove('hidden')
+            setTimeout(() => {
+                el.classList.add('hidden')
+            }, 5000);
+
+            el.innerText = msg
+        }
+
+        function onFailure(error) {
+            myAlert(error.message)
+            hideLoading()
+        }
+
+        function onSuccess() {
+            hideLoading()
+        }
+
+
+        function getFromMockData(text, cb) {
+            const data = [
+                {
+                    id: 5,
+                    created_at: "2022-10-18T10:49:55.255186+00:00",
+                    field: "open?: number;",
+                    moduleName: "historical",
+                    path: "",
+                    keyword: "open price",
+                    submodule: ""
+                },
+                {
+                    id: 6,
+                    created_at: "2022-10-18T10:49:55.255186+00:00",
+                    field: "totalCurrentAssets?: number;",
+                    moduleName: "quote",
+                    path: "balanceSheetStatements",
+                    keyword: "balance",
+                    submodule: ""
+                },
+                {
+                    id: 9,
+                    created_at: "2022-10-18T10:49:55.255186+00:00",
+                    field: "recommendedSymbols?: String[];",
+                    moduleName: "recommendationsBySymbol",
+                    path: "",
+                    keyword: "recommend",
+                    submodule: ""
+                },
+                {
+                    id: 10,
+                    created_at: "2022-10-18T10:49:55.255186+00:00",
+                    field: "totalAssets?: number;",
+                    moduleName: "quoteSummary",
+                    path: "balanceSheetHistory.balanceSheetStatements",
+                    keyword: "total Assets",
+                    submodule: "balanceSheetHistory"
+                },
+                {
+                    id: 23,
+                    created_at: "2022-10-18T10:49:55.255186+00:00",
+                    field: "netTangibleAssets?: number;",
+                    moduleName: "quoteSummary",
+                    path: "balanceSheetHistory.balanceSheetStatements",
+                    keyword: "net Tangible Assets",
+                    submodule: "balanceSheetHistory"
+                },
+                {
+                    id: 25,
+                    created_at: "2022-10-18T10:49:55.255186+00:00",
+                    field: "intangibleAssets?: number;",
+                    moduleName: "quoteSummary",
+                    path: "balanceSheetHistory.balanceSheetStatements",
+                    keyword: "intangible Assets",
+                    submodule: "balanceSheetHistory"
+                },
+                {
+                    id: 26,
+                    created_at: "2022-10-18T10:49:55.255186+00:00",
+                    field: "deferredLongTermAssetCharges?: number;",
+                    moduleName: "quoteSummary",
+                    path: "balanceSheetHistory",
+                    keyword: "deferred Long Term Asset Charges",
+                    submodule: "balanceSheetHistory"
+                }
+            ];
+
+            setTimeout(() => {
+                cb(data.sort(() => Math.random() - 0.5).slice(0, 5))
+            }, 1000);
+        }
+
+
+
+        let currentMetric = null
+
+        const suggestion = document.getElementById("suggestion");
+        const suggestionList = document.getElementById("suggestion-list");
+        const moduleName = document.getElementById('module-name')
+
+
+        const path = document.getElementById('path')
+
+        suggestion.addEventListener("keyup", (e) => {
+            if (!e.target.value || !e.target.value.trim())return
+            e.target.value && updateSuggestList(e.target.value);
+        });
+
+        const updateSuggestList = debounce((text) => {
+            showLoading()
+
+            function cb(res){
+                if (res.word !== text) return
+                const data = res.data
+                const result = data.map(el => {
+                    const dom = h('div', { class: 'block' }, [
+                        h('input', {
+                            type: 'radio', id: el.id, name: 'field', value: el.id, onClick: () => {
+                                updateProperty(el)
+                            }
+                        }),
+                        h('label', { for: el.id }, document.createTextNode(`${el.title}`)),
+                        h('div', { class: 'gray', style: 'margin-left: 2em' }, document.createTextNode(el.field)),
+                        h('div', { style: 'display:flex; gap:1em; margin-left: 2em' }, [
+                            h('span', { class: 'badge green' }, document.createTextNode(el.moduleName)),
+                            el.submodule && h('span', { class: 'badge' }, document.createTextNode(el.submodule))
+                        ]),
+                    ])
+                    return dom
+                })
+                r(suggestionList)
+                suggestionList.append(...result)
+                hideLoading()
+            }
+
+            google.script.run.withFailureHandler(onFailure).withSuccessHandler(cb).getFormula(text);
+
+
+            // getFromMockData(text, cb)
+        }, 400)
+
+        function updateProperty(info) {
+            moduleName.textContent = info.moduleName
+            path.textContent = info.path
+            currentMetric = info
+            const func = queryOptionMap.find(el => el.moduleName === info.moduleName)
+            if (func) { func.render(info) }
+            else { queryOptionMap.find(el => el.moduleName === 'default').render(info) }
+        }
+
+
+        function checkStatus() {
+            showLoading()
+
+            function gotStatus(res) {
+                onSuccess()
+                document.getElementById('plan').innerHTML = res.plan + ' plan'
+                if (res.plan !== 'Free') document.getElementById('promote').classList.add('hidden')
+
+                const paymentLink = 'https://findata-be.vercel.app/payment?email=' + res.email
+                document.querySelectorAll('.js-payment-link').forEach(el => el.setAttribute('href', paymentLink))
+
+            }
+
+            // setTimeout(() => {
+            //     gotStatus({
+            //         plan: 'Free',
+            //         email: 'me@g.com',
+            //         expiration: 0
+            //     })
+            // }, 1000);
+
+
+            google.script.run.withFailureHandler(onFailure).withSuccessHandler(function (res) {
+                gotStatus(res)
+            }).onGetPlanDetail();
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            checkStatus()
+        });
+
+
+        document.getElementById('create-btn').addEventListener('click', () => {
+
+            const ticker = document.getElementById('ticker').value
+            if (!ticker) return myAlert('Input your ticker firstly!')
+            if (!currentMetric) return myAlert('Select your metric firstly!')
+
+            showLoading()
+
+            let func = queryOptionMap.find(el => el.moduleName === currentMetric.moduleName)
+            if (!func) func = queryOptionMap.find(el => el.moduleName === 'default')
+            const info = func.collectInfo()
+            console.log(info)
+
+
+            google.script.run.withFailureHandler(onFailure).withSuccessHandler(function (res) {
+                hideLoading()
+            }).onInsertFormula(info);
+
+        })
+
+    </script>
+
+</body>
+
+</html>
