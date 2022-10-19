@@ -120,7 +120,7 @@
     "field": "fullTimeEmployees"
   },
   {
-    "path": "assetProfile.companyOfficers.name",
+    "path": "assetProfile.companyOfficers",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Name Company Officer",
@@ -128,7 +128,7 @@
     "field": "name"
   },
   {
-    "path": "assetProfile.companyOfficers.age",
+    "path": "assetProfile.companyOfficers",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Age Company Officer",
@@ -136,7 +136,7 @@
     "field": "age"
   },
   {
-    "path": "assetProfile.companyOfficers.title",
+    "path": "assetProfile.companyOfficers",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Title Company Officer",
@@ -144,7 +144,7 @@
     "field": "title"
   },
   {
-    "path": "assetProfile.companyOfficers.yearBorn",
+    "path": "assetProfile.companyOfficers",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Year Born Company Officer",
@@ -152,7 +152,7 @@
     "field": "yearBorn"
   },
   {
-    "path": "assetProfile.companyOfficers.fiscalYear",
+    "path": "assetProfile.companyOfficers",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Fiscal Year Company Officer",
@@ -160,7 +160,7 @@
     "field": "fiscalYear"
   },
   {
-    "path": "assetProfile.companyOfficers.totalPay",
+    "path": "assetProfile.companyOfficers",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Total Pay Company Officer",
@@ -168,7 +168,7 @@
     "field": "totalPay"
   },
   {
-    "path": "assetProfile.companyOfficers.exercisedValue",
+    "path": "assetProfile.companyOfficers",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Exercised Value Company Officer",
@@ -176,7 +176,7 @@
     "field": "exercisedValue"
   },
   {
-    "path": "assetProfile.companyOfficers.unexercisedValue",
+    "path": "assetProfile.companyOfficers",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Unexercised Value Company Officer",
@@ -184,7 +184,7 @@
     "field": "unexercisedValue"
   },
   {
-    "path": "assetProfile.auditRisk",
+    "path": "assetProfile",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Audit Risk Asset Profile",
@@ -192,7 +192,7 @@
     "field": "auditRisk"
   },
   {
-    "path": "assetProfile.boardRisk",
+    "path": "assetProfile",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Board Risk Asset Profile",
@@ -200,7 +200,7 @@
     "field": "boardRisk"
   },
   {
-    "path": "assetProfile.compensationRisk",
+    "path": "assetProfile",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Compensation Risk Asset Profile",
@@ -208,7 +208,7 @@
     "field": "compensationRisk"
   },
   {
-    "path": "assetProfile.shareHolderRightsRisk",
+    "path": "assetProfile",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Share Holder Rights Risk Asset Profile",
@@ -216,7 +216,7 @@
     "field": "shareHolderRightsRisk"
   },
   {
-    "path": "assetProfile.overallRisk",
+    "path": "assetProfile",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Overall Risk Asset Profile",
@@ -224,7 +224,7 @@
     "field": "overallRisk"
   },
   {
-    "path": "assetProfile.name",
+    "path": "assetProfile",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Name Asset Profile",
@@ -232,7 +232,7 @@
     "field": "name"
   },
   {
-    "path": "assetProfile.description",
+    "path": "assetProfile",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Description Asset Profile",
@@ -240,7 +240,7 @@
     "field": "description"
   },
   {
-    "path": "assetProfile.twitter",
+    "path": "assetProfile",
     "moduleName": "quoteSummary",
     "submodule": "assetProfile",
     "keyword": "Asset Profile Asset Profile Twitter Asset Profile",
@@ -248,7 +248,7 @@
     "field": "twitter"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.cash",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Cash Balance Sheet Statement",
@@ -256,7 +256,7 @@
     "field": "cash"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.shortTermInvestments",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Short Term Investments Balance Sheet Statement",
@@ -264,7 +264,7 @@
     "field": "shortTermInvestments"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.netReceivables",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Net Receivables Balance Sheet Statement",
@@ -272,7 +272,7 @@
     "field": "netReceivables"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.inventory",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Inventory Balance Sheet Statement",
@@ -280,7 +280,7 @@
     "field": "inventory"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.otherCurrentAssets",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Other Current Assets Balance Sheet Statement",
@@ -288,7 +288,7 @@
     "field": "otherCurrentAssets"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.totalCurrentAssets",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Total Current Assets Balance Sheet Statement",
@@ -296,7 +296,7 @@
     "field": "totalCurrentAssets"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.longTermInvestments",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Long Term Investments Balance Sheet Statement",
@@ -304,7 +304,7 @@
     "field": "longTermInvestments"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.propertyPlantEquipment",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Property Plant Equipment Balance Sheet Statement",
@@ -312,7 +312,7 @@
     "field": "propertyPlantEquipment"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.otherAssets",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Other Assets Balance Sheet Statement",
@@ -320,7 +320,7 @@
     "field": "otherAssets"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.totalAssets",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Total Assets Balance Sheet Statement",
@@ -328,7 +328,7 @@
     "field": "totalAssets"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.accountsPayable",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Accounts Payable Balance Sheet Statement",
@@ -336,7 +336,7 @@
     "field": "accountsPayable"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.shortLongTermDebt",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Short Long Term Debt Balance Sheet Statement",
@@ -344,7 +344,7 @@
     "field": "shortLongTermDebt"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.otherCurrentLiab",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Other Current Liab Balance Sheet Statement",
@@ -352,7 +352,7 @@
     "field": "otherCurrentLiab"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.longTermDebt",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Long Term Debt Balance Sheet Statement",
@@ -360,7 +360,7 @@
     "field": "longTermDebt"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.otherLiab",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Other Liab Balance Sheet Statement",
@@ -368,7 +368,7 @@
     "field": "otherLiab"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.totalCurrentLiabilities",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Total Current Liabilities Balance Sheet Statement",
@@ -376,7 +376,7 @@
     "field": "totalCurrentLiabilities"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.totalLiab",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Total Liab Balance Sheet Statement",
@@ -384,7 +384,7 @@
     "field": "totalLiab"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.commonStock",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Common Stock Balance Sheet Statement",
@@ -392,7 +392,7 @@
     "field": "commonStock"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.retainedEarnings",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Retained Earnings Balance Sheet Statement",
@@ -400,7 +400,7 @@
     "field": "retainedEarnings"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.treasuryStock",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Treasury Stock Balance Sheet Statement",
@@ -408,7 +408,7 @@
     "field": "treasuryStock"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.otherStockholderEquity",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Other Stockholder Equity Balance Sheet Statement",
@@ -416,7 +416,7 @@
     "field": "otherStockholderEquity"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.totalStockholderEquity",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Total Stockholder Equity Balance Sheet Statement",
@@ -424,7 +424,7 @@
     "field": "totalStockholderEquity"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.netTangibleAssets",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Net Tangible Assets Balance Sheet Statement",
@@ -432,7 +432,7 @@
     "field": "netTangibleAssets"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.goodWill",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Good Will Balance Sheet Statement",
@@ -440,7 +440,7 @@
     "field": "goodWill"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.intangibleAssets",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Intangible Assets Balance Sheet Statement",
@@ -448,7 +448,7 @@
     "field": "intangibleAssets"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.deferredLongTermAssetCharges",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Deferred Long Term Asset Charges Balance Sheet Statement",
@@ -456,7 +456,7 @@
     "field": "deferredLongTermAssetCharges"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.deferredLongTermLiab",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Deferred Long Term Liab Balance Sheet Statement",
@@ -464,7 +464,7 @@
     "field": "deferredLongTermLiab"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.minorityInterest",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Minority Interest Balance Sheet Statement",
@@ -472,7 +472,7 @@
     "field": "minorityInterest"
   },
   {
-    "path": "balanceSheetHistory.balanceSheetStatements.capitalSurplus",
+    "path": "balanceSheetHistory.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistory",
     "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Capital Surplus Balance Sheet Statement",
@@ -480,7 +480,7 @@
     "field": "capitalSurplus"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.cash",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Cash Balance Sheet Statement",
@@ -488,7 +488,7 @@
     "field": "cash"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.shortTermInvestments",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Short Term Investments Balance Sheet Statement",
@@ -496,7 +496,7 @@
     "field": "shortTermInvestments"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.netReceivables",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Net Receivables Balance Sheet Statement",
@@ -504,7 +504,7 @@
     "field": "netReceivables"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.inventory",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Inventory Balance Sheet Statement",
@@ -512,7 +512,7 @@
     "field": "inventory"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.otherCurrentAssets",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Other Current Assets Balance Sheet Statement",
@@ -520,7 +520,7 @@
     "field": "otherCurrentAssets"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.totalCurrentAssets",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Total Current Assets Balance Sheet Statement",
@@ -528,7 +528,7 @@
     "field": "totalCurrentAssets"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.longTermInvestments",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Long Term Investments Balance Sheet Statement",
@@ -536,7 +536,7 @@
     "field": "longTermInvestments"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.propertyPlantEquipment",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Property Plant Equipment Balance Sheet Statement",
@@ -544,7 +544,7 @@
     "field": "propertyPlantEquipment"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.otherAssets",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Other Assets Balance Sheet Statement",
@@ -552,7 +552,7 @@
     "field": "otherAssets"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.totalAssets",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Total Assets Balance Sheet Statement",
@@ -560,7 +560,7 @@
     "field": "totalAssets"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.accountsPayable",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Accounts Payable Balance Sheet Statement",
@@ -568,7 +568,7 @@
     "field": "accountsPayable"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.shortLongTermDebt",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Short Long Term Debt Balance Sheet Statement",
@@ -576,7 +576,7 @@
     "field": "shortLongTermDebt"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.otherCurrentLiab",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Other Current Liab Balance Sheet Statement",
@@ -584,7 +584,7 @@
     "field": "otherCurrentLiab"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.longTermDebt",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Long Term Debt Balance Sheet Statement",
@@ -592,7 +592,7 @@
     "field": "longTermDebt"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.otherLiab",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Other Liab Balance Sheet Statement",
@@ -600,7 +600,7 @@
     "field": "otherLiab"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.totalCurrentLiabilities",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Total Current Liabilities Balance Sheet Statement",
@@ -608,7 +608,7 @@
     "field": "totalCurrentLiabilities"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.totalLiab",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Total Liab Balance Sheet Statement",
@@ -616,7 +616,7 @@
     "field": "totalLiab"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.commonStock",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Common Stock Balance Sheet Statement",
@@ -624,7 +624,7 @@
     "field": "commonStock"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.retainedEarnings",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Retained Earnings Balance Sheet Statement",
@@ -632,7 +632,7 @@
     "field": "retainedEarnings"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.treasuryStock",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Treasury Stock Balance Sheet Statement",
@@ -640,7 +640,7 @@
     "field": "treasuryStock"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.otherStockholderEquity",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Other Stockholder Equity Balance Sheet Statement",
@@ -648,7 +648,7 @@
     "field": "otherStockholderEquity"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.totalStockholderEquity",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Total Stockholder Equity Balance Sheet Statement",
@@ -656,7 +656,7 @@
     "field": "totalStockholderEquity"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.netTangibleAssets",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Net Tangible Assets Balance Sheet Statement",
@@ -664,7 +664,7 @@
     "field": "netTangibleAssets"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.goodWill",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Good Will Balance Sheet Statement",
@@ -672,7 +672,7 @@
     "field": "goodWill"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.intangibleAssets",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Intangible Assets Balance Sheet Statement",
@@ -680,7 +680,7 @@
     "field": "intangibleAssets"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.deferredLongTermAssetCharges",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Deferred Long Term Asset Charges Balance Sheet Statement",
@@ -688,7 +688,7 @@
     "field": "deferredLongTermAssetCharges"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.deferredLongTermLiab",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Deferred Long Term Liab Balance Sheet Statement",
@@ -696,7 +696,7 @@
     "field": "deferredLongTermLiab"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.minorityInterest",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Minority Interest Balance Sheet Statement",
@@ -704,7 +704,7 @@
     "field": "minorityInterest"
   },
   {
-    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.capitalSurplus",
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements",
     "moduleName": "quoteSummary",
     "submodule": "balanceSheetHistoryQuarterly",
     "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Capital Surplus Balance Sheet Statement",
@@ -760,7 +760,7 @@
     "field": "revenueHigh"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.netIncome",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Net Income Cashflow Statement",
@@ -768,7 +768,7 @@
     "field": "netIncome"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.depreciation",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Depreciation Cashflow Statement",
@@ -776,7 +776,7 @@
     "field": "depreciation"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.changeToNetincome",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Netincome Cashflow Statement",
@@ -784,7 +784,7 @@
     "field": "changeToNetincome"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.changeToAccountReceivables",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Account Receivables Cashflow Statement",
@@ -792,7 +792,7 @@
     "field": "changeToAccountReceivables"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.changeToLiabilities",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Liabilities Cashflow Statement",
@@ -800,7 +800,7 @@
     "field": "changeToLiabilities"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.changeToInventory",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Inventory Cashflow Statement",
@@ -808,7 +808,7 @@
     "field": "changeToInventory"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.changeToOperatingActivities",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Operating Activities Cashflow Statement",
@@ -816,7 +816,7 @@
     "field": "changeToOperatingActivities"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.totalCashFromOperatingActivities",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cash From Operating Activities Cashflow Statement",
@@ -824,7 +824,7 @@
     "field": "totalCashFromOperatingActivities"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.capitalExpenditures",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Capital Expenditures Cashflow Statement",
@@ -832,7 +832,7 @@
     "field": "capitalExpenditures"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.investments",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Investments Cashflow Statement",
@@ -840,7 +840,7 @@
     "field": "investments"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.otherCashflowsFromInvestingActivities",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Other Cashflows From Investing Activities Cashflow Statement",
@@ -848,7 +848,7 @@
     "field": "otherCashflowsFromInvestingActivities"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.totalCashflowsFromInvestingActivities",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cashflows From Investing Activities Cashflow Statement",
@@ -856,7 +856,7 @@
     "field": "totalCashflowsFromInvestingActivities"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.dividendsPaid",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Dividends Paid Cashflow Statement",
@@ -864,7 +864,7 @@
     "field": "dividendsPaid"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.netBorrowings",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Net Borrowings Cashflow Statement",
@@ -872,7 +872,7 @@
     "field": "netBorrowings"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.otherCashflowsFromFinancingActivities",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Other Cashflows From Financing Activities Cashflow Statement",
@@ -880,7 +880,7 @@
     "field": "otherCashflowsFromFinancingActivities"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.totalCashFromFinancingActivities",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cash From Financing Activities Cashflow Statement",
@@ -888,7 +888,7 @@
     "field": "totalCashFromFinancingActivities"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.changeInCash",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change In Cash Cashflow Statement",
@@ -896,7 +896,7 @@
     "field": "changeInCash"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.repurchaseOfStock",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Repurchase Of Stock Cashflow Statement",
@@ -904,7 +904,7 @@
     "field": "repurchaseOfStock"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.issuanceOfStock",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Issuance Of Stock Cashflow Statement",
@@ -912,7 +912,7 @@
     "field": "issuanceOfStock"
   },
   {
-    "path": "cashflowStatementHistory.cashflowStatements.effectOfExchangeRate",
+    "path": "cashflowStatementHistory.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistory",
     "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Effect Of Exchange Rate Cashflow Statement",
@@ -920,7 +920,7 @@
     "field": "effectOfExchangeRate"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.netIncome",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Net Income Cashflow Statement",
@@ -928,7 +928,7 @@
     "field": "netIncome"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.depreciation",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Depreciation Cashflow Statement",
@@ -936,7 +936,7 @@
     "field": "depreciation"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeToNetincome",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Netincome Cashflow Statement",
@@ -944,7 +944,7 @@
     "field": "changeToNetincome"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeToAccountReceivables",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Account Receivables Cashflow Statement",
@@ -952,7 +952,7 @@
     "field": "changeToAccountReceivables"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeToLiabilities",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Liabilities Cashflow Statement",
@@ -960,7 +960,7 @@
     "field": "changeToLiabilities"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeToInventory",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Inventory Cashflow Statement",
@@ -968,7 +968,7 @@
     "field": "changeToInventory"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeToOperatingActivities",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Operating Activities Cashflow Statement",
@@ -976,7 +976,7 @@
     "field": "changeToOperatingActivities"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.totalCashFromOperatingActivities",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cash From Operating Activities Cashflow Statement",
@@ -984,7 +984,7 @@
     "field": "totalCashFromOperatingActivities"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.capitalExpenditures",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Capital Expenditures Cashflow Statement",
@@ -992,7 +992,7 @@
     "field": "capitalExpenditures"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.investments",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Investments Cashflow Statement",
@@ -1000,7 +1000,7 @@
     "field": "investments"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.otherCashflowsFromInvestingActivities",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Other Cashflows From Investing Activities Cashflow Statement",
@@ -1008,7 +1008,7 @@
     "field": "otherCashflowsFromInvestingActivities"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.totalCashflowsFromInvestingActivities",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cashflows From Investing Activities Cashflow Statement",
@@ -1016,7 +1016,7 @@
     "field": "totalCashflowsFromInvestingActivities"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.dividendsPaid",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Dividends Paid Cashflow Statement",
@@ -1024,7 +1024,7 @@
     "field": "dividendsPaid"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.netBorrowings",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Net Borrowings Cashflow Statement",
@@ -1032,7 +1032,7 @@
     "field": "netBorrowings"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.otherCashflowsFromFinancingActivities",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Other Cashflows From Financing Activities Cashflow Statement",
@@ -1040,7 +1040,7 @@
     "field": "otherCashflowsFromFinancingActivities"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.totalCashFromFinancingActivities",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cash From Financing Activities Cashflow Statement",
@@ -1048,7 +1048,7 @@
     "field": "totalCashFromFinancingActivities"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeInCash",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change In Cash Cashflow Statement",
@@ -1056,7 +1056,7 @@
     "field": "changeInCash"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.repurchaseOfStock",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Repurchase Of Stock Cashflow Statement",
@@ -1064,7 +1064,7 @@
     "field": "repurchaseOfStock"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.issuanceOfStock",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Issuance Of Stock Cashflow Statement",
@@ -1072,7 +1072,7 @@
     "field": "issuanceOfStock"
   },
   {
-    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.effectOfExchangeRate",
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements",
     "moduleName": "quoteSummary",
     "submodule": "cashflowStatementHistoryQuarterly",
     "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Effect Of Exchange Rate Cashflow Statement",
@@ -1416,7 +1416,7 @@
     "field": "annualHoldingsTurnover"
   },
   {
-    "path": "earnings.earningsChart.quarterly.actual",
+    "path": "earnings.earningsChart.quarterly",
     "moduleName": "quoteSummary",
     "submodule": "earnings",
     "keyword": "Earnings Quote Summary Earnings Earnings Chart Quote Summary Earnings Quarterly Earnings Chart Actual Earnings Chart Quarterly",
@@ -1424,7 +1424,7 @@
     "field": "actual"
   },
   {
-    "path": "earnings.earningsChart.quarterly.estimate",
+    "path": "earnings.earningsChart.quarterly",
     "moduleName": "quoteSummary",
     "submodule": "earnings",
     "keyword": "Earnings Quote Summary Earnings Earnings Chart Quote Summary Earnings Quarterly Earnings Chart Estimate Earnings Chart Quarterly",
@@ -1432,7 +1432,7 @@
     "field": "estimate"
   },
   {
-    "path": "earnings.earningsChart.currentQuarterEstimate",
+    "path": "earnings.earningsChart",
     "moduleName": "quoteSummary",
     "submodule": "earnings",
     "keyword": "Earnings Quote Summary Earnings Earnings Chart Quote Summary Earnings Current Quarter Estimate Earnings Chart",
@@ -1440,7 +1440,7 @@
     "field": "currentQuarterEstimate"
   },
   {
-    "path": "earnings.earningsChart.currentQuarterEstimateDate",
+    "path": "earnings.earningsChart",
     "moduleName": "quoteSummary",
     "submodule": "earnings",
     "keyword": "Earnings Quote Summary Earnings Earnings Chart Quote Summary Earnings Current Quarter Estimate Date Earnings Chart",
@@ -1448,7 +1448,7 @@
     "field": "currentQuarterEstimateDate"
   },
   {
-    "path": "earnings.earningsChart.currentQuarterEstimateYear",
+    "path": "earnings.earningsChart",
     "moduleName": "quoteSummary",
     "submodule": "earnings",
     "keyword": "Earnings Quote Summary Earnings Earnings Chart Quote Summary Earnings Current Quarter Estimate Year Earnings Chart",
@@ -1456,7 +1456,7 @@
     "field": "currentQuarterEstimateYear"
   },
   {
-    "path": "earnings.financialsChart.yearly.revenue",
+    "path": "earnings.financialsChart.yearly",
     "moduleName": "quoteSummary",
     "submodule": "earnings",
     "keyword": "Earnings Quote Summary Earnings Financials Chart Quote Summary Earnings Yearly Financials Chart Revenue Yearly",
@@ -1464,7 +1464,7 @@
     "field": "revenue"
   },
   {
-    "path": "earnings.financialsChart.yearly.earnings",
+    "path": "earnings.financialsChart.yearly",
     "moduleName": "quoteSummary",
     "submodule": "earnings",
     "keyword": "Earnings Quote Summary Earnings Financials Chart Quote Summary Earnings Yearly Financials Chart Earnings Yearly",
@@ -1472,7 +1472,7 @@
     "field": "earnings"
   },
   {
-    "path": "earnings.financialsChart.quarterly.revenue",
+    "path": "earnings.financialsChart",
     "moduleName": "quoteSummary",
     "submodule": "earnings",
     "keyword": "Earnings Quote Summary Earnings Financials Chart Quote Summary Earnings Quarterly Financials Chart Revenue Financials Chart Quarterly",
@@ -1480,7 +1480,7 @@
     "field": "revenue"
   },
   {
-    "path": "earnings.financialsChart.quarterly.earnings",
+    "path": "earnings.financialsChart",
     "moduleName": "quoteSummary",
     "submodule": "earnings",
     "keyword": "Earnings Quote Summary Earnings Financials Chart Quote Summary Earnings Quarterly Financials Chart Earnings Financials Chart Quarterly",
@@ -1496,7 +1496,7 @@
     "field": "financialCurrency"
   },
   {
-    "path": "earningsHistory.history.epsActual",
+    "path": "earningsHistory.history",
     "moduleName": "quoteSummary",
     "submodule": "earningsHistory",
     "keyword": "Earnings History Earnings History History Earnings History Eps Actual Earnings History History",
@@ -1504,7 +1504,7 @@
     "field": "epsActual"
   },
   {
-    "path": "earningsHistory.history.epsEstimate",
+    "path": "earningsHistory.history",
     "moduleName": "quoteSummary",
     "submodule": "earningsHistory",
     "keyword": "Earnings History Earnings History History Earnings History Eps Estimate Earnings History History",
@@ -1512,7 +1512,7 @@
     "field": "epsEstimate"
   },
   {
-    "path": "earningsHistory.history.epsDifference",
+    "path": "earningsHistory.history",
     "moduleName": "quoteSummary",
     "submodule": "earningsHistory",
     "keyword": "Earnings History Earnings History History Earnings History Eps Difference Earnings History History",
@@ -1520,7 +1520,7 @@
     "field": "epsDifference"
   },
   {
-    "path": "earningsHistory.history.surprisePercent",
+    "path": "earningsHistory.history",
     "moduleName": "quoteSummary",
     "submodule": "earningsHistory",
     "keyword": "Earnings History Earnings History History Earnings History Surprise Percent Earnings History History",
@@ -1528,7 +1528,7 @@
     "field": "surprisePercent"
   },
   {
-    "path": "earningsTrend.trend.growth",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Growth Earnings Trend Trend",
@@ -1536,7 +1536,7 @@
     "field": "growth"
   },
   {
-    "path": "earningsTrend.trend.earningsEstimate.avg",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend Avg Earnings Estimate",
@@ -1544,7 +1544,7 @@
     "field": "avg"
   },
   {
-    "path": "earningsTrend.trend.earningsEstimate.low",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend Low Earnings Estimate",
@@ -1552,7 +1552,7 @@
     "field": "low"
   },
   {
-    "path": "earningsTrend.trend.earningsEstimate.high",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend High Earnings Estimate",
@@ -1560,7 +1560,7 @@
     "field": "high"
   },
   {
-    "path": "earningsTrend.trend.earningsEstimate.yearAgoEps",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend Year Ago Eps Earnings Estimate",
@@ -1568,7 +1568,7 @@
     "field": "yearAgoEps"
   },
   {
-    "path": "earningsTrend.trend.earningsEstimate.numberOfAnalysts",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend Number Of Analysts Earnings Estimate",
@@ -1576,7 +1576,7 @@
     "field": "numberOfAnalysts"
   },
   {
-    "path": "earningsTrend.trend.earningsEstimate.growth",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend Growth Earnings Estimate",
@@ -1584,7 +1584,7 @@
     "field": "growth"
   },
   {
-    "path": "earningsTrend.trend.revenueEstimate.avg",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend Avg Revenue Estimate",
@@ -1592,7 +1592,7 @@
     "field": "avg"
   },
   {
-    "path": "earningsTrend.trend.revenueEstimate.low",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend Low Revenue Estimate",
@@ -1600,7 +1600,7 @@
     "field": "low"
   },
   {
-    "path": "earningsTrend.trend.revenueEstimate.high",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend High Revenue Estimate",
@@ -1608,7 +1608,7 @@
     "field": "high"
   },
   {
-    "path": "earningsTrend.trend.revenueEstimate.numberOfAnalysts",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend Number Of Analysts Revenue Estimate",
@@ -1616,7 +1616,7 @@
     "field": "numberOfAnalysts"
   },
   {
-    "path": "earningsTrend.trend.revenueEstimate.yearAgoRevenue",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend Year Ago Revenue Revenue Estimate",
@@ -1624,7 +1624,7 @@
     "field": "yearAgoRevenue"
   },
   {
-    "path": "earningsTrend.trend.revenueEstimate.growth",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend Growth Revenue Estimate",
@@ -1632,7 +1632,7 @@
     "field": "growth"
   },
   {
-    "path": "earningsTrend.trend.epsTrend.current",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Trend Earnings Trend Trend Current Eps Trend",
@@ -1640,7 +1640,7 @@
     "field": "current"
   },
   {
-    "path": "earningsTrend.trend.epsTrend.\"7daysAgo\"",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Trend Earnings Trend Trend \"7days Ago\" Eps Trend",
@@ -1648,7 +1648,7 @@
     "field": "\"7daysAgo\""
   },
   {
-    "path": "earningsTrend.trend.epsTrend.\"30daysAgo\"",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Trend Earnings Trend Trend \"30days Ago\" Eps Trend",
@@ -1656,7 +1656,7 @@
     "field": "\"30daysAgo\""
   },
   {
-    "path": "earningsTrend.trend.epsTrend.\"60daysAgo\"",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Trend Earnings Trend Trend \"60days Ago\" Eps Trend",
@@ -1664,7 +1664,7 @@
     "field": "\"60daysAgo\""
   },
   {
-    "path": "earningsTrend.trend.epsTrend.\"90daysAgo\"",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Trend Earnings Trend Trend \"90days Ago\" Eps Trend",
@@ -1672,7 +1672,7 @@
     "field": "\"90daysAgo\""
   },
   {
-    "path": "earningsTrend.trend.epsRevisions.upLast7days",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Revisions Earnings Trend Trend Up Last7days Eps Revisions",
@@ -1680,7 +1680,7 @@
     "field": "upLast7days"
   },
   {
-    "path": "earningsTrend.trend.epsRevisions.upLast30days",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Revisions Earnings Trend Trend Up Last30days Eps Revisions",
@@ -1688,7 +1688,7 @@
     "field": "upLast30days"
   },
   {
-    "path": "earningsTrend.trend.epsRevisions.downLast30days",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Revisions Earnings Trend Trend Down Last30days Eps Revisions",
@@ -1696,7 +1696,7 @@
     "field": "downLast30days"
   },
   {
-    "path": "earningsTrend.trend.epsRevisions.downLast90days",
+    "path": "earningsTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "earningsTrend",
     "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Revisions Earnings Trend Trend Down Last90days Eps Revisions",
@@ -1936,7 +1936,7 @@
     "field": "financialCurrency"
   },
   {
-    "path": "fundOwnership.ownershipList.organization",
+    "path": "fundOwnership.ownershipList",
     "moduleName": "quoteSummary",
     "submodule": "fundOwnership",
     "keyword": "Fund Ownership Ownership Ownership List Ownership Organization Ownership List",
@@ -1944,7 +1944,7 @@
     "field": "organization"
   },
   {
-    "path": "fundOwnership.ownershipList.pctHeld",
+    "path": "fundOwnership.ownershipList",
     "moduleName": "quoteSummary",
     "submodule": "fundOwnership",
     "keyword": "Fund Ownership Ownership Ownership List Ownership Pct Held Ownership List",
@@ -1952,7 +1952,7 @@
     "field": "pctHeld"
   },
   {
-    "path": "fundOwnership.ownershipList.position",
+    "path": "fundOwnership.ownershipList",
     "moduleName": "quoteSummary",
     "submodule": "fundOwnership",
     "keyword": "Fund Ownership Ownership Ownership List Ownership Position Ownership List",
@@ -1960,7 +1960,7 @@
     "field": "position"
   },
   {
-    "path": "fundOwnership.ownershipList.value",
+    "path": "fundOwnership.ownershipList",
     "moduleName": "quoteSummary",
     "submodule": "fundOwnership",
     "keyword": "Fund Ownership Ownership Ownership List Ownership Value Ownership List",
@@ -1968,7 +1968,7 @@
     "field": "value"
   },
   {
-    "path": "fundOwnership.ownershipList.pctChange",
+    "path": "fundOwnership.ownershipList",
     "moduleName": "quoteSummary",
     "submodule": "fundOwnership",
     "keyword": "Fund Ownership Ownership Ownership List Ownership Pct Change Ownership List",
@@ -2232,7 +2232,7 @@
     "field": "lastBearMkt"
   },
   {
-    "path": "fundPerformance.annualTotalReturns.returns.year",
+    "path": "fundPerformance.annualTotalReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Year Fund Performance Returns Row",
@@ -2240,7 +2240,7 @@
     "field": "year"
   },
   {
-    "path": "fundPerformance.annualTotalReturns.returns.annualValue",
+    "path": "fundPerformance.annualTotalReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Annual Value Fund Performance Returns Row",
@@ -2248,7 +2248,7 @@
     "field": "annualValue"
   },
   {
-    "path": "fundPerformance.annualTotalReturns.returns.q1",
+    "path": "fundPerformance.annualTotalReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Q1 Fund Performance Returns Row",
@@ -2256,7 +2256,7 @@
     "field": "q1"
   },
   {
-    "path": "fundPerformance.annualTotalReturns.returns.q2",
+    "path": "fundPerformance.annualTotalReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Q2 Fund Performance Returns Row",
@@ -2264,7 +2264,7 @@
     "field": "q2"
   },
   {
-    "path": "fundPerformance.annualTotalReturns.returns.q3",
+    "path": "fundPerformance.annualTotalReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Q3 Fund Performance Returns Row",
@@ -2272,7 +2272,7 @@
     "field": "q3"
   },
   {
-    "path": "fundPerformance.annualTotalReturns.returns.q4",
+    "path": "fundPerformance.annualTotalReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Q4 Fund Performance Returns Row",
@@ -2280,7 +2280,7 @@
     "field": "q4"
   },
   {
-    "path": "fundPerformance.annualTotalReturns.returnsCat",
+    "path": "fundPerformance.annualTotalReturns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Cat Fund Performance Returns",
@@ -2288,7 +2288,7 @@
     "field": "returnsCat"
   },
   {
-    "path": "fundPerformance.pastQuarterlyReturns.returns.year",
+    "path": "fundPerformance.pastQuarterlyReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Year Fund Performance Returns Row",
@@ -2296,7 +2296,7 @@
     "field": "year"
   },
   {
-    "path": "fundPerformance.pastQuarterlyReturns.returns.annualValue",
+    "path": "fundPerformance.pastQuarterlyReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Annual Value Fund Performance Returns Row",
@@ -2304,7 +2304,7 @@
     "field": "annualValue"
   },
   {
-    "path": "fundPerformance.pastQuarterlyReturns.returns.q1",
+    "path": "fundPerformance.pastQuarterlyReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Q1 Fund Performance Returns Row",
@@ -2312,7 +2312,7 @@
     "field": "q1"
   },
   {
-    "path": "fundPerformance.pastQuarterlyReturns.returns.q2",
+    "path": "fundPerformance.pastQuarterlyReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Q2 Fund Performance Returns Row",
@@ -2320,7 +2320,7 @@
     "field": "q2"
   },
   {
-    "path": "fundPerformance.pastQuarterlyReturns.returns.q3",
+    "path": "fundPerformance.pastQuarterlyReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Q3 Fund Performance Returns Row",
@@ -2328,7 +2328,7 @@
     "field": "q3"
   },
   {
-    "path": "fundPerformance.pastQuarterlyReturns.returns.q4",
+    "path": "fundPerformance.pastQuarterlyReturns.returns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Q4 Fund Performance Returns Row",
@@ -2336,7 +2336,7 @@
     "field": "q4"
   },
   {
-    "path": "fundPerformance.pastQuarterlyReturns.returnsCat",
+    "path": "fundPerformance.pastQuarterlyReturns",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Cat Fund Performance Returns",
@@ -2344,7 +2344,7 @@
     "field": "returnsCat"
   },
   {
-    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.year",
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Year Fund Performance Risk Overview Stats Row",
@@ -2352,7 +2352,7 @@
     "field": "year"
   },
   {
-    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.alpha",
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Alpha Fund Performance Risk Overview Stats Row",
@@ -2360,7 +2360,7 @@
     "field": "alpha"
   },
   {
-    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.beta",
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Beta Fund Performance Risk Overview Stats Row",
@@ -2368,7 +2368,7 @@
     "field": "beta"
   },
   {
-    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.meanAnnualReturn",
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Mean Annual Return Fund Performance Risk Overview Stats Row",
@@ -2376,7 +2376,7 @@
     "field": "meanAnnualReturn"
   },
   {
-    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.rSquared",
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats R Squared Fund Performance Risk Overview Stats Row",
@@ -2384,7 +2384,7 @@
     "field": "rSquared"
   },
   {
-    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.stdDev",
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Std Dev Fund Performance Risk Overview Stats Row",
@@ -2392,7 +2392,7 @@
     "field": "stdDev"
   },
   {
-    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.sharpeRatio",
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Sharpe Ratio Fund Performance Risk Overview Stats Row",
@@ -2400,7 +2400,7 @@
     "field": "sharpeRatio"
   },
   {
-    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.treynorRatio",
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Treynor Ratio Fund Performance Risk Overview Stats Row",
@@ -2408,7 +2408,7 @@
     "field": "treynorRatio"
   },
   {
-    "path": "fundPerformance.riskOverviewStatistics.riskRating",
+    "path": "fundPerformance.riskOverviewStatistics",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Rating Fund Performance Risk Overview Stats",
@@ -2416,7 +2416,7 @@
     "field": "riskRating"
   },
   {
-    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.year",
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Year Fund Performance Risk Overview Stats Row",
@@ -2424,7 +2424,7 @@
     "field": "year"
   },
   {
-    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.alpha",
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Alpha Fund Performance Risk Overview Stats Row",
@@ -2432,7 +2432,7 @@
     "field": "alpha"
   },
   {
-    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.beta",
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Beta Fund Performance Risk Overview Stats Row",
@@ -2440,7 +2440,7 @@
     "field": "beta"
   },
   {
-    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.meanAnnualReturn",
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Mean Annual Return Fund Performance Risk Overview Stats Row",
@@ -2448,7 +2448,7 @@
     "field": "meanAnnualReturn"
   },
   {
-    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.rSquared",
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat R Squared Fund Performance Risk Overview Stats Row",
@@ -2456,7 +2456,7 @@
     "field": "rSquared"
   },
   {
-    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.stdDev",
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Std Dev Fund Performance Risk Overview Stats Row",
@@ -2464,7 +2464,7 @@
     "field": "stdDev"
   },
   {
-    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.sharpeRatio",
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Sharpe Ratio Fund Performance Risk Overview Stats Row",
@@ -2472,7 +2472,7 @@
     "field": "sharpeRatio"
   },
   {
-    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.treynorRatio",
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat",
     "moduleName": "quoteSummary",
     "submodule": "fundPerformance",
     "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Treynor Ratio Fund Performance Risk Overview Stats Row",
@@ -2640,7 +2640,7 @@
     "field": "subseqAipInvestment"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.totalRevenue",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Total Revenue Income Statement History Element",
@@ -2648,7 +2648,7 @@
     "field": "totalRevenue"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.costOfRevenue",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Cost Of Revenue Income Statement History Element",
@@ -2656,7 +2656,7 @@
     "field": "costOfRevenue"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.grossProfit",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Gross Profit Income Statement History Element",
@@ -2664,7 +2664,7 @@
     "field": "grossProfit"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.researchDevelopment",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Research Development Income Statement History Element",
@@ -2672,7 +2672,7 @@
     "field": "researchDevelopment"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.sellingGeneralAdministrative",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Selling General Administrative Income Statement History Element",
@@ -2680,7 +2680,7 @@
     "field": "sellingGeneralAdministrative"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.nonRecurring",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Non Recurring Income Statement History Element",
@@ -2688,7 +2688,7 @@
     "field": "nonRecurring"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.otherOperatingExpenses",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Other Operating Expenses Income Statement History Element",
@@ -2696,7 +2696,7 @@
     "field": "otherOperatingExpenses"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.totalOperatingExpenses",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Total Operating Expenses Income Statement History Element",
@@ -2704,7 +2704,7 @@
     "field": "totalOperatingExpenses"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.operatingIncome",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Operating Income Income Statement History Element",
@@ -2712,7 +2712,7 @@
     "field": "operatingIncome"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.totalOtherIncomeExpenseNet",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Total Other Income Expense Net Income Statement History Element",
@@ -2720,7 +2720,7 @@
     "field": "totalOtherIncomeExpenseNet"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.ebit",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Ebit Income Statement History Element",
@@ -2728,7 +2728,7 @@
     "field": "ebit"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.interestExpense",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Interest Expense Income Statement History Element",
@@ -2736,7 +2736,7 @@
     "field": "interestExpense"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.incomeBeforeTax",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Income Before Tax Income Statement History Element",
@@ -2744,7 +2744,7 @@
     "field": "incomeBeforeTax"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.incomeTaxExpense",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Income Tax Expense Income Statement History Element",
@@ -2752,7 +2752,7 @@
     "field": "incomeTaxExpense"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.minorityInterest",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Minority Interest Income Statement History Element",
@@ -2760,7 +2760,7 @@
     "field": "minorityInterest"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.netIncomeFromContinuingOps",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Net Income From Continuing Ops Income Statement History Element",
@@ -2768,7 +2768,7 @@
     "field": "netIncomeFromContinuingOps"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.discontinuedOperations",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Discontinued Operations Income Statement History Element",
@@ -2776,7 +2776,7 @@
     "field": "discontinuedOperations"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.extraordinaryItems",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Extraordinary Items Income Statement History Element",
@@ -2784,7 +2784,7 @@
     "field": "extraordinaryItems"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.effectOfAccountingCharges",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Effect Of Accounting Charges Income Statement History Element",
@@ -2792,7 +2792,7 @@
     "field": "effectOfAccountingCharges"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.otherItems",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Other Items Income Statement History Element",
@@ -2800,7 +2800,7 @@
     "field": "otherItems"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.netIncome",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Net Income Income Statement History Element",
@@ -2808,7 +2808,7 @@
     "field": "netIncome"
   },
   {
-    "path": "incomeStatementHistory.incomeStatementHistory.netIncomeApplicableToCommonShares",
+    "path": "incomeStatementHistory.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistory",
     "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Net Income Applicable To Common Shares Income Statement History Element",
@@ -2816,7 +2816,7 @@
     "field": "netIncomeApplicableToCommonShares"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.totalRevenue",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Total Revenue Income Statement History Element",
@@ -2824,7 +2824,7 @@
     "field": "totalRevenue"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.costOfRevenue",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Cost Of Revenue Income Statement History Element",
@@ -2832,7 +2832,7 @@
     "field": "costOfRevenue"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.grossProfit",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Gross Profit Income Statement History Element",
@@ -2840,7 +2840,7 @@
     "field": "grossProfit"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.researchDevelopment",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Research Development Income Statement History Element",
@@ -2848,7 +2848,7 @@
     "field": "researchDevelopment"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.sellingGeneralAdministrative",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Selling General Administrative Income Statement History Element",
@@ -2856,7 +2856,7 @@
     "field": "sellingGeneralAdministrative"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.nonRecurring",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Non Recurring Income Statement History Element",
@@ -2864,7 +2864,7 @@
     "field": "nonRecurring"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.otherOperatingExpenses",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Other Operating Expenses Income Statement History Element",
@@ -2872,7 +2872,7 @@
     "field": "otherOperatingExpenses"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.totalOperatingExpenses",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Total Operating Expenses Income Statement History Element",
@@ -2880,7 +2880,7 @@
     "field": "totalOperatingExpenses"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.operatingIncome",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Operating Income Income Statement History Element",
@@ -2888,7 +2888,7 @@
     "field": "operatingIncome"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.totalOtherIncomeExpenseNet",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Total Other Income Expense Net Income Statement History Element",
@@ -2896,7 +2896,7 @@
     "field": "totalOtherIncomeExpenseNet"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.ebit",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Ebit Income Statement History Element",
@@ -2904,7 +2904,7 @@
     "field": "ebit"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.interestExpense",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Interest Expense Income Statement History Element",
@@ -2912,7 +2912,7 @@
     "field": "interestExpense"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.incomeBeforeTax",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Income Before Tax Income Statement History Element",
@@ -2920,7 +2920,7 @@
     "field": "incomeBeforeTax"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.incomeTaxExpense",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Income Tax Expense Income Statement History Element",
@@ -2928,7 +2928,7 @@
     "field": "incomeTaxExpense"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.minorityInterest",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Minority Interest Income Statement History Element",
@@ -2936,7 +2936,7 @@
     "field": "minorityInterest"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.netIncomeFromContinuingOps",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Net Income From Continuing Ops Income Statement History Element",
@@ -2944,7 +2944,7 @@
     "field": "netIncomeFromContinuingOps"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.discontinuedOperations",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Discontinued Operations Income Statement History Element",
@@ -2952,7 +2952,7 @@
     "field": "discontinuedOperations"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.extraordinaryItems",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Extraordinary Items Income Statement History Element",
@@ -2960,7 +2960,7 @@
     "field": "extraordinaryItems"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.effectOfAccountingCharges",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Effect Of Accounting Charges Income Statement History Element",
@@ -2968,7 +2968,7 @@
     "field": "effectOfAccountingCharges"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.otherItems",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Other Items Income Statement History Element",
@@ -2976,7 +2976,7 @@
     "field": "otherItems"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.netIncome",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Net Income Income Statement History Element",
@@ -2984,7 +2984,7 @@
     "field": "netIncome"
   },
   {
-    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.netIncomeApplicableToCommonShares",
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory",
     "moduleName": "quoteSummary",
     "submodule": "incomeStatementHistoryQuarterly",
     "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Net Income Applicable To Common Shares Income Statement History Element",
@@ -3016,7 +3016,7 @@
     "field": "pegRatio"
   },
   {
-    "path": "indexTrend.estimates.growth",
+    "path": "indexTrend.estimates",
     "moduleName": "quoteSummary",
     "submodule": "indexTrend",
     "keyword": "Index Trend Index Trend Estimates Index Trend Growth Estimate",
@@ -3040,7 +3040,7 @@
     "field": "estimates"
   },
   {
-    "path": "insiderHolders.holders.name",
+    "path": "insiderHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "insiderHolders",
     "keyword": "Insider Holders Holders Holders Holders Name Holder",
@@ -3048,7 +3048,7 @@
     "field": "name"
   },
   {
-    "path": "insiderHolders.holders.relation",
+    "path": "insiderHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "insiderHolders",
     "keyword": "Insider Holders Holders Holders Holders Relation Holder",
@@ -3056,7 +3056,7 @@
     "field": "relation"
   },
   {
-    "path": "insiderHolders.holders.url",
+    "path": "insiderHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "insiderHolders",
     "keyword": "Insider Holders Holders Holders Holders Url Holder",
@@ -3064,7 +3064,7 @@
     "field": "url"
   },
   {
-    "path": "insiderHolders.holders.transactionDescription",
+    "path": "insiderHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "insiderHolders",
     "keyword": "Insider Holders Holders Holders Holders Transaction Description Holder",
@@ -3072,7 +3072,7 @@
     "field": "transactionDescription"
   },
   {
-    "path": "insiderHolders.holders.positionDirect",
+    "path": "insiderHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "insiderHolders",
     "keyword": "Insider Holders Holders Holders Holders Position Direct Holder",
@@ -3080,7 +3080,7 @@
     "field": "positionDirect"
   },
   {
-    "path": "insiderHolders.holders.positionIndirect",
+    "path": "insiderHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "insiderHolders",
     "keyword": "Insider Holders Holders Holders Holders Position Indirect Holder",
@@ -3088,7 +3088,7 @@
     "field": "positionIndirect"
   },
   {
-    "path": "insiderTransactions.transactions.shares",
+    "path": "insiderTransactions.transactions",
     "moduleName": "quoteSummary",
     "submodule": "insiderTransactions",
     "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Shares Transaction",
@@ -3096,7 +3096,7 @@
     "field": "shares"
   },
   {
-    "path": "insiderTransactions.transactions.filerUrl",
+    "path": "insiderTransactions.transactions",
     "moduleName": "quoteSummary",
     "submodule": "insiderTransactions",
     "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Filer Url Transaction",
@@ -3104,7 +3104,7 @@
     "field": "filerUrl"
   },
   {
-    "path": "insiderTransactions.transactions.transactionText",
+    "path": "insiderTransactions.transactions",
     "moduleName": "quoteSummary",
     "submodule": "insiderTransactions",
     "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Transaction Text Transaction",
@@ -3112,7 +3112,7 @@
     "field": "transactionText"
   },
   {
-    "path": "insiderTransactions.transactions.filerName",
+    "path": "insiderTransactions.transactions",
     "moduleName": "quoteSummary",
     "submodule": "insiderTransactions",
     "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Filer Name Transaction",
@@ -3120,7 +3120,7 @@
     "field": "filerName"
   },
   {
-    "path": "insiderTransactions.transactions.filerRelation",
+    "path": "insiderTransactions.transactions",
     "moduleName": "quoteSummary",
     "submodule": "insiderTransactions",
     "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Filer Relation Transaction",
@@ -3128,7 +3128,7 @@
     "field": "filerRelation"
   },
   {
-    "path": "insiderTransactions.transactions.moneyText",
+    "path": "insiderTransactions.transactions",
     "moduleName": "quoteSummary",
     "submodule": "insiderTransactions",
     "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Money Text Transaction",
@@ -3136,7 +3136,7 @@
     "field": "moneyText"
   },
   {
-    "path": "insiderTransactions.transactions.ownership",
+    "path": "insiderTransactions.transactions",
     "moduleName": "quoteSummary",
     "submodule": "insiderTransactions",
     "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Ownership Transaction",
@@ -3144,7 +3144,7 @@
     "field": "ownership"
   },
   {
-    "path": "insiderTransactions.transactions.value",
+    "path": "insiderTransactions.transactions",
     "moduleName": "quoteSummary",
     "submodule": "insiderTransactions",
     "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Value Transaction",
@@ -3152,7 +3152,7 @@
     "field": "value"
   },
   {
-    "path": "institutionOwnership.ownershipList.organization",
+    "path": "institutionOwnership.ownershipList",
     "moduleName": "quoteSummary",
     "submodule": "institutionOwnership",
     "keyword": "Institution Ownership Ownership Ownership List Ownership Organization Ownership List",
@@ -3160,7 +3160,7 @@
     "field": "organization"
   },
   {
-    "path": "institutionOwnership.ownershipList.pctHeld",
+    "path": "institutionOwnership.ownershipList",
     "moduleName": "quoteSummary",
     "submodule": "institutionOwnership",
     "keyword": "Institution Ownership Ownership Ownership List Ownership Pct Held Ownership List",
@@ -3168,7 +3168,7 @@
     "field": "pctHeld"
   },
   {
-    "path": "institutionOwnership.ownershipList.position",
+    "path": "institutionOwnership.ownershipList",
     "moduleName": "quoteSummary",
     "submodule": "institutionOwnership",
     "keyword": "Institution Ownership Ownership Ownership List Ownership Position Ownership List",
@@ -3176,7 +3176,7 @@
     "field": "position"
   },
   {
-    "path": "institutionOwnership.ownershipList.value",
+    "path": "institutionOwnership.ownershipList",
     "moduleName": "quoteSummary",
     "submodule": "institutionOwnership",
     "keyword": "Institution Ownership Ownership Ownership List Ownership Value Ownership List",
@@ -3184,7 +3184,7 @@
     "field": "value"
   },
   {
-    "path": "institutionOwnership.ownershipList.pctChange",
+    "path": "institutionOwnership.ownershipList",
     "moduleName": "quoteSummary",
     "submodule": "institutionOwnership",
     "keyword": "Institution Ownership Ownership Ownership List Ownership Pct Change Ownership List",
@@ -3192,7 +3192,7 @@
     "field": "pctChange"
   },
   {
-    "path": "majorDirectHolders.holders.name",
+    "path": "majorDirectHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "majorDirectHolders",
     "keyword": "Major Direct Holders Holders Holders Holders Name Holder",
@@ -3200,7 +3200,7 @@
     "field": "name"
   },
   {
-    "path": "majorDirectHolders.holders.relation",
+    "path": "majorDirectHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "majorDirectHolders",
     "keyword": "Major Direct Holders Holders Holders Holders Relation Holder",
@@ -3208,7 +3208,7 @@
     "field": "relation"
   },
   {
-    "path": "majorDirectHolders.holders.url",
+    "path": "majorDirectHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "majorDirectHolders",
     "keyword": "Major Direct Holders Holders Holders Holders Url Holder",
@@ -3216,7 +3216,7 @@
     "field": "url"
   },
   {
-    "path": "majorDirectHolders.holders.transactionDescription",
+    "path": "majorDirectHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "majorDirectHolders",
     "keyword": "Major Direct Holders Holders Holders Holders Transaction Description Holder",
@@ -3224,7 +3224,7 @@
     "field": "transactionDescription"
   },
   {
-    "path": "majorDirectHolders.holders.positionDirect",
+    "path": "majorDirectHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "majorDirectHolders",
     "keyword": "Major Direct Holders Holders Holders Holders Position Direct Holder",
@@ -3232,7 +3232,7 @@
     "field": "positionDirect"
   },
   {
-    "path": "majorDirectHolders.holders.positionIndirect",
+    "path": "majorDirectHolders.holders",
     "moduleName": "quoteSummary",
     "submodule": "majorDirectHolders",
     "keyword": "Major Direct Holders Holders Holders Holders Position Indirect Holder",
@@ -3760,7 +3760,7 @@
     "field": "gmtOffSetMilliseconds"
   },
   {
-    "path": "recommendationTrend.trend.strongBuy",
+    "path": "recommendationTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "recommendationTrend",
     "keyword": "Recommendation Trend Recommendation Trend Trend Recommendation Trend Strong Buy Recommendation Trend Trend",
@@ -3768,7 +3768,7 @@
     "field": "strongBuy"
   },
   {
-    "path": "recommendationTrend.trend.buy",
+    "path": "recommendationTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "recommendationTrend",
     "keyword": "Recommendation Trend Recommendation Trend Trend Recommendation Trend Buy Recommendation Trend Trend",
@@ -3776,7 +3776,7 @@
     "field": "buy"
   },
   {
-    "path": "recommendationTrend.trend.hold",
+    "path": "recommendationTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "recommendationTrend",
     "keyword": "Recommendation Trend Recommendation Trend Trend Recommendation Trend Hold Recommendation Trend Trend",
@@ -3784,7 +3784,7 @@
     "field": "hold"
   },
   {
-    "path": "recommendationTrend.trend.sell",
+    "path": "recommendationTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "recommendationTrend",
     "keyword": "Recommendation Trend Recommendation Trend Trend Recommendation Trend Sell Recommendation Trend Trend",
@@ -3792,7 +3792,7 @@
     "field": "sell"
   },
   {
-    "path": "recommendationTrend.trend.strongSell",
+    "path": "recommendationTrend.trend",
     "moduleName": "quoteSummary",
     "submodule": "recommendationTrend",
     "keyword": "Recommendation Trend Recommendation Trend Trend Recommendation Trend Strong Sell Recommendation Trend Trend",
@@ -3800,7 +3800,7 @@
     "field": "strongSell"
   },
   {
-    "path": "secFilings.filings.type",
+    "path": "secFilings.filings",
     "moduleName": "quoteSummary",
     "submodule": "secFilings",
     "keyword": "Sec Filings SECFilings Filings SECFilings Type Filing",
@@ -3808,7 +3808,7 @@
     "field": "type"
   },
   {
-    "path": "secFilings.filings.title",
+    "path": "secFilings.filings",
     "moduleName": "quoteSummary",
     "submodule": "secFilings",
     "keyword": "Sec Filings SECFilings Filings SECFilings Title Filing",
@@ -3816,7 +3816,7 @@
     "field": "title"
   },
   {
-    "path": "secFilings.filings.edgarUrl",
+    "path": "secFilings.filings",
     "moduleName": "quoteSummary",
     "submodule": "secFilings",
     "keyword": "Sec Filings SECFilings Filings SECFilings Edgar Url Filing",
@@ -3824,7 +3824,7 @@
     "field": "edgarUrl"
   },
   {
-    "path": "secFilings.filings.url",
+    "path": "secFilings.filings",
     "moduleName": "quoteSummary",
     "submodule": "secFilings",
     "keyword": "Sec Filings SECFilings Filings SECFilings Url Filing",
@@ -4392,7 +4392,7 @@
     "field": "bondPosition"
   },
   {
-    "path": "topHoldings.holdings.symbol",
+    "path": "topHoldings.holdings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Holdings Top Holdings Symbol Top Holdings Holding",
@@ -4400,7 +4400,7 @@
     "field": "symbol"
   },
   {
-    "path": "topHoldings.holdings.holdingName",
+    "path": "topHoldings.holdings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Holdings Top Holdings Holding Name Top Holdings Holding",
@@ -4408,7 +4408,7 @@
     "field": "holdingName"
   },
   {
-    "path": "topHoldings.holdings.holdingPercent",
+    "path": "topHoldings.holdings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Holdings Top Holdings Holding Percent Top Holdings Holding",
@@ -4416,7 +4416,7 @@
     "field": "holdingPercent"
   },
   {
-    "path": "topHoldings.equityHoldings.medianMarketCap",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Median Market Cap Top Holdings Equity Holdings",
@@ -4424,7 +4424,7 @@
     "field": "medianMarketCap"
   },
   {
-    "path": "topHoldings.equityHoldings.medianMarketCapCat",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Median Market Cap Cat Top Holdings Equity Holdings",
@@ -4432,7 +4432,7 @@
     "field": "medianMarketCapCat"
   },
   {
-    "path": "topHoldings.equityHoldings.priceToBook",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Book Top Holdings Equity Holdings",
@@ -4440,7 +4440,7 @@
     "field": "priceToBook"
   },
   {
-    "path": "topHoldings.equityHoldings.priceToBookCat",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Book Cat Top Holdings Equity Holdings",
@@ -4448,7 +4448,7 @@
     "field": "priceToBookCat"
   },
   {
-    "path": "topHoldings.equityHoldings.priceToCashflow",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Cashflow Top Holdings Equity Holdings",
@@ -4456,7 +4456,7 @@
     "field": "priceToCashflow"
   },
   {
-    "path": "topHoldings.equityHoldings.priceToCashflowCat",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Cashflow Cat Top Holdings Equity Holdings",
@@ -4464,7 +4464,7 @@
     "field": "priceToCashflowCat"
   },
   {
-    "path": "topHoldings.equityHoldings.priceToEarnings",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Earnings Top Holdings Equity Holdings",
@@ -4472,7 +4472,7 @@
     "field": "priceToEarnings"
   },
   {
-    "path": "topHoldings.equityHoldings.priceToEarningsCat",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Earnings Cat Top Holdings Equity Holdings",
@@ -4480,7 +4480,7 @@
     "field": "priceToEarningsCat"
   },
   {
-    "path": "topHoldings.equityHoldings.priceToSales",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Sales Top Holdings Equity Holdings",
@@ -4488,7 +4488,7 @@
     "field": "priceToSales"
   },
   {
-    "path": "topHoldings.equityHoldings.priceToSalesCat",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Sales Cat Top Holdings Equity Holdings",
@@ -4496,7 +4496,7 @@
     "field": "priceToSalesCat"
   },
   {
-    "path": "topHoldings.equityHoldings.threeYearEarningsGrowth",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Three Year Earnings Growth Top Holdings Equity Holdings",
@@ -4504,7 +4504,7 @@
     "field": "threeYearEarningsGrowth"
   },
   {
-    "path": "topHoldings.equityHoldings.threeYearEarningsGrowthCat",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Three Year Earnings Growth Cat Top Holdings Equity Holdings",
@@ -4512,7 +4512,7 @@
     "field": "threeYearEarningsGrowthCat"
   },
   {
-    "path": "topHoldings.bondHoldings",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Bond Holdings Top Holdings",
@@ -4520,7 +4520,7 @@
     "field": "bondHoldings"
   },
   {
-    "path": "topHoldings.bondRatings.a",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings A Top Holdings Bond Rating",
@@ -4528,7 +4528,7 @@
     "field": "a"
   },
   {
-    "path": "topHoldings.bondRatings.aa",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Aa Top Holdings Bond Rating",
@@ -4536,7 +4536,7 @@
     "field": "aa"
   },
   {
-    "path": "topHoldings.bondRatings.aaa",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Aaa Top Holdings Bond Rating",
@@ -4544,7 +4544,7 @@
     "field": "aaa"
   },
   {
-    "path": "topHoldings.bondRatings.other",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Other Top Holdings Bond Rating",
@@ -4552,7 +4552,7 @@
     "field": "other"
   },
   {
-    "path": "topHoldings.bondRatings.b",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings B Top Holdings Bond Rating",
@@ -4560,7 +4560,7 @@
     "field": "b"
   },
   {
-    "path": "topHoldings.bondRatings.bb",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Bb Top Holdings Bond Rating",
@@ -4568,7 +4568,7 @@
     "field": "bb"
   },
   {
-    "path": "topHoldings.bondRatings.bbb",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Bbb Top Holdings Bond Rating",
@@ -4576,7 +4576,7 @@
     "field": "bbb"
   },
   {
-    "path": "topHoldings.bondRatings.below_b",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Below_b Top Holdings Bond Rating",
@@ -4584,7 +4584,7 @@
     "field": "below_b"
   },
   {
-    "path": "topHoldings.bondRatings.us_government",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Us_government Top Holdings Bond Rating",
@@ -4592,7 +4592,7 @@
     "field": "us_government"
   },
   {
-    "path": "topHoldings.sectorWeightings.realestate",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Realestate Top Holdings Sector Weighting",
@@ -4600,7 +4600,7 @@
     "field": "realestate"
   },
   {
-    "path": "topHoldings.sectorWeightings.consumer_cyclical",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Consumer_cyclical Top Holdings Sector Weighting",
@@ -4608,7 +4608,7 @@
     "field": "consumer_cyclical"
   },
   {
-    "path": "topHoldings.sectorWeightings.basic_materials",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Basic_materials Top Holdings Sector Weighting",
@@ -4616,7 +4616,7 @@
     "field": "basic_materials"
   },
   {
-    "path": "topHoldings.sectorWeightings.consumer_defensive",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Consumer_defensive Top Holdings Sector Weighting",
@@ -4624,7 +4624,7 @@
     "field": "consumer_defensive"
   },
   {
-    "path": "topHoldings.sectorWeightings.technology",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Technology Top Holdings Sector Weighting",
@@ -4632,7 +4632,7 @@
     "field": "technology"
   },
   {
-    "path": "topHoldings.sectorWeightings.communication_services",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Communication_services Top Holdings Sector Weighting",
@@ -4640,7 +4640,7 @@
     "field": "communication_services"
   },
   {
-    "path": "topHoldings.sectorWeightings.financial_services",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Financial_services Top Holdings Sector Weighting",
@@ -4648,7 +4648,7 @@
     "field": "financial_services"
   },
   {
-    "path": "topHoldings.sectorWeightings.utilities",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Utilities Top Holdings Sector Weighting",
@@ -4656,7 +4656,7 @@
     "field": "utilities"
   },
   {
-    "path": "topHoldings.sectorWeightings.industrials",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Industrials Top Holdings Sector Weighting",
@@ -4664,7 +4664,7 @@
     "field": "industrials"
   },
   {
-    "path": "topHoldings.sectorWeightings.energy",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Energy Top Holdings Sector Weighting",
@@ -4672,7 +4672,7 @@
     "field": "energy"
   },
   {
-    "path": "topHoldings.sectorWeightings.healthcare",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Healthcare Top Holdings Sector Weighting",
@@ -4680,7 +4680,7 @@
     "field": "healthcare"
   },
   {
-    "path": "topHoldings.cashPosition",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Cash Position Top Holdings",
@@ -4688,7 +4688,7 @@
     "field": "cashPosition"
   },
   {
-    "path": "topHoldings.otherPosition",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Other Position Top Holdings",
@@ -4696,7 +4696,7 @@
     "field": "otherPosition"
   },
   {
-    "path": "topHoldings.preferredPosition",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Preferred Position Top Holdings",
@@ -4704,7 +4704,7 @@
     "field": "preferredPosition"
   },
   {
-    "path": "topHoldings.convertiblePosition",
+    "path": "topHoldings",
     "moduleName": "quoteSummary",
     "submodule": "topHoldings",
     "keyword": "Top Holdings Top Holdings Convertible Position Top Holdings",
@@ -4712,7 +4712,7 @@
     "field": "convertiblePosition"
   },
   {
-    "path": "upgradeDowngradeHistory.history.firm",
+    "path": "upgradeDowngradeHistory.history",
     "moduleName": "quoteSummary",
     "submodule": "upgradeDowngradeHistory",
     "keyword": "Upgrade Downgrade History Upgrade Downgrade History History Upgrade Downgrade History Firm Upgrade Downgrade History History",
@@ -4720,7 +4720,7 @@
     "field": "firm"
   },
   {
-    "path": "upgradeDowngradeHistory.history.toGrade",
+    "path": "upgradeDowngradeHistory.history",
     "moduleName": "quoteSummary",
     "submodule": "upgradeDowngradeHistory",
     "keyword": "Upgrade Downgrade History Upgrade Downgrade History History Upgrade Downgrade History To Grade Upgrade Downgrade History History",
@@ -4728,7 +4728,7 @@
     "field": "toGrade"
   },
   {
-    "path": "upgradeDowngradeHistory.history.fromGrade",
+    "path": "upgradeDowngradeHistory.history",
     "moduleName": "quoteSummary",
     "submodule": "upgradeDowngradeHistory",
     "keyword": "Upgrade Downgrade History Upgrade Downgrade History History Upgrade Downgrade History From Grade Upgrade Downgrade History History",
@@ -4736,7 +4736,7 @@
     "field": "fromGrade"
   },
   {
-    "path": "upgradeDowngradeHistory.history.action",
+    "path": "upgradeDowngradeHistory.history",
     "moduleName": "quoteSummary",
     "submodule": "upgradeDowngradeHistory",
     "keyword": "Upgrade Downgrade History Upgrade Downgrade History History Upgrade Downgrade History Action Upgrade Downgrade History History",

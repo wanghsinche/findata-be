@@ -23,12 +23,14 @@ project.addSourceFileAtPath(fileNamePath);
 
 const sourceFile = project.getSourceFileOrThrow(fileName);
 
+function isInterfaceArray(it:PropertySignature){
+    return !!it.getType().getArrayElementType()
+}
+
 function getInterfaceType(it:PropertySignature){
     if (it.getType().isInterface()) return it.getType()
     if (it.getType().getArrayElementType()?.isInterface()) return it.getType().getArrayElementType() as Type<ts.Type>
     if(it.getType().getUnionTypes().some(el=>el.isInterface())) return it.getType().getUnionTypes().find(el=>el.isInterface()) as Type<ts.Type>
-
-    
 }
 
 function isInterface(it:PropertySignature){
@@ -57,7 +59,7 @@ sourceFile.getInterface('QuoteSummaryResult')?.getProperties().forEach(it=>{
 
 fs.writeFileSync(path.resolve(__dirname, `${moduleName}.json`), JSON.stringify(output, null, 2))
 
-function interfaceOrPrimitive(it: InterfaceDeclaration, prefix: string, keyword: string, subModule:string){
+function interfaceOrPrimitive(it: InterfaceDeclaration, prefix: string, keyword: string, subModule:string, isItem?:boolean){
     /**
      * traverse until it is not interface
      * return the path array
@@ -68,9 +70,10 @@ function interfaceOrPrimitive(it: InterfaceDeclaration, prefix: string, keyword:
         if (stopWords.includes(field)) return
 
 
-        const p = (prefix?(prefix+'.'):'')+field
         const typeName = camelToWords(removeImportString(it.getType().getText()))
         const title = camelToWords(field)
+
+        const p = isItem? prefix: (prefix?(prefix+'.'):'')+field
 
         const newKeyword = keyword + ' ' +title + ' ' + typeName;
         
@@ -82,8 +85,11 @@ function interfaceOrPrimitive(it: InterfaceDeclaration, prefix: string, keyword:
 
             if (stopWords.includes(interfaceName)) return
 
+            isItem = isItem || isInterfaceArray(prop)
+
+
             if (sourceFile.getInterface(interfaceName)){
-                result.push(...interfaceOrPrimitive(sourceFile.getInterface(interfaceName)!, p, newKeyword, subModule))
+                result.push(...interfaceOrPrimitive(sourceFile.getInterface(interfaceName)!, p, newKeyword, subModule, isItem))
             } else {
                 console.log('can not find '+interfaceName)
             }
@@ -91,7 +97,6 @@ function interfaceOrPrimitive(it: InterfaceDeclaration, prefix: string, keyword:
             return
         }
         
-
         result.push({
             path: p,
             moduleName,
