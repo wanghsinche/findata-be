@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         Get Start
       </button>
       <p className="text-sm text-gray-500">
-        Free user can invoke 50 calls everyday without any unlimited!
+        Free user can invoke 50 times everyday without any other limitation!
       </p>
     </div>
 
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
         <div className="w-full sm:w-1/2 p-6 mt-6">
           <div className="align-middle">
             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Financial Statement Sheet
+              Financial Statement
             </h3>
             <p className="text-gray-600 mb-8">
               The Quote Summary Module allows you to bring the balance sheet, income sheet and cashflow sheet into your spreadsheet
