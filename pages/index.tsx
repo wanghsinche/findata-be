@@ -13,16 +13,16 @@ const Home: NextPage = () => {
         Get Start
       </button>
       <p className="text-sm text-gray-500">
-      Free user can invoke 50 calls everyday without any unlimited!
+        Free user can invoke 50 calls everyday without any unlimited!
       </p>
     </div>
 
     <div className="flex items-center w-full mx-auto content-end">
       <div className="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white rounded shadow-xl ">
-      <img src="/screenshot.png" alt='screenshot' height="80" className="h-full m-auto"/>
+        <img src="/screenshot.png" alt='screenshot' height="80" className="h-full m-auto" />
 
       </div>
-      
+
     </div>
   </div>
 
@@ -45,11 +45,13 @@ const Home: NextPage = () => {
           </p>
         </div>
         <div className="w-full sm:w-1/2 p-6">
+          <Image src="/formula-builder.png" width={150} height={300} />
         </div>
       </div>
 
       <div className="flex flex-wrap flex-col-reverse sm:flex-row">
         <div className="w-full sm:w-1/2 p-6 mt-6">
+          <Image src="/screenshot-sheet.png" width={400} height={200} />
         </div>
         <div className="w-full sm:w-1/2 p-6 mt-6">
           <div className="align-middle">
@@ -66,27 +68,29 @@ const Home: NextPage = () => {
       <div className="flex flex-wrap">
         <div className="w-5/6 sm:w-1/2 p-6">
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-            History Quotes
+            Historical Quotes
           </h3>
           <p className="text-gray-600 mb-8">
             By using History Quotes Module, you can easily retrieve the years daily prices, volume and others in one click
           </p>
         </div>
         <div className="w-full sm:w-1/2 p-6">
+          <Image src="/screenshot-chart.png" width={400} height={200} />
         </div>
       </div>
 
 
       <div className="flex flex-wrap flex-col-reverse sm:flex-row">
         <div className="w-full sm:w-1/2 p-6 mt-6">
+          <Image src="/screenshot-crypto.png" width={400} height={200} />
         </div>
         <div className="w-full sm:w-1/2 p-6 mt-6">
           <div className="align-middle">
             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Million Financial Data 
+              Million Financial Data
             </h3>
             <p className="text-gray-600 mb-8">
-            Track the value of all securities and asserts while monitoring your potential investments simultaneously.
+              Track the value of all securities and asserts, including cryptocurrency, index and mutual fund
             </p>
           </div>
         </div>
