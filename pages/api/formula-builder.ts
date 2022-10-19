@@ -7,6 +7,7 @@ interface ISuggestionItem {
     moduleName: string;
     path: string;
     keyword: string;
+    title: string;
     submodule: string;
 }
 

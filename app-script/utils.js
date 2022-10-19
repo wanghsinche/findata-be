@@ -48,3 +48,7 @@ function twoDArrayToRecord(queryOption){
         return am
     }, {})
 }
+
+function recordToTwoDArrayString(obj){
+    return JSON.stringify(obj).replace(/,/g,';').replace(/:/g, ',')
+}
