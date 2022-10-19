@@ -7,7 +7,7 @@ export function MyBanner(){
         <MyLogo />
     </h1>
     <p className="leading-normal text-base mb-8 text-left md:w-full lg:w-1/2 mx-auto">
-    FinData enables you to import all market stocks, ETFs, cryptocurrencies and finance statement sheet to your spreadsheet by using a simple operation. Combined with the Google Sheet, you will be able to analyze the stock market in a single spreadsheet.
+    Empowered by Yahoo Finance, FinData enables you to import all market stocks, ETFs, cryptocurrencies and finance statement sheet to your spreadsheet by using a simple operation. Combined with the Google Sheet, you will be able to analyze the stock market in a single spreadsheet.
     </p>
   </div>
 }
