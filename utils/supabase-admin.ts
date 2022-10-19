@@ -54,6 +54,7 @@ export async function searchField(word:string) {
     .from('autocomplete')
     .select('id, title, field, moduleName, path, submodule')
     .eq('field', word)
+    .limit(20)
 
     if (res.data?.length) {
         return res.data
@@ -65,6 +66,8 @@ export async function searchField(word:string) {
     .from('autocomplete')
     .select('id, title, field, moduleName, path, submodule')
     .textSearch('keyword', `'${word}'`)
+    .limit(20)
+
     if (error){
         throw String(error)
     }

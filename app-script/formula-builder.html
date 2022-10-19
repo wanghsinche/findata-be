@@ -35,6 +35,17 @@
         #progress {
             width: 100%
         }
+        #query-option{
+            max-height: 50vh;
+            overflow-y: scroll;
+        }
+        #dialog{
+            width: 80vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
     </style>
 </head>
 
@@ -97,6 +108,13 @@
 
     </div>
 
+    <dialog id="dialog" open>
+        <div id="dialog-content" style="margin:2em ;">xxxx</div>
+        <form method="dialog">
+            <button>OK</button>
+        </form>
+    </dialog>
+
     <script>
 
         const queryOptionMap = [
@@ -127,6 +145,13 @@
                     document.getElementById('query-option').innerHTML = domHTML
                 },
                 collectInfo: () => {
+                    const path = document.getElementById('path').textContent;
+                    const column = path.endsWith(currentMetric.field)?'':currentMetric.field
+
+                    if (column){
+                        myPrompt('You can expand all the columns by removing the column parameter')
+                    }
+
                     return {
                         moduleName: document.getElementById('module-name').textContent,
                         ticker: document.getElementById('ticker').value,
@@ -136,6 +161,7 @@
                             period2: document.getElementById('period2').value,
                             interval: document.getElementById('interval').value
                         },
+                        column,
                         path: document.getElementById('path').textContent,
                     }
                 }
@@ -158,6 +184,13 @@
                     document.getElementById('query-option').innerHTML = domHTML
                 },
                 collectInfo: () => {
+                    const path = document.getElementById('path').textContent;
+                    const column = path.endsWith(currentMetric.field)?'':currentMetric.field
+
+                    if (column){
+                        myPrompt('You can expand all the columns by removing the column parameter')
+                    }
+
                     return {
                         moduleName: document.getElementById('module-name').textContent,
                         ticker: document.getElementById('ticker').value,
@@ -166,6 +199,7 @@
                             modules: document.getElementById('submodule').value,
                         },
                         path: document.getElementById('path').textContent,
+                        column
                     }
                 }
             },
@@ -185,6 +219,13 @@
                     document.getElementById('query-option').innerHTML = domHTML
                 },
                 collectInfo: () => {
+                    const path = document.getElementById('path').textContent;
+                    const column = path.endsWith(currentMetric.field)?'':currentMetric.field
+
+                    if (column){
+                        myPrompt('You can expand all the columns by removing the column parameter')
+                    }
+
                     return {
                         moduleName: document.getElementById('module-name').textContent,
                         ticker: document.getElementById('ticker').value,
@@ -193,6 +234,7 @@
                             date: document.getElementById('date').value,
                         },
                         path: document.getElementById('path').textContent,
+                        column
                     }
                 }
             },
@@ -211,6 +253,12 @@
                     document.getElementById('query-option').innerHTML = domHTML
                 },
                 collectInfo: () => {
+                    const path = document.getElementById('path').textContent;
+                    const column = path.endsWith(currentMetric.field)?'':currentMetric.field
+                    if (column){
+                        myPrompt('You can expand all the columns by removing the column parameter')
+                    }
+
                     return {
                         moduleName: document.getElementById('module-name').textContent,
                         ticker: document.getElementById('ticker').value,
@@ -218,6 +266,7 @@
                         {
                         },
                         path: document.getElementById('path').textContent,
+                        column
                     }
                 }
 
@@ -252,6 +301,12 @@
                 }
             }
             return el
+        }
+        
+        function myPrompt(text){
+            document.getElementById('dialog-content').textContent = text
+            document.getElementById('dialog').showModal()
+
         }
 
         function debounce(callback, wait) {
