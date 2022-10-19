@@ -50,7 +50,18 @@ export async function insertCustomer(customerId: string, email: string) {
 }
 
 export async function searchField(word:string) {
-    const { data, error } = await supabaseServer
+    let res = await supabaseServer
+    .from('autocomplete')
+    .select('*')
+    .eq('field', word)
+
+    if (res.data?.length) {
+        return res.data
+    }
+    
+    // fuzzy search
+
+    let { data, error } = await supabaseServer
     .from('autocomplete')
     .select('*')
     .textSearch('keyword', `'${word}'`)
@@ -58,5 +69,5 @@ export async function searchField(word:string) {
         throw String(error)
     }
 
-    return data
+    return data!
 }

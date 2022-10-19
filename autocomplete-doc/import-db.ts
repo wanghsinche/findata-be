@@ -1,37 +1,31 @@
 require('dotenv').config();
 
-import {supabaseServer} from '../utils/supabase-admin'
+import { supabaseServer } from '../utils/supabase-admin'
 import fs from 'fs'
 import path from 'path'
+import { ISchema } from './common';
 
-const name = 'quote-summary-asset-profile'
 
-const fileName = path.resolve(__dirname, `${name}.txt`)
+async function importDB(filename: string) {
 
-const fileContent = fs.readFileSync(fileName, {encoding:'utf-8'})
-const rows = fileContent.split('\n').filter(el=>!!el.trim())
+    const fileName = path.resolve(__dirname, `${filename}`)
 
-const xTicker = rows.shift()?.split(',') as string[]
+    const fileContent = fs.readFileSync(fileName, { encoding: 'utf-8' })
+    const rows: ISchema[] = JSON.parse(fileContent)
 
-async function importDB(){
-    const data = rows.map(row=>{
-        const obj:Record<string, string> = row.split(',').reduce((acm, v, idx)=>{
-            const k = xTicker[idx]?.trim()
-            if (!k) return acm
-            acm[k] = v
-            return acm
-        }, {} as Record<string, string>)
-        
-        return obj
-    })
 
-    console.log(data)
 
-    const {  error } = await supabaseServer
-    .from('autocomplete')
-    .insert(data)
-  
+    const { error } = await supabaseServer
+        .from('autocomplete')
+        .insert(rows)
+
     console.log(error)
 }
 
-importDB().then(e=>console.log(e))
+
+
+['historical.json', 'quote.json', 'quoteSummary.json'].forEach(filename => {
+
+    importDB(filename).then(e => console.log(e))
+
+})

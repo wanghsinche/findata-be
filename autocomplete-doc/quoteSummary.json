@@ -1,0 +1,4746 @@
+[
+  {
+    "path": "assetProfile.address1",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Address1 Asset Profile",
+    "title": "Address1",
+    "field": "address1"
+  },
+  {
+    "path": "assetProfile.address2",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Address2 Asset Profile",
+    "title": "Address2",
+    "field": "address2"
+  },
+  {
+    "path": "assetProfile.address3",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Address3 Asset Profile",
+    "title": "Address3",
+    "field": "address3"
+  },
+  {
+    "path": "assetProfile.city",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile City Asset Profile",
+    "title": "City",
+    "field": "city"
+  },
+  {
+    "path": "assetProfile.state",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile State Asset Profile",
+    "title": "State",
+    "field": "state"
+  },
+  {
+    "path": "assetProfile.zip",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Zip Asset Profile",
+    "title": "Zip",
+    "field": "zip"
+  },
+  {
+    "path": "assetProfile.country",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Country Asset Profile",
+    "title": "Country",
+    "field": "country"
+  },
+  {
+    "path": "assetProfile.phone",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Phone Asset Profile",
+    "title": "Phone",
+    "field": "phone"
+  },
+  {
+    "path": "assetProfile.fax",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Fax Asset Profile",
+    "title": "Fax",
+    "field": "fax"
+  },
+  {
+    "path": "assetProfile.website",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Website Asset Profile",
+    "title": "Website",
+    "field": "website"
+  },
+  {
+    "path": "assetProfile.industry",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Industry Asset Profile",
+    "title": "Industry",
+    "field": "industry"
+  },
+  {
+    "path": "assetProfile.industrySymbol",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Industry Symbol Asset Profile",
+    "title": "Industry Symbol",
+    "field": "industrySymbol"
+  },
+  {
+    "path": "assetProfile.sector",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Sector Asset Profile",
+    "title": "Sector",
+    "field": "sector"
+  },
+  {
+    "path": "assetProfile.longBusinessSummary",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Long Business Summary Asset Profile",
+    "title": "Long Business Summary",
+    "field": "longBusinessSummary"
+  },
+  {
+    "path": "assetProfile.fullTimeEmployees",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Full Time Employees Asset Profile",
+    "title": "Full Time Employees",
+    "field": "fullTimeEmployees"
+  },
+  {
+    "path": "assetProfile.companyOfficers.name",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Name Company Officer",
+    "title": "Name",
+    "field": "name"
+  },
+  {
+    "path": "assetProfile.companyOfficers.age",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Age Company Officer",
+    "title": "Age",
+    "field": "age"
+  },
+  {
+    "path": "assetProfile.companyOfficers.title",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Title Company Officer",
+    "title": "Title",
+    "field": "title"
+  },
+  {
+    "path": "assetProfile.companyOfficers.yearBorn",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Year Born Company Officer",
+    "title": "Year Born",
+    "field": "yearBorn"
+  },
+  {
+    "path": "assetProfile.companyOfficers.fiscalYear",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Fiscal Year Company Officer",
+    "title": "Fiscal Year",
+    "field": "fiscalYear"
+  },
+  {
+    "path": "assetProfile.companyOfficers.totalPay",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Total Pay Company Officer",
+    "title": "Total Pay",
+    "field": "totalPay"
+  },
+  {
+    "path": "assetProfile.companyOfficers.exercisedValue",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Exercised Value Company Officer",
+    "title": "Exercised Value",
+    "field": "exercisedValue"
+  },
+  {
+    "path": "assetProfile.companyOfficers.unexercisedValue",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Company Officers Asset Profile Unexercised Value Company Officer",
+    "title": "Unexercised Value",
+    "field": "unexercisedValue"
+  },
+  {
+    "path": "assetProfile.auditRisk",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Audit Risk Asset Profile",
+    "title": "Audit Risk",
+    "field": "auditRisk"
+  },
+  {
+    "path": "assetProfile.boardRisk",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Board Risk Asset Profile",
+    "title": "Board Risk",
+    "field": "boardRisk"
+  },
+  {
+    "path": "assetProfile.compensationRisk",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Compensation Risk Asset Profile",
+    "title": "Compensation Risk",
+    "field": "compensationRisk"
+  },
+  {
+    "path": "assetProfile.shareHolderRightsRisk",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Share Holder Rights Risk Asset Profile",
+    "title": "Share Holder Rights Risk",
+    "field": "shareHolderRightsRisk"
+  },
+  {
+    "path": "assetProfile.overallRisk",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Overall Risk Asset Profile",
+    "title": "Overall Risk",
+    "field": "overallRisk"
+  },
+  {
+    "path": "assetProfile.name",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Name Asset Profile",
+    "title": "Name",
+    "field": "name"
+  },
+  {
+    "path": "assetProfile.description",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Description Asset Profile",
+    "title": "Description",
+    "field": "description"
+  },
+  {
+    "path": "assetProfile.twitter",
+    "moduleName": "quoteSummary",
+    "submodule": "assetProfile",
+    "keyword": "Asset Profile Asset Profile Twitter Asset Profile",
+    "title": "Twitter",
+    "field": "twitter"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.cash",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Cash Balance Sheet Statement",
+    "title": "Cash",
+    "field": "cash"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.shortTermInvestments",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Short Term Investments Balance Sheet Statement",
+    "title": "Short Term Investments",
+    "field": "shortTermInvestments"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.netReceivables",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Net Receivables Balance Sheet Statement",
+    "title": "Net Receivables",
+    "field": "netReceivables"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.inventory",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Inventory Balance Sheet Statement",
+    "title": "Inventory",
+    "field": "inventory"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.otherCurrentAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Other Current Assets Balance Sheet Statement",
+    "title": "Other Current Assets",
+    "field": "otherCurrentAssets"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.totalCurrentAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Total Current Assets Balance Sheet Statement",
+    "title": "Total Current Assets",
+    "field": "totalCurrentAssets"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.longTermInvestments",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Long Term Investments Balance Sheet Statement",
+    "title": "Long Term Investments",
+    "field": "longTermInvestments"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.propertyPlantEquipment",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Property Plant Equipment Balance Sheet Statement",
+    "title": "Property Plant Equipment",
+    "field": "propertyPlantEquipment"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.otherAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Other Assets Balance Sheet Statement",
+    "title": "Other Assets",
+    "field": "otherAssets"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.totalAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Total Assets Balance Sheet Statement",
+    "title": "Total Assets",
+    "field": "totalAssets"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.accountsPayable",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Accounts Payable Balance Sheet Statement",
+    "title": "Accounts Payable",
+    "field": "accountsPayable"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.shortLongTermDebt",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Short Long Term Debt Balance Sheet Statement",
+    "title": "Short Long Term Debt",
+    "field": "shortLongTermDebt"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.otherCurrentLiab",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Other Current Liab Balance Sheet Statement",
+    "title": "Other Current Liab",
+    "field": "otherCurrentLiab"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.longTermDebt",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Long Term Debt Balance Sheet Statement",
+    "title": "Long Term Debt",
+    "field": "longTermDebt"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.otherLiab",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Other Liab Balance Sheet Statement",
+    "title": "Other Liab",
+    "field": "otherLiab"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.totalCurrentLiabilities",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Total Current Liabilities Balance Sheet Statement",
+    "title": "Total Current Liabilities",
+    "field": "totalCurrentLiabilities"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.totalLiab",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Total Liab Balance Sheet Statement",
+    "title": "Total Liab",
+    "field": "totalLiab"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.commonStock",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Common Stock Balance Sheet Statement",
+    "title": "Common Stock",
+    "field": "commonStock"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.retainedEarnings",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Retained Earnings Balance Sheet Statement",
+    "title": "Retained Earnings",
+    "field": "retainedEarnings"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.treasuryStock",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Treasury Stock Balance Sheet Statement",
+    "title": "Treasury Stock",
+    "field": "treasuryStock"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.otherStockholderEquity",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Other Stockholder Equity Balance Sheet Statement",
+    "title": "Other Stockholder Equity",
+    "field": "otherStockholderEquity"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.totalStockholderEquity",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Total Stockholder Equity Balance Sheet Statement",
+    "title": "Total Stockholder Equity",
+    "field": "totalStockholderEquity"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.netTangibleAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Net Tangible Assets Balance Sheet Statement",
+    "title": "Net Tangible Assets",
+    "field": "netTangibleAssets"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.goodWill",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Good Will Balance Sheet Statement",
+    "title": "Good Will",
+    "field": "goodWill"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.intangibleAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Intangible Assets Balance Sheet Statement",
+    "title": "Intangible Assets",
+    "field": "intangibleAssets"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.deferredLongTermAssetCharges",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Deferred Long Term Asset Charges Balance Sheet Statement",
+    "title": "Deferred Long Term Asset Charges",
+    "field": "deferredLongTermAssetCharges"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.deferredLongTermLiab",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Deferred Long Term Liab Balance Sheet Statement",
+    "title": "Deferred Long Term Liab",
+    "field": "deferredLongTermLiab"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.minorityInterest",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Minority Interest Balance Sheet Statement",
+    "title": "Minority Interest",
+    "field": "minorityInterest"
+  },
+  {
+    "path": "balanceSheetHistory.balanceSheetStatements.capitalSurplus",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistory",
+    "keyword": "Balance Sheet History Balance Sheet History Balance Sheet Statements Balance Sheet History Capital Surplus Balance Sheet Statement",
+    "title": "Capital Surplus",
+    "field": "capitalSurplus"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.cash",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Cash Balance Sheet Statement",
+    "title": "Cash",
+    "field": "cash"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.shortTermInvestments",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Short Term Investments Balance Sheet Statement",
+    "title": "Short Term Investments",
+    "field": "shortTermInvestments"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.netReceivables",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Net Receivables Balance Sheet Statement",
+    "title": "Net Receivables",
+    "field": "netReceivables"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.inventory",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Inventory Balance Sheet Statement",
+    "title": "Inventory",
+    "field": "inventory"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.otherCurrentAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Other Current Assets Balance Sheet Statement",
+    "title": "Other Current Assets",
+    "field": "otherCurrentAssets"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.totalCurrentAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Total Current Assets Balance Sheet Statement",
+    "title": "Total Current Assets",
+    "field": "totalCurrentAssets"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.longTermInvestments",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Long Term Investments Balance Sheet Statement",
+    "title": "Long Term Investments",
+    "field": "longTermInvestments"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.propertyPlantEquipment",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Property Plant Equipment Balance Sheet Statement",
+    "title": "Property Plant Equipment",
+    "field": "propertyPlantEquipment"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.otherAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Other Assets Balance Sheet Statement",
+    "title": "Other Assets",
+    "field": "otherAssets"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.totalAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Total Assets Balance Sheet Statement",
+    "title": "Total Assets",
+    "field": "totalAssets"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.accountsPayable",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Accounts Payable Balance Sheet Statement",
+    "title": "Accounts Payable",
+    "field": "accountsPayable"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.shortLongTermDebt",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Short Long Term Debt Balance Sheet Statement",
+    "title": "Short Long Term Debt",
+    "field": "shortLongTermDebt"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.otherCurrentLiab",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Other Current Liab Balance Sheet Statement",
+    "title": "Other Current Liab",
+    "field": "otherCurrentLiab"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.longTermDebt",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Long Term Debt Balance Sheet Statement",
+    "title": "Long Term Debt",
+    "field": "longTermDebt"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.otherLiab",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Other Liab Balance Sheet Statement",
+    "title": "Other Liab",
+    "field": "otherLiab"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.totalCurrentLiabilities",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Total Current Liabilities Balance Sheet Statement",
+    "title": "Total Current Liabilities",
+    "field": "totalCurrentLiabilities"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.totalLiab",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Total Liab Balance Sheet Statement",
+    "title": "Total Liab",
+    "field": "totalLiab"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.commonStock",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Common Stock Balance Sheet Statement",
+    "title": "Common Stock",
+    "field": "commonStock"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.retainedEarnings",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Retained Earnings Balance Sheet Statement",
+    "title": "Retained Earnings",
+    "field": "retainedEarnings"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.treasuryStock",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Treasury Stock Balance Sheet Statement",
+    "title": "Treasury Stock",
+    "field": "treasuryStock"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.otherStockholderEquity",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Other Stockholder Equity Balance Sheet Statement",
+    "title": "Other Stockholder Equity",
+    "field": "otherStockholderEquity"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.totalStockholderEquity",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Total Stockholder Equity Balance Sheet Statement",
+    "title": "Total Stockholder Equity",
+    "field": "totalStockholderEquity"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.netTangibleAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Net Tangible Assets Balance Sheet Statement",
+    "title": "Net Tangible Assets",
+    "field": "netTangibleAssets"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.goodWill",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Good Will Balance Sheet Statement",
+    "title": "Good Will",
+    "field": "goodWill"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.intangibleAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Intangible Assets Balance Sheet Statement",
+    "title": "Intangible Assets",
+    "field": "intangibleAssets"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.deferredLongTermAssetCharges",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Deferred Long Term Asset Charges Balance Sheet Statement",
+    "title": "Deferred Long Term Asset Charges",
+    "field": "deferredLongTermAssetCharges"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.deferredLongTermLiab",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Deferred Long Term Liab Balance Sheet Statement",
+    "title": "Deferred Long Term Liab",
+    "field": "deferredLongTermLiab"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.minorityInterest",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Minority Interest Balance Sheet Statement",
+    "title": "Minority Interest",
+    "field": "minorityInterest"
+  },
+  {
+    "path": "balanceSheetHistoryQuarterly.balanceSheetStatements.capitalSurplus",
+    "moduleName": "quoteSummary",
+    "submodule": "balanceSheetHistoryQuarterly",
+    "keyword": "Balance Sheet History Quarterly Balance Sheet History Balance Sheet Statements Balance Sheet History Capital Surplus Balance Sheet Statement",
+    "title": "Capital Surplus",
+    "field": "capitalSurplus"
+  },
+  {
+    "path": "calendarEvents.earnings.earningsAverage",
+    "moduleName": "quoteSummary",
+    "submodule": "calendarEvents",
+    "keyword": "Calendar Events Calendar Events Earnings Calendar Events Earnings Average Calendar Events Earnings",
+    "title": "Earnings Average",
+    "field": "earningsAverage"
+  },
+  {
+    "path": "calendarEvents.earnings.earningsLow",
+    "moduleName": "quoteSummary",
+    "submodule": "calendarEvents",
+    "keyword": "Calendar Events Calendar Events Earnings Calendar Events Earnings Low Calendar Events Earnings",
+    "title": "Earnings Low",
+    "field": "earningsLow"
+  },
+  {
+    "path": "calendarEvents.earnings.earningsHigh",
+    "moduleName": "quoteSummary",
+    "submodule": "calendarEvents",
+    "keyword": "Calendar Events Calendar Events Earnings Calendar Events Earnings High Calendar Events Earnings",
+    "title": "Earnings High",
+    "field": "earningsHigh"
+  },
+  {
+    "path": "calendarEvents.earnings.revenueAverage",
+    "moduleName": "quoteSummary",
+    "submodule": "calendarEvents",
+    "keyword": "Calendar Events Calendar Events Earnings Calendar Events Revenue Average Calendar Events Earnings",
+    "title": "Revenue Average",
+    "field": "revenueAverage"
+  },
+  {
+    "path": "calendarEvents.earnings.revenueLow",
+    "moduleName": "quoteSummary",
+    "submodule": "calendarEvents",
+    "keyword": "Calendar Events Calendar Events Earnings Calendar Events Revenue Low Calendar Events Earnings",
+    "title": "Revenue Low",
+    "field": "revenueLow"
+  },
+  {
+    "path": "calendarEvents.earnings.revenueHigh",
+    "moduleName": "quoteSummary",
+    "submodule": "calendarEvents",
+    "keyword": "Calendar Events Calendar Events Earnings Calendar Events Revenue High Calendar Events Earnings",
+    "title": "Revenue High",
+    "field": "revenueHigh"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.netIncome",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Net Income Cashflow Statement",
+    "title": "Net Income",
+    "field": "netIncome"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.depreciation",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Depreciation Cashflow Statement",
+    "title": "Depreciation",
+    "field": "depreciation"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.changeToNetincome",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Netincome Cashflow Statement",
+    "title": "Change To Netincome",
+    "field": "changeToNetincome"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.changeToAccountReceivables",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Account Receivables Cashflow Statement",
+    "title": "Change To Account Receivables",
+    "field": "changeToAccountReceivables"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.changeToLiabilities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Liabilities Cashflow Statement",
+    "title": "Change To Liabilities",
+    "field": "changeToLiabilities"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.changeToInventory",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Inventory Cashflow Statement",
+    "title": "Change To Inventory",
+    "field": "changeToInventory"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.changeToOperatingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Operating Activities Cashflow Statement",
+    "title": "Change To Operating Activities",
+    "field": "changeToOperatingActivities"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.totalCashFromOperatingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cash From Operating Activities Cashflow Statement",
+    "title": "Total Cash From Operating Activities",
+    "field": "totalCashFromOperatingActivities"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.capitalExpenditures",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Capital Expenditures Cashflow Statement",
+    "title": "Capital Expenditures",
+    "field": "capitalExpenditures"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.investments",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Investments Cashflow Statement",
+    "title": "Investments",
+    "field": "investments"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.otherCashflowsFromInvestingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Other Cashflows From Investing Activities Cashflow Statement",
+    "title": "Other Cashflows From Investing Activities",
+    "field": "otherCashflowsFromInvestingActivities"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.totalCashflowsFromInvestingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cashflows From Investing Activities Cashflow Statement",
+    "title": "Total Cashflows From Investing Activities",
+    "field": "totalCashflowsFromInvestingActivities"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.dividendsPaid",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Dividends Paid Cashflow Statement",
+    "title": "Dividends Paid",
+    "field": "dividendsPaid"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.netBorrowings",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Net Borrowings Cashflow Statement",
+    "title": "Net Borrowings",
+    "field": "netBorrowings"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.otherCashflowsFromFinancingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Other Cashflows From Financing Activities Cashflow Statement",
+    "title": "Other Cashflows From Financing Activities",
+    "field": "otherCashflowsFromFinancingActivities"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.totalCashFromFinancingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cash From Financing Activities Cashflow Statement",
+    "title": "Total Cash From Financing Activities",
+    "field": "totalCashFromFinancingActivities"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.changeInCash",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Change In Cash Cashflow Statement",
+    "title": "Change In Cash",
+    "field": "changeInCash"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.repurchaseOfStock",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Repurchase Of Stock Cashflow Statement",
+    "title": "Repurchase Of Stock",
+    "field": "repurchaseOfStock"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.issuanceOfStock",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Issuance Of Stock Cashflow Statement",
+    "title": "Issuance Of Stock",
+    "field": "issuanceOfStock"
+  },
+  {
+    "path": "cashflowStatementHistory.cashflowStatements.effectOfExchangeRate",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistory",
+    "keyword": "Cashflow Statement History Cashflow Statement History Cashflow Statements Cashflow Statement History Effect Of Exchange Rate Cashflow Statement",
+    "title": "Effect Of Exchange Rate",
+    "field": "effectOfExchangeRate"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.netIncome",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Net Income Cashflow Statement",
+    "title": "Net Income",
+    "field": "netIncome"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.depreciation",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Depreciation Cashflow Statement",
+    "title": "Depreciation",
+    "field": "depreciation"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeToNetincome",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Netincome Cashflow Statement",
+    "title": "Change To Netincome",
+    "field": "changeToNetincome"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeToAccountReceivables",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Account Receivables Cashflow Statement",
+    "title": "Change To Account Receivables",
+    "field": "changeToAccountReceivables"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeToLiabilities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Liabilities Cashflow Statement",
+    "title": "Change To Liabilities",
+    "field": "changeToLiabilities"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeToInventory",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Inventory Cashflow Statement",
+    "title": "Change To Inventory",
+    "field": "changeToInventory"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeToOperatingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change To Operating Activities Cashflow Statement",
+    "title": "Change To Operating Activities",
+    "field": "changeToOperatingActivities"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.totalCashFromOperatingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cash From Operating Activities Cashflow Statement",
+    "title": "Total Cash From Operating Activities",
+    "field": "totalCashFromOperatingActivities"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.capitalExpenditures",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Capital Expenditures Cashflow Statement",
+    "title": "Capital Expenditures",
+    "field": "capitalExpenditures"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.investments",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Investments Cashflow Statement",
+    "title": "Investments",
+    "field": "investments"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.otherCashflowsFromInvestingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Other Cashflows From Investing Activities Cashflow Statement",
+    "title": "Other Cashflows From Investing Activities",
+    "field": "otherCashflowsFromInvestingActivities"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.totalCashflowsFromInvestingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cashflows From Investing Activities Cashflow Statement",
+    "title": "Total Cashflows From Investing Activities",
+    "field": "totalCashflowsFromInvestingActivities"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.dividendsPaid",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Dividends Paid Cashflow Statement",
+    "title": "Dividends Paid",
+    "field": "dividendsPaid"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.netBorrowings",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Net Borrowings Cashflow Statement",
+    "title": "Net Borrowings",
+    "field": "netBorrowings"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.otherCashflowsFromFinancingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Other Cashflows From Financing Activities Cashflow Statement",
+    "title": "Other Cashflows From Financing Activities",
+    "field": "otherCashflowsFromFinancingActivities"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.totalCashFromFinancingActivities",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Total Cash From Financing Activities Cashflow Statement",
+    "title": "Total Cash From Financing Activities",
+    "field": "totalCashFromFinancingActivities"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.changeInCash",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Change In Cash Cashflow Statement",
+    "title": "Change In Cash",
+    "field": "changeInCash"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.repurchaseOfStock",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Repurchase Of Stock Cashflow Statement",
+    "title": "Repurchase Of Stock",
+    "field": "repurchaseOfStock"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.issuanceOfStock",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Issuance Of Stock Cashflow Statement",
+    "title": "Issuance Of Stock",
+    "field": "issuanceOfStock"
+  },
+  {
+    "path": "cashflowStatementHistoryQuarterly.cashflowStatements.effectOfExchangeRate",
+    "moduleName": "quoteSummary",
+    "submodule": "cashflowStatementHistoryQuarterly",
+    "keyword": "Cashflow Statement History Quarterly Cashflow Statement History Cashflow Statements Cashflow Statement History Effect Of Exchange Rate Cashflow Statement",
+    "title": "Effect Of Exchange Rate",
+    "field": "effectOfExchangeRate"
+  },
+  {
+    "path": "defaultKeyStatistics.priceHint",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Price Hint Default Key Statistics",
+    "title": "Price Hint",
+    "field": "priceHint"
+  },
+  {
+    "path": "defaultKeyStatistics.enterpriseValue",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Enterprise Value Default Key Statistics",
+    "title": "Enterprise Value",
+    "field": "enterpriseValue"
+  },
+  {
+    "path": "defaultKeyStatistics.forwardPE",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Forward PE Default Key Statistics",
+    "title": "Forward PE",
+    "field": "forwardPE"
+  },
+  {
+    "path": "defaultKeyStatistics.profitMargins",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Profit Margins Default Key Statistics",
+    "title": "Profit Margins",
+    "field": "profitMargins"
+  },
+  {
+    "path": "defaultKeyStatistics.floatShares",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Float Shares Default Key Statistics",
+    "title": "Float Shares",
+    "field": "floatShares"
+  },
+  {
+    "path": "defaultKeyStatistics.sharesOutstanding",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Shares Outstanding Default Key Statistics",
+    "title": "Shares Outstanding",
+    "field": "sharesOutstanding"
+  },
+  {
+    "path": "defaultKeyStatistics.sharesShort",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Shares Short Default Key Statistics",
+    "title": "Shares Short",
+    "field": "sharesShort"
+  },
+  {
+    "path": "defaultKeyStatistics.sharesPercentSharesOut",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Shares Percent Shares Out Default Key Statistics",
+    "title": "Shares Percent Shares Out",
+    "field": "sharesPercentSharesOut"
+  },
+  {
+    "path": "defaultKeyStatistics.heldPercentInsiders",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Held Percent Insiders Default Key Statistics",
+    "title": "Held Percent Insiders",
+    "field": "heldPercentInsiders"
+  },
+  {
+    "path": "defaultKeyStatistics.heldPercentInstitutions",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Held Percent Institutions Default Key Statistics",
+    "title": "Held Percent Institutions",
+    "field": "heldPercentInstitutions"
+  },
+  {
+    "path": "defaultKeyStatistics.shortRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Short Ratio Default Key Statistics",
+    "title": "Short Ratio",
+    "field": "shortRatio"
+  },
+  {
+    "path": "defaultKeyStatistics.shortPercentOfFloat",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Short Percent Of Float Default Key Statistics",
+    "title": "Short Percent Of Float",
+    "field": "shortPercentOfFloat"
+  },
+  {
+    "path": "defaultKeyStatistics.beta",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Beta Default Key Statistics",
+    "title": "Beta",
+    "field": "beta"
+  },
+  {
+    "path": "defaultKeyStatistics.impliedSharesOutstanding",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Implied Shares Outstanding Default Key Statistics",
+    "title": "Implied Shares Outstanding",
+    "field": "impliedSharesOutstanding"
+  },
+  {
+    "path": "defaultKeyStatistics.category",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Category Default Key Statistics",
+    "title": "Category",
+    "field": "category"
+  },
+  {
+    "path": "defaultKeyStatistics.bookValue",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Book Value Default Key Statistics",
+    "title": "Book Value",
+    "field": "bookValue"
+  },
+  {
+    "path": "defaultKeyStatistics.priceToBook",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Price To Book Default Key Statistics",
+    "title": "Price To Book",
+    "field": "priceToBook"
+  },
+  {
+    "path": "defaultKeyStatistics.fundFamily",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Fund Family Default Key Statistics",
+    "title": "Fund Family",
+    "field": "fundFamily"
+  },
+  {
+    "path": "defaultKeyStatistics.legalType",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Legal Type Default Key Statistics",
+    "title": "Legal Type",
+    "field": "legalType"
+  },
+  {
+    "path": "defaultKeyStatistics.earningsQuarterlyGrowth",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Earnings Quarterly Growth Default Key Statistics",
+    "title": "Earnings Quarterly Growth",
+    "field": "earningsQuarterlyGrowth"
+  },
+  {
+    "path": "defaultKeyStatistics.netIncomeToCommon",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Net Income To Common Default Key Statistics",
+    "title": "Net Income To Common",
+    "field": "netIncomeToCommon"
+  },
+  {
+    "path": "defaultKeyStatistics.trailingEps",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Trailing Eps Default Key Statistics",
+    "title": "Trailing Eps",
+    "field": "trailingEps"
+  },
+  {
+    "path": "defaultKeyStatistics.forwardEps",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Forward Eps Default Key Statistics",
+    "title": "Forward Eps",
+    "field": "forwardEps"
+  },
+  {
+    "path": "defaultKeyStatistics.pegRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Peg Ratio Default Key Statistics",
+    "title": "Peg Ratio",
+    "field": "pegRatio"
+  },
+  {
+    "path": "defaultKeyStatistics.lastSplitFactor",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Last Split Factor Default Key Statistics",
+    "title": "Last Split Factor",
+    "field": "lastSplitFactor"
+  },
+  {
+    "path": "defaultKeyStatistics.lastSplitDate",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Last Split Date Default Key Statistics",
+    "title": "Last Split Date",
+    "field": "lastSplitDate"
+  },
+  {
+    "path": "defaultKeyStatistics.enterpriseToRevenue",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Enterprise To Revenue Default Key Statistics",
+    "title": "Enterprise To Revenue",
+    "field": "enterpriseToRevenue"
+  },
+  {
+    "path": "defaultKeyStatistics.enterpriseToEbitda",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Enterprise To Ebitda Default Key Statistics",
+    "title": "Enterprise To Ebitda",
+    "field": "enterpriseToEbitda"
+  },
+  {
+    "path": "defaultKeyStatistics.\"52WeekChange\"",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics \"52Week Change\" Default Key Statistics",
+    "title": "\"52Week Change\"",
+    "field": "\"52WeekChange\""
+  },
+  {
+    "path": "defaultKeyStatistics.SandP52WeekChange",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Sand P52Week Change Default Key Statistics",
+    "title": "Sand P52Week Change",
+    "field": "SandP52WeekChange"
+  },
+  {
+    "path": "defaultKeyStatistics.lastDividendValue",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Last Dividend Value Default Key Statistics",
+    "title": "Last Dividend Value",
+    "field": "lastDividendValue"
+  },
+  {
+    "path": "defaultKeyStatistics.ytdReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Ytd Return Default Key Statistics",
+    "title": "Ytd Return",
+    "field": "ytdReturn"
+  },
+  {
+    "path": "defaultKeyStatistics.beta3Year",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Beta3Year Default Key Statistics",
+    "title": "Beta3Year",
+    "field": "beta3Year"
+  },
+  {
+    "path": "defaultKeyStatistics.totalAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Total Assets Default Key Statistics",
+    "title": "Total Assets",
+    "field": "totalAssets"
+  },
+  {
+    "path": "defaultKeyStatistics.yield",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Yield Default Key Statistics",
+    "title": "Yield",
+    "field": "yield"
+  },
+  {
+    "path": "defaultKeyStatistics.threeYearAverageReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Three Year Average Return Default Key Statistics",
+    "title": "Three Year Average Return",
+    "field": "threeYearAverageReturn"
+  },
+  {
+    "path": "defaultKeyStatistics.fiveYearAverageReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Five Year Average Return Default Key Statistics",
+    "title": "Five Year Average Return",
+    "field": "fiveYearAverageReturn"
+  },
+  {
+    "path": "defaultKeyStatistics.morningStarOverallRating",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Morning Star Overall Rating Default Key Statistics",
+    "title": "Morning Star Overall Rating",
+    "field": "morningStarOverallRating"
+  },
+  {
+    "path": "defaultKeyStatistics.morningStarRiskRating",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Morning Star Risk Rating Default Key Statistics",
+    "title": "Morning Star Risk Rating",
+    "field": "morningStarRiskRating"
+  },
+  {
+    "path": "defaultKeyStatistics.annualReportExpenseRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Annual Report Expense Ratio Default Key Statistics",
+    "title": "Annual Report Expense Ratio",
+    "field": "annualReportExpenseRatio"
+  },
+  {
+    "path": "defaultKeyStatistics.lastCapGain",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Last Cap Gain Default Key Statistics",
+    "title": "Last Cap Gain",
+    "field": "lastCapGain"
+  },
+  {
+    "path": "defaultKeyStatistics.annualHoldingsTurnover",
+    "moduleName": "quoteSummary",
+    "submodule": "defaultKeyStatistics",
+    "keyword": "Default Key Statistics Default Key Statistics Annual Holdings Turnover Default Key Statistics",
+    "title": "Annual Holdings Turnover",
+    "field": "annualHoldingsTurnover"
+  },
+  {
+    "path": "earnings.earningsChart.quarterly.actual",
+    "moduleName": "quoteSummary",
+    "submodule": "earnings",
+    "keyword": "Earnings Quote Summary Earnings Earnings Chart Quote Summary Earnings Quarterly Earnings Chart Actual Earnings Chart Quarterly",
+    "title": "Actual",
+    "field": "actual"
+  },
+  {
+    "path": "earnings.earningsChart.quarterly.estimate",
+    "moduleName": "quoteSummary",
+    "submodule": "earnings",
+    "keyword": "Earnings Quote Summary Earnings Earnings Chart Quote Summary Earnings Quarterly Earnings Chart Estimate Earnings Chart Quarterly",
+    "title": "Estimate",
+    "field": "estimate"
+  },
+  {
+    "path": "earnings.earningsChart.currentQuarterEstimate",
+    "moduleName": "quoteSummary",
+    "submodule": "earnings",
+    "keyword": "Earnings Quote Summary Earnings Earnings Chart Quote Summary Earnings Current Quarter Estimate Earnings Chart",
+    "title": "Current Quarter Estimate",
+    "field": "currentQuarterEstimate"
+  },
+  {
+    "path": "earnings.earningsChart.currentQuarterEstimateDate",
+    "moduleName": "quoteSummary",
+    "submodule": "earnings",
+    "keyword": "Earnings Quote Summary Earnings Earnings Chart Quote Summary Earnings Current Quarter Estimate Date Earnings Chart",
+    "title": "Current Quarter Estimate Date",
+    "field": "currentQuarterEstimateDate"
+  },
+  {
+    "path": "earnings.earningsChart.currentQuarterEstimateYear",
+    "moduleName": "quoteSummary",
+    "submodule": "earnings",
+    "keyword": "Earnings Quote Summary Earnings Earnings Chart Quote Summary Earnings Current Quarter Estimate Year Earnings Chart",
+    "title": "Current Quarter Estimate Year",
+    "field": "currentQuarterEstimateYear"
+  },
+  {
+    "path": "earnings.financialsChart.yearly.revenue",
+    "moduleName": "quoteSummary",
+    "submodule": "earnings",
+    "keyword": "Earnings Quote Summary Earnings Financials Chart Quote Summary Earnings Yearly Financials Chart Revenue Yearly",
+    "title": "Revenue",
+    "field": "revenue"
+  },
+  {
+    "path": "earnings.financialsChart.yearly.earnings",
+    "moduleName": "quoteSummary",
+    "submodule": "earnings",
+    "keyword": "Earnings Quote Summary Earnings Financials Chart Quote Summary Earnings Yearly Financials Chart Earnings Yearly",
+    "title": "Earnings",
+    "field": "earnings"
+  },
+  {
+    "path": "earnings.financialsChart.quarterly.revenue",
+    "moduleName": "quoteSummary",
+    "submodule": "earnings",
+    "keyword": "Earnings Quote Summary Earnings Financials Chart Quote Summary Earnings Quarterly Financials Chart Revenue Financials Chart Quarterly",
+    "title": "Revenue",
+    "field": "revenue"
+  },
+  {
+    "path": "earnings.financialsChart.quarterly.earnings",
+    "moduleName": "quoteSummary",
+    "submodule": "earnings",
+    "keyword": "Earnings Quote Summary Earnings Financials Chart Quote Summary Earnings Quarterly Financials Chart Earnings Financials Chart Quarterly",
+    "title": "Earnings",
+    "field": "earnings"
+  },
+  {
+    "path": "earnings.financialCurrency",
+    "moduleName": "quoteSummary",
+    "submodule": "earnings",
+    "keyword": "Earnings Quote Summary Earnings Financial Currency Quote Summary Earnings",
+    "title": "Financial Currency",
+    "field": "financialCurrency"
+  },
+  {
+    "path": "earningsHistory.history.epsActual",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsHistory",
+    "keyword": "Earnings History Earnings History History Earnings History Eps Actual Earnings History History",
+    "title": "Eps Actual",
+    "field": "epsActual"
+  },
+  {
+    "path": "earningsHistory.history.epsEstimate",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsHistory",
+    "keyword": "Earnings History Earnings History History Earnings History Eps Estimate Earnings History History",
+    "title": "Eps Estimate",
+    "field": "epsEstimate"
+  },
+  {
+    "path": "earningsHistory.history.epsDifference",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsHistory",
+    "keyword": "Earnings History Earnings History History Earnings History Eps Difference Earnings History History",
+    "title": "Eps Difference",
+    "field": "epsDifference"
+  },
+  {
+    "path": "earningsHistory.history.surprisePercent",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsHistory",
+    "keyword": "Earnings History Earnings History History Earnings History Surprise Percent Earnings History History",
+    "title": "Surprise Percent",
+    "field": "surprisePercent"
+  },
+  {
+    "path": "earningsTrend.trend.growth",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Growth Earnings Trend Trend",
+    "title": "Growth",
+    "field": "growth"
+  },
+  {
+    "path": "earningsTrend.trend.earningsEstimate.avg",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend Avg Earnings Estimate",
+    "title": "Avg",
+    "field": "avg"
+  },
+  {
+    "path": "earningsTrend.trend.earningsEstimate.low",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend Low Earnings Estimate",
+    "title": "Low",
+    "field": "low"
+  },
+  {
+    "path": "earningsTrend.trend.earningsEstimate.high",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend High Earnings Estimate",
+    "title": "High",
+    "field": "high"
+  },
+  {
+    "path": "earningsTrend.trend.earningsEstimate.yearAgoEps",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend Year Ago Eps Earnings Estimate",
+    "title": "Year Ago Eps",
+    "field": "yearAgoEps"
+  },
+  {
+    "path": "earningsTrend.trend.earningsEstimate.numberOfAnalysts",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend Number Of Analysts Earnings Estimate",
+    "title": "Number Of Analysts",
+    "field": "numberOfAnalysts"
+  },
+  {
+    "path": "earningsTrend.trend.earningsEstimate.growth",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Earnings Estimate Earnings Trend Trend Growth Earnings Estimate",
+    "title": "Growth",
+    "field": "growth"
+  },
+  {
+    "path": "earningsTrend.trend.revenueEstimate.avg",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend Avg Revenue Estimate",
+    "title": "Avg",
+    "field": "avg"
+  },
+  {
+    "path": "earningsTrend.trend.revenueEstimate.low",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend Low Revenue Estimate",
+    "title": "Low",
+    "field": "low"
+  },
+  {
+    "path": "earningsTrend.trend.revenueEstimate.high",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend High Revenue Estimate",
+    "title": "High",
+    "field": "high"
+  },
+  {
+    "path": "earningsTrend.trend.revenueEstimate.numberOfAnalysts",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend Number Of Analysts Revenue Estimate",
+    "title": "Number Of Analysts",
+    "field": "numberOfAnalysts"
+  },
+  {
+    "path": "earningsTrend.trend.revenueEstimate.yearAgoRevenue",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend Year Ago Revenue Revenue Estimate",
+    "title": "Year Ago Revenue",
+    "field": "yearAgoRevenue"
+  },
+  {
+    "path": "earningsTrend.trend.revenueEstimate.growth",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Revenue Estimate Earnings Trend Trend Growth Revenue Estimate",
+    "title": "Growth",
+    "field": "growth"
+  },
+  {
+    "path": "earningsTrend.trend.epsTrend.current",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Trend Earnings Trend Trend Current Eps Trend",
+    "title": "Current",
+    "field": "current"
+  },
+  {
+    "path": "earningsTrend.trend.epsTrend.\"7daysAgo\"",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Trend Earnings Trend Trend \"7days Ago\" Eps Trend",
+    "title": "\"7days Ago\"",
+    "field": "\"7daysAgo\""
+  },
+  {
+    "path": "earningsTrend.trend.epsTrend.\"30daysAgo\"",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Trend Earnings Trend Trend \"30days Ago\" Eps Trend",
+    "title": "\"30days Ago\"",
+    "field": "\"30daysAgo\""
+  },
+  {
+    "path": "earningsTrend.trend.epsTrend.\"60daysAgo\"",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Trend Earnings Trend Trend \"60days Ago\" Eps Trend",
+    "title": "\"60days Ago\"",
+    "field": "\"60daysAgo\""
+  },
+  {
+    "path": "earningsTrend.trend.epsTrend.\"90daysAgo\"",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Trend Earnings Trend Trend \"90days Ago\" Eps Trend",
+    "title": "\"90days Ago\"",
+    "field": "\"90daysAgo\""
+  },
+  {
+    "path": "earningsTrend.trend.epsRevisions.upLast7days",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Revisions Earnings Trend Trend Up Last7days Eps Revisions",
+    "title": "Up Last7days",
+    "field": "upLast7days"
+  },
+  {
+    "path": "earningsTrend.trend.epsRevisions.upLast30days",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Revisions Earnings Trend Trend Up Last30days Eps Revisions",
+    "title": "Up Last30days",
+    "field": "upLast30days"
+  },
+  {
+    "path": "earningsTrend.trend.epsRevisions.downLast30days",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Revisions Earnings Trend Trend Down Last30days Eps Revisions",
+    "title": "Down Last30days",
+    "field": "downLast30days"
+  },
+  {
+    "path": "earningsTrend.trend.epsRevisions.downLast90days",
+    "moduleName": "quoteSummary",
+    "submodule": "earningsTrend",
+    "keyword": "Earnings Trend Earnings Trend Trend Earnings Trend Eps Revisions Earnings Trend Trend Down Last90days Eps Revisions",
+    "title": "Down Last90days",
+    "field": "downLast90days"
+  },
+  {
+    "path": "financialData.currentPrice",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Current Price Financial Data",
+    "title": "Current Price",
+    "field": "currentPrice"
+  },
+  {
+    "path": "financialData.targetHighPrice",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Target High Price Financial Data",
+    "title": "Target High Price",
+    "field": "targetHighPrice"
+  },
+  {
+    "path": "financialData.targetLowPrice",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Target Low Price Financial Data",
+    "title": "Target Low Price",
+    "field": "targetLowPrice"
+  },
+  {
+    "path": "financialData.targetMeanPrice",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Target Mean Price Financial Data",
+    "title": "Target Mean Price",
+    "field": "targetMeanPrice"
+  },
+  {
+    "path": "financialData.targetMedianPrice",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Target Median Price Financial Data",
+    "title": "Target Median Price",
+    "field": "targetMedianPrice"
+  },
+  {
+    "path": "financialData.recommendationMean",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Recommendation Mean Financial Data",
+    "title": "Recommendation Mean",
+    "field": "recommendationMean"
+  },
+  {
+    "path": "financialData.recommendationKey",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Recommendation Key Financial Data",
+    "title": "Recommendation Key",
+    "field": "recommendationKey"
+  },
+  {
+    "path": "financialData.numberOfAnalystOpinions",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Number Of Analyst Opinions Financial Data",
+    "title": "Number Of Analyst Opinions",
+    "field": "numberOfAnalystOpinions"
+  },
+  {
+    "path": "financialData.totalCash",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Total Cash Financial Data",
+    "title": "Total Cash",
+    "field": "totalCash"
+  },
+  {
+    "path": "financialData.totalCashPerShare",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Total Cash Per Share Financial Data",
+    "title": "Total Cash Per Share",
+    "field": "totalCashPerShare"
+  },
+  {
+    "path": "financialData.ebitda",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Ebitda Financial Data",
+    "title": "Ebitda",
+    "field": "ebitda"
+  },
+  {
+    "path": "financialData.totalDebt",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Total Debt Financial Data",
+    "title": "Total Debt",
+    "field": "totalDebt"
+  },
+  {
+    "path": "financialData.quickRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Quick Ratio Financial Data",
+    "title": "Quick Ratio",
+    "field": "quickRatio"
+  },
+  {
+    "path": "financialData.currentRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Current Ratio Financial Data",
+    "title": "Current Ratio",
+    "field": "currentRatio"
+  },
+  {
+    "path": "financialData.totalRevenue",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Total Revenue Financial Data",
+    "title": "Total Revenue",
+    "field": "totalRevenue"
+  },
+  {
+    "path": "financialData.debtToEquity",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Debt To Equity Financial Data",
+    "title": "Debt To Equity",
+    "field": "debtToEquity"
+  },
+  {
+    "path": "financialData.revenuePerShare",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Revenue Per Share Financial Data",
+    "title": "Revenue Per Share",
+    "field": "revenuePerShare"
+  },
+  {
+    "path": "financialData.returnOnAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Return On Assets Financial Data",
+    "title": "Return On Assets",
+    "field": "returnOnAssets"
+  },
+  {
+    "path": "financialData.returnOnEquity",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Return On Equity Financial Data",
+    "title": "Return On Equity",
+    "field": "returnOnEquity"
+  },
+  {
+    "path": "financialData.grossProfits",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Gross Profits Financial Data",
+    "title": "Gross Profits",
+    "field": "grossProfits"
+  },
+  {
+    "path": "financialData.freeCashflow",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Free Cashflow Financial Data",
+    "title": "Free Cashflow",
+    "field": "freeCashflow"
+  },
+  {
+    "path": "financialData.operatingCashflow",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Operating Cashflow Financial Data",
+    "title": "Operating Cashflow",
+    "field": "operatingCashflow"
+  },
+  {
+    "path": "financialData.earningsGrowth",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Earnings Growth Financial Data",
+    "title": "Earnings Growth",
+    "field": "earningsGrowth"
+  },
+  {
+    "path": "financialData.revenueGrowth",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Revenue Growth Financial Data",
+    "title": "Revenue Growth",
+    "field": "revenueGrowth"
+  },
+  {
+    "path": "financialData.grossMargins",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Gross Margins Financial Data",
+    "title": "Gross Margins",
+    "field": "grossMargins"
+  },
+  {
+    "path": "financialData.ebitdaMargins",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Ebitda Margins Financial Data",
+    "title": "Ebitda Margins",
+    "field": "ebitdaMargins"
+  },
+  {
+    "path": "financialData.operatingMargins",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Operating Margins Financial Data",
+    "title": "Operating Margins",
+    "field": "operatingMargins"
+  },
+  {
+    "path": "financialData.profitMargins",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Profit Margins Financial Data",
+    "title": "Profit Margins",
+    "field": "profitMargins"
+  },
+  {
+    "path": "financialData.financialCurrency",
+    "moduleName": "quoteSummary",
+    "submodule": "financialData",
+    "keyword": "Financial Data Financial Data Financial Currency Financial Data",
+    "title": "Financial Currency",
+    "field": "financialCurrency"
+  },
+  {
+    "path": "fundOwnership.ownershipList.organization",
+    "moduleName": "quoteSummary",
+    "submodule": "fundOwnership",
+    "keyword": "Fund Ownership Ownership Ownership List Ownership Organization Ownership List",
+    "title": "Organization",
+    "field": "organization"
+  },
+  {
+    "path": "fundOwnership.ownershipList.pctHeld",
+    "moduleName": "quoteSummary",
+    "submodule": "fundOwnership",
+    "keyword": "Fund Ownership Ownership Ownership List Ownership Pct Held Ownership List",
+    "title": "Pct Held",
+    "field": "pctHeld"
+  },
+  {
+    "path": "fundOwnership.ownershipList.position",
+    "moduleName": "quoteSummary",
+    "submodule": "fundOwnership",
+    "keyword": "Fund Ownership Ownership Ownership List Ownership Position Ownership List",
+    "title": "Position",
+    "field": "position"
+  },
+  {
+    "path": "fundOwnership.ownershipList.value",
+    "moduleName": "quoteSummary",
+    "submodule": "fundOwnership",
+    "keyword": "Fund Ownership Ownership Ownership List Ownership Value Ownership List",
+    "title": "Value",
+    "field": "value"
+  },
+  {
+    "path": "fundOwnership.ownershipList.pctChange",
+    "moduleName": "quoteSummary",
+    "submodule": "fundOwnership",
+    "keyword": "Fund Ownership Ownership Ownership List Ownership Pct Change Ownership List",
+    "title": "Pct Change",
+    "field": "pctChange"
+  },
+  {
+    "path": "fundPerformance.loadAdjustedReturns.ytd",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Load Adjusted Returns Fund Performance Ytd Period Range",
+    "title": "Ytd",
+    "field": "ytd"
+  },
+  {
+    "path": "fundPerformance.loadAdjustedReturns.oneMonth",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Load Adjusted Returns Fund Performance One Month Period Range",
+    "title": "One Month",
+    "field": "oneMonth"
+  },
+  {
+    "path": "fundPerformance.loadAdjustedReturns.threeMonth",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Load Adjusted Returns Fund Performance Three Month Period Range",
+    "title": "Three Month",
+    "field": "threeMonth"
+  },
+  {
+    "path": "fundPerformance.loadAdjustedReturns.oneYear",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Load Adjusted Returns Fund Performance One Year Period Range",
+    "title": "One Year",
+    "field": "oneYear"
+  },
+  {
+    "path": "fundPerformance.loadAdjustedReturns.threeYear",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Load Adjusted Returns Fund Performance Three Year Period Range",
+    "title": "Three Year",
+    "field": "threeYear"
+  },
+  {
+    "path": "fundPerformance.loadAdjustedReturns.fiveYear",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Load Adjusted Returns Fund Performance Five Year Period Range",
+    "title": "Five Year",
+    "field": "fiveYear"
+  },
+  {
+    "path": "fundPerformance.loadAdjustedReturns.tenYear",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Load Adjusted Returns Fund Performance Ten Year Period Range",
+    "title": "Ten Year",
+    "field": "tenYear"
+  },
+  {
+    "path": "fundPerformance.rankInCategory.ytd",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Rank In Category Fund Performance Ytd Period Range",
+    "title": "Ytd",
+    "field": "ytd"
+  },
+  {
+    "path": "fundPerformance.rankInCategory.oneMonth",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Rank In Category Fund Performance One Month Period Range",
+    "title": "One Month",
+    "field": "oneMonth"
+  },
+  {
+    "path": "fundPerformance.rankInCategory.threeMonth",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Rank In Category Fund Performance Three Month Period Range",
+    "title": "Three Month",
+    "field": "threeMonth"
+  },
+  {
+    "path": "fundPerformance.rankInCategory.oneYear",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Rank In Category Fund Performance One Year Period Range",
+    "title": "One Year",
+    "field": "oneYear"
+  },
+  {
+    "path": "fundPerformance.rankInCategory.threeYear",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Rank In Category Fund Performance Three Year Period Range",
+    "title": "Three Year",
+    "field": "threeYear"
+  },
+  {
+    "path": "fundPerformance.rankInCategory.fiveYear",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Rank In Category Fund Performance Five Year Period Range",
+    "title": "Five Year",
+    "field": "fiveYear"
+  },
+  {
+    "path": "fundPerformance.rankInCategory.tenYear",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Rank In Category Fund Performance Ten Year Period Range",
+    "title": "Ten Year",
+    "field": "tenYear"
+  },
+  {
+    "path": "fundPerformance.performanceOverview.ytdReturnPct",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Fund Performance Ytd Return Pct Fund Performance Performance Overview",
+    "title": "Ytd Return Pct",
+    "field": "ytdReturnPct"
+  },
+  {
+    "path": "fundPerformance.performanceOverview.oneYearTotalReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Fund Performance One Year Total Return Fund Performance Performance Overview",
+    "title": "One Year Total Return",
+    "field": "oneYearTotalReturn"
+  },
+  {
+    "path": "fundPerformance.performanceOverview.threeYearTotalReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Fund Performance Three Year Total Return Fund Performance Performance Overview",
+    "title": "Three Year Total Return",
+    "field": "threeYearTotalReturn"
+  },
+  {
+    "path": "fundPerformance.performanceOverview.morningStarReturnRating",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Fund Performance Morning Star Return Rating Fund Performance Performance Overview",
+    "title": "Morning Star Return Rating",
+    "field": "morningStarReturnRating"
+  },
+  {
+    "path": "fundPerformance.performanceOverview.numYearsUp",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Fund Performance Num Years Up Fund Performance Performance Overview",
+    "title": "Num Years Up",
+    "field": "numYearsUp"
+  },
+  {
+    "path": "fundPerformance.performanceOverview.numYearsDown",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Fund Performance Num Years Down Fund Performance Performance Overview",
+    "title": "Num Years Down",
+    "field": "numYearsDown"
+  },
+  {
+    "path": "fundPerformance.performanceOverview.bestOneYrTotalReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Fund Performance Best One Yr Total Return Fund Performance Performance Overview",
+    "title": "Best One Yr Total Return",
+    "field": "bestOneYrTotalReturn"
+  },
+  {
+    "path": "fundPerformance.performanceOverview.worstOneYrTotalReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Fund Performance Worst One Yr Total Return Fund Performance Performance Overview",
+    "title": "Worst One Yr Total Return",
+    "field": "worstOneYrTotalReturn"
+  },
+  {
+    "path": "fundPerformance.performanceOverview.bestThreeYrTotalReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Fund Performance Best Three Yr Total Return Fund Performance Performance Overview",
+    "title": "Best Three Yr Total Return",
+    "field": "bestThreeYrTotalReturn"
+  },
+  {
+    "path": "fundPerformance.performanceOverview.worstThreeYrTotalReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Fund Performance Worst Three Yr Total Return Fund Performance Performance Overview",
+    "title": "Worst Three Yr Total Return",
+    "field": "worstThreeYrTotalReturn"
+  },
+  {
+    "path": "fundPerformance.performanceOverviewCat.ytdReturnPct",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Cat Fund Performance Ytd Return Pct Fund Performance Performance Overview Cat",
+    "title": "Ytd Return Pct",
+    "field": "ytdReturnPct"
+  },
+  {
+    "path": "fundPerformance.performanceOverviewCat.fiveYrAvgReturnPct",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Performance Overview Cat Fund Performance Five Yr Avg Return Pct Fund Performance Performance Overview Cat",
+    "title": "Five Yr Avg Return Pct",
+    "field": "fiveYrAvgReturnPct"
+  },
+  {
+    "path": "fundPerformance.trailingReturns.lastBullMkt",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Trailing Returns Fund Performance Last Bull Mkt Fund Performance Trailing Returns",
+    "title": "Last Bull Mkt",
+    "field": "lastBullMkt"
+  },
+  {
+    "path": "fundPerformance.trailingReturns.lastBearMkt",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Trailing Returns Fund Performance Last Bear Mkt Fund Performance Trailing Returns",
+    "title": "Last Bear Mkt",
+    "field": "lastBearMkt"
+  },
+  {
+    "path": "fundPerformance.trailingReturnsNav.lastBullMkt",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Trailing Returns Nav Fund Performance Last Bull Mkt Fund Performance Trailing Returns",
+    "title": "Last Bull Mkt",
+    "field": "lastBullMkt"
+  },
+  {
+    "path": "fundPerformance.trailingReturnsNav.lastBearMkt",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Trailing Returns Nav Fund Performance Last Bear Mkt Fund Performance Trailing Returns",
+    "title": "Last Bear Mkt",
+    "field": "lastBearMkt"
+  },
+  {
+    "path": "fundPerformance.trailingReturnsCat.lastBullMkt",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Trailing Returns Cat Fund Performance Last Bull Mkt Fund Performance Trailing Returns",
+    "title": "Last Bull Mkt",
+    "field": "lastBullMkt"
+  },
+  {
+    "path": "fundPerformance.trailingReturnsCat.lastBearMkt",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Trailing Returns Cat Fund Performance Last Bear Mkt Fund Performance Trailing Returns",
+    "title": "Last Bear Mkt",
+    "field": "lastBearMkt"
+  },
+  {
+    "path": "fundPerformance.annualTotalReturns.returns.year",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Year Fund Performance Returns Row",
+    "title": "Year",
+    "field": "year"
+  },
+  {
+    "path": "fundPerformance.annualTotalReturns.returns.annualValue",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Annual Value Fund Performance Returns Row",
+    "title": "Annual Value",
+    "field": "annualValue"
+  },
+  {
+    "path": "fundPerformance.annualTotalReturns.returns.q1",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Q1 Fund Performance Returns Row",
+    "title": "Q1",
+    "field": "q1"
+  },
+  {
+    "path": "fundPerformance.annualTotalReturns.returns.q2",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Q2 Fund Performance Returns Row",
+    "title": "Q2",
+    "field": "q2"
+  },
+  {
+    "path": "fundPerformance.annualTotalReturns.returns.q3",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Q3 Fund Performance Returns Row",
+    "title": "Q3",
+    "field": "q3"
+  },
+  {
+    "path": "fundPerformance.annualTotalReturns.returns.q4",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Fund Performance Returns Q4 Fund Performance Returns Row",
+    "title": "Q4",
+    "field": "q4"
+  },
+  {
+    "path": "fundPerformance.annualTotalReturns.returnsCat",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Annual Total Returns Fund Performance Returns Cat Fund Performance Returns",
+    "title": "Returns Cat",
+    "field": "returnsCat"
+  },
+  {
+    "path": "fundPerformance.pastQuarterlyReturns.returns.year",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Year Fund Performance Returns Row",
+    "title": "Year",
+    "field": "year"
+  },
+  {
+    "path": "fundPerformance.pastQuarterlyReturns.returns.annualValue",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Annual Value Fund Performance Returns Row",
+    "title": "Annual Value",
+    "field": "annualValue"
+  },
+  {
+    "path": "fundPerformance.pastQuarterlyReturns.returns.q1",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Q1 Fund Performance Returns Row",
+    "title": "Q1",
+    "field": "q1"
+  },
+  {
+    "path": "fundPerformance.pastQuarterlyReturns.returns.q2",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Q2 Fund Performance Returns Row",
+    "title": "Q2",
+    "field": "q2"
+  },
+  {
+    "path": "fundPerformance.pastQuarterlyReturns.returns.q3",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Q3 Fund Performance Returns Row",
+    "title": "Q3",
+    "field": "q3"
+  },
+  {
+    "path": "fundPerformance.pastQuarterlyReturns.returns.q4",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Fund Performance Returns Q4 Fund Performance Returns Row",
+    "title": "Q4",
+    "field": "q4"
+  },
+  {
+    "path": "fundPerformance.pastQuarterlyReturns.returnsCat",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Past Quarterly Returns Fund Performance Returns Cat Fund Performance Returns",
+    "title": "Returns Cat",
+    "field": "returnsCat"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.year",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Year Fund Performance Risk Overview Stats Row",
+    "title": "Year",
+    "field": "year"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.alpha",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Alpha Fund Performance Risk Overview Stats Row",
+    "title": "Alpha",
+    "field": "alpha"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.beta",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Beta Fund Performance Risk Overview Stats Row",
+    "title": "Beta",
+    "field": "beta"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.meanAnnualReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Mean Annual Return Fund Performance Risk Overview Stats Row",
+    "title": "Mean Annual Return",
+    "field": "meanAnnualReturn"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.rSquared",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats R Squared Fund Performance Risk Overview Stats Row",
+    "title": "R Squared",
+    "field": "rSquared"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.stdDev",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Std Dev Fund Performance Risk Overview Stats Row",
+    "title": "Std Dev",
+    "field": "stdDev"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.sharpeRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Sharpe Ratio Fund Performance Risk Overview Stats Row",
+    "title": "Sharpe Ratio",
+    "field": "sharpeRatio"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatistics.riskStatistics.treynorRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Statistics Fund Performance Risk Overview Stats Treynor Ratio Fund Performance Risk Overview Stats Row",
+    "title": "Treynor Ratio",
+    "field": "treynorRatio"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatistics.riskRating",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Fund Performance Risk Rating Fund Performance Risk Overview Stats",
+    "title": "Risk Rating",
+    "field": "riskRating"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.year",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Year Fund Performance Risk Overview Stats Row",
+    "title": "Year",
+    "field": "year"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.alpha",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Alpha Fund Performance Risk Overview Stats Row",
+    "title": "Alpha",
+    "field": "alpha"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.beta",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Beta Fund Performance Risk Overview Stats Row",
+    "title": "Beta",
+    "field": "beta"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.meanAnnualReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Mean Annual Return Fund Performance Risk Overview Stats Row",
+    "title": "Mean Annual Return",
+    "field": "meanAnnualReturn"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.rSquared",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat R Squared Fund Performance Risk Overview Stats Row",
+    "title": "R Squared",
+    "field": "rSquared"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.stdDev",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Std Dev Fund Performance Risk Overview Stats Row",
+    "title": "Std Dev",
+    "field": "stdDev"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.sharpeRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Sharpe Ratio Fund Performance Risk Overview Stats Row",
+    "title": "Sharpe Ratio",
+    "field": "sharpeRatio"
+  },
+  {
+    "path": "fundPerformance.riskOverviewStatisticsCat.riskStatisticsCat.treynorRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "fundPerformance",
+    "keyword": "Fund Performance Fund Performance Risk Overview Statistics Cat Fund Performance Risk Statistics Cat Fund Performance Risk Overview Stats Cat Treynor Ratio Fund Performance Risk Overview Stats Row",
+    "title": "Treynor Ratio",
+    "field": "treynorRatio"
+  },
+  {
+    "path": "fundProfile.styleBoxUrl",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Style Box Url Fund Profile",
+    "title": "Style Box Url",
+    "field": "styleBoxUrl"
+  },
+  {
+    "path": "fundProfile.family",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Family Fund Profile",
+    "title": "Family",
+    "field": "family"
+  },
+  {
+    "path": "fundProfile.categoryName",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Category Name Fund Profile",
+    "title": "Category Name",
+    "field": "categoryName"
+  },
+  {
+    "path": "fundProfile.legalType",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Legal Type Fund Profile",
+    "title": "Legal Type",
+    "field": "legalType"
+  },
+  {
+    "path": "fundProfile.managementInfo.managerName",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Management Info Fund Profile Manager Name Fund Profile Management Info",
+    "title": "Manager Name",
+    "field": "managerName"
+  },
+  {
+    "path": "fundProfile.managementInfo.managerBio",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Management Info Fund Profile Manager Bio Fund Profile Management Info",
+    "title": "Manager Bio",
+    "field": "managerBio"
+  },
+  {
+    "path": "fundProfile.feesExpensesInvestment.annualHoldingsTurnover",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Fees Expenses Investment Fund Profile Annual Holdings Turnover Fund Profile Fees Expenses Investment",
+    "title": "Annual Holdings Turnover",
+    "field": "annualHoldingsTurnover"
+  },
+  {
+    "path": "fundProfile.feesExpensesInvestment.annualReportExpenseRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Fees Expenses Investment Fund Profile Annual Report Expense Ratio Fund Profile Fees Expenses Investment",
+    "title": "Annual Report Expense Ratio",
+    "field": "annualReportExpenseRatio"
+  },
+  {
+    "path": "fundProfile.feesExpensesInvestment.grossExpRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Fees Expenses Investment Fund Profile Gross Exp Ratio Fund Profile Fees Expenses Investment",
+    "title": "Gross Exp Ratio",
+    "field": "grossExpRatio"
+  },
+  {
+    "path": "fundProfile.feesExpensesInvestment.netExpRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Fees Expenses Investment Fund Profile Net Exp Ratio Fund Profile Fees Expenses Investment",
+    "title": "Net Exp Ratio",
+    "field": "netExpRatio"
+  },
+  {
+    "path": "fundProfile.feesExpensesInvestment.projectionValues",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Fees Expenses Investment Fund Profile Projection Values Fund Profile Fees Expenses Investment",
+    "title": "Projection Values",
+    "field": "projectionValues"
+  },
+  {
+    "path": "fundProfile.feesExpensesInvestment.totalNetAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Fees Expenses Investment Fund Profile Total Net Assets Fund Profile Fees Expenses Investment",
+    "title": "Total Net Assets",
+    "field": "totalNetAssets"
+  },
+  {
+    "path": "fundProfile.feesExpensesInvestmentCat.projectionValuesCat",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Fees Expenses Investment Cat Fund Profile Projection Values Cat Fund Profile Fees Expenses Investment Cat",
+    "title": "Projection Values Cat",
+    "field": "projectionValuesCat"
+  },
+  {
+    "path": "fundProfile.brokerages",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Brokerages Fund Profile",
+    "title": "Brokerages",
+    "field": "brokerages"
+  },
+  {
+    "path": "fundProfile.initInvestment",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Init Investment Fund Profile",
+    "title": "Init Investment",
+    "field": "initInvestment"
+  },
+  {
+    "path": "fundProfile.initIraInvestment",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Init Ira Investment Fund Profile",
+    "title": "Init Ira Investment",
+    "field": "initIraInvestment"
+  },
+  {
+    "path": "fundProfile.initAipInvestment",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Init Aip Investment Fund Profile",
+    "title": "Init Aip Investment",
+    "field": "initAipInvestment"
+  },
+  {
+    "path": "fundProfile.subseqInvestment",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Subseq Investment Fund Profile",
+    "title": "Subseq Investment",
+    "field": "subseqInvestment"
+  },
+  {
+    "path": "fundProfile.subseqIraInvestment",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Subseq Ira Investment Fund Profile",
+    "title": "Subseq Ira Investment",
+    "field": "subseqIraInvestment"
+  },
+  {
+    "path": "fundProfile.subseqAipInvestment",
+    "moduleName": "quoteSummary",
+    "submodule": "fundProfile",
+    "keyword": "Fund Profile Fund Profile Subseq Aip Investment Fund Profile",
+    "title": "Subseq Aip Investment",
+    "field": "subseqAipInvestment"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.totalRevenue",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Total Revenue Income Statement History Element",
+    "title": "Total Revenue",
+    "field": "totalRevenue"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.costOfRevenue",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Cost Of Revenue Income Statement History Element",
+    "title": "Cost Of Revenue",
+    "field": "costOfRevenue"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.grossProfit",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Gross Profit Income Statement History Element",
+    "title": "Gross Profit",
+    "field": "grossProfit"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.researchDevelopment",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Research Development Income Statement History Element",
+    "title": "Research Development",
+    "field": "researchDevelopment"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.sellingGeneralAdministrative",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Selling General Administrative Income Statement History Element",
+    "title": "Selling General Administrative",
+    "field": "sellingGeneralAdministrative"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.nonRecurring",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Non Recurring Income Statement History Element",
+    "title": "Non Recurring",
+    "field": "nonRecurring"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.otherOperatingExpenses",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Other Operating Expenses Income Statement History Element",
+    "title": "Other Operating Expenses",
+    "field": "otherOperatingExpenses"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.totalOperatingExpenses",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Total Operating Expenses Income Statement History Element",
+    "title": "Total Operating Expenses",
+    "field": "totalOperatingExpenses"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.operatingIncome",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Operating Income Income Statement History Element",
+    "title": "Operating Income",
+    "field": "operatingIncome"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.totalOtherIncomeExpenseNet",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Total Other Income Expense Net Income Statement History Element",
+    "title": "Total Other Income Expense Net",
+    "field": "totalOtherIncomeExpenseNet"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.ebit",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Ebit Income Statement History Element",
+    "title": "Ebit",
+    "field": "ebit"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.interestExpense",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Interest Expense Income Statement History Element",
+    "title": "Interest Expense",
+    "field": "interestExpense"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.incomeBeforeTax",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Income Before Tax Income Statement History Element",
+    "title": "Income Before Tax",
+    "field": "incomeBeforeTax"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.incomeTaxExpense",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Income Tax Expense Income Statement History Element",
+    "title": "Income Tax Expense",
+    "field": "incomeTaxExpense"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.minorityInterest",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Minority Interest Income Statement History Element",
+    "title": "Minority Interest",
+    "field": "minorityInterest"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.netIncomeFromContinuingOps",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Net Income From Continuing Ops Income Statement History Element",
+    "title": "Net Income From Continuing Ops",
+    "field": "netIncomeFromContinuingOps"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.discontinuedOperations",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Discontinued Operations Income Statement History Element",
+    "title": "Discontinued Operations",
+    "field": "discontinuedOperations"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.extraordinaryItems",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Extraordinary Items Income Statement History Element",
+    "title": "Extraordinary Items",
+    "field": "extraordinaryItems"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.effectOfAccountingCharges",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Effect Of Accounting Charges Income Statement History Element",
+    "title": "Effect Of Accounting Charges",
+    "field": "effectOfAccountingCharges"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.otherItems",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Other Items Income Statement History Element",
+    "title": "Other Items",
+    "field": "otherItems"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.netIncome",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Net Income Income Statement History Element",
+    "title": "Net Income",
+    "field": "netIncome"
+  },
+  {
+    "path": "incomeStatementHistory.incomeStatementHistory.netIncomeApplicableToCommonShares",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistory",
+    "keyword": "Income Statement History Income Statement History Income Statement History Income Statement History Net Income Applicable To Common Shares Income Statement History Element",
+    "title": "Net Income Applicable To Common Shares",
+    "field": "netIncomeApplicableToCommonShares"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.totalRevenue",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Total Revenue Income Statement History Element",
+    "title": "Total Revenue",
+    "field": "totalRevenue"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.costOfRevenue",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Cost Of Revenue Income Statement History Element",
+    "title": "Cost Of Revenue",
+    "field": "costOfRevenue"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.grossProfit",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Gross Profit Income Statement History Element",
+    "title": "Gross Profit",
+    "field": "grossProfit"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.researchDevelopment",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Research Development Income Statement History Element",
+    "title": "Research Development",
+    "field": "researchDevelopment"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.sellingGeneralAdministrative",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Selling General Administrative Income Statement History Element",
+    "title": "Selling General Administrative",
+    "field": "sellingGeneralAdministrative"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.nonRecurring",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Non Recurring Income Statement History Element",
+    "title": "Non Recurring",
+    "field": "nonRecurring"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.otherOperatingExpenses",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Other Operating Expenses Income Statement History Element",
+    "title": "Other Operating Expenses",
+    "field": "otherOperatingExpenses"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.totalOperatingExpenses",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Total Operating Expenses Income Statement History Element",
+    "title": "Total Operating Expenses",
+    "field": "totalOperatingExpenses"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.operatingIncome",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Operating Income Income Statement History Element",
+    "title": "Operating Income",
+    "field": "operatingIncome"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.totalOtherIncomeExpenseNet",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Total Other Income Expense Net Income Statement History Element",
+    "title": "Total Other Income Expense Net",
+    "field": "totalOtherIncomeExpenseNet"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.ebit",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Ebit Income Statement History Element",
+    "title": "Ebit",
+    "field": "ebit"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.interestExpense",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Interest Expense Income Statement History Element",
+    "title": "Interest Expense",
+    "field": "interestExpense"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.incomeBeforeTax",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Income Before Tax Income Statement History Element",
+    "title": "Income Before Tax",
+    "field": "incomeBeforeTax"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.incomeTaxExpense",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Income Tax Expense Income Statement History Element",
+    "title": "Income Tax Expense",
+    "field": "incomeTaxExpense"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.minorityInterest",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Minority Interest Income Statement History Element",
+    "title": "Minority Interest",
+    "field": "minorityInterest"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.netIncomeFromContinuingOps",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Net Income From Continuing Ops Income Statement History Element",
+    "title": "Net Income From Continuing Ops",
+    "field": "netIncomeFromContinuingOps"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.discontinuedOperations",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Discontinued Operations Income Statement History Element",
+    "title": "Discontinued Operations",
+    "field": "discontinuedOperations"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.extraordinaryItems",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Extraordinary Items Income Statement History Element",
+    "title": "Extraordinary Items",
+    "field": "extraordinaryItems"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.effectOfAccountingCharges",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Effect Of Accounting Charges Income Statement History Element",
+    "title": "Effect Of Accounting Charges",
+    "field": "effectOfAccountingCharges"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.otherItems",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Other Items Income Statement History Element",
+    "title": "Other Items",
+    "field": "otherItems"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.netIncome",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Net Income Income Statement History Element",
+    "title": "Net Income",
+    "field": "netIncome"
+  },
+  {
+    "path": "incomeStatementHistoryQuarterly.incomeStatementHistory.netIncomeApplicableToCommonShares",
+    "moduleName": "quoteSummary",
+    "submodule": "incomeStatementHistoryQuarterly",
+    "keyword": "Income Statement History Quarterly Income Statement History Income Statement History Income Statement History Net Income Applicable To Common Shares Income Statement History Element",
+    "title": "Net Income Applicable To Common Shares",
+    "field": "netIncomeApplicableToCommonShares"
+  },
+  {
+    "path": "indexTrend.symbol",
+    "moduleName": "quoteSummary",
+    "submodule": "indexTrend",
+    "keyword": "Index Trend Index Trend Symbol Index Trend",
+    "title": "Symbol",
+    "field": "symbol"
+  },
+  {
+    "path": "indexTrend.peRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "indexTrend",
+    "keyword": "Index Trend Index Trend Pe Ratio Index Trend",
+    "title": "Pe Ratio",
+    "field": "peRatio"
+  },
+  {
+    "path": "indexTrend.pegRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "indexTrend",
+    "keyword": "Index Trend Index Trend Peg Ratio Index Trend",
+    "title": "Peg Ratio",
+    "field": "pegRatio"
+  },
+  {
+    "path": "indexTrend.estimates.growth",
+    "moduleName": "quoteSummary",
+    "submodule": "indexTrend",
+    "keyword": "Index Trend Index Trend Estimates Index Trend Growth Estimate",
+    "title": "Growth",
+    "field": "growth"
+  },
+  {
+    "path": "industryTrend.symbol",
+    "moduleName": "quoteSummary",
+    "submodule": "industryTrend",
+    "keyword": "Industry Trend Trend Symbol Trend",
+    "title": "Symbol",
+    "field": "symbol"
+  },
+  {
+    "path": "industryTrend.estimates",
+    "moduleName": "quoteSummary",
+    "submodule": "industryTrend",
+    "keyword": "Industry Trend Trend Estimates Trend",
+    "title": "Estimates",
+    "field": "estimates"
+  },
+  {
+    "path": "insiderHolders.holders.name",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderHolders",
+    "keyword": "Insider Holders Holders Holders Holders Name Holder",
+    "title": "Name",
+    "field": "name"
+  },
+  {
+    "path": "insiderHolders.holders.relation",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderHolders",
+    "keyword": "Insider Holders Holders Holders Holders Relation Holder",
+    "title": "Relation",
+    "field": "relation"
+  },
+  {
+    "path": "insiderHolders.holders.url",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderHolders",
+    "keyword": "Insider Holders Holders Holders Holders Url Holder",
+    "title": "Url",
+    "field": "url"
+  },
+  {
+    "path": "insiderHolders.holders.transactionDescription",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderHolders",
+    "keyword": "Insider Holders Holders Holders Holders Transaction Description Holder",
+    "title": "Transaction Description",
+    "field": "transactionDescription"
+  },
+  {
+    "path": "insiderHolders.holders.positionDirect",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderHolders",
+    "keyword": "Insider Holders Holders Holders Holders Position Direct Holder",
+    "title": "Position Direct",
+    "field": "positionDirect"
+  },
+  {
+    "path": "insiderHolders.holders.positionIndirect",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderHolders",
+    "keyword": "Insider Holders Holders Holders Holders Position Indirect Holder",
+    "title": "Position Indirect",
+    "field": "positionIndirect"
+  },
+  {
+    "path": "insiderTransactions.transactions.shares",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderTransactions",
+    "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Shares Transaction",
+    "title": "Shares",
+    "field": "shares"
+  },
+  {
+    "path": "insiderTransactions.transactions.filerUrl",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderTransactions",
+    "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Filer Url Transaction",
+    "title": "Filer Url",
+    "field": "filerUrl"
+  },
+  {
+    "path": "insiderTransactions.transactions.transactionText",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderTransactions",
+    "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Transaction Text Transaction",
+    "title": "Transaction Text",
+    "field": "transactionText"
+  },
+  {
+    "path": "insiderTransactions.transactions.filerName",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderTransactions",
+    "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Filer Name Transaction",
+    "title": "Filer Name",
+    "field": "filerName"
+  },
+  {
+    "path": "insiderTransactions.transactions.filerRelation",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderTransactions",
+    "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Filer Relation Transaction",
+    "title": "Filer Relation",
+    "field": "filerRelation"
+  },
+  {
+    "path": "insiderTransactions.transactions.moneyText",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderTransactions",
+    "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Money Text Transaction",
+    "title": "Money Text",
+    "field": "moneyText"
+  },
+  {
+    "path": "insiderTransactions.transactions.ownership",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderTransactions",
+    "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Ownership Transaction",
+    "title": "Ownership",
+    "field": "ownership"
+  },
+  {
+    "path": "insiderTransactions.transactions.value",
+    "moduleName": "quoteSummary",
+    "submodule": "insiderTransactions",
+    "keyword": "Insider Transactions Insider Transactions Transactions Insider Transactions Value Transaction",
+    "title": "Value",
+    "field": "value"
+  },
+  {
+    "path": "institutionOwnership.ownershipList.organization",
+    "moduleName": "quoteSummary",
+    "submodule": "institutionOwnership",
+    "keyword": "Institution Ownership Ownership Ownership List Ownership Organization Ownership List",
+    "title": "Organization",
+    "field": "organization"
+  },
+  {
+    "path": "institutionOwnership.ownershipList.pctHeld",
+    "moduleName": "quoteSummary",
+    "submodule": "institutionOwnership",
+    "keyword": "Institution Ownership Ownership Ownership List Ownership Pct Held Ownership List",
+    "title": "Pct Held",
+    "field": "pctHeld"
+  },
+  {
+    "path": "institutionOwnership.ownershipList.position",
+    "moduleName": "quoteSummary",
+    "submodule": "institutionOwnership",
+    "keyword": "Institution Ownership Ownership Ownership List Ownership Position Ownership List",
+    "title": "Position",
+    "field": "position"
+  },
+  {
+    "path": "institutionOwnership.ownershipList.value",
+    "moduleName": "quoteSummary",
+    "submodule": "institutionOwnership",
+    "keyword": "Institution Ownership Ownership Ownership List Ownership Value Ownership List",
+    "title": "Value",
+    "field": "value"
+  },
+  {
+    "path": "institutionOwnership.ownershipList.pctChange",
+    "moduleName": "quoteSummary",
+    "submodule": "institutionOwnership",
+    "keyword": "Institution Ownership Ownership Ownership List Ownership Pct Change Ownership List",
+    "title": "Pct Change",
+    "field": "pctChange"
+  },
+  {
+    "path": "majorDirectHolders.holders.name",
+    "moduleName": "quoteSummary",
+    "submodule": "majorDirectHolders",
+    "keyword": "Major Direct Holders Holders Holders Holders Name Holder",
+    "title": "Name",
+    "field": "name"
+  },
+  {
+    "path": "majorDirectHolders.holders.relation",
+    "moduleName": "quoteSummary",
+    "submodule": "majorDirectHolders",
+    "keyword": "Major Direct Holders Holders Holders Holders Relation Holder",
+    "title": "Relation",
+    "field": "relation"
+  },
+  {
+    "path": "majorDirectHolders.holders.url",
+    "moduleName": "quoteSummary",
+    "submodule": "majorDirectHolders",
+    "keyword": "Major Direct Holders Holders Holders Holders Url Holder",
+    "title": "Url",
+    "field": "url"
+  },
+  {
+    "path": "majorDirectHolders.holders.transactionDescription",
+    "moduleName": "quoteSummary",
+    "submodule": "majorDirectHolders",
+    "keyword": "Major Direct Holders Holders Holders Holders Transaction Description Holder",
+    "title": "Transaction Description",
+    "field": "transactionDescription"
+  },
+  {
+    "path": "majorDirectHolders.holders.positionDirect",
+    "moduleName": "quoteSummary",
+    "submodule": "majorDirectHolders",
+    "keyword": "Major Direct Holders Holders Holders Holders Position Direct Holder",
+    "title": "Position Direct",
+    "field": "positionDirect"
+  },
+  {
+    "path": "majorDirectHolders.holders.positionIndirect",
+    "moduleName": "quoteSummary",
+    "submodule": "majorDirectHolders",
+    "keyword": "Major Direct Holders Holders Holders Holders Position Indirect Holder",
+    "title": "Position Indirect",
+    "field": "positionIndirect"
+  },
+  {
+    "path": "majorHoldersBreakdown.insidersPercentHeld",
+    "moduleName": "quoteSummary",
+    "submodule": "majorHoldersBreakdown",
+    "keyword": "Major Holders Breakdown Major Holders Breakdown Insiders Percent Held Major Holders Breakdown",
+    "title": "Insiders Percent Held",
+    "field": "insidersPercentHeld"
+  },
+  {
+    "path": "majorHoldersBreakdown.institutionsPercentHeld",
+    "moduleName": "quoteSummary",
+    "submodule": "majorHoldersBreakdown",
+    "keyword": "Major Holders Breakdown Major Holders Breakdown Institutions Percent Held Major Holders Breakdown",
+    "title": "Institutions Percent Held",
+    "field": "institutionsPercentHeld"
+  },
+  {
+    "path": "majorHoldersBreakdown.institutionsFloatPercentHeld",
+    "moduleName": "quoteSummary",
+    "submodule": "majorHoldersBreakdown",
+    "keyword": "Major Holders Breakdown Major Holders Breakdown Institutions Float Percent Held Major Holders Breakdown",
+    "title": "Institutions Float Percent Held",
+    "field": "institutionsFloatPercentHeld"
+  },
+  {
+    "path": "majorHoldersBreakdown.institutionsCount",
+    "moduleName": "quoteSummary",
+    "submodule": "majorHoldersBreakdown",
+    "keyword": "Major Holders Breakdown Major Holders Breakdown Institutions Count Major Holders Breakdown",
+    "title": "Institutions Count",
+    "field": "institutionsCount"
+  },
+  {
+    "path": "netSharePurchaseActivity.buyInfoCount",
+    "moduleName": "quoteSummary",
+    "submodule": "netSharePurchaseActivity",
+    "keyword": "Net Share Purchase Activity Net Share Purchase Activity Buy Info Count Net Share Purchase Activity",
+    "title": "Buy Info Count",
+    "field": "buyInfoCount"
+  },
+  {
+    "path": "netSharePurchaseActivity.buyInfoShares",
+    "moduleName": "quoteSummary",
+    "submodule": "netSharePurchaseActivity",
+    "keyword": "Net Share Purchase Activity Net Share Purchase Activity Buy Info Shares Net Share Purchase Activity",
+    "title": "Buy Info Shares",
+    "field": "buyInfoShares"
+  },
+  {
+    "path": "netSharePurchaseActivity.buyPercentInsiderShares",
+    "moduleName": "quoteSummary",
+    "submodule": "netSharePurchaseActivity",
+    "keyword": "Net Share Purchase Activity Net Share Purchase Activity Buy Percent Insider Shares Net Share Purchase Activity",
+    "title": "Buy Percent Insider Shares",
+    "field": "buyPercentInsiderShares"
+  },
+  {
+    "path": "netSharePurchaseActivity.sellInfoCount",
+    "moduleName": "quoteSummary",
+    "submodule": "netSharePurchaseActivity",
+    "keyword": "Net Share Purchase Activity Net Share Purchase Activity Sell Info Count Net Share Purchase Activity",
+    "title": "Sell Info Count",
+    "field": "sellInfoCount"
+  },
+  {
+    "path": "netSharePurchaseActivity.sellInfoShares",
+    "moduleName": "quoteSummary",
+    "submodule": "netSharePurchaseActivity",
+    "keyword": "Net Share Purchase Activity Net Share Purchase Activity Sell Info Shares Net Share Purchase Activity",
+    "title": "Sell Info Shares",
+    "field": "sellInfoShares"
+  },
+  {
+    "path": "netSharePurchaseActivity.sellPercentInsiderShares",
+    "moduleName": "quoteSummary",
+    "submodule": "netSharePurchaseActivity",
+    "keyword": "Net Share Purchase Activity Net Share Purchase Activity Sell Percent Insider Shares Net Share Purchase Activity",
+    "title": "Sell Percent Insider Shares",
+    "field": "sellPercentInsiderShares"
+  },
+  {
+    "path": "netSharePurchaseActivity.netInfoCount",
+    "moduleName": "quoteSummary",
+    "submodule": "netSharePurchaseActivity",
+    "keyword": "Net Share Purchase Activity Net Share Purchase Activity Net Info Count Net Share Purchase Activity",
+    "title": "Net Info Count",
+    "field": "netInfoCount"
+  },
+  {
+    "path": "netSharePurchaseActivity.netInfoShares",
+    "moduleName": "quoteSummary",
+    "submodule": "netSharePurchaseActivity",
+    "keyword": "Net Share Purchase Activity Net Share Purchase Activity Net Info Shares Net Share Purchase Activity",
+    "title": "Net Info Shares",
+    "field": "netInfoShares"
+  },
+  {
+    "path": "netSharePurchaseActivity.netPercentInsiderShares",
+    "moduleName": "quoteSummary",
+    "submodule": "netSharePurchaseActivity",
+    "keyword": "Net Share Purchase Activity Net Share Purchase Activity Net Percent Insider Shares Net Share Purchase Activity",
+    "title": "Net Percent Insider Shares",
+    "field": "netPercentInsiderShares"
+  },
+  {
+    "path": "netSharePurchaseActivity.totalInsiderShares",
+    "moduleName": "quoteSummary",
+    "submodule": "netSharePurchaseActivity",
+    "keyword": "Net Share Purchase Activity Net Share Purchase Activity Total Insider Shares Net Share Purchase Activity",
+    "title": "Total Insider Shares",
+    "field": "totalInsiderShares"
+  },
+  {
+    "path": "price.averageDailyVolume10Day",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Average Daily Volume10Day Price",
+    "title": "Average Daily Volume10Day",
+    "field": "averageDailyVolume10Day"
+  },
+  {
+    "path": "price.averageDailyVolume3Month",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Average Daily Volume3Month Price",
+    "title": "Average Daily Volume3Month",
+    "field": "averageDailyVolume3Month"
+  },
+  {
+    "path": "price.exchange",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Exchange Price",
+    "title": "Exchange",
+    "field": "exchange"
+  },
+  {
+    "path": "price.exchangeName",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Exchange Name Price",
+    "title": "Exchange Name",
+    "field": "exchangeName"
+  },
+  {
+    "path": "price.exchangeDataDelayedBy",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Exchange Data Delayed By Price",
+    "title": "Exchange Data Delayed By",
+    "field": "exchangeDataDelayedBy"
+  },
+  {
+    "path": "price.postMarketChangePercent",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Post Market Change Percent Price",
+    "title": "Post Market Change Percent",
+    "field": "postMarketChangePercent"
+  },
+  {
+    "path": "price.postMarketChange",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Post Market Change Price",
+    "title": "Post Market Change",
+    "field": "postMarketChange"
+  },
+  {
+    "path": "price.postMarketPrice",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Post Market Price Price",
+    "title": "Post Market Price",
+    "field": "postMarketPrice"
+  },
+  {
+    "path": "price.postMarketSource",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Post Market Source Price",
+    "title": "Post Market Source",
+    "field": "postMarketSource"
+  },
+  {
+    "path": "price.preMarketChangePercent",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Pre Market Change Percent Price",
+    "title": "Pre Market Change Percent",
+    "field": "preMarketChangePercent"
+  },
+  {
+    "path": "price.preMarketChange",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Pre Market Change Price",
+    "title": "Pre Market Change",
+    "field": "preMarketChange"
+  },
+  {
+    "path": "price.preMarketPrice",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Pre Market Price Price",
+    "title": "Pre Market Price",
+    "field": "preMarketPrice"
+  },
+  {
+    "path": "price.preMarketSource",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Pre Market Source Price",
+    "title": "Pre Market Source",
+    "field": "preMarketSource"
+  },
+  {
+    "path": "price.priceHint",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Price Hint Price",
+    "title": "Price Hint",
+    "field": "priceHint"
+  },
+  {
+    "path": "price.regularMarketChangePercent",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Regular Market Change Percent Price",
+    "title": "Regular Market Change Percent",
+    "field": "regularMarketChangePercent"
+  },
+  {
+    "path": "price.regularMarketChange",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Regular Market Change Price",
+    "title": "Regular Market Change",
+    "field": "regularMarketChange"
+  },
+  {
+    "path": "price.regularMarketPrice",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Regular Market Price Price",
+    "title": "Regular Market Price",
+    "field": "regularMarketPrice"
+  },
+  {
+    "path": "price.regularMarketDayHigh",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Regular Market Day High Price",
+    "title": "Regular Market Day High",
+    "field": "regularMarketDayHigh"
+  },
+  {
+    "path": "price.regularMarketDayLow",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Regular Market Day Low Price",
+    "title": "Regular Market Day Low",
+    "field": "regularMarketDayLow"
+  },
+  {
+    "path": "price.regularMarketVolume",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Regular Market Volume Price",
+    "title": "Regular Market Volume",
+    "field": "regularMarketVolume"
+  },
+  {
+    "path": "price.regularMarketPreviousClose",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Regular Market Previous Close Price",
+    "title": "Regular Market Previous Close",
+    "field": "regularMarketPreviousClose"
+  },
+  {
+    "path": "price.regularMarketSource",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Regular Market Source Price",
+    "title": "Regular Market Source",
+    "field": "regularMarketSource"
+  },
+  {
+    "path": "price.regularMarketOpen",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Regular Market Open Price",
+    "title": "Regular Market Open",
+    "field": "regularMarketOpen"
+  },
+  {
+    "path": "price.quoteSourceName",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Quote Source Name Price",
+    "title": "Quote Source Name",
+    "field": "quoteSourceName"
+  },
+  {
+    "path": "price.quoteType",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Quote Type Price",
+    "title": "Quote Type",
+    "field": "quoteType"
+  },
+  {
+    "path": "price.symbol",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Symbol Price",
+    "title": "Symbol",
+    "field": "symbol"
+  },
+  {
+    "path": "price.underlyingSymbol",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Underlying Symbol Price",
+    "title": "Underlying Symbol",
+    "field": "underlyingSymbol"
+  },
+  {
+    "path": "price.shortName",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Short Name Price",
+    "title": "Short Name",
+    "field": "shortName"
+  },
+  {
+    "path": "price.longName",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Long Name Price",
+    "title": "Long Name",
+    "field": "longName"
+  },
+  {
+    "path": "price.lastMarket",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Last Market Price",
+    "title": "Last Market",
+    "field": "lastMarket"
+  },
+  {
+    "path": "price.marketState",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Market State Price",
+    "title": "Market State",
+    "field": "marketState"
+  },
+  {
+    "path": "price.marketCap",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Market Cap Price",
+    "title": "Market Cap",
+    "field": "marketCap"
+  },
+  {
+    "path": "price.currency",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Currency Price",
+    "title": "Currency",
+    "field": "currency"
+  },
+  {
+    "path": "price.currencySymbol",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Currency Symbol Price",
+    "title": "Currency Symbol",
+    "field": "currencySymbol"
+  },
+  {
+    "path": "price.fromCurrency",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price From Currency Price",
+    "title": "From Currency",
+    "field": "fromCurrency"
+  },
+  {
+    "path": "price.toCurrency",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price To Currency Price",
+    "title": "To Currency",
+    "field": "toCurrency"
+  },
+  {
+    "path": "price.volume24Hr",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Volume24Hr Price",
+    "title": "Volume24Hr",
+    "field": "volume24Hr"
+  },
+  {
+    "path": "price.volumeAllCurrencies",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Volume All Currencies Price",
+    "title": "Volume All Currencies",
+    "field": "volumeAllCurrencies"
+  },
+  {
+    "path": "price.circulatingSupply",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Circulating Supply Price",
+    "title": "Circulating Supply",
+    "field": "circulatingSupply"
+  },
+  {
+    "path": "price.openInterest",
+    "moduleName": "quoteSummary",
+    "submodule": "price",
+    "keyword": "Price Price Open Interest Price",
+    "title": "Open Interest",
+    "field": "openInterest"
+  },
+  {
+    "path": "quoteType.exchange",
+    "moduleName": "quoteSummary",
+    "submodule": "quoteType",
+    "keyword": "Quote Type Quote Type Exchange Quote Type",
+    "title": "Exchange",
+    "field": "exchange"
+  },
+  {
+    "path": "quoteType.quoteType",
+    "moduleName": "quoteSummary",
+    "submodule": "quoteType",
+    "keyword": "Quote Type Quote Type Quote Type Quote Type",
+    "title": "Quote Type",
+    "field": "quoteType"
+  },
+  {
+    "path": "quoteType.symbol",
+    "moduleName": "quoteSummary",
+    "submodule": "quoteType",
+    "keyword": "Quote Type Quote Type Symbol Quote Type",
+    "title": "Symbol",
+    "field": "symbol"
+  },
+  {
+    "path": "quoteType.underlyingSymbol",
+    "moduleName": "quoteSummary",
+    "submodule": "quoteType",
+    "keyword": "Quote Type Quote Type Underlying Symbol Quote Type",
+    "title": "Underlying Symbol",
+    "field": "underlyingSymbol"
+  },
+  {
+    "path": "quoteType.shortName",
+    "moduleName": "quoteSummary",
+    "submodule": "quoteType",
+    "keyword": "Quote Type Quote Type Short Name Quote Type",
+    "title": "Short Name",
+    "field": "shortName"
+  },
+  {
+    "path": "quoteType.longName",
+    "moduleName": "quoteSummary",
+    "submodule": "quoteType",
+    "keyword": "Quote Type Quote Type Long Name Quote Type",
+    "title": "Long Name",
+    "field": "longName"
+  },
+  {
+    "path": "quoteType.timeZoneFullName",
+    "moduleName": "quoteSummary",
+    "submodule": "quoteType",
+    "keyword": "Quote Type Quote Type Time Zone Full Name Quote Type",
+    "title": "Time Zone Full Name",
+    "field": "timeZoneFullName"
+  },
+  {
+    "path": "quoteType.timeZoneShortName",
+    "moduleName": "quoteSummary",
+    "submodule": "quoteType",
+    "keyword": "Quote Type Quote Type Time Zone Short Name Quote Type",
+    "title": "Time Zone Short Name",
+    "field": "timeZoneShortName"
+  },
+  {
+    "path": "quoteType.uuid",
+    "moduleName": "quoteSummary",
+    "submodule": "quoteType",
+    "keyword": "Quote Type Quote Type Uuid Quote Type",
+    "title": "Uuid",
+    "field": "uuid"
+  },
+  {
+    "path": "quoteType.messageBoardId",
+    "moduleName": "quoteSummary",
+    "submodule": "quoteType",
+    "keyword": "Quote Type Quote Type Message Board Id Quote Type",
+    "title": "Message Board Id",
+    "field": "messageBoardId"
+  },
+  {
+    "path": "quoteType.gmtOffSetMilliseconds",
+    "moduleName": "quoteSummary",
+    "submodule": "quoteType",
+    "keyword": "Quote Type Quote Type Gmt Off Set Milliseconds Quote Type",
+    "title": "Gmt Off Set Milliseconds",
+    "field": "gmtOffSetMilliseconds"
+  },
+  {
+    "path": "recommendationTrend.trend.strongBuy",
+    "moduleName": "quoteSummary",
+    "submodule": "recommendationTrend",
+    "keyword": "Recommendation Trend Recommendation Trend Trend Recommendation Trend Strong Buy Recommendation Trend Trend",
+    "title": "Strong Buy",
+    "field": "strongBuy"
+  },
+  {
+    "path": "recommendationTrend.trend.buy",
+    "moduleName": "quoteSummary",
+    "submodule": "recommendationTrend",
+    "keyword": "Recommendation Trend Recommendation Trend Trend Recommendation Trend Buy Recommendation Trend Trend",
+    "title": "Buy",
+    "field": "buy"
+  },
+  {
+    "path": "recommendationTrend.trend.hold",
+    "moduleName": "quoteSummary",
+    "submodule": "recommendationTrend",
+    "keyword": "Recommendation Trend Recommendation Trend Trend Recommendation Trend Hold Recommendation Trend Trend",
+    "title": "Hold",
+    "field": "hold"
+  },
+  {
+    "path": "recommendationTrend.trend.sell",
+    "moduleName": "quoteSummary",
+    "submodule": "recommendationTrend",
+    "keyword": "Recommendation Trend Recommendation Trend Trend Recommendation Trend Sell Recommendation Trend Trend",
+    "title": "Sell",
+    "field": "sell"
+  },
+  {
+    "path": "recommendationTrend.trend.strongSell",
+    "moduleName": "quoteSummary",
+    "submodule": "recommendationTrend",
+    "keyword": "Recommendation Trend Recommendation Trend Trend Recommendation Trend Strong Sell Recommendation Trend Trend",
+    "title": "Strong Sell",
+    "field": "strongSell"
+  },
+  {
+    "path": "secFilings.filings.type",
+    "moduleName": "quoteSummary",
+    "submodule": "secFilings",
+    "keyword": "Sec Filings SECFilings Filings SECFilings Type Filing",
+    "title": "Type",
+    "field": "type"
+  },
+  {
+    "path": "secFilings.filings.title",
+    "moduleName": "quoteSummary",
+    "submodule": "secFilings",
+    "keyword": "Sec Filings SECFilings Filings SECFilings Title Filing",
+    "title": "Title",
+    "field": "title"
+  },
+  {
+    "path": "secFilings.filings.edgarUrl",
+    "moduleName": "quoteSummary",
+    "submodule": "secFilings",
+    "keyword": "Sec Filings SECFilings Filings SECFilings Edgar Url Filing",
+    "title": "Edgar Url",
+    "field": "edgarUrl"
+  },
+  {
+    "path": "secFilings.filings.url",
+    "moduleName": "quoteSummary",
+    "submodule": "secFilings",
+    "keyword": "Sec Filings SECFilings Filings SECFilings Url Filing",
+    "title": "Url",
+    "field": "url"
+  },
+  {
+    "path": "sectorTrend.symbol",
+    "moduleName": "quoteSummary",
+    "submodule": "sectorTrend",
+    "keyword": "Sector Trend Trend Symbol Trend",
+    "title": "Symbol",
+    "field": "symbol"
+  },
+  {
+    "path": "sectorTrend.estimates",
+    "moduleName": "quoteSummary",
+    "submodule": "sectorTrend",
+    "keyword": "Sector Trend Trend Estimates Trend",
+    "title": "Estimates",
+    "field": "estimates"
+  },
+  {
+    "path": "summaryDetail.priceHint",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Price Hint Summary Detail",
+    "title": "Price Hint",
+    "field": "priceHint"
+  },
+  {
+    "path": "summaryDetail.previousClose",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Previous Close Summary Detail",
+    "title": "Previous Close",
+    "field": "previousClose"
+  },
+  {
+    "path": "summaryDetail.open",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Open Summary Detail",
+    "title": "Open",
+    "field": "open"
+  },
+  {
+    "path": "summaryDetail.dayLow",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Day Low Summary Detail",
+    "title": "Day Low",
+    "field": "dayLow"
+  },
+  {
+    "path": "summaryDetail.dayHigh",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Day High Summary Detail",
+    "title": "Day High",
+    "field": "dayHigh"
+  },
+  {
+    "path": "summaryDetail.regularMarketPreviousClose",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Regular Market Previous Close Summary Detail",
+    "title": "Regular Market Previous Close",
+    "field": "regularMarketPreviousClose"
+  },
+  {
+    "path": "summaryDetail.regularMarketOpen",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Regular Market Open Summary Detail",
+    "title": "Regular Market Open",
+    "field": "regularMarketOpen"
+  },
+  {
+    "path": "summaryDetail.regularMarketDayLow",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Regular Market Day Low Summary Detail",
+    "title": "Regular Market Day Low",
+    "field": "regularMarketDayLow"
+  },
+  {
+    "path": "summaryDetail.regularMarketDayHigh",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Regular Market Day High Summary Detail",
+    "title": "Regular Market Day High",
+    "field": "regularMarketDayHigh"
+  },
+  {
+    "path": "summaryDetail.regularMarketVolume",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Regular Market Volume Summary Detail",
+    "title": "Regular Market Volume",
+    "field": "regularMarketVolume"
+  },
+  {
+    "path": "summaryDetail.dividendRate",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Dividend Rate Summary Detail",
+    "title": "Dividend Rate",
+    "field": "dividendRate"
+  },
+  {
+    "path": "summaryDetail.dividendYield",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Dividend Yield Summary Detail",
+    "title": "Dividend Yield",
+    "field": "dividendYield"
+  },
+  {
+    "path": "summaryDetail.payoutRatio",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Payout Ratio Summary Detail",
+    "title": "Payout Ratio",
+    "field": "payoutRatio"
+  },
+  {
+    "path": "summaryDetail.fiveYearAvgDividendYield",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Five Year Avg Dividend Yield Summary Detail",
+    "title": "Five Year Avg Dividend Yield",
+    "field": "fiveYearAvgDividendYield"
+  },
+  {
+    "path": "summaryDetail.beta",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Beta Summary Detail",
+    "title": "Beta",
+    "field": "beta"
+  },
+  {
+    "path": "summaryDetail.trailingPE",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Trailing PE Summary Detail",
+    "title": "Trailing PE",
+    "field": "trailingPE"
+  },
+  {
+    "path": "summaryDetail.forwardPE",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Forward PE Summary Detail",
+    "title": "Forward PE",
+    "field": "forwardPE"
+  },
+  {
+    "path": "summaryDetail.volume",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Volume Summary Detail",
+    "title": "Volume",
+    "field": "volume"
+  },
+  {
+    "path": "summaryDetail.averageVolume",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Average Volume Summary Detail",
+    "title": "Average Volume",
+    "field": "averageVolume"
+  },
+  {
+    "path": "summaryDetail.averageVolume10days",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Average Volume10days Summary Detail",
+    "title": "Average Volume10days",
+    "field": "averageVolume10days"
+  },
+  {
+    "path": "summaryDetail.averageDailyVolume10Day",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Average Daily Volume10Day Summary Detail",
+    "title": "Average Daily Volume10Day",
+    "field": "averageDailyVolume10Day"
+  },
+  {
+    "path": "summaryDetail.bid",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Bid Summary Detail",
+    "title": "Bid",
+    "field": "bid"
+  },
+  {
+    "path": "summaryDetail.ask",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Ask Summary Detail",
+    "title": "Ask",
+    "field": "ask"
+  },
+  {
+    "path": "summaryDetail.bidSize",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Bid Size Summary Detail",
+    "title": "Bid Size",
+    "field": "bidSize"
+  },
+  {
+    "path": "summaryDetail.askSize",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Ask Size Summary Detail",
+    "title": "Ask Size",
+    "field": "askSize"
+  },
+  {
+    "path": "summaryDetail.marketCap",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Market Cap Summary Detail",
+    "title": "Market Cap",
+    "field": "marketCap"
+  },
+  {
+    "path": "summaryDetail.fiftyDayAverage",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Fifty Day Average Summary Detail",
+    "title": "Fifty Day Average",
+    "field": "fiftyDayAverage"
+  },
+  {
+    "path": "summaryDetail.fiftyTwoWeekLow",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Fifty Two Week Low Summary Detail",
+    "title": "Fifty Two Week Low",
+    "field": "fiftyTwoWeekLow"
+  },
+  {
+    "path": "summaryDetail.fiftyTwoWeekHigh",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Fifty Two Week High Summary Detail",
+    "title": "Fifty Two Week High",
+    "field": "fiftyTwoWeekHigh"
+  },
+  {
+    "path": "summaryDetail.twoHundredDayAverage",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Two Hundred Day Average Summary Detail",
+    "title": "Two Hundred Day Average",
+    "field": "twoHundredDayAverage"
+  },
+  {
+    "path": "summaryDetail.priceToSalesTrailing12Months",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Price To Sales Trailing12Months Summary Detail",
+    "title": "Price To Sales Trailing12Months",
+    "field": "priceToSalesTrailing12Months"
+  },
+  {
+    "path": "summaryDetail.trailingAnnualDividendRate",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Trailing Annual Dividend Rate Summary Detail",
+    "title": "Trailing Annual Dividend Rate",
+    "field": "trailingAnnualDividendRate"
+  },
+  {
+    "path": "summaryDetail.trailingAnnualDividendYield",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Trailing Annual Dividend Yield Summary Detail",
+    "title": "Trailing Annual Dividend Yield",
+    "field": "trailingAnnualDividendYield"
+  },
+  {
+    "path": "summaryDetail.currency",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Currency Summary Detail",
+    "title": "Currency",
+    "field": "currency"
+  },
+  {
+    "path": "summaryDetail.algorithm",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Algorithm Summary Detail",
+    "title": "Algorithm",
+    "field": "algorithm"
+  },
+  {
+    "path": "summaryDetail.tradeable",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Tradeable Summary Detail",
+    "title": "Tradeable",
+    "field": "tradeable"
+  },
+  {
+    "path": "summaryDetail.yield",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Yield Summary Detail",
+    "title": "Yield",
+    "field": "yield"
+  },
+  {
+    "path": "summaryDetail.totalAssets",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Total Assets Summary Detail",
+    "title": "Total Assets",
+    "field": "totalAssets"
+  },
+  {
+    "path": "summaryDetail.navPrice",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Nav Price Summary Detail",
+    "title": "Nav Price",
+    "field": "navPrice"
+  },
+  {
+    "path": "summaryDetail.ytdReturn",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Ytd Return Summary Detail",
+    "title": "Ytd Return",
+    "field": "ytdReturn"
+  },
+  {
+    "path": "summaryDetail.fromCurrency",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail From Currency Summary Detail",
+    "title": "From Currency",
+    "field": "fromCurrency"
+  },
+  {
+    "path": "summaryDetail.toCurrency",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail To Currency Summary Detail",
+    "title": "To Currency",
+    "field": "toCurrency"
+  },
+  {
+    "path": "summaryDetail.lastMarket",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Last Market Summary Detail",
+    "title": "Last Market",
+    "field": "lastMarket"
+  },
+  {
+    "path": "summaryDetail.volume24Hr",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Volume24Hr Summary Detail",
+    "title": "Volume24Hr",
+    "field": "volume24Hr"
+  },
+  {
+    "path": "summaryDetail.volumeAllCurrencies",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Volume All Currencies Summary Detail",
+    "title": "Volume All Currencies",
+    "field": "volumeAllCurrencies"
+  },
+  {
+    "path": "summaryDetail.circulatingSupply",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Circulating Supply Summary Detail",
+    "title": "Circulating Supply",
+    "field": "circulatingSupply"
+  },
+  {
+    "path": "summaryDetail.coinMarketCapLink",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Coin Market Cap Link Summary Detail",
+    "title": "Coin Market Cap Link",
+    "field": "coinMarketCapLink"
+  },
+  {
+    "path": "summaryDetail.openInterest",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryDetail",
+    "keyword": "Summary Detail Summary Detail Open Interest Summary Detail",
+    "title": "Open Interest",
+    "field": "openInterest"
+  },
+  {
+    "path": "summaryProfile.address1",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Address1 Summary Profile",
+    "title": "Address1",
+    "field": "address1"
+  },
+  {
+    "path": "summaryProfile.address2",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Address2 Summary Profile",
+    "title": "Address2",
+    "field": "address2"
+  },
+  {
+    "path": "summaryProfile.address3",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Address3 Summary Profile",
+    "title": "Address3",
+    "field": "address3"
+  },
+  {
+    "path": "summaryProfile.city",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile City Summary Profile",
+    "title": "City",
+    "field": "city"
+  },
+  {
+    "path": "summaryProfile.state",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile State Summary Profile",
+    "title": "State",
+    "field": "state"
+  },
+  {
+    "path": "summaryProfile.zip",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Zip Summary Profile",
+    "title": "Zip",
+    "field": "zip"
+  },
+  {
+    "path": "summaryProfile.country",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Country Summary Profile",
+    "title": "Country",
+    "field": "country"
+  },
+  {
+    "path": "summaryProfile.phone",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Phone Summary Profile",
+    "title": "Phone",
+    "field": "phone"
+  },
+  {
+    "path": "summaryProfile.fax",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Fax Summary Profile",
+    "title": "Fax",
+    "field": "fax"
+  },
+  {
+    "path": "summaryProfile.website",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Website Summary Profile",
+    "title": "Website",
+    "field": "website"
+  },
+  {
+    "path": "summaryProfile.industry",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Industry Summary Profile",
+    "title": "Industry",
+    "field": "industry"
+  },
+  {
+    "path": "summaryProfile.sector",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Sector Summary Profile",
+    "title": "Sector",
+    "field": "sector"
+  },
+  {
+    "path": "summaryProfile.longBusinessSummary",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Long Business Summary Summary Profile",
+    "title": "Long Business Summary",
+    "field": "longBusinessSummary"
+  },
+  {
+    "path": "summaryProfile.fullTimeEmployees",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Full Time Employees Summary Profile",
+    "title": "Full Time Employees",
+    "field": "fullTimeEmployees"
+  },
+  {
+    "path": "summaryProfile.companyOfficers",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Company Officers Summary Profile",
+    "title": "Company Officers",
+    "field": "companyOfficers"
+  },
+  {
+    "path": "summaryProfile.twitter",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Twitter Summary Profile",
+    "title": "Twitter",
+    "field": "twitter"
+  },
+  {
+    "path": "summaryProfile.name",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Name Summary Profile",
+    "title": "Name",
+    "field": "name"
+  },
+  {
+    "path": "summaryProfile.description",
+    "moduleName": "quoteSummary",
+    "submodule": "summaryProfile",
+    "keyword": "Summary Profile Summary Profile Description Summary Profile",
+    "title": "Description",
+    "field": "description"
+  },
+  {
+    "path": "topHoldings.stockPosition",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Stock Position Top Holdings",
+    "title": "Stock Position",
+    "field": "stockPosition"
+  },
+  {
+    "path": "topHoldings.bondPosition",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Bond Position Top Holdings",
+    "title": "Bond Position",
+    "field": "bondPosition"
+  },
+  {
+    "path": "topHoldings.holdings.symbol",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Holdings Top Holdings Symbol Top Holdings Holding",
+    "title": "Symbol",
+    "field": "symbol"
+  },
+  {
+    "path": "topHoldings.holdings.holdingName",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Holdings Top Holdings Holding Name Top Holdings Holding",
+    "title": "Holding Name",
+    "field": "holdingName"
+  },
+  {
+    "path": "topHoldings.holdings.holdingPercent",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Holdings Top Holdings Holding Percent Top Holdings Holding",
+    "title": "Holding Percent",
+    "field": "holdingPercent"
+  },
+  {
+    "path": "topHoldings.equityHoldings.medianMarketCap",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Median Market Cap Top Holdings Equity Holdings",
+    "title": "Median Market Cap",
+    "field": "medianMarketCap"
+  },
+  {
+    "path": "topHoldings.equityHoldings.medianMarketCapCat",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Median Market Cap Cat Top Holdings Equity Holdings",
+    "title": "Median Market Cap Cat",
+    "field": "medianMarketCapCat"
+  },
+  {
+    "path": "topHoldings.equityHoldings.priceToBook",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Book Top Holdings Equity Holdings",
+    "title": "Price To Book",
+    "field": "priceToBook"
+  },
+  {
+    "path": "topHoldings.equityHoldings.priceToBookCat",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Book Cat Top Holdings Equity Holdings",
+    "title": "Price To Book Cat",
+    "field": "priceToBookCat"
+  },
+  {
+    "path": "topHoldings.equityHoldings.priceToCashflow",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Cashflow Top Holdings Equity Holdings",
+    "title": "Price To Cashflow",
+    "field": "priceToCashflow"
+  },
+  {
+    "path": "topHoldings.equityHoldings.priceToCashflowCat",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Cashflow Cat Top Holdings Equity Holdings",
+    "title": "Price To Cashflow Cat",
+    "field": "priceToCashflowCat"
+  },
+  {
+    "path": "topHoldings.equityHoldings.priceToEarnings",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Earnings Top Holdings Equity Holdings",
+    "title": "Price To Earnings",
+    "field": "priceToEarnings"
+  },
+  {
+    "path": "topHoldings.equityHoldings.priceToEarningsCat",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Earnings Cat Top Holdings Equity Holdings",
+    "title": "Price To Earnings Cat",
+    "field": "priceToEarningsCat"
+  },
+  {
+    "path": "topHoldings.equityHoldings.priceToSales",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Sales Top Holdings Equity Holdings",
+    "title": "Price To Sales",
+    "field": "priceToSales"
+  },
+  {
+    "path": "topHoldings.equityHoldings.priceToSalesCat",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Price To Sales Cat Top Holdings Equity Holdings",
+    "title": "Price To Sales Cat",
+    "field": "priceToSalesCat"
+  },
+  {
+    "path": "topHoldings.equityHoldings.threeYearEarningsGrowth",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Three Year Earnings Growth Top Holdings Equity Holdings",
+    "title": "Three Year Earnings Growth",
+    "field": "threeYearEarningsGrowth"
+  },
+  {
+    "path": "topHoldings.equityHoldings.threeYearEarningsGrowthCat",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Equity Holdings Top Holdings Three Year Earnings Growth Cat Top Holdings Equity Holdings",
+    "title": "Three Year Earnings Growth Cat",
+    "field": "threeYearEarningsGrowthCat"
+  },
+  {
+    "path": "topHoldings.bondHoldings",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Bond Holdings Top Holdings",
+    "title": "Bond Holdings",
+    "field": "bondHoldings"
+  },
+  {
+    "path": "topHoldings.bondRatings.a",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings A Top Holdings Bond Rating",
+    "title": "A",
+    "field": "a"
+  },
+  {
+    "path": "topHoldings.bondRatings.aa",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Aa Top Holdings Bond Rating",
+    "title": "Aa",
+    "field": "aa"
+  },
+  {
+    "path": "topHoldings.bondRatings.aaa",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Aaa Top Holdings Bond Rating",
+    "title": "Aaa",
+    "field": "aaa"
+  },
+  {
+    "path": "topHoldings.bondRatings.other",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Other Top Holdings Bond Rating",
+    "title": "Other",
+    "field": "other"
+  },
+  {
+    "path": "topHoldings.bondRatings.b",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings B Top Holdings Bond Rating",
+    "title": "B",
+    "field": "b"
+  },
+  {
+    "path": "topHoldings.bondRatings.bb",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Bb Top Holdings Bond Rating",
+    "title": "Bb",
+    "field": "bb"
+  },
+  {
+    "path": "topHoldings.bondRatings.bbb",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Bbb Top Holdings Bond Rating",
+    "title": "Bbb",
+    "field": "bbb"
+  },
+  {
+    "path": "topHoldings.bondRatings.below_b",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Below_b Top Holdings Bond Rating",
+    "title": "Below_b",
+    "field": "below_b"
+  },
+  {
+    "path": "topHoldings.bondRatings.us_government",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Bond Ratings Top Holdings Us_government Top Holdings Bond Rating",
+    "title": "Us_government",
+    "field": "us_government"
+  },
+  {
+    "path": "topHoldings.sectorWeightings.realestate",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Realestate Top Holdings Sector Weighting",
+    "title": "Realestate",
+    "field": "realestate"
+  },
+  {
+    "path": "topHoldings.sectorWeightings.consumer_cyclical",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Consumer_cyclical Top Holdings Sector Weighting",
+    "title": "Consumer_cyclical",
+    "field": "consumer_cyclical"
+  },
+  {
+    "path": "topHoldings.sectorWeightings.basic_materials",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Basic_materials Top Holdings Sector Weighting",
+    "title": "Basic_materials",
+    "field": "basic_materials"
+  },
+  {
+    "path": "topHoldings.sectorWeightings.consumer_defensive",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Consumer_defensive Top Holdings Sector Weighting",
+    "title": "Consumer_defensive",
+    "field": "consumer_defensive"
+  },
+  {
+    "path": "topHoldings.sectorWeightings.technology",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Technology Top Holdings Sector Weighting",
+    "title": "Technology",
+    "field": "technology"
+  },
+  {
+    "path": "topHoldings.sectorWeightings.communication_services",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Communication_services Top Holdings Sector Weighting",
+    "title": "Communication_services",
+    "field": "communication_services"
+  },
+  {
+    "path": "topHoldings.sectorWeightings.financial_services",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Financial_services Top Holdings Sector Weighting",
+    "title": "Financial_services",
+    "field": "financial_services"
+  },
+  {
+    "path": "topHoldings.sectorWeightings.utilities",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Utilities Top Holdings Sector Weighting",
+    "title": "Utilities",
+    "field": "utilities"
+  },
+  {
+    "path": "topHoldings.sectorWeightings.industrials",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Industrials Top Holdings Sector Weighting",
+    "title": "Industrials",
+    "field": "industrials"
+  },
+  {
+    "path": "topHoldings.sectorWeightings.energy",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Energy Top Holdings Sector Weighting",
+    "title": "Energy",
+    "field": "energy"
+  },
+  {
+    "path": "topHoldings.sectorWeightings.healthcare",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Sector Weightings Top Holdings Healthcare Top Holdings Sector Weighting",
+    "title": "Healthcare",
+    "field": "healthcare"
+  },
+  {
+    "path": "topHoldings.cashPosition",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Cash Position Top Holdings",
+    "title": "Cash Position",
+    "field": "cashPosition"
+  },
+  {
+    "path": "topHoldings.otherPosition",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Other Position Top Holdings",
+    "title": "Other Position",
+    "field": "otherPosition"
+  },
+  {
+    "path": "topHoldings.preferredPosition",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Preferred Position Top Holdings",
+    "title": "Preferred Position",
+    "field": "preferredPosition"
+  },
+  {
+    "path": "topHoldings.convertiblePosition",
+    "moduleName": "quoteSummary",
+    "submodule": "topHoldings",
+    "keyword": "Top Holdings Top Holdings Convertible Position Top Holdings",
+    "title": "Convertible Position",
+    "field": "convertiblePosition"
+  },
+  {
+    "path": "upgradeDowngradeHistory.history.firm",
+    "moduleName": "quoteSummary",
+    "submodule": "upgradeDowngradeHistory",
+    "keyword": "Upgrade Downgrade History Upgrade Downgrade History History Upgrade Downgrade History Firm Upgrade Downgrade History History",
+    "title": "Firm",
+    "field": "firm"
+  },
+  {
+    "path": "upgradeDowngradeHistory.history.toGrade",
+    "moduleName": "quoteSummary",
+    "submodule": "upgradeDowngradeHistory",
+    "keyword": "Upgrade Downgrade History Upgrade Downgrade History History Upgrade Downgrade History To Grade Upgrade Downgrade History History",
+    "title": "To Grade",
+    "field": "toGrade"
+  },
+  {
+    "path": "upgradeDowngradeHistory.history.fromGrade",
+    "moduleName": "quoteSummary",
+    "submodule": "upgradeDowngradeHistory",
+    "keyword": "Upgrade Downgrade History Upgrade Downgrade History History Upgrade Downgrade History From Grade Upgrade Downgrade History History",
+    "title": "From Grade",
+    "field": "fromGrade"
+  },
+  {
+    "path": "upgradeDowngradeHistory.history.action",
+    "moduleName": "quoteSummary",
+    "submodule": "upgradeDowngradeHistory",
+    "keyword": "Upgrade Downgrade History Upgrade Downgrade History History Upgrade Downgrade History Action Upgrade Downgrade History History",
+    "title": "Action",
+    "field": "action"
+  }
+]
