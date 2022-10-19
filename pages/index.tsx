@@ -12,7 +12,9 @@ const Home: NextPage = () => {
       <button className="mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48 bg-green-500">
         Get Start
       </button>
-
+      <p className="text-sm text-gray-500">
+      Free user can invoke 50 calls everyday without any unlimited!
+      </p>
     </div>
 
     <div className="flex items-center w-full mx-auto content-end">
@@ -36,10 +38,10 @@ const Home: NextPage = () => {
       <div className="flex flex-wrap">
         <div className="w-5/6 sm:w-1/2 p-6">
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-            History Quotes panel
+            Formula Builder
           </h3>
           <p className="text-gray-600 mb-8">
-            By using History Quotes Panel, you can easily retrieve the last 2 years daily prices, volumnes and others in one click
+            The Formula Builder Panel makes you easily retrieve all the data in one click
           </p>
         </div>
         <div className="w-full sm:w-1/2 p-6">
@@ -55,7 +57,36 @@ const Home: NextPage = () => {
               Financial Statement Sheet
             </h3>
             <p className="text-gray-600 mb-8">
-              The Financial Fundamental Panel allows you to bring the balance sheet, income sheet and cashflow sheet into your spreadsheet
+              The Quote Summary Module allows you to bring the balance sheet, income sheet and cashflow sheet into your spreadsheet
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-wrap">
+        <div className="w-5/6 sm:w-1/2 p-6">
+          <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+            History Quotes
+          </h3>
+          <p className="text-gray-600 mb-8">
+            By using History Quotes Module, you can easily retrieve the years daily prices, volume and others in one click
+          </p>
+        </div>
+        <div className="w-full sm:w-1/2 p-6">
+        </div>
+      </div>
+
+
+      <div className="flex flex-wrap flex-col-reverse sm:flex-row">
+        <div className="w-full sm:w-1/2 p-6 mt-6">
+        </div>
+        <div className="w-full sm:w-1/2 p-6 mt-6">
+          <div className="align-middle">
+            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Million Financial Data 
+            </h3>
+            <p className="text-gray-600 mb-8">
+            Track the value of all securities and asserts while monitoring your potential investments simultaneously.
             </p>
           </div>
         </div>

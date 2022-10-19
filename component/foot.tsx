@@ -33,15 +33,23 @@ export function MyFoot() {
           <ul className="list-reset mb-6">
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <span className="font-light no-underline text-gray-100 hover:text-orange-500">
-                <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('npmjs.com')}&sz=${16}`} width={16} height={16} style={{display:'inline-block'}} /> node-yahoo-finance2</span>
+                <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('app.supabase.com')}&sz=${16}`} width={16} height={16} style={{ display: 'inline-block' }} /> supabase.com</span>
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <span className="font-light no-underline text-gray-100 hover:text-orange-500">
-                <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('app.supabase.com')}&sz=${16}`} width={16} height={16} style={{display:'inline-block'}} /> supabase.com</span>
+                <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('redis.com')}&sz=${16}`} width={16} height={16} style={{ display: 'inline-block' }} /> redis.com</span>
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <span className="font-light no-underline text-gray-100 hover:text-orange-500">
-                <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('vercel.com')}&sz=${16}`} width={16} height={16} style={{display:'inline-block'}} /> vercel.com</span>
+                <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('finance.yahoo.com')}&sz=${16}`} width={16} height={16} style={{ display: 'inline-block' }} /> finance.yahoo.com</span>
+            </li>
+            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+              <span className="font-light no-underline text-gray-100 hover:text-orange-500">
+                <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('npmjs.com')}&sz=${16}`} width={16} height={16} style={{ display: 'inline-block' }} /> node-yahoo-finance2</span>
+            </li>
+            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+              <span className="font-light no-underline text-gray-100 hover:text-orange-500">
+                <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('vercel.com')}&sz=${16}`} width={16} height={16} style={{ display: 'inline-block' }} /> vercel.com</span>
             </li>
           </ul>
         </div>
