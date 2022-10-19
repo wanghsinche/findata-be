@@ -175,7 +175,15 @@
                     const column = (isColumn && filter) ? currentMetric.field : ''
 
                     if (isColumn) {
-                        myPrompt(`The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option`)
+                        myPrompt(`
+                            <h2>Inserted</h2>
+                            <br/>
+                            The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option
+                        `)
+                    } else{
+                        myPrompt(`
+                            <h2>Inserted</h2>
+                        `)
                     }
 
                     return {
@@ -218,7 +226,15 @@
                     const column = (isColumn && filter) ? currentMetric.field : ''
 
                     if (isColumn) {
-                        myPrompt(`The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option`)
+                        myPrompt(`
+                            <h2>Inserted</h2>
+                            <br/>
+                            The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option
+                        `)
+                    } else{
+                        myPrompt(`
+                            <h2>Inserted</h2>
+                        `)
                     }
 
                     return {
@@ -257,7 +273,15 @@
                     const column = (isColumn && filter) ? currentMetric.field : ''
 
                     if (isColumn) {
-                        myPrompt(`The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option`)
+                        myPrompt(`
+                            <h2>Inserted</h2>
+                            <br/>
+                            The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option
+                        `)
+                    } else{
+                        myPrompt(`
+                            <h2>Inserted</h2>
+                        `)
                     }
 
                     return {
@@ -295,8 +319,17 @@
                     const column = (isColumn && filter) ? currentMetric.field : ''
 
                     if (isColumn) {
-                        myPrompt(`The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option`)
+                        myPrompt(`
+                            <h2>Inserted</h2>
+                            <br/>
+                            The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option
+                        `)
+                    } else{
+                        myPrompt(`
+                            <h2>Inserted</h2>
+                        `)
                     }
+                    
                     return {
                         moduleName: document.getElementById('module-name').textContent,
                         ticker: document.getElementById('ticker').value,
