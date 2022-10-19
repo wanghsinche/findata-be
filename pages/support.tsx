@@ -10,7 +10,7 @@ const Page = () => {
         </p>
         
         <p>
-            Need additional help? Email me at {email}
+            Need additional help? Fill the form https://forms.gle/gp8KYghdD93kSzq48
         </p>
 
     </div>

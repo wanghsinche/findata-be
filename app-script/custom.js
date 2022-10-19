@@ -1,9 +1,9 @@
 /**
- * Imports unlimited data from yahoo finance. See complete documentation at https://github.com/gadicc/node-yahoo-finance2/tree/devel/docs#yahoo-finance-docs
+ * Imports unlimited data from yahoo finance. See complete documentation at https://findata-be.uk
  * 
  * @param {string} moduleName moduleName: historical, quote, quoteSummary, etc 
  * @param {string} ticker ticker: AAPL, TSLA.
- * @param {*[][]} queryOption queryOption: See complete documentation at https://github.com/gadicc/node-yahoo-finance2/tree/devel/docs#yahoo-finance-docs. example: {"modules","cashflowStatementHistory"}.
+ * @param {*[][]} queryOption queryOption: See complete documentation at https://findata-be.uk example: {"modules","cashflowStatementHistory"}.
  * @param {string} expand expand: Expand a specific part from the result, use empty string "" if you don't need it. example: a.b[0].c .
  * @param {string} columns columns: Select specific parts from the result. example: col1, col2, col3 .
  * @return The asked information from the data source.
