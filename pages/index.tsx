@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         Get Start
       </button>
       <p className="text-sm text-gray-500">
-        Free user can invoke 50 times everyday without any other limitation!
+        Free user can invoke 50 queries everyday without any other limitation!
       </p>
     </div>
 
