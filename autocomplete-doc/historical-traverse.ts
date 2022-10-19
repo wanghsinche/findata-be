@@ -54,22 +54,16 @@ function interfaceOrPrimitive(it: InterfaceDeclaration, prefix: string, keyword:
         if (stopWords.includes(field)) return
 
 
-        const p = (prefix?(prefix+'.'):'')+field
         const typeName = camelToWords(removeImportString(it.getType().getText()))
         const title = camelToWords(field)
 
         keyword.add(title)
         keyword.add(typeName)
 
-
-        if (prop.getType().isInterface() && 'getProperties' in prop){
-            result.push(...interfaceOrPrimitive(prop as any, p, keyword))
-            return
-        }
         
 
         result.push({
-            path: p,
+            path: '',
             moduleName,
             submodule:'',
             keyword,

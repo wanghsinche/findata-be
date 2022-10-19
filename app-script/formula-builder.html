@@ -90,8 +90,8 @@
 
         <fieldset>
 
-            <legend>Select a metric:</legend>
-            <input type="text" class="block" id="suggestion" placeholder="what do you want?">
+            <legend>which metric do you want?</legend>
+            <input type="text" class="block" id="suggestion" placeholder="Try to input operation cash">
 
             <div id="suggestion-list" class="block">
 
@@ -103,10 +103,11 @@
             <legend>Metric Detail:</legend>
             <div class="block">Module name : <span class="badge" id="module-name"></span></div>
 
-            <div class="block">Path : <span id="path" class="badge"></span></div>
+            <div class="block">Path : <span id="path" class="badge" style="word-break: break-all;"></span></div>
 
-            <div class="block"><label for="filter">Column Filter</label> : <input checked id="filter" type="checkbox"
-                    class="inline"></input>
+            <div class="block"><label for="filter">Column Filter :</label>
+                <input checked id="filter" type="checkbox"
+                    style="display: inline-block ;"></input>
             </div>
         </fieldset>
 
@@ -331,7 +332,7 @@
             }
             if (children) {
                 if (children instanceof Array) {
-                    el.append(...children)
+                    el.append(...children.filter(el=>!!el))
                 }
                 else {
                     el.appendChild(children)
@@ -496,8 +497,8 @@
                             h('label', { for: el.id }, document.createTextNode(`${el.title}`)),
                             h('div', { class: 'gray', style: 'margin-left: 2em' }, document.createTextNode(el.field)),
                             h('div', { style: 'display:flex; gap:1em; margin-left: 2em' }, [
-                                h('span', { class: 'badge green' }, document.createTextNode(el.moduleName)),
-                                el.submodule && h('span', { class: 'badge' }, document.createTextNode(el.submodule))
+                                el.submodule && h('span', { class: 'badge' }, document.createTextNode(el.submodule)),
+                                h('span', { class: 'badge green' }, document.createTextNode(el.moduleName)),                            
                             ]),
                         ])
                         return dom

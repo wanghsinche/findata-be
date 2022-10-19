@@ -1,6 +1,6 @@
 [
   {
-    "path": "open",
+    "path": "",
     "moduleName": "historical",
     "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
@@ -8,7 +8,7 @@
     "field": "open"
   },
   {
-    "path": "high",
+    "path": "",
     "moduleName": "historical",
     "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
@@ -16,7 +16,7 @@
     "field": "high"
   },
   {
-    "path": "low",
+    "path": "",
     "moduleName": "historical",
     "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
@@ -24,7 +24,7 @@
     "field": "low"
   },
   {
-    "path": "close",
+    "path": "",
     "moduleName": "historical",
     "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
@@ -32,7 +32,7 @@
     "field": "close"
   },
   {
-    "path": "adjClose",
+    "path": "",
     "moduleName": "historical",
     "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
@@ -40,7 +40,7 @@
     "field": "adjClose"
   },
   {
-    "path": "volume",
+    "path": "",
     "moduleName": "historical",
     "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
