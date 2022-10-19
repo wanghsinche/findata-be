@@ -52,7 +52,7 @@ export async function insertCustomer(customerId: string, email: string) {
 export async function searchField(word:string) {
     let res = await supabaseServer
     .from('autocomplete')
-    .select('*')
+    .select('id, title, field, moduleName, path, submodule')
     .eq('field', word)
 
     if (res.data?.length) {
@@ -63,7 +63,7 @@ export async function searchField(word:string) {
 
     let { data, error } = await supabaseServer
     .from('autocomplete')
-    .select('*')
+    .select('id, title, field, moduleName, path, submodule')
     .textSearch('keyword', `'${word}'`)
     if (error){
         throw String(error)
