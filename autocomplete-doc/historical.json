@@ -2,49 +2,49 @@
   {
     "path": "open",
     "moduleName": "historical",
-    "subModule": "",
+    "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
     "title": "Open",
-    "fieldName": "open"
+    "field": "open"
   },
   {
     "path": "high",
     "moduleName": "historical",
-    "subModule": "",
+    "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
     "title": "High",
-    "fieldName": "high"
+    "field": "high"
   },
   {
     "path": "low",
     "moduleName": "historical",
-    "subModule": "",
+    "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
     "title": "Low",
-    "fieldName": "low"
+    "field": "low"
   },
   {
     "path": "close",
     "moduleName": "historical",
-    "subModule": "",
+    "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
     "title": "Close",
-    "fieldName": "close"
+    "field": "close"
   },
   {
     "path": "adjClose",
     "moduleName": "historical",
-    "subModule": "",
+    "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
     "title": "Adj Close",
-    "fieldName": "adjClose"
+    "field": "adjClose"
   },
   {
     "path": "volume",
     "moduleName": "historical",
-    "subModule": "",
+    "submodule": "",
     "keyword": "Historical Row Open High Low Close Adj Close Volume",
     "title": "Volume",
-    "fieldName": "volume"
+    "field": "volume"
   }
 ]

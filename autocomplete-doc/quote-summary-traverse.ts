@@ -95,10 +95,10 @@ function interfaceOrPrimitive(it: InterfaceDeclaration, prefix: string, keyword:
         result.push({
             path: p,
             moduleName,
-            subModule,
+            submodule: subModule,
             keyword: newKeyword,
             title,
-            fieldName: prop.getName(),
+            field: prop.getName(),
         })
         
     })

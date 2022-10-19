@@ -1,8 +1,8 @@
 export interface ISchema {
-    fieldName: string;
+    field: string;
     path: string;
     moduleName: string;
-    subModule: string;
+    submodule: string;
     keyword: string;
     title: string;
 }
