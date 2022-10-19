@@ -65,7 +65,7 @@ export async function searchField(word:string) {
     let { data, error } = await supabaseServer
     .from('autocomplete')
     .select('id, title, field, moduleName, path, submodule')
-    .textSearch('keyword', `'${word}'`)
+    .textSearch('keyword', word.split(' ').map(w=>`'${w}'`).join(' & '))
     .limit(20)
 
     if (error){

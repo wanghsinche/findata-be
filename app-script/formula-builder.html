@@ -29,22 +29,39 @@
         .hidden {
             display: none
         }
-        .invisible{
+
+        .invisible {
             visibility: hidden;
         }
+
         #progress {
             width: 100%
         }
-        #query-option{
-            max-height: 50vh;
+
+        /* #suggestion-list{
+            max-height: 30vh;
             overflow-y: scroll;
+        } */
+        kbd {
+            background-color: #eee;
+            border-radius: 3px;
+            border: 1px solid #b4b4b4;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 20%), 0 2px 0 0 rgb(255 255 255 / 70%) inset;
+            color: #333;
+            display: inline-block;
+            font-size: .85em;
+            font-weight: 700;
+            line-height: 1;
+            padding: 2px 4px;
+            white-space: nowrap;
         }
-        #dialog{
+
+        #dialog {
             width: 80vw;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
@@ -84,9 +101,13 @@
 
         <fieldset>
             <legend>Metric Detail:</legend>
-            <div>Module name : <span id="module-name"></span></div>
+            <div class="block">Module name : <span class="badge" id="module-name"></span></div>
 
-            <div>Path : <span id="path"></span></div>
+            <div class="block">Path : <span id="path" class="badge"></span></div>
+
+            <div class="block"><label for="filter">Column Filter</label> : <input id="filter" type="checkbox"
+                    class="inline"></input>
+            </div>
         </fieldset>
 
         <fieldset id="query-option">
@@ -108,7 +129,7 @@
 
     </div>
 
-    <dialog id="dialog" open>
+    <dialog id="dialog">
         <div id="dialog-content" style="margin:2em ;">xxxx</div>
         <form method="dialog">
             <button>OK</button>
@@ -145,11 +166,15 @@
                     document.getElementById('query-option').innerHTML = domHTML
                 },
                 collectInfo: () => {
-                    const path = document.getElementById('path').textContent;
-                    const column = path.endsWith(currentMetric.field)?'':currentMetric.field
+                    const filter = document.getElementById('filter').checked;
 
-                    if (column){
-                        myPrompt('You can expand all the columns by removing the column parameter')
+                    const path = document.getElementById('path').textContent;
+                    const isColumn = !path.endsWith(currentMetric.field)
+
+                    const column = (isColumn && filter) ? currentMetric.field : ''
+
+                    if (isColumn) {
+                        myPrompt(`The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option`)
                     }
 
                     return {
@@ -184,11 +209,15 @@
                     document.getElementById('query-option').innerHTML = domHTML
                 },
                 collectInfo: () => {
-                    const path = document.getElementById('path').textContent;
-                    const column = path.endsWith(currentMetric.field)?'':currentMetric.field
+                    const filter = document.getElementById('filter').checked;
 
-                    if (column){
-                        myPrompt('You can expand all the columns by removing the column parameter')
+                    const path = document.getElementById('path').textContent;
+                    const isColumn = !path.endsWith(currentMetric.field)
+
+                    const column = (isColumn && filter) ? currentMetric.field : ''
+
+                    if (isColumn) {
+                        myPrompt(`The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option`)
                     }
 
                     return {
@@ -219,11 +248,15 @@
                     document.getElementById('query-option').innerHTML = domHTML
                 },
                 collectInfo: () => {
-                    const path = document.getElementById('path').textContent;
-                    const column = path.endsWith(currentMetric.field)?'':currentMetric.field
+                    const filter = document.getElementById('filter').checked;
 
-                    if (column){
-                        myPrompt('You can expand all the columns by removing the column parameter')
+                    const path = document.getElementById('path').textContent;
+                    const isColumn = !path.endsWith(currentMetric.field)
+
+                    const column = (isColumn && filter) ? currentMetric.field : ''
+
+                    if (isColumn) {
+                        myPrompt(`The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option`)
                     }
 
                     return {
@@ -253,12 +286,16 @@
                     document.getElementById('query-option').innerHTML = domHTML
                 },
                 collectInfo: () => {
-                    const path = document.getElementById('path').textContent;
-                    const column = path.endsWith(currentMetric.field)?'':currentMetric.field
-                    if (column){
-                        myPrompt('You can expand all the columns by removing the column parameter')
-                    }
+                    const filter = document.getElementById('filter').checked;
 
+                    const path = document.getElementById('path').textContent;
+                    const isColumn = !path.endsWith(currentMetric.field)
+
+                    const column = (isColumn && filter) ? currentMetric.field : ''
+
+                    if (isColumn) {
+                        myPrompt(`The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option`)
+                    }
                     return {
                         moduleName: document.getElementById('module-name').textContent,
                         ticker: document.getElementById('ticker').value,
@@ -302,9 +339,9 @@
             }
             return el
         }
-        
-        function myPrompt(text){
-            document.getElementById('dialog-content').textContent = text
+
+        function myPrompt(text) {
+            document.getElementById('dialog-content').innerHTML = text
             document.getElementById('dialog').showModal()
 
         }
@@ -314,7 +351,7 @@
             return (...args) => {
                 window.clearTimeout(timeoutId);
                 timeoutId = window.setTimeout(() => {
-                callback.apply(null, args);
+                    callback.apply(null, args);
                 }, wait);
             };
         }
@@ -435,35 +472,45 @@
         const path = document.getElementById('path')
 
         suggestion.addEventListener("keyup", (e) => {
-            if (!e.target.value || !e.target.value.trim())return
+            if (!e.target.value || !e.target.value.trim()) return
             e.target.value && updateSuggestList(e.target.value);
         });
 
         const updateSuggestList = debounce((text) => {
             showLoading()
 
-            function cb(res){
-                if (res.word !== text) return
-                const data = res.data
-                const result = data.map(el => {
-                    const dom = h('div', { class: 'block' }, [
-                        h('input', {
-                            type: 'radio', id: el.id, name: 'field', value: el.id, onClick: () => {
-                                updateProperty(el)
-                            }
-                        }),
-                        h('label', { for: el.id }, document.createTextNode(`${el.title}`)),
-                        h('div', { class: 'gray', style: 'margin-left: 2em' }, document.createTextNode(el.field)),
-                        h('div', { style: 'display:flex; gap:1em; margin-left: 2em' }, [
-                            h('span', { class: 'badge green' }, document.createTextNode(el.moduleName)),
-                            el.submodule && h('span', { class: 'badge' }, document.createTextNode(el.submodule))
-                        ]),
-                    ])
-                    return dom
-                })
-                r(suggestionList)
-                suggestionList.append(...result)
-                hideLoading()
+            function cb(res) {
+                try {
+                    if (res.word !== text) {
+                        hideLoading()
+                        return
+                    }
+                    const data = res.data
+                    const result = data.map(el => {
+                        const dom = h('div', { class: 'block' }, [
+                            h('input', {
+                                type: 'radio', id: el.id, name: 'field', value: el.id, onClick: () => {
+                                    updateProperty(el)
+                                }
+                            }),
+                            h('label', { for: el.id }, document.createTextNode(`${el.title}`)),
+                            h('div', { class: 'gray', style: 'margin-left: 2em' }, document.createTextNode(el.field)),
+                            h('div', { style: 'display:flex; gap:1em; margin-left: 2em' }, [
+                                h('span', { class: 'badge green' }, document.createTextNode(el.moduleName)),
+                                el.submodule && h('span', { class: 'badge' }, document.createTextNode(el.submodule))
+                            ]),
+                        ])
+                        return dom
+                    })
+                    r(suggestionList)
+                    suggestionList.append(...result)
+                    hideLoading()
+
+                } catch (error) {
+                    myAlert(error)
+                } finally{
+                    hideLoading()
+                }
             }
 
             google.script.run.withFailureHandler(onFailure).withSuccessHandler(cb).getFormula(text);

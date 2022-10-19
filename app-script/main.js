@@ -91,7 +91,7 @@ function onInsertFormula(info){
     throw('Unable to insert text, no cursor.');
   }
 
-  cell.setValue(`=FinData("${info.moduleName}", "${info.ticker}", ${recordToTwoDArrayString(info.queryOption)}, "${info.path}")`)
+  cell.setValue(`=FinData("${info.moduleName}", "${info.ticker}", ${recordToTwoDArrayString(info.queryOption)}, "${info.path}", "${info.column}")`)
 
 }
 
