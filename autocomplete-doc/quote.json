@@ -1,0 +1,874 @@
+[
+  {
+    "path": "testField",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Test Field Quote Base",
+    "title": "Test Field",
+    "fieldName": "testField"
+  },
+  {
+    "path": "language",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Language Quote Base",
+    "title": "Language",
+    "fieldName": "language"
+  },
+  {
+    "path": "region",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Region Quote Base",
+    "title": "Region",
+    "fieldName": "region"
+  },
+  {
+    "path": "typeDisp",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Type Disp Quote Base",
+    "title": "Type Disp",
+    "fieldName": "typeDisp"
+  },
+  {
+    "path": "quoteSourceName",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Quote Source Name Quote Base",
+    "title": "Quote Source Name",
+    "fieldName": "quoteSourceName"
+  },
+  {
+    "path": "triggerable",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Triggerable Quote Base",
+    "title": "Triggerable",
+    "fieldName": "triggerable"
+  },
+  {
+    "path": "currency",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Currency Quote Base",
+    "title": "Currency",
+    "fieldName": "currency"
+  },
+  {
+    "path": "customPriceAlertConfidence",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Custom Price Alert Confidence Quote Base",
+    "title": "Custom Price Alert Confidence",
+    "fieldName": "customPriceAlertConfidence"
+  },
+  {
+    "path": "marketState",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Market State Quote Base",
+    "title": "Market State",
+    "fieldName": "marketState"
+  },
+  {
+    "path": "tradeable",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Tradeable Quote Base",
+    "title": "Tradeable",
+    "fieldName": "tradeable"
+  },
+  {
+    "path": "exchange",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Exchange Quote Base",
+    "title": "Exchange",
+    "fieldName": "exchange"
+  },
+  {
+    "path": "shortName",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Short Name Quote Base",
+    "title": "Short Name",
+    "fieldName": "shortName"
+  },
+  {
+    "path": "longName",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Long Name Quote Base",
+    "title": "Long Name",
+    "fieldName": "longName"
+  },
+  {
+    "path": "messageBoardId",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Message Board Id Quote Base",
+    "title": "Message Board Id",
+    "fieldName": "messageBoardId"
+  },
+  {
+    "path": "exchangeTimezoneName",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Exchange Timezone Name Quote Base",
+    "title": "Exchange Timezone Name",
+    "fieldName": "exchangeTimezoneName"
+  },
+  {
+    "path": "exchangeTimezoneShortName",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Exchange Timezone Short Name Quote Base",
+    "title": "Exchange Timezone Short Name",
+    "fieldName": "exchangeTimezoneShortName"
+  },
+  {
+    "path": "gmtOffSetMilliseconds",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Gmt Off Set Milliseconds Quote Base",
+    "title": "Gmt Off Set Milliseconds",
+    "fieldName": "gmtOffSetMilliseconds"
+  },
+  {
+    "path": "market",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Market Quote Base",
+    "title": "Market",
+    "fieldName": "market"
+  },
+  {
+    "path": "esgPopulated",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Esg Populated Quote Base",
+    "title": "Esg Populated",
+    "fieldName": "esgPopulated"
+  },
+  {
+    "path": "fiftyTwoWeekLowChange",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Fifty Two Week Low Change Quote Base",
+    "title": "Fifty Two Week Low Change",
+    "fieldName": "fiftyTwoWeekLowChange"
+  },
+  {
+    "path": "fiftyTwoWeekLowChangePercent",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Fifty Two Week Low Change Percent Quote Base",
+    "title": "Fifty Two Week Low Change Percent",
+    "fieldName": "fiftyTwoWeekLowChangePercent"
+  },
+  {
+    "path": "fiftyTwoWeekRange",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Fifty Two Week Range Quote Base",
+    "title": "Fifty Two Week Range",
+    "fieldName": "fiftyTwoWeekRange"
+  },
+  {
+    "path": "fiftyTwoWeekHighChange",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Fifty Two Week High Change Quote Base",
+    "title": "Fifty Two Week High Change",
+    "fieldName": "fiftyTwoWeekHighChange"
+  },
+  {
+    "path": "fiftyTwoWeekHighChangePercent",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Fifty Two Week High Change Percent Quote Base",
+    "title": "Fifty Two Week High Change Percent",
+    "fieldName": "fiftyTwoWeekHighChangePercent"
+  },
+  {
+    "path": "fiftyTwoWeekLow",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Fifty Two Week Low Quote Base",
+    "title": "Fifty Two Week Low",
+    "fieldName": "fiftyTwoWeekLow"
+  },
+  {
+    "path": "fiftyTwoWeekHigh",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Fifty Two Week High Quote Base",
+    "title": "Fifty Two Week High",
+    "fieldName": "fiftyTwoWeekHigh"
+  },
+  {
+    "path": "dividendDate",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Dividend Date Quote Base",
+    "title": "Dividend Date",
+    "fieldName": "dividendDate"
+  },
+  {
+    "path": "earningsTimestamp",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Earnings Timestamp Quote Base",
+    "title": "Earnings Timestamp",
+    "fieldName": "earningsTimestamp"
+  },
+  {
+    "path": "earningsTimestampStart",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Earnings Timestamp Start Quote Base",
+    "title": "Earnings Timestamp Start",
+    "fieldName": "earningsTimestampStart"
+  },
+  {
+    "path": "earningsTimestampEnd",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Earnings Timestamp End Quote Base",
+    "title": "Earnings Timestamp End",
+    "fieldName": "earningsTimestampEnd"
+  },
+  {
+    "path": "trailingAnnualDividendRate",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Trailing Annual Dividend Rate Quote Base",
+    "title": "Trailing Annual Dividend Rate",
+    "fieldName": "trailingAnnualDividendRate"
+  },
+  {
+    "path": "trailingPE",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Trailing PE Quote Base",
+    "title": "Trailing PE",
+    "fieldName": "trailingPE"
+  },
+  {
+    "path": "trailingAnnualDividendYield",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Trailing Annual Dividend Yield Quote Base",
+    "title": "Trailing Annual Dividend Yield",
+    "fieldName": "trailingAnnualDividendYield"
+  },
+  {
+    "path": "epsTrailingTwelveMonths",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Eps Trailing Twelve Months Quote Base",
+    "title": "Eps Trailing Twelve Months",
+    "fieldName": "epsTrailingTwelveMonths"
+  },
+  {
+    "path": "epsForward",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Eps Forward Quote Base",
+    "title": "Eps Forward",
+    "fieldName": "epsForward"
+  },
+  {
+    "path": "epsCurrentYear",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Eps Current Year Quote Base",
+    "title": "Eps Current Year",
+    "fieldName": "epsCurrentYear"
+  },
+  {
+    "path": "priceEpsCurrentYear",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Price Eps Current Year Quote Base",
+    "title": "Price Eps Current Year",
+    "fieldName": "priceEpsCurrentYear"
+  },
+  {
+    "path": "sharesOutstanding",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Shares Outstanding Quote Base",
+    "title": "Shares Outstanding",
+    "fieldName": "sharesOutstanding"
+  },
+  {
+    "path": "bookValue",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Book Value Quote Base",
+    "title": "Book Value",
+    "fieldName": "bookValue"
+  },
+  {
+    "path": "fiftyDayAverage",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Fifty Day Average Quote Base",
+    "title": "Fifty Day Average",
+    "fieldName": "fiftyDayAverage"
+  },
+  {
+    "path": "fiftyDayAverageChange",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Fifty Day Average Change Quote Base",
+    "title": "Fifty Day Average Change",
+    "fieldName": "fiftyDayAverageChange"
+  },
+  {
+    "path": "fiftyDayAverageChangePercent",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Fifty Day Average Change Percent Quote Base",
+    "title": "Fifty Day Average Change Percent",
+    "fieldName": "fiftyDayAverageChangePercent"
+  },
+  {
+    "path": "twoHundredDayAverage",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Two Hundred Day Average Quote Base",
+    "title": "Two Hundred Day Average",
+    "fieldName": "twoHundredDayAverage"
+  },
+  {
+    "path": "twoHundredDayAverageChange",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Two Hundred Day Average Change Quote Base",
+    "title": "Two Hundred Day Average Change",
+    "fieldName": "twoHundredDayAverageChange"
+  },
+  {
+    "path": "twoHundredDayAverageChangePercent",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Two Hundred Day Average Change Percent Quote Base",
+    "title": "Two Hundred Day Average Change Percent",
+    "fieldName": "twoHundredDayAverageChangePercent"
+  },
+  {
+    "path": "marketCap",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Market Cap Quote Base",
+    "title": "Market Cap",
+    "fieldName": "marketCap"
+  },
+  {
+    "path": "forwardPE",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Forward PE Quote Base",
+    "title": "Forward PE",
+    "fieldName": "forwardPE"
+  },
+  {
+    "path": "priceToBook",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Price To Book Quote Base",
+    "title": "Price To Book",
+    "fieldName": "priceToBook"
+  },
+  {
+    "path": "sourceInterval",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Source Interval Quote Base",
+    "title": "Source Interval",
+    "fieldName": "sourceInterval"
+  },
+  {
+    "path": "exchangeDataDelayedBy",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Exchange Data Delayed By Quote Base",
+    "title": "Exchange Data Delayed By",
+    "fieldName": "exchangeDataDelayedBy"
+  },
+  {
+    "path": "firstTradeDateMilliseconds",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base First Trade Date Milliseconds Quote Base",
+    "title": "First Trade Date Milliseconds",
+    "fieldName": "firstTradeDateMilliseconds"
+  },
+  {
+    "path": "priceHint",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Price Hint Quote Base",
+    "title": "Price Hint",
+    "fieldName": "priceHint"
+  },
+  {
+    "path": "postMarketChangePercent",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Post Market Change Percent Quote Base",
+    "title": "Post Market Change Percent",
+    "fieldName": "postMarketChangePercent"
+  },
+  {
+    "path": "postMarketTime",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Post Market Time Quote Base",
+    "title": "Post Market Time",
+    "fieldName": "postMarketTime"
+  },
+  {
+    "path": "postMarketPrice",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Post Market Price Quote Base",
+    "title": "Post Market Price",
+    "fieldName": "postMarketPrice"
+  },
+  {
+    "path": "postMarketChange",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Post Market Change Quote Base",
+    "title": "Post Market Change",
+    "fieldName": "postMarketChange"
+  },
+  {
+    "path": "regularMarketChange",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Regular Market Change Quote Base",
+    "title": "Regular Market Change",
+    "fieldName": "regularMarketChange"
+  },
+  {
+    "path": "regularMarketChangePercent",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Regular Market Change Percent Quote Base",
+    "title": "Regular Market Change Percent",
+    "fieldName": "regularMarketChangePercent"
+  },
+  {
+    "path": "regularMarketTime",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Regular Market Time Quote Base",
+    "title": "Regular Market Time",
+    "fieldName": "regularMarketTime"
+  },
+  {
+    "path": "regularMarketPrice",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Regular Market Price Quote Base",
+    "title": "Regular Market Price",
+    "fieldName": "regularMarketPrice"
+  },
+  {
+    "path": "regularMarketDayHigh",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Regular Market Day High Quote Base",
+    "title": "Regular Market Day High",
+    "fieldName": "regularMarketDayHigh"
+  },
+  {
+    "path": "regularMarketDayRange",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Regular Market Day Range Quote Base",
+    "title": "Regular Market Day Range",
+    "fieldName": "regularMarketDayRange"
+  },
+  {
+    "path": "regularMarketDayLow",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Regular Market Day Low Quote Base",
+    "title": "Regular Market Day Low",
+    "fieldName": "regularMarketDayLow"
+  },
+  {
+    "path": "regularMarketVolume",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Regular Market Volume Quote Base",
+    "title": "Regular Market Volume",
+    "fieldName": "regularMarketVolume"
+  },
+  {
+    "path": "regularMarketPreviousClose",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Regular Market Previous Close Quote Base",
+    "title": "Regular Market Previous Close",
+    "fieldName": "regularMarketPreviousClose"
+  },
+  {
+    "path": "preMarketChange",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Pre Market Change Quote Base",
+    "title": "Pre Market Change",
+    "fieldName": "preMarketChange"
+  },
+  {
+    "path": "preMarketChangePercent",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Pre Market Change Percent Quote Base",
+    "title": "Pre Market Change Percent",
+    "fieldName": "preMarketChangePercent"
+  },
+  {
+    "path": "preMarketTime",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Pre Market Time Quote Base",
+    "title": "Pre Market Time",
+    "fieldName": "preMarketTime"
+  },
+  {
+    "path": "preMarketPrice",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Pre Market Price Quote Base",
+    "title": "Pre Market Price",
+    "fieldName": "preMarketPrice"
+  },
+  {
+    "path": "bid",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Bid Quote Base",
+    "title": "Bid",
+    "fieldName": "bid"
+  },
+  {
+    "path": "ask",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Ask Quote Base",
+    "title": "Ask",
+    "fieldName": "ask"
+  },
+  {
+    "path": "bidSize",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Bid Size Quote Base",
+    "title": "Bid Size",
+    "fieldName": "bidSize"
+  },
+  {
+    "path": "askSize",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Ask Size Quote Base",
+    "title": "Ask Size",
+    "fieldName": "askSize"
+  },
+  {
+    "path": "fullExchangeName",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Full Exchange Name Quote Base",
+    "title": "Full Exchange Name",
+    "fieldName": "fullExchangeName"
+  },
+  {
+    "path": "financialCurrency",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Financial Currency Quote Base",
+    "title": "Financial Currency",
+    "fieldName": "financialCurrency"
+  },
+  {
+    "path": "regularMarketOpen",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Regular Market Open Quote Base",
+    "title": "Regular Market Open",
+    "fieldName": "regularMarketOpen"
+  },
+  {
+    "path": "averageDailyVolume3Month",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Average Daily Volume3Month Quote Base",
+    "title": "Average Daily Volume3Month",
+    "fieldName": "averageDailyVolume3Month"
+  },
+  {
+    "path": "averageDailyVolume10Day",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Average Daily Volume10Day Quote Base",
+    "title": "Average Daily Volume10Day",
+    "fieldName": "averageDailyVolume10Day"
+  },
+  {
+    "path": "displayName",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Display Name Quote Base",
+    "title": "Display Name",
+    "fieldName": "displayName"
+  },
+  {
+    "path": "symbol",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Symbol Quote Base",
+    "title": "Symbol",
+    "fieldName": "symbol"
+  },
+  {
+    "path": "underlyingSymbol",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Underlying Symbol Quote Base",
+    "title": "Underlying Symbol",
+    "fieldName": "underlyingSymbol"
+  },
+  {
+    "path": "ytdReturn",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Ytd Return Quote Base",
+    "title": "Ytd Return",
+    "fieldName": "ytdReturn"
+  },
+  {
+    "path": "trailingThreeMonthReturns",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Trailing Three Month Returns Quote Base",
+    "title": "Trailing Three Month Returns",
+    "fieldName": "trailingThreeMonthReturns"
+  },
+  {
+    "path": "trailingThreeMonthNavReturns",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Trailing Three Month Nav Returns Quote Base",
+    "title": "Trailing Three Month Nav Returns",
+    "fieldName": "trailingThreeMonthNavReturns"
+  },
+  {
+    "path": "ipoExpectedDate",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Ipo Expected Date Quote Base",
+    "title": "Ipo Expected Date",
+    "fieldName": "ipoExpectedDate"
+  },
+  {
+    "path": "newListingDate",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base New Listing Date Quote Base",
+    "title": "New Listing Date",
+    "fieldName": "newListingDate"
+  },
+  {
+    "path": "nameChangeDate",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Name Change Date Quote Base",
+    "title": "Name Change Date",
+    "fieldName": "nameChangeDate"
+  },
+  {
+    "path": "prevName",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Prev Name Quote Base",
+    "title": "Prev Name",
+    "fieldName": "prevName"
+  },
+  {
+    "path": "averageAnalystRating",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Average Analyst Rating Quote Base",
+    "title": "Average Analyst Rating",
+    "fieldName": "averageAnalystRating"
+  },
+  {
+    "path": "pageViewGrowthWeekly",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Page View Growth Weekly Quote Base",
+    "title": "Page View Growth Weekly",
+    "fieldName": "pageViewGrowthWeekly"
+  },
+  {
+    "path": "openInterest",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Base Quote Base Open Interest Quote Base",
+    "title": "Open Interest",
+    "fieldName": "openInterest"
+  },
+  {
+    "path": "circulatingSupply",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Crypto Currency Quote Crypto Currency Circulating Supply Quote Crypto Currency",
+    "title": "Circulating Supply",
+    "fieldName": "circulatingSupply"
+  },
+  {
+    "path": "fromCurrency",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Crypto Currency Quote Crypto Currency From Currency Quote Crypto Currency",
+    "title": "From Currency",
+    "fieldName": "fromCurrency"
+  },
+  {
+    "path": "toCurrency",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Crypto Currency Quote Crypto Currency To Currency Quote Crypto Currency",
+    "title": "To Currency",
+    "fieldName": "toCurrency"
+  },
+  {
+    "path": "lastMarket",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Crypto Currency Quote Crypto Currency Last Market Quote Crypto Currency",
+    "title": "Last Market",
+    "fieldName": "lastMarket"
+  },
+  {
+    "path": "coinImageUrl",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Crypto Currency Quote Crypto Currency Coin Image Url Quote Crypto Currency",
+    "title": "Coin Image Url",
+    "fieldName": "coinImageUrl"
+  },
+  {
+    "path": "volume24Hr",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Crypto Currency Quote Crypto Currency Volume24Hr Quote Crypto Currency",
+    "title": "Volume24Hr",
+    "fieldName": "volume24Hr"
+  },
+  {
+    "path": "volumeAllCurrencies",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Crypto Currency Quote Crypto Currency Volume All Currencies Quote Crypto Currency",
+    "title": "Volume All Currencies",
+    "fieldName": "volumeAllCurrencies"
+  },
+  {
+    "path": "startDate",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Crypto Currency Quote Crypto Currency Start Date Quote Crypto Currency",
+    "title": "Start Date",
+    "fieldName": "startDate"
+  },
+  {
+    "path": "headSymbolAsString",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Future Quote Future Head Symbol As String Quote Future",
+    "title": "Head Symbol As String",
+    "fieldName": "headSymbolAsString"
+  },
+  {
+    "path": "contractSymbol",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Future Quote Future Contract Symbol Quote Future",
+    "title": "Contract Symbol",
+    "fieldName": "contractSymbol"
+  },
+  {
+    "path": "underlyingExchangeSymbol",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Future Quote Future Underlying Exchange Symbol Quote Future",
+    "title": "Underlying Exchange Symbol",
+    "fieldName": "underlyingExchangeSymbol"
+  },
+  {
+    "path": "expireDate",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Future Quote Future Expire Date Quote Future",
+    "title": "Expire Date",
+    "fieldName": "expireDate"
+  },
+  {
+    "path": "expireIsoDate",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Future Quote Future Expire Iso Date Quote Future",
+    "title": "Expire Iso Date",
+    "fieldName": "expireIsoDate"
+  },
+  {
+    "path": "strike",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Option Quote Option Strike Quote Option",
+    "title": "Strike",
+    "fieldName": "strike"
+  },
+  {
+    "path": "openInterest",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Option Quote Option Open Interest Quote Option",
+    "title": "Open Interest",
+    "fieldName": "openInterest"
+  },
+  {
+    "path": "expireDate",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Option Quote Option Expire Date Quote Option",
+    "title": "Expire Date",
+    "fieldName": "expireDate"
+  },
+  {
+    "path": "expireIsoDate",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Option Quote Option Expire Iso Date Quote Option",
+    "title": "Expire Iso Date",
+    "fieldName": "expireIsoDate"
+  },
+  {
+    "path": "underlyingSymbol",
+    "moduleName": "quote",
+    "subModule": "",
+    "keyword": "Quote Option Quote Option Underlying Symbol Quote Option",
+    "title": "Underlying Symbol",
+    "fieldName": "underlyingSymbol"
+  }
+]

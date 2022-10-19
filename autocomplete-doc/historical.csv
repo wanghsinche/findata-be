@@ -1,7 +1,0 @@
-﻿field,moduleName,path,keyword
-open: number;,historical,,open  price
-high: number;,historical,,high  price
-low: number;,historical,,low  price
-close: number;,historical,,close  price
-adjClose?: number;,historical,,adjusted close  price
-volume: number;,historical,,volume
