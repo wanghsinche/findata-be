@@ -5,8 +5,8 @@ import { MyBanner } from '../component/banner'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
-  const firstSection = <div className="container mx-auto h-screen">
-    <div className="text-center px-3 lg:px-0">
+  const firstSection = <div className="container mx-auto h-screen ">
+    <div className="text-center px-3 lg:px-0 my-bg-image" >
       <MyBanner />
 
       <button className="mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48 bg-green-500">
@@ -18,9 +18,8 @@ const Home: NextPage = () => {
     </div>
 
     <div className="flex items-center w-full mx-auto content-end">
-      <div className="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white rounded shadow-xl ">
+      <div className="browser-mockup flex flex-1  md:px-0 md:m-12 bg-white rounded shadow-xl ">
         <img src="/screenshot.png" alt='screenshot' height="80" className="h-full m-auto" />
-
       </div>
 
     </div>
@@ -100,7 +99,7 @@ const Home: NextPage = () => {
 
 
   return (
-    <div>
+    <div className=''>
       {firstSection}
       {secondSection}
     </div>

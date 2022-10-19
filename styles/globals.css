@@ -25,6 +25,29 @@ a {
   }
 }
 
+.my-bg-image{
+  position: relative;
+}
+.my-bg-image *{
+  position: relative;
+  z-index: 2;
+}
+.my-bg-image::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: 1;
+  background-image: url('../public/bg.jpg');
+  background-repeat: repeat;
+  background-position: 50% 0;
+  background-size: initial;
+}
+
 .mainbg{
   background-color:  #2b2932
 }

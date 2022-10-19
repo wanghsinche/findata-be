@@ -5,7 +5,7 @@ import { MyLogo } from "./logo";
 export function MyHead() {
     const [menu, setMenu] = useState(false)
     
-    return <nav id="header" className="w-full z-30 top-0 text-white py-1 lg:py-6 bg-gray-800">
+    return <nav id="header" className="w-full z-30 top-0 text-white py-1 lg:py-2 bg-gray-800">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6">
             <div className="pl-4 flex items-center">
                 <MyLogo />

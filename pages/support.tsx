@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import { productName, email } from '../utils/constant'
 
 const Page = () => {
-    return <div className='m-auto' >
+    return <div className='m-auto my-bg-image' >
     <div className='md:w-full break-all lg:w-2/3 m-auto bg-white p-10'>
         <h1 className='font-bold text-lg text-center'>Support</h1>
         <p>
