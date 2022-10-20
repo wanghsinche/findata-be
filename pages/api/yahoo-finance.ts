@@ -44,7 +44,7 @@ export default async function handler(
     if (error) return res.status(400).json({ ticker: '', sheetData: [], error: error.message })
 
     const oneDaySecs = 3600 * 24
-    const limitation = 50 // 50 queries
+    const limitation = 500 // 500 queries
 
     const limiterFunc = getLimiter(oneDaySecs, limitation)
 

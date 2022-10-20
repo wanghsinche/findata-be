@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         Get Start
       </button>
       <p className="text-sm text-gray-500">
-        After 15 days trial, free user can invoke 50 queries everyday without any other limitation!
+        After 15 days trial, free user can invoke 500 queries everyday without any other limitation!
       </p>
     </div>
 
