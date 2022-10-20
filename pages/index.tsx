@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { MyBanner } from '../component/banner'
 import styles from '../styles/Home.module.css'
+import { freeLimitation } from '../utils/constant'
 
 const Home: NextPage = () => {
   const firstSection = <div className="container mx-auto h-screen ">
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
         Get Start
       </button>
       <p className="text-sm text-gray-500">
-        After 15 days trial, free user can invoke 500 queries everyday without any other limitation!
+        After 15 days trial, free user can invoke {freeLimitation} queries everyday without any other limitation!
       </p>
     </div>
 

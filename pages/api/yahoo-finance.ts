@@ -4,6 +4,7 @@ import { get, primitiveData, tabularData, TCell } from '../../utils/common';
 import Joi from 'joi'
 import { EModule, getYahooFinanceData } from '../../utils/yahoo'
 import { getLimiter } from '../../utils/limiter';
+import { freeLimitation } from '../../utils/constant';
 
 interface IResult {
     error?: string;
@@ -44,13 +45,12 @@ export default async function handler(
     if (error) return res.status(400).json({ ticker: '', sheetData: [], error: error.message })
 
     const oneDaySecs = 3600 * 24
-    const limitation = 500 // 500 queries
 
-    const limiterFunc = getLimiter(oneDaySecs, limitation)
+    const limiterFunc = getLimiter(oneDaySecs, freeLimitation)
 
     const userPlan = await getUserPlan(email)
     if (userPlan.plan === 'Free' && await limiterFunc(email)) {
-        res.status(400).json({ ticker: '', sheetData: [], error: `Free user can have ${limitation} queries everyday` })
+        res.status(400).json({ ticker: '', sheetData: [], error: `Free user can have ${freeLimitation} queries everyday` })
         return
     }
 

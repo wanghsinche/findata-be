@@ -2,6 +2,8 @@ export const domain = `https://${process.env.DOMAIN}`
 export const productName = 'FinData'
 export const email = 'wang0xinzhe@gmail.com';
 
+export const freeLimitation = 500
+
 export const supabaseUrl = 'https://tgubgmgavtnuuavwolvm.supabase.co'
 
 export function getSupabaseKey(){
