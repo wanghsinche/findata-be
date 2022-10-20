@@ -11,9 +11,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       <title>{productName}</title>
-      <meta name="description" content="" />
-      <meta name="keywords" content="" />
-      <meta name="author" content="" />
+      <meta name="description" content="Powered by Yahoo Finance, FinData enables you to import all market stocks, ETFs, cryptocurrencies and finance statement to your spreadsheet." />
+      <meta name="keywords" content="findata google sheet addons extension stock" />
+      <meta name="author" content="findata" />
       <meta name="google-site-verification" content="TXey7sFwuQUU4xYY2iklnrHAKriPDfkg6mOEndjaHZs" />
     </Head>
     <Layout>
