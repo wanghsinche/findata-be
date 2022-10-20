@@ -37,6 +37,10 @@ export function MyFoot() {
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <span className="font-light no-underline text-gray-100 hover:text-orange-500">
+                <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('railway.app')}&sz=${16}`} width={16} height={16} style={{ display: 'inline-block' }} /> railway.app</span>
+            </li>
+            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+              <span className="font-light no-underline text-gray-100 hover:text-orange-500">
                 <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('redis.com')}&sz=${16}`} width={16} height={16} style={{ display: 'inline-block' }} /> redis.com</span>
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -50,6 +54,10 @@ export function MyFoot() {
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <span className="font-light no-underline text-gray-100 hover:text-orange-500">
                 <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('vercel.com')}&sz=${16}`} width={16} height={16} style={{ display: 'inline-block' }} /> vercel.com</span>
+            </li>
+            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+              <span className="font-light no-underline text-gray-100 hover:text-orange-500">
+                <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent('stripe.com')}&sz=${16}`} width={16} height={16} style={{ display: 'inline-block' }} /> stripe.com</span>
             </li>
           </ul>
         </div>
