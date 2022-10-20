@@ -12,7 +12,11 @@ const Page: NextPage = () => {
   const email = router.query.email;
   const title = failed ? 'Payment failed' : sessionId ? 'Thanks for your payment!' : 'Loading';
 
-  const result = sessionId ? <div className='text-ms'>Please redirect to your spreadsheet and reload it to fetch the latest status.<p>You will receive an email confirmation.</p></div> : '';
+  const result = sessionId ? <div className='text-ms'>
+  <p>Please redirect to your spreadsheet and reload to make sure that it fetches the latest data.</p>
+  <p>You may be able to setup your sheet auto reflect by using this <a href='https://www.reddit.com/r/googlesheets/comments/qo7vil/rerun_functions_refresh_data_on_demand/' target="_blank" rel='noreferrer'>tutorial</a></p>
+  <p>An receipt confirmation will be sent to your email.</p>
+  </div> : '';
 
   const customerPortal = <a href='https://billing.stripe.com/p/login/28o3eV8FO1BJ7Mk000' target='_blank' rel="noreferrer" className='mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg'>
     Customer Portal
