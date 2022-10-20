@@ -14,13 +14,19 @@ export enum EModule {
 
 const YHModuleMap:Partial<Record<EModule, (query:string, option: unknown)=>unknown>> = {
     [EModule.historicalc]: (query:string, rawOption: unknown)=>{
-        const yearOfStart = new Date()
-        yearOfStart.setUTCMonth(0)
-        yearOfStart.setUTCDate(0)
-        yearOfStart.setUTCHours(0)
-        yearOfStart.setUTCMinutes(0)
-        yearOfStart.setUTCSeconds(0)
-        const option = {period1: yearOfStart, ...rawOption as Record<string, unknown>}
+
+        const option = {...rawOption as Record<string, unknown>}
+
+        const endTime = option.period2 as string || new Date().toDateString()
+        const earliest = new Date(endTime)
+        
+        earliest.setUTCFullYear(earliest.getUTCFullYear()-3) // three years ago
+
+
+        if (new Date(option.period1 as string).valueOf() < earliest.valueOf() ) {
+            option.period1 = earliest.toDateString()
+        }
+
         return yahooFinance.historical(query, option as any)
     },
     [EModule.quote]:(query:string, option: unknown)=>yahooFinance.quote(query, option as any),
