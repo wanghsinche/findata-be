@@ -44,7 +44,7 @@ export default async function handler(
     const checkoutSession = await stripeServer.checkout.sessions.create({
       mode: modeMap[price.type],
       success_url: `${getDomain(req)}/result?session_id={CHECKOUT_SESSION_ID}&email=${email||''}`,
-      cancel_url: `${getDomain(req)}/result?failed=true`,
+      cancel_url: `${getDomain(req)}/payment?email=${email||''}`,
       customer: customer?.id,
       line_items: [{
         price: priceId,
