@@ -22,10 +22,11 @@ export async function selectOrCreateCustomer(email: string) {
     if (oldUser && !oldUser.deleted) return oldUser
   }
 
+  const fiftyDays = 1000 * 3600 * 24 * 15  // 15 days free trial for new user
   const name = email.split('@')[0]
   const customer = await stripeServer.customers.create({
     email, name, metadata: {
-      expiration: String(Date.now())
+      expiration: String(Date.now()+fiftyDays)
     }
   })
 

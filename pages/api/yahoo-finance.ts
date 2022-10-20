@@ -3,6 +3,7 @@ import { getUserPlan } from '../../utils/stripe';
 import { get, primitiveData, tabularData, TCell } from '../../utils/common';
 import Joi from 'joi'
 import { EModule, getYahooFinanceData } from '../../utils/yahoo'
+import { getLimiter } from '../../utils/limiter';
 
 interface IResult {
     error?: string;
@@ -37,10 +38,21 @@ export default async function handler(
             console.error(err)
         }
     }
-
+    const email = req.query.email as string;
     const { error } = schema.validate(body)
 
     if (error) return res.status(400).json({ ticker: '', sheetData: [], error: error.message })
+
+    const oneDaySecs = 3600 * 24
+    const limitation = 50 // 50 queries
+
+    const limiterFunc = getLimiter(oneDaySecs, limitation)
+
+    const userPlan = await getUserPlan(email)
+    if (userPlan.plan === 'Free' && await limiterFunc(email)) {
+        res.status(400).json({ ticker: '', sheetData: [], error: `Free user can have ${limitation} queries everyday` })
+        return
+    }
 
     const moduleName = body.moduleName as EModule
     const query = body.query as string

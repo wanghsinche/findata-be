@@ -1,7 +1,7 @@
 import { createClient, RedisClientType } from 'redis';
 import { getRedisURL } from './constant';
 
-const client = createClient({
+export const client = createClient({
     url: getRedisURL()
 });
 
