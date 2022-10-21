@@ -14,7 +14,7 @@ function Policy() {
         <ul className='ml-4'>
             <li dir="ltr" className="list-disc">1. See, edit, create, and delete your spreadsheets in Google Drive – Scope: https://www.googleapis.com/auth/spreadsheets. This permission allows the add-on to manipulate the spreadsheet to be able to insert the API data.</li>
             <li dir="ltr" className="list-disc">2. Connect to an external service – Scope: https://www.googleapis.com/auth/script.external_request. This permission is necessary for the add-on to be able to make API calls to external applications.</li>
-            <li dir="ltr" className="list-disc">3. Display and run third-party web content in prompts and sidebars inside Google applications – Scope: https://www.googleapis.com/auth/script.container.ui. This permission allows the add-on to be inserted into the menu of Google Sheets so you can open the add-on in a sidebar and make API requests.</li>
+            <li dir="ltr" className="list-disc">3. Display and run third-party web content in prompts and sidebars inside Google applications – Scope: https://www.googleapis.com/auth/script.container.ui. This permission allows the add-on to be inserted into the menu of Google Sheets™ so you can open the add-on in a sidebar and make API requests.</li>
         </ul>
         <p dir="ltr" className="my-4">When you install and open the add-on for the first time, Google will ask you to allow access for the 3 permissions listed above.</p>
         <p dir="ltr" className="my-4">We do not have access to view any of the information stored in your Sheets or any of your saved API information. All of your spreadsheet/API information is stored by Google and we don’t have access to it.</p>
@@ -29,7 +29,7 @@ function InfoLog() {
     return <div className='container'>
         <h1 className='font-bold text-lg text-center'>Information Collected and Used</h1>
         <div className="my-4">
-            <p dir="ltr" className="my-4">Here you will find information describing the data collected by our website (the “Website”) and via our Google Sheets add-on {productName} (the “Add-on”), here in after called the “Service”.</p>
+            <p dir="ltr" className="my-4">Here you will find information describing the data collected by our website (the “Website”) and via our Google Sheets™ add-on {productName} (the “Add-on”), here in after called the “Service”.</p>
             <p dir="ltr" className="my-4">This Privacy Statement governs personal information we collects from customers, users and online visitors (“you” or “your”) in connection with your use of the Service, applications and services (including support and education), where we post or link to this Privacy Statement, as well as information we automatically collect from your online visits (e.g. data collected via cookies). For the purposes of this Privacy Statement, “personal information” means any information that, by itself, can identify you or can be combined with other information to identify you.</p>
             <p dir="ltr" className="my-4">As a general code of conduct, we always try our best to minimize the amount of information we need to collect and use, while still providing you with the highest level of Service.</p>
         </div>
@@ -39,7 +39,7 @@ function InfoLog() {
         <p className="my-4">
             Each access to our Website generates logs data that includes, but may not be limited to: your IP address, your web browser user-agent, the language preferences of your web browser, the date and time of your visits.
 
-            Each access to our Add-on generates logs data that includes an anonymous and temporary number that Google Sheets generates. As each call to your API is anonymous, in order to count the number of unique API calls we receive, we also make a hash of your sheet locale, id and timezone.
+            Each access to our Add-on generates logs data that includes an anonymous and temporary number that Google Sheets™ generates. As each call to your API is anonymous, in order to count the number of unique API calls we receive, we also make a hash of your sheet locale, id and timezone.
 
             We may use your personal information for legitimate business purposes, including: to provide and deliver the Services you request; send you transaction information; including confirmations and transaction status; product and services information, updates, security alerts and support and administrative messages; administer your account, including verifying your information; respond to your comments and questions and provide customer support or other services; offer Live Chat assistance to facilitate; operate and improve our websites, products and services; provide you with information about products and services; perform other functions or serve other purposes, as disclosed to you at the point of collection, or as otherwise required or allowed under applicable law.
         </p>
