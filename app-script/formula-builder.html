@@ -71,7 +71,7 @@
     <div class="block">
         <span class="badge black" id="plan">Free plan</span>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="js-payment-link" id="promote" href="https://findata-be.vercel.app/payment" target="_blank">
+        <a class="js-payment-link" id="promote" href="https://findata-be.uk/payment" target="_blank">
             To Unlock More Access!
         </a>
     </div>
@@ -571,7 +571,7 @@
                 document.getElementById('plan').innerHTML = res.plan + ' plan'
                 if (res.plan !== 'Free') document.getElementById('promote').classList.add('hidden')
 
-                const paymentLink = 'https://findata-be.vercel.app/payment?email=' + res.email
+                const paymentLink = 'https://findata-be.uk/payment?email=' + res.email
                 document.querySelectorAll('.js-payment-link').forEach(el => el.setAttribute('href', paymentLink))
 
             }

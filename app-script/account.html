@@ -31,7 +31,7 @@
             <a class="btn btn-outline js-payment-link" href="https://billing.stripe.com/p/login/28o3eV8FO1BJ7Mk000"
                 target="_blank">Customer Portal</a>
 
-            <a class="btn btn-primary js-payment-link" href="https://findata-be.vercel.app/payment"
+            <a class="btn btn-primary js-payment-link" href="https://findata-be.uk/payment"
                 target="_blank">upgrade Plan</a>
         </div>
 
@@ -42,7 +42,7 @@
         </p>
 
         <p class="text-sm" id="promote">
-            <a class="text-red-400 link js-payment-link" href="https://findata-be.vercel.app/payment" target="_blank">
+            <a class="text-red-400 link js-payment-link" href="https://findata-be.uk/payment" target="_blank">
                 Upgrade the plan to unlock more data!
             </a>
             &nbsp;&nbsp;
@@ -110,7 +110,7 @@
                     document.getElementById('portal').classList.remove('hidden')
                 }
 
-                const paymentLink = 'https://findata-be.vercel.app/payment?email=' + res.email
+                const paymentLink = 'https://findata-be.uk/payment?email=' + res.email
                 document.querySelectorAll('.js-payment-link').forEach(el => el.setAttribute('href', paymentLink))
                 onSuccess()
             }).onGetPlanDetail();
