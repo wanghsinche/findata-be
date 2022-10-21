@@ -43,7 +43,7 @@ export default async function handler(
     const email = req.query.email as string;
     const { error } = schema.validate(body)
 
-    if (error) return res.status(400).json({ ticker: '', sheetData: [], error: error.message })
+    if (error) return res.status(400).json({ ticker: '', sheetData: [[error.message]], error: error.message })
 
     const oneDaySecs = 3600 * 24
 
@@ -53,7 +53,7 @@ export default async function handler(
 
 
     if (userPlan?.plan === 'Free' && await limiterFunc(email)) {
-        res.status(400).json({ ticker: '', sheetData: [], error: `Free user can have ${freeLimitation} queries everyday` })
+        res.status(400).json({ ticker: '', sheetData: [[`Free user can have ${freeLimitation} queries everyday`]], error: `Free user can have ${freeLimitation} queries everyday` })
         return
     }
 
@@ -68,7 +68,7 @@ export default async function handler(
     try {
         data = await getYahooFinanceData(moduleName, query, queryOptions)
     } catch (err) {
-        return res.status(400).json({ ticker: '', sheetData: [], error: String(err) })
+        return res.status(400).json({ ticker: '', sheetData: [[String(err)]], error: String(err) })
     }
 
 
@@ -76,7 +76,7 @@ export default async function handler(
     const result = expand === '*' || !expand ? data : get(data as any, expand, null) as unknown
 
     if (!result) return res.status(200).json({
-        ticker: query, sheetData: []
+        ticker: query, sheetData: [["null"]]
     })
 
     const sheetData = selectColumns(convertToSheetData(result), columns)

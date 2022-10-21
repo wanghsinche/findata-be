@@ -27,11 +27,16 @@ function onInsertFormula(info){
  * @param {*} e open event
  */
 function onOpen(e) {
+  
+  SpreadsheetApp.flush();
+
   SpreadsheetApp.getUi().createAddonMenu()
     .addItem(`Open ${appName} Formula Builder`, 'showbuilder')
     .addSeparator()
     .addItem(`My Account`, 'showAccount')
     .addToUi();
+
+  
 }
 
 /**

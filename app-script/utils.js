@@ -31,7 +31,7 @@ function getFromCacheOrServer(quoteURL) {
     let quoteRes = '';
     const cache = CacheService.getScriptCache();
     if (cache.get(key)) {
-        process.env.NODE_ENV === 'test' && console.log(`cache hits at ${key}`)
+        process.env.NODE_ENV === 'test' && Logger.log(`cache hits at ${key}`)
         quoteRes = cache.get(key)
     } else {
         quoteRes = UrlFetchApp.fetch(quoteURL).getContentText();
