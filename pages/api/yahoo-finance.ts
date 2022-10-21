@@ -5,6 +5,7 @@ import Joi from 'joi'
 import { EModule, getYahooFinanceData } from '../../utils/yahoo'
 import { getLimiter } from '../../utils/limiter';
 import { freeLimitation } from '../../utils/constant';
+import { getFromCacheOrRetrieveFromRemote } from '../../utils/cache';
 
 interface IResult {
     error?: string;
@@ -48,8 +49,10 @@ export default async function handler(
 
     const limiterFunc = getLimiter(oneDaySecs, freeLimitation)
 
-    const userPlan = await getUserPlan(email)
-    if (userPlan.plan === 'Free' && await limiterFunc(email)) {
+    const userPlan = await getFromCacheOrRetrieveFromRemote('userPlan_'+email, ()=>getUserPlan(email), 30) // 10sec
+
+
+    if (userPlan?.plan === 'Free' && await limiterFunc(email)) {
         res.status(400).json({ ticker: '', sheetData: [], error: `Free user can have ${freeLimitation} queries everyday` })
         return
     }

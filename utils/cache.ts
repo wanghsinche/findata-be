@@ -7,7 +7,6 @@ export const client = createClient({
 
 client.on('error', (err) => console.log('Redis Client Error', err));    
 
-const expireSeconds = 300 // 5min
 
 function hashFunc(text:string) {
     var hash = 0,
@@ -23,7 +22,7 @@ function hashFunc(text:string) {
   
   
 
-export async function getCache(){
+export async function getCache(expireSeconds=300){ // 5min
 
     if (!client.isReady){    
         await client.connect();
@@ -34,10 +33,41 @@ export async function getCache(){
             k = hashFunc(k)
             await client.setEx(k, expireSeconds, JSON.stringify(data))
         },
-        async get (k:string){
+        async get<T extends unknown> (k:string){
             k = hashFunc(k)
             const result = await client.get(k)
-            if (result) return JSON.parse(result)
+            if (result) return JSON.parse(result) as T
         }
     }
 } 
+
+export async function getFromCacheOrRetrieveFromRemote<T extends unknown>(key:string, retrieveFunc:()=>Promise<T>, expireSeconds=300):Promise<T> {
+    let cache 
+
+    try {
+        cache = await getCache(expireSeconds)
+
+        const cacheData = await cache.get<T>(key)
+    
+        if (cacheData) return cacheData
+
+
+    } catch (error) {
+        console.error(error)        
+    }
+
+    const data = await retrieveFunc()
+
+
+    try {
+        if (!cache){
+            cache = await getCache(expireSeconds)
+        }
+        await cache.set(key, data)
+    } catch (error) {
+        console.error(error)        
+    }
+
+    return data
+
+}
