@@ -28,7 +28,7 @@ function onInsertFormula(info){
  */
 function onOpen(e) {
   
-  SpreadsheetApp.flush();
+  console.log('current plan:',getPlanDetail())
 
   SpreadsheetApp.getUi().createAddonMenu()
     .addItem(`Open ${appName} Formula Builder`, 'showbuilder')

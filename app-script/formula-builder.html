@@ -68,10 +68,12 @@
 
 <body>
     <progress id="progress" class="invisible"></progress>
-    <div id="email" style="margin: 8px 4px;"></div>
     <div class="block">
         <span class="badge black" id="plan">Loading...</span>
         &nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="email">loading...</span>
+    </div>
+    <div class="block">
         <a class="js-payment-link" id="promote" href="https://findata-be.uk/payment" target="_blank">
             To Unlock More Access!
         </a>
@@ -92,7 +94,8 @@
         <fieldset>
 
             <legend>which metric do you want?</legend>
-            <input type="text" class="block" id="suggestion" placeholder="Try to input operation cash" style="min-width: 180px">
+            <input type="text" class="block" id="suggestion" placeholder="Try to input operation cash"
+                style="min-width: 180px">
 
             <div id="suggestion-list" class="block">
 
@@ -107,8 +110,7 @@
             <div class="block">Path : <span id="path" class="badge" style="word-break: break-all;"></span></div>
 
             <div class="block"><label for="filter">Column Filter :</label>
-                <input checked id="filter" type="checkbox"
-                    style="display: inline-block ;"></input>
+                <input checked id="filter" type="checkbox" style="display: inline-block ;"></input>
             </div>
         </fieldset>
 
@@ -181,7 +183,7 @@
                             <br/>
                             The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option
                         `)
-                    } else{
+                    } else {
                         myPrompt(`
                             <h2>Inserted</h2>
                         `)
@@ -232,7 +234,7 @@
                             <br/>
                             The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option
                         `)
-                    } else{
+                    } else {
                         myPrompt(`
                             <h2>Inserted</h2>
                         `)
@@ -279,7 +281,7 @@
                             <br/>
                             The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option
                         `)
-                    } else{
+                    } else {
                         myPrompt(`
                             <h2>Inserted</h2>
                         `)
@@ -325,7 +327,7 @@
                             <br/>
                             The selected metric is a time series, you can expand all the columns by unchecking the <kbd>column filter</kbd> option
                         `)
-                    } else{
+                    } else {
                         myPrompt(`
                             <h2>Inserted</h2>
                         `)
@@ -366,7 +368,7 @@
             }
             if (children) {
                 if (children instanceof Array) {
-                    el.append(...children.filter(el=>!!el))
+                    el.append(...children.filter(el => !!el))
                 }
                 else {
                     el.appendChild(children)
@@ -532,7 +534,7 @@
                             h('div', { class: 'gray', style: 'margin-left: 2em' }, document.createTextNode(el.field)),
                             h('div', { style: 'display:flex; gap:1em; margin-left: 2em' }, [
                                 el.submodule && h('span', { class: 'badge' }, document.createTextNode(el.submodule)),
-                                h('span', { class: 'badge green' }, document.createTextNode(el.moduleName)),                            
+                                h('span', { class: 'badge green' }, document.createTextNode(el.moduleName)),
                             ]),
                         ])
                         return dom
@@ -543,7 +545,7 @@
 
                 } catch (error) {
                     myAlert(error)
-                } finally{
+                } finally {
                     hideLoading()
                 }
             }
@@ -572,7 +574,7 @@
                 document.getElementById('email').textContent = res.email
                 document.getElementById('plan').innerHTML = res.plan + ' plan'
                 if (res.plan !== 'Free') document.getElementById('promote').classList.add('hidden')
-                
+
                 const paymentLink = 'https://findata-be.uk/payment?email=' + res.email
                 document.querySelectorAll('.js-payment-link').forEach(el => el.setAttribute('href', paymentLink))
 

@@ -1,16 +1,18 @@
 const domain = 'https://findata-be.uk'
 
-let temporaryEmailStore = 'wang0xinzhe@gmail.com'
+const testEmail = 'support@findata-be.uk'
+
+let temporaryEmailStore = testEmail
 
 function getEmail() {
   if (process.env.NODE_ENV === 'test' ){
-    return 'wang0xinzhe@gmail.com' 
+    return testEmail
   }
   try {
     temporaryEmailStore = Session.getActiveUser().getEmail();    
     return temporaryEmailStore
   } catch (error) {
-    console.error(error)
+    console.error("email failure",error)
 
     return temporaryEmailStore
   }
