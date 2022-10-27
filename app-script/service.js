@@ -1,7 +1,19 @@
 const domain = 'https://findata-be.uk'
 
+let temporaryEmailStore = 'wang0xinzhe@gmail.com'
+
 function getEmail() {
-  return process.env.NODE_ENV === 'test' ? 'wang0xinzhe@gmail.com' : Session.getActiveUser().getEmail();
+  if (process.env.NODE_ENV === 'test' ){
+    return 'wang0xinzhe@gmail.com' 
+  }
+  try {
+    temporaryEmailStore = Session.getActiveUser().getEmail();    
+    return temporaryEmailStore
+  } catch (error) {
+    console.error(error)
+
+    return temporaryEmailStore
+  }
 }
 
 /**

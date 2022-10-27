@@ -16,5 +16,4 @@ function FinData(moduleName, ticker, queryOption = [], expand='', columns='' ){
     }
 
     return getYahooFinance(moduleName, ticker, param, expand, columns)
-
 }
