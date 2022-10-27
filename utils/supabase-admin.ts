@@ -32,12 +32,12 @@ export async function retrieveCustomer(email: string) {
     .order('created_at', {
         ascending: true
     })
-    .single();
-
-    if (!customerData) {
+    .limit(1)
+    // .single();
+    if (!customerData?.length) {
         return
     }
-    return customerData.customerId
+    return customerData[0].customerId
 }
 
 export async function insertCustomer(customerId: string, email: string) {

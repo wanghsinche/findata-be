@@ -28,8 +28,6 @@ function onInsertFormula(info){
  */
 function onOpen(e) {
   
-  console.log('current plan:',getPlanDetail())
-
   SpreadsheetApp.getUi().createAddonMenu()
     .addItem(`Open ${appName} Formula Builder`, 'showbuilder')
     .addSeparator()
