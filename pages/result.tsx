@@ -36,7 +36,7 @@ const Page: NextPage = () => {
 
   return (
     <div >
-      <section className="w-full mx-auto text-center bg-gray-100 pt-6 pb-12 my-bg-image" style={{ minHeight: '50vh' }}>
+      <section className="w-full mx-auto text-center bg-gray-100 pt-6 pb-12" style={{ minHeight: '50vh' }}>
         <h2 className="w-full my-2 text-5xl font-black leading-tight text-center">
           {title}
         </h2>
