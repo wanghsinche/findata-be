@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { productName } from "../utils/constant";
+import { productName, storeAddress } from "../utils/constant";
 import { MyLogo } from "./logo";
 
 export function MyHead() {
@@ -23,7 +23,7 @@ export function MyHead() {
             <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${menu?'':'hidden'} lg:block mt-2 lg:mt-0 text-white p-4 lg:p-0 z-20`} id="nav-content">
                 <ul className="list-reset lg:flex justify-end flex-1 items-center">
                     <li className="mr-3">
-                        <a className="inline-block py-2 px-4 text-white font-bold no-underline" href="#">Try it in Google Sheets™</a>
+                        <a className="inline-block py-2 px-4 text-white font-bold no-underline" href={storeAddress} target="_blank" rel="noreferrer">Try it in Google Sheets™</a>
                     </li>
                     <li className="mr-3">
                         <a className="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/privacy">Privacy</a>

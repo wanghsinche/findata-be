@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { MyBanner } from '../component/banner'
 import styles from '../styles/Home.module.css'
+import { storeAddress } from '../utils/constant'
 
 const Home: NextPage = () => {
   const firstSection = <div className="container mx-auto h-screen ">
@@ -10,7 +11,7 @@ const Home: NextPage = () => {
       <MyBanner />
 
       <button className="mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48 bg-green-500">
-        Get Start
+        <a href={storeAddress} target="_blank" rel="noreferrer">Get Start</a>
       </button>
     </div>
 

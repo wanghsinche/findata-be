@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+	<title>logo-small-svg</title>
+	<style>
+		.s0 { fill: #1f2937;stroke:#1f2937 ;stroke-width: 14 } 
+		.s1 { fill: none;stroke: #ffffff;stroke-width: 12 } 
+		.s2 { fill: #ffffff } 
+	</style>
+	<path id="Layer" class="s0" d="m15 43c0-11 9-20 20-20h185c11 0 20 9 20 20v170.4c0 11-9 20-20 20h-185c-11 0-20-9-20-20z"/>
+	<path id="Layer" class="s1" d="m15 82.4v-5.6l220.1-0.8v5.6zm55.3-58.3h5.7l-0.4 205.5h-5.6z"/>
+	<path id="f" class="s2" aria-label="f"  d="m163.1 104.1h13.6v12h-13.8q-7.7 0-10.8 3.1-2.9 3.1-2.9 11.2v7.8h23.6v11.2h-23.6v76.3h-14.5v-76.3h-13.7v-11.2h13.7v-6.1q0-14.6 6.8-21.3 6.8-6.7 21.6-6.7z"/>
+</svg>

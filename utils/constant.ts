@@ -2,6 +2,8 @@ export const domain = `https://${process.env.DOMAIN}`
 export const productName = 'FinData'
 export const email = 'wang0xinzhe@gmail.com';
 
+export const storeAddress = 'https://workspace.google.com/marketplace/app/findata/462554829673'
+
 export const freeLimitation = Number(process.env.LIMITATION) || 500
 
 export const supabaseUrl = 'https://tgubgmgavtnuuavwolvm.supabase.co'
