@@ -4,11 +4,7 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-                <link
-                    href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css"
-                    rel="stylesheet"
-                />
+                <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
             </Head>
             <body className='leading-relaxed tracking-wide flex flex-col'>
                 <Main />

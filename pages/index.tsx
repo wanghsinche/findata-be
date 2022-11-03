@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <div className="text-center px-3 lg:px-0" >
       <MyBanner />
 
-      <button className="mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48 bg-green-500">
+      <button className="mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48 bg-slate-800	">
         <a href={storeAddress} target="_blank" rel="noreferrer">Get Start</a>
       </button>
     </div>
