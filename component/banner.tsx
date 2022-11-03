@@ -3,7 +3,7 @@ import { MyLogo } from "./logo";
 
 export function MyBanner(){
     return <div className="px-3 lg:px-0">
-    <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight">
+    <h1 className="mb-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight pt-6">
         <img src="/logo-small-svg.svg" alt="logo"  className="h-8 w-8 inline-block fill-current mx-1"/>
         <MyLogo />
     </h1>
