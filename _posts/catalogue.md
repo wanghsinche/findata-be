@@ -1,5 +1,6 @@
-- [Modules](#)
-  * [Historical](/docs/historical)
-  * [Quote](/docs/quote)
-  * [QuoteSummary](/docs/quotesummary)
-  * [Historical](/docs/historical)
+## Documents 
+* [Start](/docs/start)
+* [Sample](/docs/sample)
+* [Historical](/docs/historical)
+* [Quote](/docs/quote)
+* [QuoteSummary](/docs/quotesummary)

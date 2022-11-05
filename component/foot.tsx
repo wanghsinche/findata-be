@@ -13,6 +13,9 @@ export function MyFoot() {
           <p className="uppercase font-extrabold text-gray-200 md:mb-6">Links</p>
           <ul className="list-reset mb-6">
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="/docs" className="font-light no-underline hover:underline text-gray-100 hover:text-orange-500">Documents</a>
+            </li>
+            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <a href="/privacy" className="font-light no-underline hover:underline text-gray-100 hover:text-orange-500">Privacy Policy</a>
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
