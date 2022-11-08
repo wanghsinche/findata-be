@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  darkMode: ['class', '[data-mode="dark"]'],
   async redirects() {
     return [
       {
