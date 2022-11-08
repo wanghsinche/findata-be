@@ -21,3 +21,18 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Formula builder design
 
 ![image](https://user-images.githubusercontent.com/14119632/196391148-19ade442-b9c4-483c-890d-6755c2a5dc72.png)
+
+## Docs
+
+FinData enhances Google Sheets™ with huge finance data. You can easily build up your powerful investing dashboards by a few clicks. 
+
+Powered by yahoo finance, FinData provides over thousands securities, funds and cryptocurrencies with real time price quotes and comprehensive fundamental financial data! 📔Full Docs: https://www.findata-be.uk/docs/start [THEY EXPLAIN EVERYTHING!] 📔
+
+We also provide Pre-built Templates: https://www.findata-be.uk/docs/sample for new users 
+
+➤ Use our formula builder to quickly access the desired data without extra efforts. 
+
+➤ No personal or payment details needed to trial, get started immediately after install
+
+➤ Unpaid user can still make several queries each day
+
