@@ -5,9 +5,14 @@ export default function Document() {
         <Html>
             <Head>
                 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-                <script>
-                {`tailwind.config = {
+                <script type="tailwind-config">
+                    {`tailwind.config = {
                     darkMode: 'class',
+                }`}
+                </script>
+                <script type="tailwind-config">
+                {`{
+                darkMode: 'class',
                 }`}
                 </script>
             </Head>
