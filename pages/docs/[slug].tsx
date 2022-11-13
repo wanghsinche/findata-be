@@ -30,7 +30,7 @@ export default function Doc({ content, menu, slug }: IProps) {
     return <div className='md:flex items-start sm:mx-1 py-2 gap-2'>
         <div className='md:h-screen md:overflow-auto md:basis-1/4 border-r-2 max-w-xs px-4' ref={catalogueRef} dangerouslySetInnerHTML={{ __html: menu }}></div>
 
-        <div className='md:h-screen overflow-auto grow ' >
+        <div className='md:h-screen overflow-auto grow ' style={{background:'white', color:'black'}}>
             <article className='prose' dangerouslySetInnerHTML={{ __html: content }}>
             </article>
         </div>
