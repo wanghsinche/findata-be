@@ -2,7 +2,7 @@ import yahooFinance from 'yahoo-finance2';
 import { getCache, getFromCacheOrRetrieveFromRemote } from './cache'
 
 export enum EModule {
-    historicalc = 'historical', // - historical market prices.
+    historical = 'historical', // - historical market prices.
     quote = 'quote',// - essential symbol info.
     quoteSummary = 'quoteSummary', // - comprehensive symbol info.
     // search='search',// - symbol lookup, news and articles.
@@ -13,7 +13,7 @@ export enum EModule {
 }
 
 const YHModuleMap: Partial<Record<EModule, (query: string, option: unknown) => unknown>> = {
-    [EModule.historicalc]: (query: string, rawOption: unknown) => {
+    [EModule.historical]: (query: string, rawOption: unknown) => {
 
         const option = { ...rawOption as Record<string, unknown> }
 
