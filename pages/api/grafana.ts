@@ -12,22 +12,23 @@ const schema = Joi.object({
     moduleName: Joi.string().required().valid(...Object.values(EModule)),
     tick: Joi.string().required(),
     modules: Joi.array().items(Joi.string()),
-    start: Joi.string(),
-    end: Joi.string()
+    from: Joi.alternatives(Joi.string(), Joi.number()),
+    to: Joi.alternatives(Joi.string(), Joi.number()),
 })
 
 export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse<IResult>
 ) {
-    const query = req.query
+    const query = req.method === 'POST' ? req.body:req.query
+
     const { error } = schema.validate(query)
     if (error) return res.status(400).json({ error: error.message, sheetData: [] })
 
     if (query.moduleName === EModule.historical) {
         const sheetData = await getYahooFinanceData(EModule.historical, query.tick as string, {
-            period1: query.start,
-            period2: query.end
+            period1: query.from,
+            period2: query.to
         })
 
         return res.status(200).json({
