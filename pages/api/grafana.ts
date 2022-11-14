@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import Joi from 'joi'
+import Joi, { number } from 'joi'
 import { getFromCacheOrRetrieveFromRemote } from '../../utils/cache';
 import { DataFrame } from '../../types/grafana';
 import { EModule, getYahooFinanceData } from '../../utils/yahoo';
@@ -24,6 +24,10 @@ export default async function handler(
 
     const { error } = schema.validate(query)
     if (error) return res.status(400).json({ error: error.message, sheetData: [] })
+
+    // convert to number
+    query.from = numericLiteralToNumber(query.from)
+    query.to = numericLiteralToNumber(query.to)
 
     if (query.moduleName === EModule.historical) {
         const sheetData = await getYahooFinanceData(EModule.historical, query.tick as string, {
@@ -50,3 +54,8 @@ export default async function handler(
     return res.status(400).json({ error: 'invalid option', sheetData: [] })
 }
 
+function numericLiteralToNumber(n?:number|string){
+    if (typeof n === 'number') return n
+    if (typeof n === 'string' && !isNaN(Number(n))) return Number(n)
+    return n
+}
