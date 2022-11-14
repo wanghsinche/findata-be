@@ -26,8 +26,8 @@ export default async function handler(
     if (error) return res.status(400).json({ error: error.message, sheetData: [] })
 
     // convert to number
-    query.from = numericLiteralToNumber(query.from)
-    query.to = numericLiteralToNumber(query.to)
+    query.from = numericLiteralToDate(query.from)
+    query.to = numericLiteralToDate(query.to)
 
     if (query.moduleName === EModule.historical) {
         const sheetData = await getYahooFinanceData(EModule.historical, query.tick as string, {
@@ -54,8 +54,8 @@ export default async function handler(
     return res.status(400).json({ error: 'invalid option', sheetData: [] })
 }
 
-function numericLiteralToNumber(n?:number|string){
-    if (typeof n === 'number') return n
-    if (typeof n === 'string' && !isNaN(Number(n))) return Number(n)
+function numericLiteralToDate(n?:number|string){
+    if (typeof n === 'number') return new Date(n)
+    if (typeof n === 'string' && !isNaN(Number(n))) return new Date(Number(n))
     return n
 }
