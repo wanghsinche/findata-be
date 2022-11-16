@@ -57,8 +57,10 @@ export default async function handler(
     }
 
     if (query.moduleName === EModule.chart) {
+        const startOfTheDate = new Date().toDateString();
+
         const sheetData = await getRealtimeYahooFinanceData(EModule.chart, query.tick as string, {
-            period1: query.from,
+            period1: query.from || startOfTheDate,
             period2: query.to,
             interval: query.interval
         })
