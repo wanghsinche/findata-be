@@ -10,6 +10,7 @@ export enum EModule {
     trendingSymbols = 'trendingSymbols',// - symbols trending in a country.
     options = 'options',// - options trading (call/put).
     insights = 'insights',// - insights and scores.
+    chart = '_chart'
 }
 
 const YHModuleMap: Partial<Record<EModule, (query: string, option: unknown) => unknown>> = {
@@ -36,6 +37,7 @@ const YHModuleMap: Partial<Record<EModule, (query: string, option: unknown) => u
     [EModule.trendingSymbols]: (query: string, option: unknown) => yahooFinance.trendingSymbols(query, option as any),
     [EModule.options]: (query: string, option: unknown) => yahooFinance.options(query, option as any),
     [EModule.insights]: (query: string, option: unknown) => yahooFinance.insights(query, option as any),
+    [EModule.chart]: (query: string, option: unknown) => yahooFinance._chart(query, option as any),
 }
 
 function adjustQueryOptions(query: Record<string, unknown>) {
@@ -46,6 +48,14 @@ function adjustQueryOptions(query: Record<string, unknown>) {
         }
     })
     return query
+}
+
+export async function getRealtimeYahooFinanceData(moduleName: EModule, query: string, queryOption: Record<string, unknown>) {
+
+    const data = await (YHModuleMap[moduleName] as any)(query, adjustQueryOptions(queryOption) as any)
+
+
+    return data
 }
 
 
