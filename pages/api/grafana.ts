@@ -22,6 +22,10 @@ export default async function handler(
 ) {
     const query = req.method === 'POST' ? req.body:req.query
 
+    if (typeof query.modules === 'string') {
+        query.modules = [query.modules]
+    }
+
     const { error } = schema.validate(query)
     if (error) return res.status(400).json({ error: error.message, sheetData: [] })
 
