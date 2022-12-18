@@ -2,19 +2,26 @@ const domain = 'https://findata-be.uk'
 
 const testEmail = 'support@findata-be.uk'
 
-let temporaryEmailStore = testEmail
-
 function getEmail() {
+  const key = 'email';
+  const cache = CacheService.getScriptCache();
+
   if (process.env.NODE_ENV === 'test' ){
     return testEmail
   }
   try {
-    temporaryEmailStore = Session.getActiveUser().getEmail();    
+    let temporaryEmailStore = Session.getActiveUser().getEmail();   
+    console.log('save to cache'); 
+    cache.put(key, temporaryEmailStore)
     return temporaryEmailStore
   } catch (error) {
-    console.error("email failure",error)
-
-    return temporaryEmailStore
+    const cachedEmail = cache.get(key);
+    if (cachedEmail){
+      console.error("email failure, get from cache", cachedEmail);
+      return cachedEmail;
+    }
+    console.log('use test email');
+    return testEmail
   }
 }
 

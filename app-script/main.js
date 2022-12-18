@@ -27,7 +27,8 @@ function onInsertFormula(info){
  * @param {*} e open event
  */
 function onOpen(e) {
-  
+  console.log(getEmail(), 'onopen');
+
   SpreadsheetApp.getUi().createAddonMenu()
     .addItem(`Open ${appName} Formula Builder`, 'showbuilder')
     .addSeparator()
