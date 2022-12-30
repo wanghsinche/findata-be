@@ -49,13 +49,13 @@ export default async function handler(
 
     const limiterFunc = getLimiter(oneDaySecs, freeLimitation)
 
-    const userPlan = await getFromCacheOrRetrieveFromRemote('userPlan_'+email, ()=>getUserPlan(email), 30) // 10sec
+    // const userPlan = await getFromCacheOrRetrieveFromRemote('userPlan_'+email, ()=>getUserPlan(email), 30) // 10sec
 
 
-    if (userPlan?.plan === 'Free' && await limiterFunc(email)) {
-        res.status(400).json({ ticker: '', sheetData: [[`Free user can have ${freeLimitation} queries everyday`]], error: `Free user can have ${freeLimitation} queries everyday` })
-        return
-    }
+    // if (userPlan?.plan === 'Free' && await limiterFunc(email)) {
+    //     res.status(400).json({ ticker: '', sheetData: [[`Free user can have ${freeLimitation} queries everyday`]], error: `Free user can have ${freeLimitation} queries everyday` })
+    //     return
+    // }
 
     const moduleName = body.moduleName as EModule
     const query = body.query as string
